@@ -1,0 +1,10 @@
+{
+  "name": "steves-heating-and-air",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Steve's Air Conditioning & Heating — Murrieta, CA",
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  }
+}

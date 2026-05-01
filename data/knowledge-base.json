@@ -1,0 +1,271 @@
+{
+  "business": {
+    "name": "Steve's Air Conditioning & Heating",
+    "tagline": "Your Comfort Is My Business",
+    "owner": "Steve",
+    "phone": "(951) 634-3233",
+    "phoneRaw": "9516343233",
+    "email": "stevesac_6708@yahoo.com",
+    "address": {
+      "line1": "40960 California Oaks Rd #239",
+      "city": "Murrieta",
+      "state": "CA",
+      "zip": "92562"
+    },
+    "yearsInBusiness": "20+",
+    "rating": "5.0",
+    "reviewCount": "100+",
+    "credentials": ["Licensed", "Bonded", "Insured", "NATE-Certified Technicians"],
+    "ownership": "American-owned, locally operated, family-run",
+    "hours": {
+      "monday_friday": "7:00 AM – 6:00 PM",
+      "saturday": "8:00 AM – 3:00 PM",
+      "sunday": "Closed (emergency service available)",
+      "emergency": "Same-day emergency response available for AC/heating failures"
+    },
+    "paymentTypes": "Call for accepted payment methods and current financing options",
+    "warranties": "Factory warranties on all brand-name equipment, plus our own labor guarantee on installations"
+  },
+
+  "serviceArea": {
+    "primary": ["Murrieta", "Temecula"],
+    "full": [
+      "Murrieta",
+      "Temecula",
+      "Wildomar",
+      "Lake Elsinore",
+      "Canyon Lake",
+      "Menifee",
+      "Sun City",
+      "Winchester",
+      "French Valley",
+      "Perris"
+    ],
+    "region": "Southwest Riverside County, California",
+    "note": "If you're not sure whether we cover your area, just call — we'll let you know straight away."
+  },
+
+  "services": [
+    {
+      "id": "ac",
+      "name": "Air Conditioning",
+      "summary": "Installation, repair, and tune-up for all AC systems",
+      "details": "Whether your central AC unit has stopped working in a SoCal heat wave or you're building a new home and need a complete system installed, Steve's has the experience to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs. We also offer ductless mini-split installation for garages, additions, and spaces difficult to cool with central systems.",
+      "features": [
+        "Central AC installation & replacement",
+        "Emergency AC repair — same day",
+        "Ductless mini-split systems",
+        "Seasonal tune-ups & maintenance",
+        "All major brands serviced",
+        "Energy efficiency assessments"
+      ]
+    },
+    {
+      "id": "furnace",
+      "name": "Furnaces",
+      "summary": "Gas, electric, and propane furnace installation and repair",
+      "details": "Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, and propane furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic.",
+      "features": [
+        "Natural gas furnace install & repair",
+        "Electric furnace service",
+        "Propane system installation",
+        "Full furnace replacement",
+        "Heat exchanger inspection",
+        "All brands serviced"
+      ]
+    },
+    {
+      "id": "heatpump",
+      "name": "Heat Pumps",
+      "summary": "Year-round heating and cooling efficiency",
+      "details": "Heat pumps are one of the most energy-efficient ways to heat and cool your home — ideal for the mild SoCal climate. A single system does the work of both a furnace and an AC unit, moving heat rather than generating it, which means dramatically lower energy bills year-round. We install and service air-source and ground-source heat pumps for residential and light commercial applications.",
+      "features": [
+        "Air-source heat pump installation",
+        "Heat pump repair & diagnostics",
+        "Dual-fuel system setup",
+        "Energy efficiency consulting"
+      ]
+    },
+    {
+      "id": "res-ref",
+      "name": "Residential Refrigeration",
+      "summary": "Specialty refrigeration for homes",
+      "details": "From custom wine cellars to residential walk-in coolers, Steve's handles the full range of residential refrigeration. Our technicians are certified in refrigerant handling and skilled in both installation and repair of specialty cold storage systems.",
+      "features": [
+        "Wine cellar refrigeration",
+        "Walk-in cooler installation",
+        "Refrigerant recovery & recharge",
+        "Cold room repair & maintenance"
+      ]
+    },
+    {
+      "id": "com-ref",
+      "name": "Commercial Refrigeration",
+      "summary": "Keeping your business running cold",
+      "details": "Restaurant walk-ins, commercial freezers, refrigerated display cases — a refrigeration failure means lost product and lost revenue. Steve's provides rapid-response commercial refrigeration repair and full system installation for businesses throughout SW Riverside County. We work around your schedule to minimize downtime.",
+      "features": [
+        "Restaurant walk-in cooler/freezer repair",
+        "Commercial display case service",
+        "New system installation",
+        "Preventive maintenance contracts",
+        "Emergency response available",
+        "Health code compliance support"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "name": "HVAC Maintenance",
+      "summary": "Keep it running before it breaks",
+      "details": "The single best way to avoid a mid-summer AC emergency is a proper spring tune-up. Our maintenance service includes a comprehensive system inspection, cleaning of all critical components, refrigerant level check, and a full performance test. We document everything and give you a plain-language report on your system's condition.",
+      "features": [
+        "Annual AC tune-up",
+        "Furnace inspection & cleaning",
+        "Filter replacement & coil cleaning",
+        "Refrigerant level check",
+        "Thermostat calibration",
+        "Written system health report"
+      ]
+    }
+  ],
+
+  "brands": [
+    "Carrier",
+    "Lennox",
+    "Trane",
+    "York",
+    "Rheem",
+    "Goodman",
+    "Daikin",
+    "American Standard",
+    "Bryant",
+    "Amana"
+  ],
+
+  "pricingApproach": {
+    "philosophy": "Honest, upfront pricing with no hidden fees, bait-and-switch tactics, or high-pressure sales",
+    "estimates": "Free estimates on installations and replacements",
+    "diagnostic": "Service call / diagnostic fee may apply for repairs — call (951) 634-3233 for current rates",
+    "quoteProcess": "We provide a clear written quote before any work begins. If we discover something during the job, we stop and discuss it with you first.",
+    "note": "Specific pricing varies by job. The best way to get an accurate number is to call (951) 634-3233 for a free quote."
+  },
+
+  "values": [
+    "Honest, upfront pricing — no hidden fees",
+    "Same-day emergency service",
+    "All brands, all systems — factory-trained expertise",
+    "American-owned, locally operated family business",
+    "Real technicians, no call centers",
+    "No bait-and-switch, no high-pressure sales"
+  ],
+
+  "faqs": [
+    {
+      "q": "Do you offer emergency service?",
+      "a": "Yes — we offer same-day emergency response for heating and cooling failures. If your AC is out in summer heat or your furnace died on a cold night, call (951) 634-3233 and we'll get someone out to you as fast as possible."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes. Steve's Air Conditioning & Heating is fully Licensed, Bonded, and Insured. Our technicians are also NATE-certified (North American Technician Excellence) — a nationally recognized HVAC certification. Every job, every tech, fully covered."
+    },
+    {
+      "q": "What brands do you service?",
+      "a": "All major HVAC brands — including Carrier, Lennox, Trane, York, Rheem, Goodman, Daikin, American Standard, Bryant, and Amana. If you have a different brand, call us and ask — we likely service it."
+    },
+    {
+      "q": "How long have you been in business?",
+      "a": "Over 20 years serving the Murrieta-Temecula Valley and Southwest Riverside County."
+    },
+    {
+      "q": "Do you give free estimates?",
+      "a": "Yes — free estimates on installations and replacements. Service-call diagnostic fees may apply for repairs. Call (951) 634-3233 for current rates."
+    },
+    {
+      "q": "What areas do you cover?",
+      "a": "We serve all of Southwest Riverside County: Murrieta, Temecula, Wildomar, Lake Elsinore, Canyon Lake, Menifee, Sun City, Winchester, French Valley, and Perris. If you're outside that list, call and ask — we'll let you know."
+    },
+    {
+      "q": "Can you install a brand I purchase myself?",
+      "a": "Call us about that one — equipment-supplied installs are case-by-case. We need to make sure the equipment is right for your home and that any factory warranty isn't voided by the install."
+    },
+    {
+      "q": "How often should I have my HVAC serviced?",
+      "a": "Once a year minimum — ideally a spring AC tune-up and a fall furnace inspection. Annual maintenance catches small problems before they become emergency failures and keeps your system running efficiently."
+    },
+    {
+      "q": "What's the difference between a heat pump and a regular AC?",
+      "a": "A heat pump moves heat in either direction, so it can both cool your home in summer AND heat it in winter — a single system replacing both your AC and furnace. They're very efficient in mild climates like ours, which means lower energy bills year-round. A regular AC only cools."
+    },
+    {
+      "q": "How long does a new HVAC system last?",
+      "a": "With proper maintenance, central AC units typically last 15-20 years, furnaces 15-25 years, and heat pumps 12-15 years. Skipping annual maintenance can cut those numbers dramatically."
+    },
+    {
+      "q": "Do you do commercial work?",
+      "a": "Yes — we handle commercial refrigeration (restaurant walk-ins, freezers, display cases), commercial HVAC, and light commercial heat pump systems. We work around your business schedule to minimize downtime."
+    },
+    {
+      "q": "Should I repair or replace my old unit?",
+      "a": "Call us for an honest assessment. As a rule of thumb: if your system is over 12-15 years old and the repair costs more than half the price of a new unit, replacement usually makes more sense. We'll lay out both options with real numbers — no upsell pressure."
+    },
+    {
+      "q": "How can I lower my energy bills?",
+      "a": "Annual maintenance, a programmable or smart thermostat, sealing duct leaks, replacing filters monthly during heavy-use seasons, and setting your thermostat 2-3° higher in summer / lower in winter. If your system is old and inefficient, a high-SEER replacement can cut cooling costs significantly."
+    }
+  ],
+
+  "troubleshootingTips": [
+    {
+      "issue": "AC not cooling",
+      "tips": [
+        "Check the thermostat is set to 'cool' and below room temperature",
+        "Replace a dirty air filter — this is the #1 cause of weak cooling",
+        "Make sure the outside condenser unit isn't blocked by leaves, debris, or overgrown plants",
+        "Check the breaker — a tripped breaker is common after power surges",
+        "If it's still not cooling, call us — could be low refrigerant or a failing component"
+      ]
+    },
+    {
+      "issue": "Furnace not heating",
+      "tips": [
+        "Confirm the thermostat is set to 'heat' and the temperature is above the room temperature",
+        "Check that the gas valve is open (for gas furnaces)",
+        "Replace a dirty air filter",
+        "Check for a tripped breaker or blown fuse",
+        "Listen for clicking without ignition — could be a bad igniter, common but a tech needs to handle it"
+      ]
+    },
+    {
+      "issue": "AC running but blowing warm air",
+      "tips": [
+        "Check the thermostat fan setting — set to 'auto' not 'on'",
+        "Look for ice on the refrigerant lines — if you see it, turn the system off and call us (frozen coil from low refrigerant or airflow problem)",
+        "Replace the air filter",
+        "Don't keep running it if it's blowing warm — you can damage the compressor"
+      ]
+    },
+    {
+      "issue": "Strange noises",
+      "tips": [
+        "Squealing usually means a belt or motor bearing issue — call us",
+        "Banging or clanking can indicate a loose part — turn it off and call",
+        "Hissing near the indoor unit can be a refrigerant leak — call us same day",
+        "Light clicking at startup is normal; constant clicking is not"
+      ]
+    },
+    {
+      "issue": "Water leaking from indoor unit",
+      "tips": [
+        "Most often a clogged condensate drain line",
+        "Turn the AC off to prevent water damage",
+        "Don't try to clear it with chemicals — call us, we'll flush it properly"
+      ]
+    }
+  ],
+
+  "seasonalTips": {
+    "spring": "Schedule your AC tune-up before the first heat wave hits. Replace your air filter. Clear leaves and debris from around the outdoor condenser unit.",
+    "summer": "Set your thermostat to 78°F when home, higher when away. Use ceiling fans to feel cooler at higher set points. Close blinds during peak sun hours. Replace filters monthly during heavy use.",
+    "fall": "Schedule your furnace inspection before first cold night. Test your heater on a cool day so you find any problems before you actually need it. Replace the filter.",
+    "winter": "Set your thermostat to 68°F when home — every degree higher costs about 3% more on heating. Make sure heating vents aren't blocked by furniture. Replace filters every 1-2 months."
+  }
+}
