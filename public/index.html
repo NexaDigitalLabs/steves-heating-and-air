@@ -663,8 +663,10 @@
     .rc::before { content: '"'; position: absolute; top: 10px; right: 18px; font-size: 6rem; line-height: 1; color: rgba(26,63,122,.18); font-family: Georgia, serif; }
     .rc-st { color: var(--gold); font-size: .9rem; letter-spacing: 2px; margin-bottom: 12px; }
     .rc-tx { font-size: .92rem; color: rgba(255,255,255,.78); line-height: 1.7; margin-bottom: 18px; }
-    .rc-au { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
+    .rc-au { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
     .rc-au strong { color: var(--white); }
+    .rc-via { font-size: .68rem; letter-spacing: .12em; color: rgba(255,255,255,.4); font-weight: 500; display: inline-flex; align-items: center; gap: 4px; }
+    .rc-via::before { content: 'G'; display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; background: var(--white); color: #4285F4; border-radius: 50%; font-family: 'Inter', sans-serif; font-weight: 700; font-size: .65rem; letter-spacing: 0; }
 
     /* Leave a review block */
     .leave-review-block {
@@ -1447,6 +1449,48 @@
       "bestRating": "5",
       "worstRating": "1"
     },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Sarah Switzer" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-04-02",
+        "reviewBody": "Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!",
+        "publisher": { "@type": "Organization", "name": "Google" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Richard Leon" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-04-02",
+        "reviewBody": "Steve's Air Conditioning & Heating are the real deal, honest, reliable & they don't try to up-sell you. Been using Steve's for years. Great company! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!",
+        "publisher": { "@type": "Organization", "name": "Google" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Christina Ayguasbiba" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-04-25",
+        "reviewBody": "Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.",
+        "publisher": { "@type": "Organization", "name": "Google" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Paul Haug" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-04-04",
+        "reviewBody": "Steve's technician came in, they were professional, assessed the problem, told me my options and when I made my decision they gave me a quote. They found a problem I did not know about — it was a quick fix and I was up and running. They cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.",
+        "publisher": { "@type": "Organization", "name": "Google" }
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Yagui Yaqui" },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-04-02",
+        "reviewBody": "Michael Castanon was very professional and knowledgeable about concerns. He serviced all that was necessary in a timely manner. Very pleasant to interact with.",
+        "publisher": { "@type": "Organization", "name": "Google" }
+      }
+    ],
     "knowsAbout": [
       "Air Conditioning Repair","Central Air Installation","Furnace Installation","Heat Pump Systems",
       "HVAC Maintenance","Indoor Air Quality","Commercial Refrigeration","Residential Refrigeration",
@@ -1670,6 +1714,47 @@
     <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
   </div></div>
 
+  <section class="hrev"><div class="container">
+    <div class="rev-intro fi">
+      <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
+      <div class="rating-big">
+        <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
+        <div class="rat-d">
+          <div class="rat-c">Based on 612+ Google Reviews</div>
+          <a href="#" onclick="return go('reviews')" class="btn btn-blue" style="margin-top:12px;font-size:.8rem;padding:10px 18px">Read All Reviews →</a>
+        </div>
+      </div>
+    </div>
+    <div class="rev-g">
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!</p><div class="rc-au"><strong>Sarah Switzer</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's Air Conditioning &amp; Heating are the real deal, honest, reliable &amp; they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!!!</p><div class="rc-au"><strong>Richard Leon</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.</p><div class="rc-au"><strong>Christina Ayguasbiba</strong> <span class="rc-via">via Google</span></div></div>
+    </div>
+    <div class="leave-review-block fi">
+      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
+        <img src="/images/leave-review.png" alt="Leave us a Google review"/>
+      </a>
+      <p class="leave-review-tx">Had a great experience with Steve's? Take 30 seconds to share it.</p>
+    </div>
+  </div></section>
+
+  <section class="hwhy"><div class="container"><div class="why-g">
+    <div class="why-vis fi">
+      <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="why-vis-ph" style="display:none">🔧</div>
+    </div>
+    <div>
+      <div class="eyebrow fi">Why Steve's</div>
+      <h2 class="section-h2 fi">SW Riverside County's <em>Most Trusted</em> HVAC Pro</h2>
+      <div class="wpts">
+        <div class="wp fi"><div><strong>Honest, Upfront Pricing</strong><p>No hidden fees, no bait-and-switch. We give you a straight quote before any work begins.</p></div></div>
+        <div class="wp fi"><div><strong>Same-Day Emergency Service</strong><p>AC dies in 105° heat? We move fast. Emergency response means we're there when you need it most.</p></div></div>
+        <div class="wp fi"><div><strong>All Brands, All Systems</strong><p>Carrier, Lennox, Trane, Rheem — we service and install everything with factory-trained expertise.</p></div></div>
+        <div class="wp fi"><div><strong>Proudly American-Owned</strong><p>A local family business serving the community with the integrity you'd expect from a neighbor.</p></div></div>
+      </div>
+    </div>
+  </div></div></section>
+
   <!-- ══════════════════════════════ FAQ ══════════════════════════════ -->
   <section class="faq-sec" id="faq" aria-labelledby="faq-heading">
     <div class="faq-container">
@@ -1696,47 +1781,6 @@
       </div>
     </div>
   </section>
-
-  <section class="hrev"><div class="container">
-    <div class="rev-intro fi">
-      <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
-      <div class="rating-big">
-        <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
-        <div class="rat-d">
-          <div class="rat-c">Based on 612+ Google Reviews</div>
-          <a href="#" onclick="return go('reviews')" class="btn btn-blue" style="margin-top:12px;font-size:.8rem;padding:10px 18px">Read All Reviews →</a>
-        </div>
-      </div>
-    </div>
-    <div class="rev-g">
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's showed up same day when our AC went out in July. The tech was honest, quick, and didn't try to upsell us on anything. We'll never call anyone else.</p><div class="rc-au"><strong>Maria T.</strong> — Murrieta, CA</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Replaced our entire HVAC at a price way better than two other quotes. Crew was professional, cleaned up perfectly. System runs like a dream.</p><div class="rc-au"><strong>Brandon K.</strong> — Temecula, CA</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Been using Steve's for our restaurant refrigeration for years. Responsive, reliable, and they genuinely know what they're doing. Highest recommendation.</p><div class="rc-au"><strong>Julio R.</strong> — Wildomar, CA</div></div>
-    </div>
-    <div class="leave-review-block fi">
-      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
-        <img src="/images/leave-review.png" alt="Leave us a Google review"/>
-      </a>
-      <p class="leave-review-tx">Had a great experience with Steve's? Take 30 seconds to share it.</p>
-    </div>
-  </div></section>
-
-  <section class="hwhy"><div class="container"><div class="why-g">
-    <div class="why-vis fi">
-      <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="why-vis-ph" style="display:none">🔧</div>
-    </div>
-    <div>
-      <div class="eyebrow fi">Why Steve's</div>
-      <h2 class="section-h2 fi">SW Riverside County's <em>Most Trusted</em> HVAC Pro</h2>
-      <div class="wpts">
-        <div class="wp fi"><div><strong>Honest, Upfront Pricing</strong><p>No hidden fees, no bait-and-switch. We give you a straight quote before any work begins.</p></div></div>
-        <div class="wp fi"><div><strong>Same-Day Emergency Service</strong><p>AC dies in 105° heat? We move fast. Emergency response means we're there when you need it most.</p></div></div>
-        <div class="wp fi"><div><strong>All Brands, All Systems</strong><p>Carrier, Lennox, Trane, Rheem — we service and install everything with factory-trained expertise.</p></div></div>
-        <div class="wp fi"><div><strong>Proudly American-Owned</strong><p>A local family business serving the community with the integrity you'd expect from a neighbor.</p></div></div>
-      </div>
-    </div>
-  </div></div></section>
 
   <div class="cband"><div class="cband-in">
     <h2 class="fi">Ready to Get Comfortable?</h2>
@@ -1834,18 +1878,19 @@
   <section class="rvp"><div class="container">
     <div class="rv-hs">
       <div class="rv-hc fi"><div class="rv-hn">5.0<span>★</span></div><div class="rv-hl">Average Google Rating</div></div>
-      <div class="rv-hc fi"><div class="rv-hn" style="color:var(--sky)">100<span style="color:var(--sky)">+</span></div><div class="rv-hl">Verified Customer Reviews</div></div>
+      <div class="rv-hc fi"><div class="rv-hn" style="color:var(--sky)">612<span style="color:var(--sky)">+</span></div><div class="rv-hl">Verified Customer Reviews</div></div>
       <div class="rv-hc fi"><div class="rv-hn" style="color:var(--red)">20<span style="color:var(--red)">+</span></div><div class="rv-hl">Years Building Trust</div></div>
     </div>
     <div class="rv-ag">
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's showed up same day when our AC went out in July. Honest, quick, and didn't try to upsell us. We'll never call anyone else.</p><div class="rc-au"><strong>Maria T.</strong> — Murrieta</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Replaced our entire HVAC at a price way better than two other quotes. Crew was professional and cleaned up perfectly. System runs like a dream.</p><div class="rc-au"><strong>Brandon K.</strong> — Temecula</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Been using Steve's for restaurant refrigeration for years. Responsive, reliable, genuine expertise. Highest possible recommendation.</p><div class="rc-au"><strong>Julio R.</strong> — Wildomar</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Called at 7am on a Saturday. They had someone out by noon. Fixed fast, fair price. These guys are the real deal — won't call anyone else.</p><div class="rc-au"><strong>Sandra M.</strong> — Lake Elsinore</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve personally came out and walked me through exactly what was wrong and what it would cost. No nonsense. Fixed same day. Outstanding.</p><div class="rc-au"><strong>Mike H.</strong> — Canyon Lake</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Furnace went out right before Thanksgiving. Steve's fit us in immediately, found a bad igniter, had heat back on in two hours. Lifesavers.</p><div class="rc-au"><strong>The Garcias</strong> — Menifee</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I've used three HVAC companies in this area over the years. Steve's is the only one I've gone back to and will keep calling. Fair, honest, skilled.</p><div class="rc-au"><strong>David L.</strong> — Murrieta</div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Installed a new Carrier system in our home. Competitive price, clean work, done in one day. Very happy with the whole experience.</p><div class="rc-au"><strong>Jennifer W.</strong> — Temecula</div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!</p><div class="rc-au"><strong>Sarah Switzer</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's Air Conditioning &amp; Heating are the real deal, honest, reliable &amp; they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!!!</p><div class="rc-au"><strong>Richard Leon</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.</p><div class="rc-au"><strong>Christina Ayguasbiba</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's technician came in, they were professional, assessed the problem, told me my options and when I made my decision they gave me a quote. They found a problem I did not know about — it was a quick fix and I was up and running. They cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.</p><div class="rc-au"><strong>Paul Haug</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I just had a technician from Steve's come to my home — his name is Michael and I'm very pleased with the service. He did a thorough job checking everything and made sure my system was running properly. He was extremely professional.</p><div class="rc-au"><strong>Marietta Spry</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Michael Castanon was very professional and knowledgeable about concerns. He serviced all that was necessary in a timely manner. Very pleasant to interact with.</p><div class="rc-au"><strong>Yagui Yaqui</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I had a great experience with Steve and the work he did for me. He was up front about costs and provided me with the knowledge necessary to work on the system if I wanted to. I would recommend Steve's Air Conditioning service to everyone.</p><div class="rc-au"><strong>David Sosa</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Always 5 stars. Honest, efficient, knowledgeable. Highly recommend.</p><div class="rc-au"><strong>Jessica Pennington</strong> <span class="rc-via">via Google</span></div></div>
+      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Thank you for a great experience. The technicians were professional, knowledgeable, and courteous! Awesome job!</p><div class="rc-au"><strong>Billy Ward</strong> <span class="rc-via">via Google</span></div></div>
     </div>
     <div class="leave-review-block fi">
       <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
