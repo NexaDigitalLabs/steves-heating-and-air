@@ -299,29 +299,24 @@
       width: 100%;
       padding: 80px 40px;
       text-align: center;
-      animation: hContentIn .8s ease both;
-    }
-    @keyframes hContentIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Reduced motion — show poster only, skip animations */
     @media (prefers-reduced-motion: reduce) {
       .h-video { display: none !important; }
       .h-poster { opacity: 1 !important; }
-      .h-content { animation: none; }
+      .fade-stage { opacity: 1 !important; transform: none !important; transition: none !important; }
     }
 
     .h-tag {
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(11,29,58,.7);
       border: 1px solid rgba(196,30,30,.5);
-      padding: 8px 18px; border-radius: 50px;
+      padding: 10px 22px; border-radius: 50px;
       font-family: 'Bebas Neue', sans-serif;
-      font-size: .9rem; letter-spacing: .22em; text-transform: uppercase;
+      font-size: 1.05rem; letter-spacing: .22em; text-transform: uppercase;
       color: var(--white);
-      margin-bottom: 28px;
+      margin-bottom: 32px;
       backdrop-filter: blur(6px);
     }
     .h-tag::before { content: '●'; font-size: .55rem; color: var(--red); animation: blink 2s infinite; }
@@ -329,10 +324,10 @@
 
     .h-h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-size: clamp(4.2rem, 9vw, 7.8rem);
       line-height: .9;
       letter-spacing: .04em;
-      margin-bottom: 20px;
+      margin-bottom: 28px;
       color: var(--white);
       text-shadow: 0 2px 24px rgba(0,0,0,.6);
     }
@@ -341,25 +336,15 @@
 
     .h-tagline {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(1.4rem, 2.4vw, 2rem);
+      font-size: clamp(1.6rem, 2.8vw, 2.3rem);
       letter-spacing: .25em;
       color: var(--gold);
-      margin: 0 auto 28px;
-      padding: 10px 24px;
+      margin: 0 auto 36px;
+      padding: 0;
       display: inline-block;
-      border-top: 1px solid rgba(212,168,67,.4);
-      border-bottom: 1px solid rgba(212,168,67,.4);
       text-shadow: 0 2px 16px rgba(0,0,0,.7);
     }
 
-    .h-sub {
-      font-size: 1.08rem;
-      color: rgba(255,255,255,.88);
-      line-height: 1.7;
-      max-width: 620px;
-      margin: 0 auto 36px;
-      text-shadow: 0 1px 12px rgba(0,0,0,.6);
-    }
     .h-ctas {
       display: flex; gap: 14px; flex-wrap: wrap;
       justify-content: center;
@@ -373,10 +358,14 @@
       max-width: 620px;
       margin: 0 auto;
     }
-    .ht-item { display: flex; flex-direction: column; align-items: center; }
+    .ht-item { display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 90px; }
     .ht-val { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; color: var(--white); letter-spacing: .04em; line-height: 1; text-shadow: 0 2px 12px rgba(0,0,0,.7); }
     .ht-val span { color: var(--blueAcc); }
-    .ht-lbl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-top: 4px; }
+    .ht-lbl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-top: 4px; text-align: center; }
+
+    /* Hero staged fade-ins. Children start hidden, JS adds .shown progressively */
+    .fade-stage { opacity: 0; transform: translateY(14px); transition: opacity .9s ease, transform .9s ease; }
+    .fade-stage.shown { opacity: 1; transform: none; }
 
     /* Trust bar */
     .tbar {
@@ -646,7 +635,7 @@
     /* Reviews home */
     .hrev { padding: 100px 0; background: var(--dark); }
     .rev-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px; }
-    .rating-big { display: flex; gap: 20px; align-items: center; }
+    .rating-big { display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center; }
     .rating-img {
       max-width: 320px; width: 100%; height: auto;
       border-radius: 8px;
@@ -654,9 +643,10 @@
       filter: brightness(1.05);
     }
     .rat-n { font-family: 'Bebas Neue', sans-serif; font-size: 6rem; color: var(--white); line-height: 1; letter-spacing: .04em; }
-    .rat-d { display: flex; flex-direction: column; gap: 4px; }
+    .rat-d { display: flex; flex-direction: column; gap: 4px; align-items: center; }
     .stars { color: var(--gold); font-size: 1.2rem; letter-spacing: 3px; }
-    .rat-c { font-size: .85rem; color: var(--muted); }
+    .rat-c { font-size: .9rem; color: var(--muted); }
+    .rat-btn { font-size: .82rem; padding: 11px 22px; }
     .rev-g { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .rc { background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 30px; position: relative; overflow: hidden; transition: border-color .3s, transform .3s; }
     .rc:hover { border-color: rgba(74,122,181,.3); transform: translateY(-4px); }
@@ -1591,6 +1581,7 @@
       class="h-video"
       id="heroVideo"
       muted
+      autoplay
       playsinline
       preload="auto"
       poster="/images/truck-hero-poster.jpg"
@@ -1603,21 +1594,20 @@
 
     <!-- Layer 4: centered text content -->
     <div class="h-content">
-      <div class="h-tag">Murrieta, CA — Serving SW Riverside County</div>
-      <h1 class="h-h1">
+      <div class="h-tag fade-stage fade-s2">Murrieta, CA — Serving SW Riverside County</div>
+      <h1 class="h-h1 fade-stage fade-s1">
         <span class="l1">Your Comfort</span>
         <span class="l2">Is My Business</span>
       </h1>
-      <div class="h-tagline">Licensed • Bonded • Insured</div>
-      <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first&nbsp;time.</p>
-      <div class="h-ctas">
+      <div class="h-tagline fade-stage fade-s2">Licensed • Bonded • Insured</div>
+      <div class="h-ctas fade-stage fade-s3">
         <a href="tel:9516343233" class="btn btn-red btn-lg">Call Now</a>
         <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote</a>
       </div>
-      <div class="h-trust">
+      <div class="h-trust fade-stage fade-s3">
         <div class="ht-item"><div class="ht-val">20<span>+</span></div><div class="ht-lbl">Years in SoCal</div></div>
-        <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
         <div class="ht-item"><div class="ht-val">Same<span>&nbsp;Day</span></div><div class="ht-lbl">Service Available</div></div>
+        <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
       </div>
     </div>
   </section>
@@ -1719,10 +1709,8 @@
       <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
       <div class="rating-big">
         <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
-        <div class="rat-d">
-          <div class="rat-c">Based on 612+ Google Reviews</div>
-          <a href="#" onclick="return go('reviews')" class="btn btn-blue" style="margin-top:12px;font-size:.8rem;padding:10px 18px">Read All Reviews →</a>
-        </div>
+        <div class="rat-c">Based on 612+ Google Reviews</div>
+        <a href="#" onclick="return go('reviews')" class="btn btn-blue rat-btn">Read All Reviews</a>
       </div>
     </div>
     <div class="rev-g">
@@ -2249,35 +2237,87 @@ async function cbAsk(text) {
   }
 }
 
-// ─── HERO VIDEO ──────────────────────────────────────────────────────
-// Plays once on page load, then freezes on the last frame.
-// Poster image is shown instantly while video loads + as fallback for
-// browsers/devices that block autoplay (iOS Low Power, slow connections).
-(function initHeroVideo() {
+// ─── HERO VIDEO + STAGED FADE-IN ─────────────────────────────────────
+// Sequence: video plays clean → near end, h1 fades in → tag + tagline
+// fade in → buttons + trust stats fade in last. If autoplay is blocked
+// (iOS Low Power Mode, etc.), staged fades fire on a timer instead.
+(function initHeroStaged() {
   const v = document.getElementById('heroVideo');
-  if (!v) return;
 
-  // Respect reduced-motion preference: don't play, just keep poster visible
+  // Stage targets — keyed by .fade-s1 / .fade-s2 / .fade-s3
+  const s1 = document.querySelectorAll('.fade-s1'); // H1
+  const s2 = document.querySelectorAll('.fade-s2'); // Tag pill + Licensed/Bonded/Insured
+  const s3 = document.querySelectorAll('.fade-s3'); // CTAs + trust stats
+
+  const flags = { 1: false, 2: false, 3: false };
+  const triggerStage = (n) => {
+    if (flags[n]) return;
+    flags[n] = true;
+    const els = n === 1 ? s1 : n === 2 ? s2 : s3;
+    els.forEach(el => el.classList.add('shown'));
+  };
+  const showAll = () => { triggerStage(1); triggerStage(2); triggerStage(3); };
+
+  // Reduced-motion: show everything immediately, no animation
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    showAll();
     return;
   }
+  if (!v) { showAll(); return; }
 
-  // Freeze on last frame after first play-through
+  // Watchdog: if the video doesn't actually start playing within ~1.6s,
+  // trigger fades on a timer so the hero never sits empty
+  let videoStarted = false;
+  const fbTimers = [];
+  const armFallback = () => {
+    fbTimers.push(setTimeout(() => triggerStage(1), 200));
+    fbTimers.push(setTimeout(() => triggerStage(2), 800));
+    fbTimers.push(setTimeout(() => triggerStage(3), 1400));
+  };
+  const watchdog = setTimeout(() => {
+    if (!videoStarted) armFallback();
+  }, 1600);
+
+  // Freeze on last frame after first play-through; ensure final stage shown
   v.addEventListener('ended', () => {
     v.classList.add('ended');
     v.pause();
+    triggerStage(3);
   });
 
-  // Reveal video only once it has enough buffer to play smoothly
+  // Once metadata loads, schedule stage triggers based on duration
+  v.addEventListener('loadedmetadata', () => {
+    if (!isFinite(v.duration) || v.duration <= 0) return;
+    const dur = v.duration;
+    // Title appears near the end; tag + tagline shortly after; CTAs/trust on ended
+    const t1 = Math.max(dur - 1.6, dur * 0.55);
+    const t2 = Math.max(dur - 0.8, dur * 0.80);
+    v.addEventListener('timeupdate', () => {
+      if (v.currentTime >= t1) triggerStage(1);
+      if (v.currentTime >= t2) triggerStage(2);
+    });
+  });
+
+  // Reveal video once buffered enough; attempt programmatic play as backup
+  // to the autoplay attribute (covers some Safari edge cases)
   v.addEventListener('canplay', () => {
     v.classList.add('ready');
-    v.play().catch(() => {
-      // Autoplay blocked (e.g., iOS Low Power) — poster stays visible, no harm done
-    });
+    const p = v.play();
+    if (p && typeof p.then === 'function') {
+      p.then(() => {
+        videoStarted = true;
+        clearTimeout(watchdog);
+      }).catch(() => {
+        // Autoplay blocked — watchdog fallback already armed
+      });
+    }
   }, { once: true });
 
-  // Safety net: if 'canplay' never fires (slow connection, decode error),
-  // poster image carries the hero on its own — no further action needed.
+  // If 'playing' fires before canplay handler resolves, also clear watchdog
+  v.addEventListener('playing', () => {
+    videoStarted = true;
+    clearTimeout(watchdog);
+  }, { once: true });
 })();
 </script>
 </body>
