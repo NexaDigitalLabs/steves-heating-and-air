@@ -106,35 +106,20 @@
     .fi.in { opacity: 1; transform: translateY(0); }
 
     /* ═══════════════════════════════════════════════════════════════════
-       STARS BORDER (top-of-page accent — Americana nod)
+       TOP FLAG BANNER (replaces old stars row)
        ═══════════════════════════════════════════════════════════════════ */
-    .stars-row {
-      background: var(--navy3);
+    .top-banner {
+      width: 100%;
+      height: 60px;
+      background-image: url('/images/top-flag-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       border-bottom: 2px solid var(--red);
-      padding: 6px 20px;
-      text-align: center;
-      font-size: .85rem;
-      letter-spacing: .8em;
-      color: var(--white);
-      user-select: none;
     }
-
-    /* ═══════════════════════════════════════════════════════════════════
-       TOP BAR
-       ═══════════════════════════════════════════════════════════════════ */
-    #topbar {
-      background: var(--navy);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      padding: 9px 40px;
-      display: flex; justify-content: space-between; align-items: center;
-      font-family: 'Rajdhani', sans-serif;
-      font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 600;
+    @media (max-width: 768px) {
+      .top-banner { height: 40px; }
     }
-    .tb-badges { display: flex; gap: 20px; color: var(--muted); }
-    .tb-badges span { color: var(--sky); }
-    .tb-badges span::before { content: '✓ '; }
-    .tb-phone a { color: var(--white); text-decoration: none; font-size: .9rem; }
-    .tb-phone a:hover { color: var(--sky); }
 
     /* ═══════════════════════════════════════════════════════════════════
        NAVBAR
@@ -144,17 +129,21 @@
       background: rgba(6,14,28,.96);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,.07);
-      height: 70px;
+      height: 84px;
       display: flex; align-items: center; padding: 0 40px;
       justify-content: space-between;
       transition: border-color .3s, box-shadow .3s;
     }
     #navbar.scrolled { border-bottom-color: var(--blue); box-shadow: 0 4px 40px rgba(26,63,122,.3); }
 
-    .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-    .nav-logo img { height: 50px; width: auto; }
-    .nav-logo-txt { font-family: 'Bebas Neue', sans-serif; font-size: 1.3rem; letter-spacing: .08em; line-height: 1.1; color: var(--white); }
-    .nav-logo-txt span { color: var(--red); }
+    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo img {
+      height: 60px;
+      width: auto;
+      max-width: 260px;
+      object-fit: contain;
+      display: block;
+    }
 
     .nav-ul { display: flex; list-style: none; gap: 2px; align-items: center; }
     .nav-ul > li > a {
@@ -202,65 +191,32 @@
     .page.active { display: block; }
 
     /* ═══════════════════════════════════════════════════════════════════
-       HERO — Split layout: dark column (left) + truck video (right)
+       HERO — Full-bleed video with centered text overlay
        ═══════════════════════════════════════════════════════════════════ */
     #hero {
       position: relative;
-      min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      background: var(--dark);
+      min-height: calc(100vh - 84px - 60px);
+      width: 100%;
       overflow: hidden;
+      background: var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    /* LEFT — content column */
-    .h-left {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 100px 60px 80px;
-      overflow: hidden;
-      background: var(--dark);
-    }
-    /* Flag overlay layered behind content (low opacity for depth) */
-    .h-left::before {
-      content: '';
+    /* LAYER 1 — Flag overlay (sits at the very back, behind video) */
+    .h-flag-bg {
       position: absolute; inset: 0;
       background-image: url('/images/flag-bg.png');
       background-size: cover;
       background-position: center;
-      opacity: var(--flag-opacity);
-      filter: contrast(1.05) saturate(.7);
+      opacity: 0.5;
+      filter: contrast(1.05) saturate(.6);
       z-index: 0;
       pointer-events: none;
     }
-    /* Gradient on top of flag for legibility */
-    .h-left::after {
-      content: '';
-      position: absolute; inset: 0;
-      background:
-        radial-gradient(ellipse 70% 90% at 0% 50%, rgba(26,63,122,.40) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 100% 0%, rgba(196,30,30,.15) 0%, transparent 60%),
-        linear-gradient(160deg, rgba(11,29,58,.78) 0%, rgba(6,14,28,.88) 55%, rgba(8,15,31,.94) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-    .h-left-inner {
-      position: relative;
-      z-index: 2;
-      max-width: 540px;
-      width: 100%;
-      margin-left: auto;
-    }
 
-    /* RIGHT — video column */
-    .h-right-vid {
-      position: relative;
-      overflow: hidden;
-      background: #000;
-      min-height: 100vh;
-    }
+    /* LAYER 2 — Video & poster (full-bleed) */
     .h-video, .h-poster {
       position: absolute;
       inset: 0;
@@ -269,93 +225,119 @@
       object-fit: cover;
       object-position: center;
     }
-    .h-poster {
-      z-index: 1;
-      transition: opacity .4s ease;
-    }
+    .h-poster { z-index: 1; transition: opacity .4s ease; }
     .h-video {
       z-index: 2;
       opacity: 0;
       transition: opacity .4s ease;
     }
     .h-video.ready { opacity: 1; }
-    .h-video.ended { /* we keep video visible, just paused on its last frame */ }
-    /* Subtle vignette on the right edge to blend video into navy column on small screens */
-    .h-right-vid::after {
-      content: '';
+
+    /* LAYER 3 — Heavy darkening overlay for text legibility */
+    .h-darken {
       position: absolute; inset: 0;
-      background:
-        linear-gradient(90deg, rgba(6,14,28,.55) 0%, transparent 18%, transparent 82%, rgba(6,14,28,.25) 100%),
-        linear-gradient(180deg, rgba(6,14,28,.18) 0%, transparent 30%, transparent 70%, rgba(6,14,28,.35) 100%);
       z-index: 3;
+      background:
+        radial-gradient(ellipse 80% 70% at 50% 50%, rgba(6,14,28,.55) 0%, rgba(6,14,28,.78) 60%, rgba(6,14,28,.88) 100%),
+        linear-gradient(180deg, rgba(6,14,28,.40) 0%, transparent 25%, transparent 75%, rgba(6,14,28,.65) 100%);
       pointer-events: none;
     }
-    /* Red accent strip — vertical bar where the columns meet */
-    .h-right-vid::before {
+
+    /* LAYER 4 — Subtle red bottom accent */
+    .h-darken::after {
       content: '';
       position: absolute;
-      top: 0; bottom: 0; left: 0;
-      width: 4px;
-      background: linear-gradient(180deg, transparent 0%, var(--red) 30%, var(--red) 70%, transparent 100%);
-      z-index: 4;
+      left: 0; right: 0; bottom: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent 0%, var(--red) 30%, var(--red) 70%, transparent 100%);
     }
 
-    /* Reduced motion — freeze immediately on poster */
+    /* LAYER 5 — Centered content */
+    .h-content {
+      position: relative;
+      z-index: 4;
+      max-width: 900px;
+      width: 100%;
+      padding: 80px 40px;
+      text-align: center;
+      animation: hContentIn .8s ease both;
+    }
+    @keyframes hContentIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Reduced motion — show poster only, skip animations */
     @media (prefers-reduced-motion: reduce) {
       .h-video { display: none !important; }
       .h-poster { opacity: 1 !important; }
+      .h-content { animation: none; }
     }
 
     .h-tag {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(26,63,122,.3);
-      border: 1px solid rgba(74,122,181,.35);
-      padding: 6px 14px; border-radius: 50px;
+      background: rgba(11,29,58,.7);
+      border: 1px solid rgba(196,30,30,.5);
+      padding: 8px 18px; border-radius: 50px;
       font-family: 'Rajdhani', sans-serif; font-weight: 600;
-      font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;
-      color: var(--sky); margin-bottom: 24px;
+      font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 28px;
+      backdrop-filter: blur(6px);
     }
-    .h-tag::before { content: '●'; font-size: .5rem; animation: blink 2s infinite; }
+    .h-tag::before { content: '●'; font-size: .55rem; color: var(--red); animation: blink 2s infinite; }
     @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
 
     .h-h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.4rem, 5.5vw, 5.6rem);
-      line-height: .92;
-      letter-spacing: .03em;
-      margin-bottom: 18px;
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: .9;
+      letter-spacing: .04em;
+      margin-bottom: 20px;
       color: var(--white);
+      text-shadow: 0 2px 24px rgba(0,0,0,.6);
     }
     .h-h1 .l1 { display: block; color: var(--white); }
-    .h-h1 .l2 { display: block; color: var(--red); }
+    .h-h1 .l2 { display: block; color: var(--red); text-shadow: 0 2px 30px rgba(196,30,30,.5), 0 2px 10px rgba(0,0,0,.6); }
 
     .h-tagline {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(1.5rem, 2.2vw, 2.1rem);
-      letter-spacing: .12em;
+      font-size: clamp(1.4rem, 2.4vw, 2rem);
+      letter-spacing: .25em;
       color: var(--gold);
-      margin: 4px 0 24px;
-      border-left: 3px solid var(--red);
-      padding: 6px 0 6px 14px;
+      margin: 0 auto 28px;
+      padding: 10px 24px;
+      display: inline-block;
+      border-top: 1px solid rgba(212,168,67,.4);
+      border-bottom: 1px solid rgba(212,168,67,.4);
+      text-shadow: 0 2px 16px rgba(0,0,0,.7);
     }
 
     .h-sub {
-      font-size: 1.02rem;
-      color: rgba(255,255,255,.74);
+      font-size: 1.08rem;
+      color: rgba(255,255,255,.88);
       line-height: 1.7;
-      max-width: 480px;
-      margin-bottom: 32px;
+      max-width: 620px;
+      margin: 0 auto 36px;
+      text-shadow: 0 1px 12px rgba(0,0,0,.6);
     }
-    .h-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+    .h-ctas {
+      display: flex; gap: 14px; flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 44px;
+    }
     .h-trust {
-      display: flex; gap: 28px; flex-wrap: wrap;
+      display: flex; gap: 40px; flex-wrap: wrap;
+      justify-content: center;
       padding-top: 28px;
-      border-top: 1px solid rgba(255,255,255,.1);
+      border-top: 1px solid rgba(255,255,255,.18);
+      max-width: 620px;
+      margin: 0 auto;
     }
-    .ht-item { display: flex; flex-direction: column; }
-    .ht-val { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--white); letter-spacing: .04em; line-height: 1; }
+    .ht-item { display: flex; flex-direction: column; align-items: center; }
+    .ht-val { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; color: var(--white); letter-spacing: .04em; line-height: 1; text-shadow: 0 2px 12px rgba(0,0,0,.7); }
     .ht-val span { color: var(--red); }
-    .ht-lbl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+    .ht-lbl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-top: 4px; }
 
     /* Urgency strip */
     .urg {
@@ -433,6 +415,12 @@
     .hrev { padding: 100px 0; background: var(--dark); }
     .rev-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 60px; }
     .rating-big { display: flex; gap: 20px; align-items: center; }
+    .rating-img {
+      max-width: 320px; width: 100%; height: auto;
+      border-radius: 8px;
+      mix-blend-mode: screen;
+      filter: brightness(1.05);
+    }
     .rat-n { font-family: 'Bebas Neue', sans-serif; font-size: 6rem; color: var(--white); line-height: 1; letter-spacing: .04em; }
     .rat-d { display: flex; flex-direction: column; gap: 4px; }
     .stars { color: var(--gold); font-size: 1.2rem; letter-spacing: 3px; }
@@ -445,6 +433,48 @@
     .rc-tx { font-size: .92rem; color: rgba(255,255,255,.78); line-height: 1.7; margin-bottom: 18px; }
     .rc-au { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); }
     .rc-au strong { color: var(--white); }
+
+    /* Leave a review block */
+    .leave-review-block {
+      margin-top: 56px;
+      padding: 36px 40px;
+      background: var(--mid);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--r-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .leave-review-link {
+      display: block;
+      transition: transform .25s ease, filter .25s ease;
+      flex-shrink: 0;
+    }
+    .leave-review-link:hover {
+      transform: translateY(-3px) scale(1.02);
+      filter: brightness(1.1);
+    }
+    .leave-review-link img {
+      display: block;
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      mix-blend-mode: screen;
+    }
+    .leave-review-tx {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.78);
+      max-width: 360px;
+      line-height: 1.5;
+      margin: 0;
+    }
 
     /* CTA band */
     .cband { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, var(--navy2) 100%); padding: 80px 40px; text-align: center; position: relative; overflow: hidden; }
@@ -464,7 +494,7 @@
     /* Services page */
     .svp { padding: 80px 0; background: var(--dark); }
     .sv-lay { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
-    .sv-sb { background: var(--mid); border-radius: var(--r-lg); border: 1px solid rgba(255,255,255,.06); overflow: hidden; position: sticky; top: 90px; }
+    .sv-sb { background: var(--mid); border-radius: var(--r-lg); border: 1px solid rgba(255,255,255,.06); overflow: hidden; position: sticky; top: 104px; }
     .sv-sb-h { background: var(--blue); padding: 16px 20px; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: #fff; }
     .sv-sb ul { list-style: none; }
     .sv-sb ul li a { display: flex; align-items: center; gap: 10px; padding: 13px 20px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .88rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.04); transition: color .2s, background .2s, padding-left .2s; }
@@ -586,29 +616,67 @@
     @keyframes cpulse { 0%,100% { box-shadow: 0 8px 28px rgba(196,30,30,.55); } 50% { box-shadow: 0 8px 50px rgba(196,30,30,.8); } }
 
     /* ═══════════════════════════════════════════════════════════════════
-       CHATBOT (floating bubble, bottom-right)
+       CHATBOT — "Ask Steve" pill launcher
        ═══════════════════════════════════════════════════════════════════ */
     #chatbot-launcher {
       position: fixed; bottom: 24px; right: 24px; z-index: 9998;
-      width: 64px; height: 64px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue2) 0%, var(--blue) 100%);
-      border: 2px solid var(--sky);
-      box-shadow: 0 8px 28px rgba(34,85,164,.5);
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer; color: #fff; font-size: 1.6rem;
-      transition: transform .25s ease, box-shadow .25s ease;
+      display: flex; align-items: center; gap: 0;
+      height: 56px;
+      padding: 0;
+      background: var(--red);
+      border: 2px solid var(--red2);
+      border-radius: 50px;
+      box-shadow: 0 8px 28px rgba(196,30,30,.5);
+      cursor: pointer;
+      color: #fff;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      overflow: hidden;
     }
-    #chatbot-launcher:hover { transform: scale(1.06); box-shadow: 0 12px 40px rgba(34,85,164,.7); }
+    #chatbot-launcher:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(196,30,30,.7);
+      background: var(--red2);
+    }
+    #chatbot-launcher .cb-icon-wrap {
+      width: 48px; height: 48px; margin: 2px 0 2px 4px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.18);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    #chatbot-launcher .cb-icon-wrap svg {
+      width: 22px; height: 22px;
+      fill: #fff;
+    }
+    #chatbot-launcher .cb-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: .12em;
+      color: #fff;
+      padding: 0 22px 0 10px;
+      white-space: nowrap;
+    }
     #chatbot-launcher .cb-pulse {
       position: absolute; top: -2px; right: -2px;
-      width: 14px; height: 14px; background: var(--red); border-radius: 50%;
-      border: 2px solid var(--dark); animation: cbpulse 2s infinite;
+      width: 14px; height: 14px;
+      background: var(--gold); border-radius: 50%;
+      border: 2px solid var(--dark);
+      animation: cbpulse 2s infinite;
     }
     @keyframes cbpulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
-    #chatbot-launcher.open .cb-icon-chat { display: none; }
-    #chatbot-launcher .cb-icon-close { display: none; }
-    #chatbot-launcher.open .cb-icon-close { display: inline; }
+
+    /* Open state: collapse to circle with X */
+    #chatbot-launcher.open {
+      width: 56px;
+      padding: 0;
+      background: var(--navy);
+      border-color: var(--blue2);
+    }
+    #chatbot-launcher.open .cb-icon-wrap,
+    #chatbot-launcher.open .cb-label,
     #chatbot-launcher.open .cb-pulse { display: none; }
+    #chatbot-launcher .cb-close { display: none; font-size: 1.4rem; padding: 0 18px; }
+    #chatbot-launcher.open .cb-close { display: inline-block; }
 
     #chatbot-window {
       position: fixed; bottom: 100px; right: 24px; z-index: 9997;
@@ -765,23 +833,21 @@
        RESPONSIVE
        ═══════════════════════════════════════════════════════════════════ */
     @media (max-width: 1100px) {
-      #hero { grid-template-columns: 1fr; min-height: auto; }
-      .h-left { padding: 80px 40px 60px; }
-      .h-left-inner { max-width: 100%; margin: 0 auto; }
-      .h-right-vid { min-height: 380px; aspect-ratio: 16/9; }
-      .h-right-vid::before { display: none; }
+      #hero { min-height: 75vh; }
+      .h-content { padding: 60px 30px; }
       .hsg { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
-      #topbar .tb-badges { display: none; }
       #navbar { padding: 0 20px; }
-      .nav-ul { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
+      .nav-ul { display: none; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
       .nav-ul.open { display: flex; }
       .drop { position: static; border: none; border-left: 3px solid var(--blue2); margin-left: 16px; box-shadow: none; }
       .ham { display: flex; }
-      .h-left { padding: 60px 20px 40px; }
-      .h-h1 { font-size: 3rem; }
-      .h-right-vid { min-height: 240px; }
+      #hero { min-height: 70vh; }
+      .h-content { padding: 50px 20px; }
+      .h-h1 { font-size: 3.2rem; }
+      .h-trust { gap: 24px; }
+      .ht-val { font-size: 1.8rem; }
       .tbar-in { grid-template-columns: 1fr 1fr; }
       .tbi { border-right: none; border-bottom: 1px solid rgba(255,255,255,.06); }
       .hsg { grid-template-columns: 1fr; }
@@ -815,20 +881,13 @@
 </head>
 <body>
 
-<!-- STARS BORDER (Americana accent — top of page) -->
-<div class="stars-row">★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★</div>
-
-<!-- TOP BAR -->
-<div id="topbar">
-  <div class="tb-badges"><span>Licensed</span><span>Bonded</span><span>Insured</span></div>
-  <div class="tb-phone"><a href="tel:9516343233">📞 (951) 634-3233 — Call or Text Anytime</a></div>
-</div>
+<!-- TOP FLAG BANNER -->
+<div class="top-banner" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
   <a class="nav-logo" href="#" onclick="return go('home')">
-    <img src="/images/logo.png" alt="Steve's HVAC" onerror="this.style.display='none'"/>
-    <div class="nav-logo-txt">Steve's<br/><span>AC & Heating</span></div>
+    <img src="/images/logo.png" alt="Steve's Air Conditioning & Heating" onerror="this.style.display='none'"/>
   </a>
   <ul class="nav-ul" id="navUl">
     <li><a href="#" data-p="home" class="act" onclick="return go('home')">Home</a></li>
@@ -855,42 +914,43 @@
 <!-- ══════════════════════════════ HOME ══════════════════════════════ -->
 <div class="page active" id="pg-home">
   <section id="hero">
-    <!-- LEFT — content column (with flag overlay layered behind) -->
-    <div class="h-left">
-      <div class="h-left-inner">
-        <div class="h-tag">Murrieta, CA — Serving SW Riverside County</div>
-        <h1 class="h-h1">
-          <span class="l1">Your Comfort</span>
-          <span class="l2">Is My Business.</span>
-        </h1>
-        <div class="h-tagline">Licensed • Bonded • Insured</div>
-        <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first time.</p>
-        <div class="h-ctas">
-          <a href="tel:9516343233" class="btn btn-red btn-lg">📞 Call Now — (951) 634-3233</a>
-          <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote →</a>
-        </div>
-        <div class="h-trust">
-          <div class="ht-item"><div class="ht-val">20<span>+</span></div><div class="ht-lbl">Years in SoCal</div></div>
-          <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
-          <div class="ht-item"><div class="ht-val">Same<span>&nbsp;Day</span></div><div class="ht-lbl">Service Available</div></div>
-        </div>
-      </div>
-    </div>
+    <!-- Layer 1: flag overlay (back) -->
+    <div class="h-flag-bg" aria-hidden="true"></div>
 
-    <!-- RIGHT — video column. Plays once, freezes on last frame.
-         Poster shows instantly while video loads + as fallback. -->
-    <div class="h-right-vid">
-      <img class="h-poster" src="/images/truck-hero-poster.jpg" alt="Steve's HVAC service truck"/>
-      <video
-        class="h-video"
-        id="heroVideo"
-        muted
-        playsinline
-        preload="auto"
-        poster="/images/truck-hero-poster.jpg"
-        aria-label="Steve's HVAC service truck">
-        <source src="/images/truck-hero.mp4" type="video/mp4"/>
-      </video>
+    <!-- Layer 2: poster + video (full-bleed) -->
+    <img class="h-poster" src="/images/truck-hero-poster.jpg" alt=""/>
+    <video
+      class="h-video"
+      id="heroVideo"
+      muted
+      playsinline
+      preload="auto"
+      poster="/images/truck-hero-poster.jpg"
+      aria-label="Steve's HVAC service truck">
+      <source src="/images/truck-hero.mp4" type="video/mp4"/>
+    </video>
+
+    <!-- Layer 3: dark gradient for legibility -->
+    <div class="h-darken" aria-hidden="true"></div>
+
+    <!-- Layer 4: centered text content -->
+    <div class="h-content">
+      <div class="h-tag">Murrieta, CA — Serving SW Riverside County</div>
+      <h1 class="h-h1">
+        <span class="l1">Your Comfort</span>
+        <span class="l2">Is My Business.</span>
+      </h1>
+      <div class="h-tagline">Licensed • Bonded • Insured</div>
+      <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first time.</p>
+      <div class="h-ctas">
+        <a href="tel:9516343233" class="btn btn-red btn-lg">📞 Call Now — (951) 634-3233</a>
+        <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote →</a>
+      </div>
+      <div class="h-trust">
+        <div class="ht-item"><div class="ht-val">20<span>+</span></div><div class="ht-lbl">Years in SoCal</div></div>
+        <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
+        <div class="ht-item"><div class="ht-val">Same<span>&nbsp;Day</span></div><div class="ht-lbl">Service Available</div></div>
+      </div>
     </div>
   </section>
 
@@ -945,9 +1005,8 @@
     <div class="rev-intro fi">
       <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
       <div class="rating-big">
-        <div class="rat-n">5.0</div>
+        <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
         <div class="rat-d">
-          <div class="stars">★★★★★</div>
           <div class="rat-c">Based on 100+ Google Reviews</div>
           <a href="#" onclick="return go('reviews')" class="btn btn-blue" style="margin-top:12px;font-size:.8rem;padding:10px 18px">Read All Reviews →</a>
         </div>
@@ -957,6 +1016,12 @@
       <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's showed up same day when our AC went out in July. The tech was honest, quick, and didn't try to upsell us on anything. We'll never call anyone else.</p><div class="rc-au"><strong>Maria T.</strong> — Murrieta, CA</div></div>
       <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Replaced our entire HVAC at a price way better than two other quotes. Crew was professional, cleaned up perfectly. System runs like a dream.</p><div class="rc-au"><strong>Brandon K.</strong> — Temecula, CA</div></div>
       <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Been using Steve's for our restaurant refrigeration for years. Responsive, reliable, and they genuinely know what they're doing. Highest recommendation.</p><div class="rc-au"><strong>Julio R.</strong> — Wildomar, CA</div></div>
+    </div>
+    <div class="leave-review-block fi">
+      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
+        <img src="/images/leave-review.png" alt="Leave us a Google review"/>
+      </a>
+      <p class="leave-review-tx">Had a great experience with Steve's? Take 30 seconds to share it.</p>
     </div>
   </div></section>
 
@@ -1060,6 +1125,12 @@
       <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I've used three HVAC companies in this area over the years. Steve's is the only one I've gone back to and will keep calling. Fair, honest, skilled.</p><div class="rc-au"><strong>David L.</strong> — Murrieta</div></div>
       <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Installed a new Carrier system in our home. Competitive price, clean work, done in one day. Very happy with the whole experience.</p><div class="rc-au"><strong>Jennifer W.</strong> — Temecula</div></div>
     </div>
+    <div class="leave-review-block fi">
+      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
+        <img src="/images/leave-review.png" alt="Leave us a Google review"/>
+      </a>
+      <p class="leave-review-tx">Were we good to you? Drop us a quick Google review — it means a lot to a small family business.</p>
+    </div>
   </div></section>
 </div>
 
@@ -1132,9 +1203,14 @@
 <a href="tel:9516343233" class="sticall">📞 Call</a>
 
 <!-- ══════════════════════════════ CHATBOT ══════════════════════════════ -->
-<div id="chatbot-launcher" onclick="cbToggle()" aria-label="Open chat">
-  <span class="cb-icon-chat">💬</span>
-  <span class="cb-icon-close">✕</span>
+<div id="chatbot-launcher" onclick="cbToggle()" aria-label="Ask Steve — open chat">
+  <div class="cb-icon-wrap">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+    </svg>
+  </div>
+  <span class="cb-label">Ask Steve</span>
+  <span class="cb-close">✕</span>
   <span class="cb-pulse"></span>
 </div>
 
