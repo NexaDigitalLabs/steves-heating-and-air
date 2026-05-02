@@ -160,14 +160,15 @@
     }
     #navbar.scrolled { border-bottom-color: var(--blue); box-shadow: 0 4px 40px rgba(26,63,122,.3); }
 
-    .nav-logo { display: flex; align-items: center; justify-content: center; text-decoration: none; height: 100%; }
+    .nav-logo { display: flex; align-items: center; justify-content: center; text-decoration: none; height: 100%; padding: 0; }
     .nav-logo img {
-      height: 88px;
+      height: 104px;
       width: auto;
-      max-width: 360px;
+      max-width: 400px;
       object-fit: contain;
       display: block;
       align-self: center;
+      margin: auto 0;
     }
 
     .nav-ul { display: flex; list-style: none; gap: 2px; align-items: center; }
@@ -375,8 +376,8 @@
 
     /* Trust bar */
     .tbar {
-      background: linear-gradient(180deg, var(--navy) 0%, var(--navy3) 100%);
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: var(--dark);
+      border-bottom: 1px solid rgba(255,255,255,.04);
       padding: 36px 40px;
     }
     .tbar-in { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
@@ -384,19 +385,19 @@
       display: flex; align-items: flex-start; gap: 16px;
       padding: 22px 24px;
       background: rgba(255,255,255,.025);
-      border: 1px solid rgba(74,122,181,.18);
+      border: 1px solid rgba(255,255,255,.06);
       border-radius: 10px;
       transition: border-color .25s ease, background .25s ease, transform .25s ease;
     }
     .tbi:hover {
-      border-color: rgba(74,122,181,.45);
-      background: rgba(26,63,122,.12);
+      border-color: rgba(196,30,30,.35);
+      background: rgba(255,255,255,.04);
       transform: translateY(-2px);
     }
     .tbi-ic {
       width: 52px; height: 52px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
-      border: 1px solid rgba(74,122,181,.4);
+      background: linear-gradient(135deg, var(--navy3) 0%, var(--dark) 100%);
+      border: 1px solid rgba(255,255,255,.08);
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem; flex-shrink: 0;
       box-shadow: 0 4px 14px rgba(0,0,0,.3);
@@ -421,8 +422,8 @@
        VALUE PROP STRIP + CREDENTIAL BADGES
        ═══════════════════════════════════════════════════════════════════ */
     .vps {
-      background: var(--navy3);
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: var(--dark);
+      border-bottom: 1px solid rgba(255,255,255,.04);
       padding: 22px 40px;
       position: relative;
       overflow: hidden;
@@ -432,7 +433,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 2px;
-      background: linear-gradient(90deg, transparent 0%, var(--red) 25%, var(--blue2) 75%, transparent 100%);
+      background: linear-gradient(90deg, transparent 0%, var(--red) 50%, transparent 100%);
     }
     .vps-in {
       max-width: 1200px;
@@ -454,7 +455,7 @@
       line-height: 1;
     }
     .vps-words .vp-w { color: var(--white); }
-    .vps-words .vp-dot { color: var(--blueAcc); font-size: 1.4rem; }
+    .vps-words .vp-dot { color: var(--red); font-size: 1.4rem; }
     .vps-badges {
       display: flex;
       align-items: stretch;
@@ -466,18 +467,19 @@
       align-items: center;
       gap: 10px;
       padding: 12px 16px;
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(74,122,181,.28);
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
       border-radius: 8px;
       transition: border-color .25s ease, background .25s ease;
     }
     .vps-bd:hover {
-      border-color: rgba(74,122,181,.55);
-      background: rgba(26,63,122,.12);
+      border-color: rgba(196,30,30,.3);
+      background: rgba(255,255,255,.05);
     }
     .vps-bd-ic {
       width: 32px; height: 32px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+      background: linear-gradient(135deg, var(--navy3) 0%, var(--dark) 100%);
+      border: 1px solid rgba(255,255,255,.08);
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
@@ -514,7 +516,7 @@
       position: absolute;
       top: 0; left: 50%; transform: translateX(-50%);
       width: 200px; height: 3px;
-      background: linear-gradient(90deg, var(--red) 0%, var(--blue2) 100%);
+      background: var(--red);
       border-radius: 0 0 3px 3px;
     }
     .ilf-in {
@@ -625,7 +627,7 @@
     .bpill::after { content: '◆'; font-size: .4rem; color: var(--blue2); }
 
     /* Why us */
-    .hwhy { background: var(--mid); padding: 100px 0; }
+    .hwhy { background: var(--mid); padding: 64px 0; }
     .why-g { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
     .why-vis { position: relative; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
     .why-vis img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.05) saturate(.9); }
@@ -759,7 +761,7 @@
     .faq-list { display: flex; flex-direction: column; gap: 12px; }
     .faq-item { background: var(--navy); border: 1px solid rgba(74,122,181,.18); border-radius: var(--r); overflow: hidden; transition: border-color .2s ease; }
     .faq-item[open] { border-color: rgba(0,88,158,.5); }
-    .faq-item summary { list-style: none; cursor: pointer; padding: 22px 28px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1.1rem; color: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: background .2s ease; }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 22px 28px; font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.35rem; letter-spacing: .04em; color: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: background .2s ease; }
     .faq-item summary::-webkit-details-marker { display: none; }
     .faq-item summary:hover { background: rgba(0,88,158,.08); }
     .faq-item summary::after { content: '+'; font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--blueAcc); transition: transform .2s ease; flex-shrink: 0; line-height: 1; }
@@ -1001,7 +1003,7 @@
       filter: contrast(1.1) saturate(.6);
     }
     .ft-g { position: relative; z-index: 1; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding: 60px 40px 40px; max-width: 1200px; margin: 0 auto; }
-    .ft-br img { height: 56px; margin-bottom: 16px; display: block; }
+    .ft-br img { height: 110px; margin-bottom: 18px; display: block; max-width: 320px; width: auto; object-fit: contain; }
     .ft-br-n { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: .06em; margin-bottom: 12px; }
     .ft-br-n span { color: var(--red); }
     .ft-br p { font-size: .87rem; color: var(--muted); line-height: 1.7; max-width: 280px; }
@@ -1296,7 +1298,7 @@
     @media (max-width: 768px) {
       #navbar { padding: 0 20px; height: 84px; justify-content: space-between; align-items: center; position: relative; }
       .nav-logo { margin: 0; display: flex; align-items: center; height: 100%; }
-      .nav-logo img { height: 56px; max-width: 220px; display: block; }
+      .nav-logo img { height: 64px; max-width: 240px; display: block; margin: auto 0; }
       .nav-ul { display: none; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
       .nav-ul.open { display: flex; }
       .drop { position: static; border: none; border-left: 3px solid var(--blue2); margin-left: 16px; box-shadow: none; }
@@ -1356,7 +1358,7 @@
       .sd-feats { grid-template-columns: 1fr; }
       .faq-sec { padding: 56px 0; }
       .faq-sec .faq-container { padding: 0 20px; }
-      .faq-item summary { padding: 18px 20px; font-size: 1rem; }
+      .faq-item summary { padding: 18px 20px; font-size: 1.15rem; }
       .faq-body { padding: 0 20px 20px; }
       .ft-nap { padding: 22px 20px; }
       .ft-nap-name { font-size: 1.25rem; }
@@ -1498,9 +1500,6 @@
   </script>
 </head>
 <body>
-
-<!-- TOP FLAG BANNER -->
-<div class="top-banner" aria-hidden="true"></div>
 
 <!-- NAVBAR -->
 <nav id="navbar">
@@ -1667,30 +1666,13 @@
     <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
   </div></div>
 
-  <section class="hwhy"><div class="container"><div class="why-g">
-    <div class="why-vis fi">
-      <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="why-vis-ph" style="display:none">🔧</div>
-    </div>
-    <div>
-      <div class="eyebrow fi">Why Steve's</div>
-      <h2 class="section-h2 fi">SW Riverside County's <em>Most Trusted</em> HVAC Pro</h2>
-      <div class="wpts">
-        <div class="wp fi"><div class="wp-n">01</div><div><strong>Honest, Upfront Pricing</strong><p>No hidden fees, no bait-and-switch. We give you a straight quote before any work begins.</p></div></div>
-        <div class="wp fi"><div class="wp-n">02</div><div><strong>Same-Day Emergency Service</strong><p>AC dies in 105° heat? We move fast. Emergency response means we're there when you need it most.</p></div></div>
-        <div class="wp fi"><div class="wp-n">03</div><div><strong>All Brands, All Systems</strong><p>Carrier, Lennox, Trane, Rheem — we service and install everything with factory-trained expertise.</p></div></div>
-        <div class="wp fi"><div class="wp-n">04</div><div><strong>Proudly American-Owned</strong><p>A local family business serving the community with the integrity you'd expect from a neighbor.</p></div></div>
-      </div>
-    </div>
-  </div></div></section>
-
   <!-- ══════════════════════════════ FAQ ══════════════════════════════ -->
   <section class="faq-sec" id="faq" aria-labelledby="faq-heading">
     <div class="faq-container">
       <div class="faq-head">
         <div class="eyebrow">Common Questions</div>
         <h2 id="faq-heading">Frequently Asked Questions</h2>
-        <p>Straight answers about HVAC service in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a> — real people, real answers.</p>
+        <p>Straight answers about HVAC service in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
       </div>
       <div class="faq-list">
         <details class="faq-item"><summary>Do you offer emergency HVAC service?</summary><div class="faq-body">Yes — same-day emergency response for heating and cooling failures across Murrieta, Temecula, and Southwest Riverside County. If your AC is out in summer heat or your furnace died on a cold night, call (951) 634-3233 and we'll get someone out to you as fast as possible.</div></details>
@@ -1734,6 +1716,23 @@
       <p class="leave-review-tx">Had a great experience with Steve's? Take 30 seconds to share it.</p>
     </div>
   </div></section>
+
+  <section class="hwhy"><div class="container"><div class="why-g">
+    <div class="why-vis fi">
+      <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="why-vis-ph" style="display:none">🔧</div>
+    </div>
+    <div>
+      <div class="eyebrow fi">Why Steve's</div>
+      <h2 class="section-h2 fi">SW Riverside County's <em>Most Trusted</em> HVAC Pro</h2>
+      <div class="wpts">
+        <div class="wp fi"><div><strong>Honest, Upfront Pricing</strong><p>No hidden fees, no bait-and-switch. We give you a straight quote before any work begins.</p></div></div>
+        <div class="wp fi"><div><strong>Same-Day Emergency Service</strong><p>AC dies in 105° heat? We move fast. Emergency response means we're there when you need it most.</p></div></div>
+        <div class="wp fi"><div><strong>All Brands, All Systems</strong><p>Carrier, Lennox, Trane, Rheem — we service and install everything with factory-trained expertise.</p></div></div>
+        <div class="wp fi"><div><strong>Proudly American-Owned</strong><p>A local family business serving the community with the integrity you'd expect from a neighbor.</p></div></div>
+      </div>
+    </div>
+  </div></div></section>
 
   <div class="cband"><div class="cband-in">
     <h2 class="fi">Ready to Get Comfortable?</h2>
@@ -1928,7 +1927,7 @@
     </div>
   </div>
   <div class="ft-g">
-    <div class="ft-br"><img src="/images/logo.png" alt="Steve's HVAC" onerror="this.style.display='none'"/><div class="ft-br-n">Steve's <span>AC & Heating</span></div><p>Licensed, bonded, and insured HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County for over 20 years.</p></div>
+    <div class="ft-br"><img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/><p>Licensed, bonded, and insured HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County for over 20 years.</p></div>
     <div class="ft-c"><h4>Services</h4><ul><li><a href="#" onclick="return go('services','ac')">Air Conditioning</a></li><li><a href="#" onclick="return go('services','furnace')">Furnaces</a></li><li><a href="#" onclick="return go('services','heatpump')">Heat Pumps</a></li><li><a href="#" onclick="return go('services','res-ref')">Residential Refrigeration</a></li><li><a href="#" onclick="return go('services','com-ref')">Commercial Refrigeration</a></li><li><a href="#" onclick="return go('services','maintenance')">HVAC Maintenance</a></li><li><a href="#" onclick="return go('services','air-quality')">Air Quality Control</a></li><li><a href="#" onclick="return go('services','water-heaters')">Water Heaters</a></li><li><a href="#" onclick="return go('services','energy-audit')">Energy Audits</a></li></ul></div>
     <div class="ft-c"><h4>Company</h4><ul><li><a href="#" onclick="return go('about')">About Us</a></li><li><a href="#" onclick="return go('reviews')">Reviews</a></li><li><a href="#" onclick="return go('area')">Service Area</a></li><li><a href="#" onclick="return go('contact')">Contact</a></li></ul></div>
     <div class="ft-c"><h4>Contact</h4><ul><li><a href="tel:9516343233">(951) 634-3233</a></li><li><a href="mailto:stevesac_6708@yahoo.com">stevesac_6708@yahoo.com</a></li><li><a href="#" onclick="return go('area')">Murrieta, CA 92562</a></li></ul></div>
