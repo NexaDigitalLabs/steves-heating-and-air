@@ -169,6 +169,7 @@
       display: block;
       align-self: center;
       margin: auto 0;
+      transform: translateY(8px);
     }
 
     .nav-ul { display: flex; list-style: none; gap: 2px; align-items: center; }
@@ -1298,7 +1299,7 @@
     @media (max-width: 768px) {
       #navbar { padding: 0 20px; height: 84px; justify-content: space-between; align-items: center; position: relative; }
       .nav-logo { margin: 0; display: flex; align-items: center; height: 100%; }
-      .nav-logo img { height: 64px; max-width: 240px; display: block; margin: auto 0; }
+      .nav-logo img { height: 64px; max-width: 240px; display: block; margin: auto 0; transform: translateY(4px); }
       .nav-ul { display: none; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
       .nav-ul.open { display: flex; }
       .drop { position: static; border: none; border-left: 3px solid var(--blue2); margin-left: 16px; box-shadow: none; }
@@ -1526,7 +1527,7 @@
     <li><a href="#" data-p="reviews" onclick="return go('reviews')">Reviews</a></li>
     <li><a href="#" data-p="area" onclick="return go('area')">Service Area</a></li>
     <li><a href="#" data-p="contact" onclick="return go('contact')">Contact</a></li>
-    <li><a href="tel:9516343233" class="nav-cta-btn">📞 (951) 634-3233</a></li>
+    <li><a href="tel:9516343233" class="nav-cta-btn">📞 Schedule Now</a></li>
   </ul>
   <div class="ham" id="ham"><span></span><span></span><span></span></div>
 </nav>
