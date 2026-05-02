@@ -40,8 +40,8 @@
       --dark:     #060E1C;
       --mid:      #0D1A30;
       --gold:     #D4A843;
-      --r:        4px;
-      --r-lg:     10px;
+      --r:        8px;
+      --r-lg:     14px;
 
       /* Flag overlay opacity (used in hero + footer only — balanced Americana) */
       --flag-opacity: 0.18;
@@ -129,7 +129,7 @@
       background: rgba(6,14,28,.96);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(255,255,255,.07);
-      height: 84px;
+      height: 110px;
       display: flex; align-items: center; padding: 0 40px;
       justify-content: space-between;
       transition: border-color .3s, box-shadow .3s;
@@ -138,46 +138,55 @@
 
     .nav-logo { display: flex; align-items: center; text-decoration: none; }
     .nav-logo img {
-      height: 60px;
+      height: 88px;
       width: auto;
-      max-width: 260px;
+      max-width: 360px;
       object-fit: contain;
       display: block;
     }
 
     .nav-ul { display: flex; list-style: none; gap: 2px; align-items: center; }
     .nav-ul > li > a {
-      font-family: 'Rajdhani', sans-serif; font-weight: 600;
-      font-size: .88rem; letter-spacing: .1em; text-transform: uppercase;
-      color: rgba(255,255,255,.75); text-decoration: none;
-      padding: 8px 14px; border-radius: var(--r);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.15rem; letter-spacing: .14em; text-transform: uppercase;
+      color: rgba(255,255,255,.78); text-decoration: none;
+      padding: 10px 16px; border-radius: var(--r);
       transition: color .2s, background .2s;
       display: block; position: relative;
     }
     .nav-ul > li > a.act { color: var(--white); }
-    .nav-ul > li > a.act::after { content: ''; position: absolute; bottom: 0; left: 14px; right: 14px; height: 2px; background: var(--red); border-radius: 2px; }
+    .nav-ul > li > a.act::after { content: ''; position: absolute; bottom: 2px; left: 16px; right: 16px; height: 2px; background: var(--red); border-radius: 2px; }
     .nav-ul > li > a:hover { color: var(--white); background: rgba(255,255,255,.05); }
 
     .has-drop { position: relative; }
     .drop {
-      display: none; position: absolute; top: calc(100% + 10px); left: -10px;
+      display: none; position: absolute; top: 100%; left: -10px;
       background: var(--navy); border: 1px solid rgba(255,255,255,.1);
       border-top: 2px solid var(--blue2);
-      border-radius: 0 0 6px 6px; min-width: 220px; list-style: none;
+      border-radius: 0 0 6px 6px; min-width: 240px; list-style: none;
       overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,.5);
+      padding-top: 0;
     }
-    .has-drop:hover .drop { display: block; }
+    /* Invisible bridge above the dropdown so the user can move their cursor down without losing hover */
+    .drop::before {
+      content: '';
+      position: absolute;
+      top: -14px; left: 0; right: 0;
+      height: 14px;
+    }
+    .has-drop:hover .drop,
+    .has-drop:focus-within .drop { display: block; }
     .drop li a {
-      display: block; padding: 11px 20px;
-      font-family: 'Rajdhani', sans-serif; font-weight: 600;
-      font-size: .85rem; letter-spacing: .08em; text-transform: uppercase;
-      color: rgba(255,255,255,.65); text-decoration: none;
+      display: block; padding: 12px 20px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem; letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.72); text-decoration: none;
       border-bottom: 1px solid rgba(255,255,255,.04);
       transition: color .2s, background .2s, padding-left .2s;
     }
     .drop li a:hover { color: #fff; background: rgba(255,255,255,.04); padding-left: 26px; }
 
-    .nav-cta-btn { background: var(--red) !important; color: #fff !important; margin-left: 8px; }
+    .nav-cta-btn { background: var(--red) !important; color: #fff !important; margin-left: 8px; font-size: 1.15rem !important; padding: 12px 22px !important; }
     .nav-cta-btn:hover { background: var(--red2) !important; }
 
     .ham { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
@@ -195,7 +204,7 @@
        ═══════════════════════════════════════════════════════════════════ */
     #hero {
       position: relative;
-      min-height: calc(100vh - 84px - 60px);
+      min-height: calc(100vh - 110px - 60px);
       width: 100%;
       overflow: hidden;
       background: var(--dark);
@@ -339,31 +348,47 @@
     .ht-val span { color: var(--red); }
     .ht-lbl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-top: 4px; }
 
-    /* Urgency strip */
-    .urg {
-      background: linear-gradient(90deg, var(--red) 0%, var(--redDark) 100%);
-      padding: 18px 40px;
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 20px; flex-wrap: wrap;
-      position: relative; overflow: hidden;
-    }
-    .urg::before {
-      content: ''; position: absolute; inset: 0;
-      background-image: repeating-linear-gradient(45deg, transparent 0, transparent 8px, rgba(255,255,255,.04) 8px, rgba(255,255,255,.04) 16px);
-      pointer-events: none;
-    }
-    .urg-t { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase; position: relative; z-index: 1; }
-    .urg-n { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: .06em; position: relative; z-index: 1; }
-    .urg-n a { color: #fff; text-decoration: none; }
-
     /* Trust bar */
-    .tbar { background: var(--navy); border-bottom: 1px solid rgba(255,255,255,.06); padding: 28px 40px; }
-    .tbar-in { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
-    .tbi { display: flex; align-items: center; gap: 14px; padding: 16px 24px; border-right: 1px solid rgba(255,255,255,.06); }
-    .tbi:last-child { border-right: none; }
-    .tbi-ic { width: 44px; height: 44px; border-radius: 8px; background: rgba(26,63,122,.4); border: 1px solid rgba(74,122,181,.25); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
-    .tbi-tx strong { display: block; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .88rem; letter-spacing: .06em; text-transform: uppercase; color: var(--white); }
-    .tbi-tx span { font-size: .78rem; color: var(--muted); }
+    .tbar {
+      background: linear-gradient(180deg, var(--navy) 0%, var(--navy3) 100%);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      padding: 36px 40px;
+    }
+    .tbar-in { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .tbi {
+      display: flex; align-items: center; gap: 16px;
+      padding: 22px 24px;
+      background: rgba(255,255,255,.025);
+      border: 1px solid rgba(74,122,181,.18);
+      border-radius: 10px;
+      transition: border-color .25s ease, background .25s ease, transform .25s ease;
+    }
+    .tbi:hover {
+      border-color: rgba(74,122,181,.45);
+      background: rgba(26,63,122,.12);
+      transform: translateY(-2px);
+    }
+    .tbi-ic {
+      width: 52px; height: 52px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+      border: 1px solid rgba(74,122,181,.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(0,0,0,.3);
+    }
+    .tbi-tx strong {
+      display: block;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.15rem; letter-spacing: .06em; text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 3px;
+    }
+    .tbi-tx span {
+      font-size: .82rem;
+      color: var(--muted);
+      letter-spacing: .02em;
+    }
 
     /* Home services */
     .hsv { padding: 100px 0; background: var(--dark); }
@@ -398,12 +423,9 @@
     /* Why us */
     .hwhy { background: var(--mid); padding: 100px 0; }
     .why-g { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .why-vis { position: relative; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); }
-    .why-vis img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.05) saturate(.85); }
+    .why-vis { position: relative; border-radius: var(--r-lg); overflow: hidden; aspect-ratio: 4/3; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+    .why-vis img { width: 100%; height: 100%; object-fit: cover; display: block; filter: contrast(1.05) saturate(.9); }
     .why-vis-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 5rem; }
-    .why-vis::before { content: ''; position: absolute; left: 0; top: 15%; bottom: 15%; width: 4px; background: var(--red); z-index: 2; }
-    .why-vis::after { content: ''; position: absolute; inset: 14px; border: 1px solid rgba(74,122,181,.25); border-radius: 8px; pointer-events: none; z-index: 2; }
-    .why-badge-tag { position: absolute; bottom: 24px; right: 24px; background: var(--red); padding: 10px 18px; border-radius: 6px; z-index: 3; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: #fff; }
     .wpts { margin-top: 40px; display: flex; flex-direction: column; gap: 24px; }
     .wp { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border-radius: 8px; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.04); transition: border-color .2s, background .2s; }
     .wp:hover { border-color: rgba(74,122,181,.25); background: rgba(26,63,122,.08); }
@@ -474,11 +496,43 @@
     }
 
     /* CTA band */
-    .cband { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 50%, var(--navy2) 100%); padding: 80px 40px; text-align: center; position: relative; overflow: hidden; }
-    .cband::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px); background-size: 50px 50px; }
-    .cband-in { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
-    .cband-in h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4rem); letter-spacing: .04em; margin-bottom: 14px; }
-    .cband-in p { color: rgba(255,255,255,.72); margin-bottom: 32px; font-size: 1.05rem; }
+    .cband {
+      background: var(--dark);
+      padding: 90px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cband::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url('/images/flag-bg.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.25;
+      filter: contrast(1.05) saturate(.7);
+      pointer-events: none;
+    }
+    .cband::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(6,14,28,.55) 0%, rgba(6,14,28,.85) 100%);
+      pointer-events: none;
+    }
+    .cband-in { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
+    .cband-in h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      letter-spacing: .04em;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 16px rgba(0,0,0,.6);
+    }
+    .cband-in p {
+      color: rgba(255,255,255,.82);
+      margin-bottom: 36px;
+      font-size: 1.08rem;
+      text-shadow: 0 1px 8px rgba(0,0,0,.5);
+    }
     .cband-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
     /* Page hero */
@@ -490,24 +544,111 @@
 
     /* Services page */
     .svp { padding: 80px 0; background: var(--dark); }
-    .sv-lay { display: grid; grid-template-columns: 260px 1fr; gap: 40px; align-items: start; }
-    .sv-sb { background: var(--mid); border-radius: var(--r-lg); border: 1px solid rgba(255,255,255,.06); overflow: hidden; position: sticky; top: 104px; }
-    .sv-sb-h { background: var(--blue); padding: 16px 20px; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: #fff; }
+    .sv-lay { display: grid; grid-template-columns: 280px 1fr; gap: 40px; align-items: start; }
+    .sv-sb { background: var(--mid); border-radius: var(--r-lg); border: 1px solid rgba(255,255,255,.06); overflow: hidden; position: sticky; top: 130px; box-shadow: 0 12px 32px rgba(0,0,0,.25); }
+    .sv-sb-h {
+      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+      padding: 18px 22px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.05rem; letter-spacing: .2em; text-transform: uppercase; color: #fff;
+    }
     .sv-sb ul { list-style: none; }
-    .sv-sb ul li a { display: flex; align-items: center; gap: 10px; padding: 13px 20px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .88rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.04); transition: color .2s, background .2s, padding-left .2s; }
-    .sv-sb ul li a:hover, .sv-sb ul li a.act { color: var(--white); background: rgba(255,255,255,.04); padding-left: 26px; }
-    .sv-sb ul li a.act { border-left: 3px solid var(--red); }
-    .sd { background: var(--mid); border-radius: 12px; border: 1px solid rgba(255,255,255,.06); padding: 48px; display: none; }
+    .sv-sb ul li a {
+      display: flex; align-items: center; gap: 12px;
+      padding: 15px 22px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.02rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.04);
+      transition: color .2s, background .2s, padding-left .2s, border-left-color .2s;
+      border-left: 3px solid transparent;
+    }
+    .sv-sb ul li a:hover, .sv-sb ul li a.act {
+      color: var(--white);
+      background: rgba(255,255,255,.04);
+      padding-left: 28px;
+      border-left-color: var(--red);
+    }
+    .sd {
+      background: linear-gradient(180deg, var(--mid) 0%, var(--navy3) 100%);
+      border-radius: var(--r-lg);
+      border: 1px solid rgba(74,122,181,.15);
+      padding: 52px;
+      display: none;
+      box-shadow: 0 20px 50px rgba(0,0,0,.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .sd::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--red) 0%, var(--blue2) 100%);
+    }
     .sd.active { display: block; }
-    .sd-hd { display: flex; align-items: center; gap: 20px; margin-bottom: 32px; }
-    .sd-ic { width: 64px; height: 64px; border-radius: 12px; background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%); border: 1px solid rgba(74,122,181,.3); display: flex; align-items: center; justify-content: center; font-size: 2rem; flex-shrink: 0; }
-    .sd-hd h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; letter-spacing: .04em; }
-    .sd-hd p { font-size: .85rem; color: var(--muted); margin-top: 4px; }
-    .sd-bd { font-size: .95rem; color: rgba(255,255,255,.78); line-height: 1.75; margin-bottom: 28px; }
-    .sd-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 32px; }
-    .sd-f { display: flex; align-items: flex-start; gap: 10px; background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.06); border-radius: 6px; padding: 14px 16px; }
-    .sd-f-ck { color: var(--red); font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
-    .sd-f-tx { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .85rem; letter-spacing: .04em; color: var(--white); }
+    .sd-hd {
+      display: flex; align-items: center; gap: 22px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .sd-ic {
+      width: 72px; height: 72px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%);
+      border: 1px solid rgba(74,122,181,.4);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.2rem; flex-shrink: 0;
+      box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    }
+    .sd-hd h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.8rem; letter-spacing: .04em; line-height: 1;
+      color: var(--white);
+    }
+    .sd-hd p {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1rem; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--sky);
+      margin-top: 6px;
+    }
+    .sd-bd { font-size: .98rem; color: rgba(255,255,255,.82); line-height: 1.8; margin-bottom: 28px; }
+    .sd-feats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 36px; }
+    .sd-f {
+      display: flex; align-items: center; gap: 14px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(74,122,181,.18);
+      border-radius: 8px;
+      padding: 16px 18px;
+      transition: border-color .25s ease, background .25s ease, transform .25s ease;
+    }
+    .sd-f:hover {
+      border-color: rgba(74,122,181,.45);
+      background: rgba(26,63,122,.1);
+      transform: translateX(3px);
+    }
+    .sd-f-ck {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--red) 0%, var(--redDark) 100%);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(196,30,30,.4);
+    }
+    .sd-f-ck svg {
+      width: 14px; height: 14px;
+      stroke: #fff;
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .sd-f-tx {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.05rem; letter-spacing: .06em;
+      color: var(--white);
+      line-height: 1.2;
+    }
 
     /* About */
     .abp { background: var(--dark); }
@@ -826,7 +967,8 @@
       .hsg { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
-      #navbar { padding: 0 20px; }
+      #navbar { padding: 0 20px; height: 84px; }
+      .nav-logo img { height: 60px; max-width: 240px; }
       .nav-ul { display: none; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
       .nav-ul.open { display: flex; }
       .drop { position: static; border: none; border-left: 3px solid var(--blue2); margin-left: 16px; box-shadow: none; }
@@ -836,8 +978,9 @@
       .h-h1 { font-size: 3.2rem; }
       .h-trust { gap: 24px; }
       .ht-val { font-size: 1.8rem; }
-      .tbar-in { grid-template-columns: 1fr 1fr; }
-      .tbi { border-right: none; border-bottom: 1px solid rgba(255,255,255,.06); }
+      .tbar { padding: 24px 20px; }
+      .tbar-in { grid-template-columns: 1fr; gap: 12px; }
+      .tbi { border-right: none; padding: 18px 20px; }
       .hsg { grid-template-columns: 1fr; }
       .why-g { grid-template-columns: 1fr; }
       .why-vis { display: none; }
@@ -857,7 +1000,6 @@
       .sticall { display: block; }
       .ph { padding: 60px 20px 40px; }
       .cband { padding: 60px 20px; }
-      .urg { padding: 16px 20px; }
       .rv-hs { grid-template-columns: 1fr; }
       .hsv-hd { grid-template-columns: 1fr; }
       #chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 90px; height: 70vh; }
@@ -945,8 +1087,6 @@
     </div>
   </section>
 
-  <div class="urg"><div class="urg-t">🌡️ AC or Heater down? Same-day emergency service available!</div><div class="urg-n"><a href="tel:9516343233">(951) 634-3233</a></div></div>
-
   <div class="tbar"><div class="tbar-in">
     <div class="tbi fi"><div class="tbi-ic">🛡️</div><div class="tbi-tx"><strong>Licensed, Bonded & Insured</strong><span>Full coverage on every job</span></div></div>
     <div class="tbi fi"><div class="tbi-ic">⚡</div><div class="tbi-tx"><strong>Same-Day Service</strong><span>Emergency response when needed</span></div></div>
@@ -981,7 +1121,6 @@
     <div class="why-vis fi">
       <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
       <div class="why-vis-ph" style="display:none">🔧</div>
-      <div class="why-badge-tag">Licensed & Insured</div>
     </div>
     <div>
       <div class="eyebrow fi">Why Steve's</div>
@@ -1048,23 +1187,23 @@
       </ul>
     </div>
     <div>
-      <div class="sd active" id="sd-ac"><div class="sd-hd"><div class="sd-ic">❄️</div><div><h2>Air Conditioning</h2><p>Installation, repair & tune-up for all AC systems</p></div></div><p class="sd-bd">Whether your central AC unit has stopped working in a SoCal heat wave, or you're building a new home and need a complete system installed, Steve's has the experience and equipment to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs.</p><p class="sd-bd">We also offer ductless mini-split installation for garages, additions, and spaces that are difficult to cool. If your unit is aging and driving up energy bills, we'll give you an honest assessment on whether repair or replacement makes more financial sense.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Central AC installation & replacement</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Emergency AC repair — same day</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Ductless mini-split systems</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Seasonal tune-ups & maintenance</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">All major brands serviced</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Energy efficiency assessments</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Equipment retrofit & replacement</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request AC Service →</a></div>
+      <div class="sd active" id="sd-ac"><div class="sd-hd"><div class="sd-ic">❄️</div><div><h2>Air Conditioning</h2><p>Installation, repair & tune-up for all AC systems</p></div></div><p class="sd-bd">Whether your central AC unit has stopped working in a SoCal heat wave, or you're building a new home and need a complete system installed, Steve's has the experience and equipment to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs.</p><p class="sd-bd">We also offer ductless mini-split installation for garages, additions, and spaces that are difficult to cool. If your unit is aging and driving up energy bills, we'll give you an honest assessment on whether repair or replacement makes more financial sense.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Central AC installation & replacement</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency AC repair — same day</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Ductless mini-split systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Seasonal tune-ups & maintenance</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">All major brands serviced</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Energy efficiency assessments</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Equipment retrofit & replacement</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request AC Service →</a></div>
 
-      <div class="sd" id="sd-furnace"><div class="sd-hd"><div class="sd-ic">🔥</div><div><h2>Furnaces</h2><p>Gas, electric, propane, oil & water systems</p></div></div><p class="sd-bd">Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, propane, oil, and water furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic. We'll tell you straight whether repair or replacement is the smarter investment.</p><p class="sd-bd">We also handle full equipment retrofit and replacement projects — upgrading older inefficient systems to modern high-efficiency units that pay for themselves in energy savings.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Natural gas furnace install & repair</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Electric furnace service</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Propane system installation</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Oil and water furnace service</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Full furnace replacement & retrofit</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Heat exchanger inspection</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">All brands serviced</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Furnace Service →</a></div>
+      <div class="sd" id="sd-furnace"><div class="sd-hd"><div class="sd-ic">🔥</div><div><h2>Furnaces</h2><p>Gas, electric, propane, oil & water systems</p></div></div><p class="sd-bd">Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, propane, oil, and water furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic. We'll tell you straight whether repair or replacement is the smarter investment.</p><p class="sd-bd">We also handle full equipment retrofit and replacement projects — upgrading older inefficient systems to modern high-efficiency units that pay for themselves in energy savings.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Natural gas furnace install & repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Electric furnace service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Propane system installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Oil and water furnace service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Full furnace replacement & retrofit</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat exchanger inspection</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">All brands serviced</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Furnace Service →</a></div>
 
-      <div class="sd" id="sd-heatpump"><div class="sd-hd"><div class="sd-ic">♨️</div><div><h2>Heat Pumps</h2><p>Year-round heating and cooling efficiency</p></div></div><p class="sd-bd">Heat pumps are one of the most energy-efficient ways to heat and cool your home — ideal for the mild SoCal climate. A single system does the work of both a furnace and an AC unit, moving heat rather than generating it, which means dramatically lower energy bills year-round. Steve's installs and services air-source and ground-source heat pumps for residential and light commercial applications.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Air-source heat pump installation</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Heat pump repair & diagnostics</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Dual-fuel system setup</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Energy efficiency consulting</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Heat Pump Service →</a></div>
+      <div class="sd" id="sd-heatpump"><div class="sd-hd"><div class="sd-ic">♨️</div><div><h2>Heat Pumps</h2><p>Year-round heating and cooling efficiency</p></div></div><p class="sd-bd">Heat pumps are one of the most energy-efficient ways to heat and cool your home — ideal for the mild SoCal climate. A single system does the work of both a furnace and an AC unit, moving heat rather than generating it, which means dramatically lower energy bills year-round. Steve's installs and services air-source and ground-source heat pumps for residential and light commercial applications.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air-source heat pump installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump repair & diagnostics</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Dual-fuel system setup</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Energy efficiency consulting</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Heat Pump Service →</a></div>
 
-      <div class="sd" id="sd-res-ref"><div class="sd-hd"><div class="sd-ic">🏠</div><div><h2>Residential Refrigeration</h2><p>Specialty refrigeration for homes</p></div></div><p class="sd-bd">From custom wine cellars to residential walk-in coolers, Steve's handles the full range of residential refrigeration. Our technicians are certified in refrigerant handling and skilled in both installation and repair of specialty cold storage systems.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Wine cellar refrigeration</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Walk-in cooler installation</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Refrigerant recovery & recharge</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Cold room repair & maintenance</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Service →</a></div>
+      <div class="sd" id="sd-res-ref"><div class="sd-hd"><div class="sd-ic">🏠</div><div><h2>Residential Refrigeration</h2><p>Specialty refrigeration for homes</p></div></div><p class="sd-bd">From custom wine cellars to residential walk-in coolers, Steve's handles the full range of residential refrigeration. Our technicians are certified in refrigerant handling and skilled in both installation and repair of specialty cold storage systems.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Wine cellar refrigeration</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Walk-in cooler installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant recovery & recharge</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Cold room repair & maintenance</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Service →</a></div>
 
-      <div class="sd" id="sd-com-ref"><div class="sd-hd"><div class="sd-ic">🏢</div><div><h2>Commercial Refrigeration</h2><p>Keeping your business running cold</p></div></div><p class="sd-bd">Restaurant walk-ins, commercial freezers, refrigerated display cases — a refrigeration failure means lost product and lost revenue. Steve's provides rapid-response commercial refrigeration repair and full system installation for businesses throughout SW Riverside County. We work around your schedule to minimize downtime.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Restaurant walk-in cooler/freezer repair</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Commercial display case service</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">New system installation</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Preventive maintenance contracts</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Emergency response available</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Health code compliance support</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Commercial Service →</a></div>
+      <div class="sd" id="sd-com-ref"><div class="sd-hd"><div class="sd-ic">🏢</div><div><h2>Commercial Refrigeration</h2><p>Keeping your business running cold</p></div></div><p class="sd-bd">Restaurant walk-ins, commercial freezers, refrigerated display cases — a refrigeration failure means lost product and lost revenue. Steve's provides rapid-response commercial refrigeration repair and full system installation for businesses throughout SW Riverside County. We work around your schedule to minimize downtime.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Restaurant walk-in cooler/freezer repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Commercial display case service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">New system installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Preventive maintenance contracts</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency response available</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Health code compliance support</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Commercial Service →</a></div>
 
-      <div class="sd" id="sd-maintenance"><div class="sd-hd"><div class="sd-ic">🔧</div><div><h2>HVAC Maintenance</h2><p>Keep it running before it breaks</p></div></div><p class="sd-bd">The single best way to avoid a mid-summer AC emergency is a proper spring tune-up. Steve's maintenance service includes a comprehensive system inspection, cleaning of all critical components, refrigerant level check, and a full performance test. We document everything and give you a plain-language report on your system's condition so you can plan ahead — not react in panic mode.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Annual AC tune-up</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Furnace inspection & cleaning</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Filter replacement & coil cleaning</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Refrigerant level check</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Thermostat calibration</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Written system health report</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Schedule Maintenance →</a></div>
+      <div class="sd" id="sd-maintenance"><div class="sd-hd"><div class="sd-ic">🔧</div><div><h2>HVAC Maintenance</h2><p>Keep it running before it breaks</p></div></div><p class="sd-bd">The single best way to avoid a mid-summer AC emergency is a proper spring tune-up. Steve's maintenance service includes a comprehensive system inspection, cleaning of all critical components, refrigerant level check, and a full performance test. We document everything and give you a plain-language report on your system's condition so you can plan ahead — not react in panic mode.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual AC tune-up</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Furnace inspection & cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Filter replacement & coil cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant level check</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Thermostat calibration</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Written system health report</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Schedule Maintenance →</a></div>
 
-      <div class="sd" id="sd-air-quality"><div class="sd-hd"><div class="sd-ic">🌬️</div><div><h2>Air Quality Control</h2><p>Healthier indoor air for your home or business</p></div></div><p class="sd-bd">The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.</p><p class="sd-bd">HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without the energy penalty of just opening windows. Ideal for tightly sealed modern homes.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">HRV (Heat Recovery Ventilation)</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">High-efficiency air filtration (HEPA, MERV-13+)</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">UV light air purification</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Whole-home humidifiers & dehumidifiers</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Air quality testing & assessment</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Duct cleaning & sealing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Improve My Air Quality →</a></div>
+      <div class="sd" id="sd-air-quality"><div class="sd-hd"><div class="sd-ic">🌬️</div><div><h2>Air Quality Control</h2><p>Healthier indoor air for your home or business</p></div></div><p class="sd-bd">The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.</p><p class="sd-bd">HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without the energy penalty of just opening windows. Ideal for tightly sealed modern homes.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HRV (Heat Recovery Ventilation)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">High-efficiency air filtration (HEPA, MERV-13+)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">UV light air purification</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home humidifiers & dehumidifiers</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air quality testing & assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Duct cleaning & sealing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Improve My Air Quality →</a></div>
 
-      <div class="sd" id="sd-water-heaters"><div class="sd-hd"><div class="sd-ic">💧</div><div><h2>Water Heaters</h2><p>Tank, tankless & hybrid systems</p></div></div><p class="sd-bd">Whether you're running out of hot water mid-shower or your old tank is leaking, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p><p class="sd-bd">Not sure which type is right for your home? We'll walk you through the tradeoffs based on your family size, fuel availability, and budget — without pushing you toward whatever has the best margin for us.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Tank water heater install & replacement</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Tankless on-demand systems</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Gas, electric & propane systems</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Emergency water heater repair</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Annual maintenance & flushing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Water Heater Service →</a></div>
+      <div class="sd" id="sd-water-heaters"><div class="sd-hd"><div class="sd-ic">💧</div><div><h2>Water Heaters</h2><p>Tank, tankless & hybrid systems</p></div></div><p class="sd-bd">Whether you're running out of hot water mid-shower or your old tank is leaking, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p><p class="sd-bd">Not sure which type is right for your home? We'll walk you through the tradeoffs based on your family size, fuel availability, and budget — without pushing you toward whatever has the best margin for us.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency water heater repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Water Heater Service →</a></div>
 
-      <div class="sd" id="sd-energy-audit"><div class="sd-hd"><div class="sd-ic">⚡</div><div><h2>Energy Audits</h2><p>Stop wasting money on inefficiency</p></div></div><p class="sd-bd">An energy audit is the single most cost-effective service we offer — and one most HVAC contractors don't even provide. Steve's comprehensive audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots you'd never spot without proper diagnostic equipment.</p><p class="sd-bd">You get a written report with prioritized recommendations and projected savings for each fix. Many customers recover the cost of the audit itself within the first 2-3 months of implementing our recommendations.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Whole-home energy assessment</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Thermal imaging & leak detection</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Ductwork inspection & sealing recommendations</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Insulation evaluation</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">HVAC right-sizing analysis</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Written report with prioritized savings</div></div><div class="sd-f"><div class="sd-f-ck">✓</div><div class="sd-f-tx">Commercial energy audits available</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Schedule Energy Audit →</a></div>
+      <div class="sd" id="sd-energy-audit"><div class="sd-hd"><div class="sd-ic">⚡</div><div><h2>Energy Audits</h2><p>Stop wasting money on inefficiency</p></div></div><p class="sd-bd">An energy audit is the single most cost-effective service we offer — and one most HVAC contractors don't even provide. Steve's comprehensive audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots you'd never spot without proper diagnostic equipment.</p><p class="sd-bd">You get a written report with prioritized recommendations and projected savings for each fix. Many customers recover the cost of the audit itself within the first 2-3 months of implementing our recommendations.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home energy assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Thermal imaging & leak detection</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Ductwork inspection & sealing recommendations</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Insulation evaluation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HVAC right-sizing analysis</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Written report with prioritized savings</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Commercial energy audits available</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Schedule Energy Audit →</a></div>
     </div>
   </div></div></section>
 </div>
