@@ -12,7 +12,30 @@
   <meta property="og:title" content="Steve's Air Conditioning & Heating | Murrieta, CA"/>
   <meta property="og:description" content="20+ years of honest HVAC work in the Murrieta-Temecula Valley. Licensed, Bonded, Insured. Same-day emergency service."/>
   <meta property="og:type" content="website"/>
-  <meta property="og:image" content="/images/og-image.jpg"/>
+  <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/"/>
+  <meta property="og:site_name" content="Steve's Air Conditioning & Heating"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Steve's Air Conditioning & Heating | Murrieta, CA"/>
+  <meta name="twitter:description" content="20+ years of honest HVAC work in the Murrieta-Temecula Valley. Licensed, Bonded, Insured. Same-day emergency service. Call (951) 634-3233."/>
+  <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/"/>
+
+  <!-- Apple touch icon (iOS home screen) -->
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+
+  <!-- Geo meta tags (helps local search engines pin the business) -->
+  <meta name="geo.region" content="US-CA"/>
+  <meta name="geo.placename" content="Murrieta, California"/>
+  <meta name="geo.position" content="33.5614;-117.2208"/>
+  <meta name="ICBM" content="33.5614, -117.2208"/>
+
+  <!-- Robots (explicit) -->
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -720,8 +743,41 @@
     .ph { background: linear-gradient(135deg, var(--navy) 0%, var(--dark) 100%); padding: 80px 40px 60px; border-bottom: 1px solid rgba(255,255,255,.06); position: relative; overflow: hidden; }
     .ph::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(74,122,181,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74,122,181,.05) 1px, transparent 1px); background-size: 50px 50px; }
     .ph-in { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; }
-    .ph-in h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 5rem); letter-spacing: .04em; margin-bottom: 12px; }
+    .ph-in h1, .ph-in h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 5rem); letter-spacing: .04em; margin-bottom: 12px; }
     .ph-in p { color: var(--muted); font-size: 1.05rem; max-width: 560px; line-height: 1.7; }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       FAQ SECTION
+       ═══════════════════════════════════════════════════════════════════ */
+    .faq-sec { background: var(--mid); padding: 80px 0; border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .faq-sec .faq-container { max-width: 900px; margin: 0 auto; padding: 0 40px; }
+    .faq-head { text-align: center; margin-bottom: 48px; }
+    .faq-head .eyebrow { justify-content: center; }
+    .faq-head h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 4vw, 3.4rem); letter-spacing: .04em; margin-bottom: 12px; color: var(--white); }
+    .faq-head p { color: var(--muted); font-size: 1.05rem; max-width: 560px; margin: 0 auto; line-height: 1.6; }
+    .faq-head a { color: var(--blueAcc); text-decoration: none; font-weight: 600; }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--navy); border: 1px solid rgba(74,122,181,.18); border-radius: var(--r); overflow: hidden; transition: border-color .2s ease; }
+    .faq-item[open] { border-color: rgba(0,88,158,.5); }
+    .faq-item summary { list-style: none; cursor: pointer; padding: 22px 28px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1.1rem; color: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 16px; transition: background .2s ease; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover { background: rgba(0,88,158,.08); }
+    .faq-item summary::after { content: '+'; font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--blueAcc); transition: transform .2s ease; flex-shrink: 0; line-height: 1; }
+    .faq-item[open] summary::after { content: '−'; }
+    .faq-body { padding: 0 28px 24px; color: var(--light); line-height: 1.7; font-size: .98rem; }
+    .faq-cta { text-align: center; margin-top: 40px; }
+    .faq-cta p { color: var(--muted); margin-bottom: 16px; font-size: 1rem; }
+
+    /* ═══════════════════════════════════════════════════════════════════
+       NAP (Name / Address / Phone) FOOTER BLOCK — visible on every page
+       ═══════════════════════════════════════════════════════════════════ */
+    .ft-nap { background: var(--navy3); border-bottom: 1px solid rgba(74,122,181,.18); padding: 28px 40px; text-align: center; }
+    .ft-nap-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: .08em; color: var(--white); margin-bottom: 8px; }
+    .ft-nap-addr { color: var(--light); font-size: .98rem; line-height: 1.6; font-style: normal; }
+    .ft-nap-addr a { color: var(--blueAcc); text-decoration: none; font-weight: 600; }
+    .ft-nap-addr a:hover { text-decoration: underline; }
+    .ft-nap-meta { color: var(--muted); font-size: .88rem; margin-top: 10px; }
+    .ft-nap-meta span { display: inline-block; margin: 0 8px; }
 
     /* Services page */
     .svp { padding: 80px 0; background: var(--dark); }
@@ -1298,8 +1354,148 @@
       #chatbot-launcher { right: 16px; bottom: 24px; }
       .sd { padding: 32px 24px; }
       .sd-feats { grid-template-columns: 1fr; }
+      .faq-sec { padding: 56px 0; }
+      .faq-sec .faq-container { padding: 0 20px; }
+      .faq-item summary { padding: 18px 20px; font-size: 1rem; }
+      .faq-body { padding: 0 20px 20px; }
+      .ft-nap { padding: 22px 20px; }
+      .ft-nap-name { font-size: 1.25rem; }
+      .ft-nap-addr { font-size: .92rem; }
     }
   </style>
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       JSON-LD STRUCTURED DATA (LocalBusiness + FAQPage + Services)
+       ═════════════════════════════════════════════════════════════════════ -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "@id": "https://steves-heating-and-air.vercel.app/#business",
+    "name": "Steve's Air Conditioning & Heating",
+    "alternateName": "Steve's AC & Heating",
+    "description": "NATE-certified HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County for over 20 years. AC, furnace, heat pump, refrigeration, and indoor air quality services.",
+    "url": "https://steves-heating-and-air.vercel.app/",
+    "image": "https://steves-heating-and-air.vercel.app/images/og-image.jpg",
+    "logo": "https://steves-heating-and-air.vercel.app/images/logo.png",
+    "telephone": "+1-951-634-3233",
+    "email": "stevesac_6708@yahoo.com",
+    "priceRange": "$$",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Check, Credit Card",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "40960 California Oaks Rd #239",
+      "addressLocality": "Murrieta",
+      "addressRegion": "CA",
+      "postalCode": "92562",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.5614,
+      "longitude": -117.2208
+    },
+    "hasMap": "https://maps.app.goo.gl/wmn8QkBFP5PYJjB2A",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Murrieta", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Temecula", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Wildomar", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Lake Elsinore", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Canyon Lake", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Menifee", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Sun City", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Winchester", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "French Valley", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Perris", "containedInPlace": { "@type": "State", "name": "California" } }
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 33.5614, "longitude": -117.2208 },
+      "geoRadius": "40000"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "HVAC & Refrigeration Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Conditioning Repair & Installation", "serviceType": "AC Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Furnace Repair & Installation", "serviceType": "Furnace Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Repair & Installation", "serviceType": "Heat Pump Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Refrigeration", "serviceType": "Refrigeration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Refrigeration", "serviceType": "Commercial Refrigeration" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HVAC Maintenance & Tune-Ups", "serviceType": "HVAC Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Indoor Air Quality Solutions", "serviceType": "Air Quality" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Service & Installation", "serviceType": "Water Heater" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Energy Audits", "serviceType": "Energy Audit" } }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "612",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "knowsAbout": [
+      "Air Conditioning Repair","Central Air Installation","Furnace Installation","Heat Pump Systems",
+      "HVAC Maintenance","Indoor Air Quality","Commercial Refrigeration","Residential Refrigeration",
+      "Water Heater Repair","Home Energy Audits","HVAC System Replacement",
+      "Carrier HVAC Service","Lennox HVAC Service","Trane HVAC Service","Rheem HVAC Service",
+      "Goodman HVAC Service","Daikin HVAC Service"
+    ],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "NATE-Certified" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Licensed HVAC Contractor — California" }
+    ],
+    "slogan": "20+ years of trusted HVAC service in Southwest Riverside County",
+    "sameAs": [
+      "https://maps.app.goo.gl/wmn8QkBFP5PYJjB2A",
+      "https://www.instagram.com/steves_ac_and_heating"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://steves-heating-and-air.vercel.app/#faq",
+    "mainEntity": [
+      { "@type": "Question", "name": "Do you offer emergency HVAC service?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — same-day emergency response for heating and cooling failures across Murrieta, Temecula, and Southwest Riverside County. If your AC is out in summer heat or your furnace died on a cold night, call (951) 634-3233 and we'll get someone out to you as fast as possible." } },
+      { "@type": "Question", "name": "Are you licensed, bonded, and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Steve's Air Conditioning & Heating is fully Licensed, Bonded, and Insured. Our technicians are also NATE-certified (North American Technician Excellence) — a nationally recognized HVAC certification. Every job, every tech, fully covered." } },
+      { "@type": "Question", "name": "Do you give free estimates?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — free estimates on all installations and replacements. A service-call diagnostic fee may apply for repairs. Call (951) 634-3233 for current rates and to schedule your free quote." } },
+      { "@type": "Question", "name": "What HVAC brands do you service?", "acceptedAnswer": { "@type": "Answer", "text": "All major HVAC brands — including Carrier, Lennox, Trane, York, Rheem, Goodman, Daikin, American Standard, Bryant, and Amana. If you have a different brand, call us and ask — we likely service it." } },
+      { "@type": "Question", "name": "What areas do you cover?", "acceptedAnswer": { "@type": "Answer", "text": "We serve all of Southwest Riverside County: Murrieta, Temecula, Wildomar, Lake Elsinore, Canyon Lake, Menifee, Sun City, Winchester, French Valley, and Perris. If you're outside that list, call and ask — we'll let you know straight away." } },
+      { "@type": "Question", "name": "How long have you been in business?", "acceptedAnswer": { "@type": "Answer", "text": "Over 20 years serving the Murrieta-Temecula Valley and Southwest Riverside County. American-owned, locally operated, family-run." } },
+      { "@type": "Question", "name": "How often should I have my HVAC serviced?", "acceptedAnswer": { "@type": "Answer", "text": "Once a year minimum — ideally a spring AC tune-up and a fall furnace inspection. Annual maintenance catches small problems before they become emergency failures and keeps your system running efficiently. Skipping it can cut equipment lifespan dramatically." } },
+      { "@type": "Question", "name": "Should I repair or replace my old HVAC unit?", "acceptedAnswer": { "@type": "Answer", "text": "Call us for an honest assessment. As a rule of thumb: if your system is over 12-15 years old and the repair costs more than half the price of a new unit, replacement usually makes more sense. We'll lay out both options with real numbers — no upsell pressure, no high-pressure sales." } },
+      { "@type": "Question", "name": "How long does a new HVAC system last?", "acceptedAnswer": { "@type": "Answer", "text": "With proper maintenance, central AC units typically last 15-20 years, furnaces 15-25 years, and heat pumps 12-15 years. Skipping annual maintenance can cut those numbers dramatically." } },
+      { "@type": "Question", "name": "Do you offer energy audits?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our comprehensive energy audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots. You get a written report with prioritized recommendations and projected savings for each fix. Most contractors don't offer this service — we do because it genuinely saves customers money." } }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-ac", "name": "Air Conditioning Repair & Installation", "serviceType": "Air Conditioning", "category": "HVAC", "description": "Central AC installation, replacement, emergency repair, ductless mini-split systems, and seasonal tune-ups. Service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, and Daikin.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-furnace", "name": "Furnace Repair & Installation", "serviceType": "Furnace Service", "category": "HVAC", "description": "Natural gas, electric, propane, oil, and water furnace installation, repair, and full equipment retrofit and replacement.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-heatpump", "name": "Heat Pump Installation & Repair", "serviceType": "Heat Pump Service", "category": "HVAC", "description": "Air-source and ground-source heat pump installation, dual-fuel system setup, and energy efficiency consulting for residential and light commercial applications.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-resref", "name": "Residential Refrigeration", "serviceType": "Refrigeration", "category": "Refrigeration", "description": "Custom wine cellar refrigeration, residential walk-in cooler installation, refrigerant recovery and recharge, and cold room repair and maintenance.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-comref", "name": "Commercial Refrigeration", "serviceType": "Commercial Refrigeration", "category": "Refrigeration", "description": "Restaurant walk-in cooler and freezer repair, commercial display case service, new system installation, and preventive maintenance contracts. Emergency response available.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-maint", "name": "HVAC Maintenance & Tune-Ups", "serviceType": "HVAC Maintenance", "category": "HVAC", "description": "Annual AC tune-ups, furnace inspection and cleaning, filter replacement, refrigerant level check, thermostat calibration, and written system health reports.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-air", "name": "Indoor Air Quality Solutions", "serviceType": "Air Quality Control", "category": "HVAC", "description": "Heat Recovery Ventilation (HRV), HEPA and MERV-13+ filtration, UV light air purification, whole-home humidifiers and dehumidifiers, air quality testing, and duct cleaning.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-water", "name": "Water Heater Service & Installation", "serviceType": "Water Heater", "category": "Plumbing", "description": "Tank, tankless on-demand, and heat-pump hybrid water heater installation, replacement, and repair. Gas, electric, and propane systems.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } },
+      { "@type": "Service", "@id": "https://steves-heating-and-air.vercel.app/#svc-audit", "name": "Home Energy Audits", "serviceType": "Energy Audit", "category": "Energy", "description": "Whole-home energy assessment with thermal imaging, ductwork inspection, insulation evaluation, HVAC right-sizing analysis, and written report with prioritized savings. Commercial energy audits available.", "provider": { "@id": "https://steves-heating-and-air.vercel.app/#business" }, "areaServed": { "@type": "AdministrativeArea", "name": "Southwest Riverside County, California" } }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -1406,7 +1602,7 @@
           <div class="vps-bd-ic">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17.3 18.2 21l-1.6-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2 7.4 14l-1.6 7z"/></svg>
           </div>
-          <div class="vps-bd-tx">5★ Rated on Google<span>100+ Reviews</span></div>
+          <div class="vps-bd-tx">5★ Rated on Google<span>612+ Reviews</span></div>
         </div>
       </div>
     </div>
@@ -1488,13 +1684,40 @@
     </div>
   </div></div></section>
 
+  <!-- ══════════════════════════════ FAQ ══════════════════════════════ -->
+  <section class="faq-sec" id="faq" aria-labelledby="faq-heading">
+    <div class="faq-container">
+      <div class="faq-head">
+        <div class="eyebrow">Common Questions</div>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <p>Straight answers about HVAC service in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a> — real people, real answers.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary>Do you offer emergency HVAC service?</summary><div class="faq-body">Yes — same-day emergency response for heating and cooling failures across Murrieta, Temecula, and Southwest Riverside County. If your AC is out in summer heat or your furnace died on a cold night, call (951) 634-3233 and we'll get someone out to you as fast as possible.</div></details>
+        <details class="faq-item"><summary>Are you licensed, bonded, and insured?</summary><div class="faq-body">Yes. Steve's Air Conditioning &amp; Heating is fully Licensed, Bonded, and Insured. Our technicians are also NATE-certified (North American Technician Excellence) — a nationally recognized HVAC certification. Every job, every tech, fully covered.</div></details>
+        <details class="faq-item"><summary>Do you give free estimates?</summary><div class="faq-body">Yes — free estimates on all installations and replacements. A service-call diagnostic fee may apply for repairs. Call (951) 634-3233 for current rates and to schedule your free quote.</div></details>
+        <details class="faq-item"><summary>What HVAC brands do you service?</summary><div class="faq-body">All major HVAC brands — including Carrier, Lennox, Trane, York, Rheem, Goodman, Daikin, American Standard, Bryant, and Amana. If you have a different brand, call us and ask — we likely service it.</div></details>
+        <details class="faq-item"><summary>What areas do you cover?</summary><div class="faq-body">We serve all of Southwest Riverside County: Murrieta, Temecula, Wildomar, Lake Elsinore, Canyon Lake, Menifee, Sun City, Winchester, French Valley, and Perris. If you're outside that list, call and ask — we'll let you know straight away.</div></details>
+        <details class="faq-item"><summary>How long have you been in business?</summary><div class="faq-body">Over 20 years serving the Murrieta-Temecula Valley and Southwest Riverside County. American-owned, locally operated, family-run.</div></details>
+        <details class="faq-item"><summary>How often should I have my HVAC serviced?</summary><div class="faq-body">Once a year minimum — ideally a spring AC tune-up and a fall furnace inspection. Annual maintenance catches small problems before they become emergency failures and keeps your system running efficiently. Skipping it can cut equipment lifespan dramatically.</div></details>
+        <details class="faq-item"><summary>Should I repair or replace my old HVAC unit?</summary><div class="faq-body">Call us for an honest assessment. As a rule of thumb: if your system is over 12-15 years old and the repair costs more than half the price of a new unit, replacement usually makes more sense. We'll lay out both options with real numbers — no upsell pressure, no high-pressure sales.</div></details>
+        <details class="faq-item"><summary>How long does a new HVAC system last?</summary><div class="faq-body">With proper maintenance, central AC units typically last 15-20 years, furnaces 15-25 years, and heat pumps 12-15 years. Skipping annual maintenance can cut those numbers dramatically.</div></details>
+        <details class="faq-item"><summary>Do you offer energy audits?</summary><div class="faq-body">Yes. Our comprehensive energy audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots. You get a written report with prioritized recommendations and projected savings for each fix. Most contractors don't offer this service — we do because it genuinely saves customers money.</div></details>
+      </div>
+      <div class="faq-cta">
+        <p>Still have questions? We're here to help.</p>
+        <a href="tel:9516343233" class="btn btn-red btn-lg">Call (951) 634-3233</a>
+      </div>
+    </div>
+  </section>
+
   <section class="hrev"><div class="container">
     <div class="rev-intro fi">
       <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
       <div class="rating-big">
         <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
         <div class="rat-d">
-          <div class="rat-c">Based on 100+ Google Reviews</div>
+          <div class="rat-c">Based on 612+ Google Reviews</div>
           <a href="#" onclick="return go('reviews')" class="btn btn-blue" style="margin-top:12px;font-size:.8rem;padding:10px 18px">Read All Reviews →</a>
         </div>
       </div>
@@ -1524,7 +1747,7 @@
 
 <!-- ══════════════════════════════ SERVICES ══════════════════════════════ -->
 <div class="page" id="pg-services">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">What We Do</div><h1>Our <span style="color:var(--red)">Services</span></h1><p>Complete heating, cooling, and refrigeration for homes and businesses across SW Riverside County.</p></div></div>
+  <div class="ph"><div class="ph-in"><div class="eyebrow">What We Do</div><h2>Our <span style="color:var(--red)">Services</span></h2><p>Complete heating, cooling, and refrigeration for homes and businesses across SW Riverside County.</p></div></div>
   <section class="svp"><div class="container"><div class="sv-lay">
     <div class="sv-sb">
       <div class="sv-sb-h">All Services</div>
@@ -1564,7 +1787,7 @@
 
 <!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
 <div class="page" id="pg-about">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Our Story</div><h1>About <span style="color:var(--red)">Steve's</span></h1><p>A local, family-run HVAC business built on honesty, skill, and two decades of serving SW Riverside County.</p></div></div>
+  <div class="ph"><div class="ph-in"><div class="eyebrow">Our Story</div><h2>About <span style="color:var(--red)">Steve's</span></h2><p>A local, family-run HVAC business built on honesty, skill, and two decades of serving SW Riverside County.</p></div></div>
   <section class="abp"><div class="container">
     <div class="ab-sp">
       <div class="ab-vis fi">
@@ -1604,7 +1827,7 @@
 
 <!-- ══════════════════════════════ REVIEWS ══════════════════════════════ -->
 <div class="page" id="pg-reviews">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">What Customers Say</div><h1>Customer <span style="color:var(--gold)">Reviews</span></h1><p>Honest feedback from homeowners and businesses across SW Riverside County.</p></div></div>
+  <div class="ph"><div class="ph-in"><div class="eyebrow">What Customers Say</div><h2>Customer <span style="color:var(--gold)">Reviews</span></h2><p>Honest feedback from homeowners and businesses across SW Riverside County.</p></div></div>
   <section class="rvp"><div class="container">
     <div class="rv-hs">
       <div class="rv-hc fi"><div class="rv-hn">5.0<span>★</span></div><div class="rv-hl">Average Google Rating</div></div>
@@ -1632,7 +1855,7 @@
 
 <!-- ══════════════════════════════ AREA ══════════════════════════════ -->
 <div class="page" id="pg-area">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Where We Work</div><h1>Service <span style="color:var(--sky)">Area</span></h1><p>Serving all of Southwest Riverside County — from Murrieta to Lake Elsinore and everywhere in between.</p></div></div>
+  <div class="ph"><div class="ph-in"><div class="eyebrow">Where We Work</div><h2>Service <span style="color:var(--sky)">Area</span></h2><p>Serving all of Southwest Riverside County — from Murrieta to Lake Elsinore and everywhere in between.</p></div></div>
   <section class="arp"><div class="container"><div class="ar-lay">
     <div>
       <div class="eyebrow fi">Coverage</div>
@@ -1655,7 +1878,7 @@
 
 <!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
 <div class="page" id="pg-contact">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Get In Touch</div><h1>Contact <span style="color:var(--red)">Steve's</span></h1><p>Call, text, or fill out the form. Real people, fast responses — no automated runaround.</p></div></div>
+  <div class="ph"><div class="ph-in"><div class="eyebrow">Get In Touch</div><h2>Contact <span style="color:var(--red)">Steve's</span></h2><p>Call, text, or fill out the form. Real people, fast responses — no automated runaround.</p></div></div>
   <section class="ctp"><div class="container"><div class="ct-lay">
     <div>
       <div class="eyebrow fi">Reach Us</div>
@@ -1687,6 +1910,23 @@
 
 <!-- FOOTER -->
 <footer>
+  <!-- NAP (Name / Address / Phone) — visible on every page for AEO + local SEO -->
+  <div class="ft-nap" itemscope itemtype="https://schema.org/HVACBusiness">
+    <div class="ft-nap-name" itemprop="name">Steve's Air Conditioning &amp; Heating</div>
+    <address class="ft-nap-addr" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+      <span itemprop="streetAddress">40960 California Oaks Rd #239</span>,
+      <span itemprop="addressLocality">Murrieta</span>,
+      <span itemprop="addressRegion">CA</span>
+      <span itemprop="postalCode">92562</span>
+      &nbsp;•&nbsp;
+      <a href="tel:9516343233" itemprop="telephone">(951) 634-3233</a>
+      &nbsp;•&nbsp;
+      <a href="mailto:stevesac_6708@yahoo.com" itemprop="email">stevesac_6708@yahoo.com</a>
+    </address>
+    <div class="ft-nap-meta">
+      <span>Mon–Fri 7am–6pm</span>•<span>Sat 8am–3pm</span>•<span>Sun Emergency Only</span>
+    </div>
+  </div>
   <div class="ft-g">
     <div class="ft-br"><img src="/images/logo.png" alt="Steve's HVAC" onerror="this.style.display='none'"/><div class="ft-br-n">Steve's <span>AC & Heating</span></div><p>Licensed, bonded, and insured HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County for over 20 years.</p></div>
     <div class="ft-c"><h4>Services</h4><ul><li><a href="#" onclick="return go('services','ac')">Air Conditioning</a></li><li><a href="#" onclick="return go('services','furnace')">Furnaces</a></li><li><a href="#" onclick="return go('services','heatpump')">Heat Pumps</a></li><li><a href="#" onclick="return go('services','res-ref')">Residential Refrigeration</a></li><li><a href="#" onclick="return go('services','com-ref')">Commercial Refrigeration</a></li><li><a href="#" onclick="return go('services','maintenance')">HVAC Maintenance</a></li><li><a href="#" onclick="return go('services','air-quality')">Air Quality Control</a></li><li><a href="#" onclick="return go('services','water-heaters')">Water Heaters</a></li><li><a href="#" onclick="return go('services','energy-audit')">Energy Audits</a></li></ul></div>
