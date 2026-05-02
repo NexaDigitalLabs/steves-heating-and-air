@@ -39,7 +39,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 
   <style>
     /* ═══════════════════════════════════════════════════════════════════
@@ -204,13 +204,16 @@
     .has-drop:hover .drop,
     .has-drop:focus-within .drop { display: block; }
     .drop li a {
-      display: block; padding: 12px 20px;
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 12px 20px;
       font-family: 'Bebas Neue', sans-serif;
       font-size: 1rem; letter-spacing: .1em; text-transform: uppercase;
       color: rgba(255,255,255,.72); text-decoration: none;
       border-bottom: 1px solid rgba(255,255,255,.04);
       transition: color .2s, background .2s, padding-left .2s;
     }
+    .drop li a .drop-ic { flex-shrink: 0; width: 22px; display: inline-block; text-align: center; line-height: 1.2; }
+    .drop li a .drop-tx { flex: 1; min-width: 0; }
     .drop li a:hover { color: #fff; background: rgba(255,255,255,.04); padding-left: 26px; }
 
     .nav-cta-btn { background: var(--red) !important; color: #fff !important; margin-left: 8px; font-size: 1.15rem !important; padding: 12px 22px !important; }
@@ -325,13 +328,14 @@
     @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
 
     .h-h1 {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Anton', 'Bebas Neue', sans-serif;
       font-size: clamp(3.5rem, 8vw, 7rem);
-      line-height: .9;
-      letter-spacing: .04em;
+      line-height: .92;
+      letter-spacing: .015em;
       margin-bottom: 20px;
       color: var(--white);
       text-shadow: 0 2px 24px rgba(0,0,0,.6);
+      text-transform: uppercase;
     }
     .h-h1 .l1 { display: block; color: var(--white); }
     .h-h1 .l2 { display: block; color: var(--blueAcc); text-shadow: 0 2px 30px rgba(0,88,158,.55), 0 2px 10px rgba(0,0,0,.6); }
@@ -1512,15 +1516,15 @@
     <li class="has-drop">
       <a href="#" data-p="services" onclick="return go('services')">Services ▾</a>
       <ul class="drop">
-        <li><a href="#" onclick="return go('services','ac')">❄️ Air Conditioning</a></li>
-        <li><a href="#" onclick="return go('services','furnace')">🔥 Furnaces</a></li>
-        <li><a href="#" onclick="return go('services','heatpump')">♨️ Heat Pumps</a></li>
-        <li><a href="#" onclick="return go('services','res-ref')">🏠 Residential Refrigeration</a></li>
-        <li><a href="#" onclick="return go('services','com-ref')">🏢 Commercial Refrigeration</a></li>
-        <li><a href="#" onclick="return go('services','maintenance')">🔧 HVAC Maintenance</a></li>
-        <li><a href="#" onclick="return go('services','air-quality')">🌬️ Air Quality Control</a></li>
-        <li><a href="#" onclick="return go('services','water-heaters')">💧 Water Heaters</a></li>
-        <li><a href="#" onclick="return go('services','energy-audit')">⚡ Energy Audits</a></li>
+        <li><a href="#" onclick="return go('services','ac')"><span class="drop-ic">❄️</span><span class="drop-tx">Air Conditioning</span></a></li>
+        <li><a href="#" onclick="return go('services','furnace')"><span class="drop-ic">🔥</span><span class="drop-tx">Furnaces</span></a></li>
+        <li><a href="#" onclick="return go('services','heatpump')"><span class="drop-ic">♨️</span><span class="drop-tx">Heat Pumps</span></a></li>
+        <li><a href="#" onclick="return go('services','res-ref')"><span class="drop-ic">🏠</span><span class="drop-tx">Residential Refrigeration</span></a></li>
+        <li><a href="#" onclick="return go('services','com-ref')"><span class="drop-ic">🏢</span><span class="drop-tx">Commercial Refrigeration</span></a></li>
+        <li><a href="#" onclick="return go('services','maintenance')"><span class="drop-ic">🔧</span><span class="drop-tx">HVAC Maintenance</span></a></li>
+        <li><a href="#" onclick="return go('services','air-quality')"><span class="drop-ic">💨</span><span class="drop-tx">Air Quality Control</span></a></li>
+        <li><a href="#" onclick="return go('services','water-heaters')"><span class="drop-ic">💧</span><span class="drop-tx">Water Heaters</span></a></li>
+        <li><a href="#" onclick="return go('services','energy-audit')"><span class="drop-ic">⚡</span><span class="drop-tx">Energy Audits</span></a></li>
       </ul>
     </li>
     <li><a href="#" data-p="about" onclick="return go('about')">About Us</a></li>
@@ -1656,7 +1660,7 @@
       <div class="hsc2 fi" onclick="go('services','res-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><a href="#" onclick="return go('services','res-ref')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','com-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><a href="#" onclick="return go('services','com-ref')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','maintenance')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><a href="#" onclick="return go('services','maintenance')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','air-quality')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">🌬️</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><a href="#" onclick="return go('services','air-quality')" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi" onclick="go('services','air-quality')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">💨</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><a href="#" onclick="return go('services','air-quality')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','water-heaters')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/water-heater.png')"></div><div class="hsc2-em">💧</div></div><div class="hsc2-bd"><h3>Water Heaters</h3><p>Tank, tankless, and hybrid water heater installation, repair, and replacement. Gas, electric, and propane systems.</p><a href="#" onclick="return go('services','water-heaters')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','energy-audit')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/energy-audit.png')"></div><div class="hsc2-em">⚡</div></div><div class="hsc2-bd"><h3>Energy Audits</h3><p>Comprehensive home and business energy assessments. Identify thermal leaks, insulation issues, and savings opportunities.</p><a href="#" onclick="return go('services','energy-audit')" class="hsc2-lk">Learn More →</a></div></div>
     </div>
@@ -1758,7 +1762,7 @@
         <li><a href="#" onclick="return svShow('res-ref',this)">🏠 Residential Refrigeration</a></li>
         <li><a href="#" onclick="return svShow('com-ref',this)">🏢 Commercial Refrigeration</a></li>
         <li><a href="#" onclick="return svShow('maintenance',this)">🔧 HVAC Maintenance</a></li>
-        <li><a href="#" onclick="return svShow('air-quality',this)">🌬️ Air Quality Control</a></li>
+        <li><a href="#" onclick="return svShow('air-quality',this)">💨 Air Quality Control</a></li>
         <li><a href="#" onclick="return svShow('water-heaters',this)">💧 Water Heaters</a></li>
         <li><a href="#" onclick="return svShow('energy-audit',this)">⚡ Energy Audits</a></li>
       </ul>
@@ -1776,7 +1780,7 @@
 
       <div class="sd" id="sd-maintenance"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🔧</div><div><h2>HVAC Maintenance</h2><p>Keep it running before it breaks</p></div></div><p class="sd-bd">The single best way to avoid a mid-summer AC emergency is a proper spring tune-up. Steve's maintenance service includes a comprehensive system inspection, cleaning of all critical components, refrigerant level check, and a full performance test. We document everything and give you a plain-language report on your system's condition so you can plan ahead — not react in panic mode.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual AC tune-up</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Furnace inspection & cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Filter replacement & coil cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant level check</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Thermostat calibration</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Written system health report</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Schedule Maintenance →</a></div>
 
-      <div class="sd" id="sd-air-quality"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🌬️</div><div><h2>Air Quality Control</h2><p>Healthier indoor air for your home or business</p></div></div><p class="sd-bd">The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.</p><p class="sd-bd">HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without the energy penalty of just opening windows. Ideal for tightly sealed modern homes.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HRV (Heat Recovery Ventilation)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">High-efficiency air filtration (HEPA, MERV-13+)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">UV light air purification</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home humidifiers & dehumidifiers</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air quality testing & assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Duct cleaning & sealing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Improve My Air Quality →</a></div>
+      <div class="sd" id="sd-air-quality"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">💨</div><div><h2>Air Quality Control</h2><p>Healthier indoor air for your home or business</p></div></div><p class="sd-bd">The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.</p><p class="sd-bd">HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without the energy penalty of just opening windows. Ideal for tightly sealed modern homes.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HRV (Heat Recovery Ventilation)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">High-efficiency air filtration (HEPA, MERV-13+)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">UV light air purification</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home humidifiers & dehumidifiers</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air quality testing & assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Duct cleaning & sealing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Improve My Air Quality →</a></div>
 
       <div class="sd" id="sd-water-heaters"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">💧</div><div><h2>Water Heaters</h2><p>Tank, tankless & hybrid systems</p></div></div><p class="sd-bd">Whether you're running out of hot water mid-shower or your old tank is leaking, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p><p class="sd-bd">Not sure which type is right for your home? We'll walk you through the tradeoffs based on your family size, fuel availability, and budget — without pushing you toward whatever has the best margin for us.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency water heater repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div></div><a href="#" onclick="return go('contact')" class="btn btn-red">Request Water Heater Service →</a></div>
 
