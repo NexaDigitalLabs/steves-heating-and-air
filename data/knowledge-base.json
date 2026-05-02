@@ -50,26 +50,28 @@
       "id": "ac",
       "name": "Air Conditioning",
       "summary": "Installation, repair, and tune-up for all AC systems",
-      "details": "Whether your central AC unit has stopped working in a SoCal heat wave or you're building a new home and need a complete system installed, Steve's has the experience to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs. We also offer ductless mini-split installation for garages, additions, and spaces difficult to cool with central systems.",
+      "details": "Whether your central AC unit has stopped working in a SoCal heat wave or you're building a new home and need a complete system installed, Steve's has the experience to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs. We also offer ductless mini-split installation for garages, additions, and spaces difficult to cool with central systems, plus full equipment retrofit and replacement for aging systems.",
       "features": [
         "Central AC installation & replacement",
         "Emergency AC repair — same day",
         "Ductless mini-split systems",
         "Seasonal tune-ups & maintenance",
         "All major brands serviced",
-        "Energy efficiency assessments"
+        "Energy efficiency assessments",
+        "Equipment retrofit & replacement"
       ]
     },
     {
       "id": "furnace",
       "name": "Furnaces",
-      "summary": "Gas, electric, and propane furnace installation and repair",
-      "details": "Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, and propane furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic.",
+      "summary": "Gas, electric, propane, oil, and water furnace installation and repair",
+      "details": "Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, propane, oil, and water furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic. We also handle full equipment retrofit and replacement projects — upgrading older inefficient systems to modern high-efficiency units.",
       "features": [
         "Natural gas furnace install & repair",
         "Electric furnace service",
         "Propane system installation",
-        "Full furnace replacement",
+        "Oil and water furnace service",
+        "Full furnace replacement & retrofit",
         "Heat exchanger inspection",
         "All brands serviced"
       ]
@@ -124,6 +126,49 @@
         "Refrigerant level check",
         "Thermostat calibration",
         "Written system health report"
+      ]
+    },
+    {
+      "id": "air-quality",
+      "name": "Air Quality Control",
+      "summary": "Healthier indoor air for your home or business",
+      "details": "The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without an energy penalty. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.",
+      "features": [
+        "HRV (Heat Recovery Ventilation)",
+        "High-efficiency air filtration (HEPA, MERV-13+)",
+        "UV light air purification",
+        "Whole-home humidifiers & dehumidifiers",
+        "Air quality testing & assessment",
+        "Duct cleaning & sealing"
+      ]
+    },
+    {
+      "id": "water-heaters",
+      "name": "Water Heaters",
+      "summary": "Tank, tankless, and hybrid water heater systems",
+      "details": "Whether you're running out of hot water mid-shower or your old tank is leaking, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half. Not sure which type is right for your home? We'll walk you through the tradeoffs based on your family size, fuel availability, and budget.",
+      "features": [
+        "Tank water heater install & replacement",
+        "Tankless on-demand systems",
+        "Heat pump hybrid water heaters",
+        "Gas, electric & propane systems",
+        "Emergency water heater repair",
+        "Annual maintenance & flushing"
+      ]
+    },
+    {
+      "id": "energy-audit",
+      "name": "Energy Audits",
+      "summary": "Comprehensive energy assessments to stop wasted energy and money",
+      "details": "An energy audit is the single most cost-effective service we offer — and one most HVAC contractors don't even provide. Steve's comprehensive audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots you'd never spot without proper diagnostic equipment. You get a written report with prioritized recommendations and projected savings for each fix. Many customers recover the cost of the audit within 2-3 months of implementing recommendations.",
+      "features": [
+        "Whole-home energy assessment",
+        "Thermal imaging & leak detection",
+        "Ductwork inspection & sealing recommendations",
+        "Insulation evaluation",
+        "HVAC right-sizing analysis",
+        "Written report with prioritized savings",
+        "Commercial energy audits available"
       ]
     }
   ],
@@ -209,7 +254,31 @@
     },
     {
       "q": "How can I lower my energy bills?",
-      "a": "Annual maintenance, a programmable or smart thermostat, sealing duct leaks, replacing filters monthly during heavy-use seasons, and setting your thermostat 2-3° higher in summer / lower in winter. If your system is old and inefficient, a high-SEER replacement can cut cooling costs significantly."
+      "a": "Annual maintenance, a programmable or smart thermostat, sealing duct leaks, replacing filters monthly during heavy-use seasons, and setting your thermostat 2-3° higher in summer / lower in winter. If your system is old and inefficient, a high-SEER replacement can cut cooling costs significantly. We also offer comprehensive energy audits that identify exactly where your home is losing energy — most customers recover the audit cost within 2-3 months of implementing our recommendations."
+    },
+    {
+      "q": "Do you do energy audits?",
+      "a": "Yes. Our comprehensive energy audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots. You get a written report with prioritized recommendations and projected savings for each fix. Most contractors don't offer this service — we do because it genuinely saves customers money."
+    },
+    {
+      "q": "Do you install water heaters?",
+      "a": "Yes — we install and service every type of water heater: traditional tank models (gas, electric, propane), high-efficiency tankless on-demand systems, and modern heat-pump hybrid units that can cut water heating costs in half. Not sure which is right for your home? Call us and we'll walk you through the tradeoffs based on your family size, fuel availability, and budget."
+    },
+    {
+      "q": "What's a tankless water heater and is it worth it?",
+      "a": "A tankless water heater heats water on demand instead of constantly heating a stored tank. Pros: endless hot water, smaller footprint, longer lifespan (~20 years vs ~10 for tank), and lower energy use. Cons: higher upfront cost, may need gas line / electrical upgrades. Worth it for most homes that use a lot of hot water or want to save space — call (951) 634-3233 and we'll let you know if it's a fit for your situation."
+    },
+    {
+      "q": "Do you handle indoor air quality issues?",
+      "a": "Yes. We install full air quality systems including HRV (Heat Recovery Ventilation), HEPA / MERV-13+ filtration, UV light air purification, whole-home humidifiers/dehumidifiers, and duct cleaning. If you have allergies, asthma, or just notice musty smells or dust buildup, an air quality assessment is a great place to start."
+    },
+    {
+      "q": "What is HRV (Heat Recovery Ventilation)?",
+      "a": "HRV is a system that brings fresh outdoor air into your home while capturing heat (or cool) from the stale air being exhausted out. It dramatically improves indoor air quality without the energy penalty of just opening windows. Especially valuable in modern tightly-sealed homes where natural air exchange is minimal."
+    },
+    {
+      "q": "Do you do furnace replacements with different fuel types?",
+      "a": "Yes — we install and service natural gas, electric, propane, oil, and water furnaces. We also handle full equipment retrofit projects, like converting from oil to gas, or upgrading older inefficient systems to modern high-efficiency units."
     }
   ],
 
