@@ -137,13 +137,14 @@
     }
     #navbar.scrolled { border-bottom-color: var(--blue); box-shadow: 0 4px 40px rgba(26,63,122,.3); }
 
-    .nav-logo { display: flex; align-items: center; text-decoration: none; }
+    .nav-logo { display: flex; align-items: center; justify-content: center; text-decoration: none; height: 100%; }
     .nav-logo img {
       height: 88px;
       width: auto;
       max-width: 360px;
       object-fit: contain;
       display: block;
+      align-self: center;
     }
 
     .nav-ul { display: flex; list-style: none; gap: 2px; align-items: center; }
@@ -289,8 +290,8 @@
       background: rgba(11,29,58,.7);
       border: 1px solid rgba(196,30,30,.5);
       padding: 8px 18px; border-radius: 50px;
-      font-family: 'Rajdhani', sans-serif; font-weight: 600;
-      font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: .9rem; letter-spacing: .22em; text-transform: uppercase;
       color: var(--white);
       margin-bottom: 28px;
       backdrop-filter: blur(6px);
@@ -1185,13 +1186,13 @@
       .ilf-form .ilf-sub { grid-column: 1 / -1; }
     }
     @media (max-width: 768px) {
-      #navbar { padding: 0 20px; height: 84px; justify-content: center; position: relative; }
-      .nav-logo { margin: 0 auto; }
-      .nav-logo img { height: 60px; max-width: 240px; }
+      #navbar { padding: 0 20px; height: 84px; justify-content: space-between; align-items: center; position: relative; }
+      .nav-logo { margin: 0; display: flex; align-items: center; height: 100%; }
+      .nav-logo img { height: 56px; max-width: 220px; display: block; }
       .nav-ul { display: none; flex-direction: column; position: absolute; top: 84px; left: 0; right: 0; background: rgba(6,14,28,.99); border-bottom: 2px solid var(--blue); padding: 16px; gap: 0; }
       .nav-ul.open { display: flex; }
       .drop { position: static; border: none; border-left: 3px solid var(--blue2); margin-left: 16px; box-shadow: none; }
-      .ham { display: flex; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
+      .ham { display: flex; position: static; transform: none; }
       .ham.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
       .ham.open span:nth-child(2) { opacity: 0; }
       .ham.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
@@ -1316,7 +1317,7 @@
       <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first&nbsp;time.</p>
       <div class="h-ctas">
         <a href="tel:9516343233" class="btn btn-red btn-lg">Call Now</a>
-        <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote →</a>
+        <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote</a>
       </div>
       <div class="h-trust">
         <div class="ht-item"><div class="ht-val">20<span>+</span></div><div class="ht-lbl">Years in SoCal</div></div>
