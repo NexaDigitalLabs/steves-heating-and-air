@@ -115,7 +115,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      border-bottom: 2px solid var(--red);
+      opacity: 0.3;
     }
     @media (max-width: 768px) {
       .top-banner { height: 40px; }
@@ -408,7 +408,7 @@
     .wp { display: flex; gap: 16px; align-items: flex-start; padding: 20px; border-radius: 8px; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.04); transition: border-color .2s, background .2s; }
     .wp:hover { border-color: rgba(74,122,181,.25); background: rgba(26,63,122,.08); }
     .wp-n { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--red); line-height: 1; flex-shrink: 0; width: 36px; }
-    .wp strong { display: block; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .98rem; letter-spacing: .06em; text-transform: uppercase; color: var(--white); margin-bottom: 4px; }
+    .wp strong { display: block; font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.5rem; letter-spacing: .08em; color: var(--white); margin-bottom: 6px; line-height: 1.1; }
     .wp p { font-size: .87rem; color: var(--muted); line-height: 1.6; }
 
     /* Reviews home */
@@ -437,10 +437,7 @@
     /* Leave a review block */
     .leave-review-block {
       margin-top: 56px;
-      padding: 36px 40px;
-      background: var(--mid);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--r-lg);
+      padding: 24px 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -656,14 +653,6 @@
       padding: 0 22px 0 10px;
       white-space: nowrap;
     }
-    #chatbot-launcher .cb-pulse {
-      position: absolute; top: -2px; right: -2px;
-      width: 14px; height: 14px;
-      background: var(--gold); border-radius: 50%;
-      border: 2px solid var(--dark);
-      animation: cbpulse 2s infinite;
-    }
-    @keyframes cbpulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
 
     /* Open state: collapse to circle with X */
     #chatbot-launcher.open {
@@ -673,8 +662,7 @@
       border-color: var(--blue2);
     }
     #chatbot-launcher.open .cb-icon-wrap,
-    #chatbot-launcher.open .cb-label,
-    #chatbot-launcher.open .cb-pulse { display: none; }
+    #chatbot-launcher.open .cb-label { display: none; }
     #chatbot-launcher .cb-close { display: none; font-size: 1.4rem; padding: 0 18px; }
     #chatbot-launcher.open .cb-close { display: inline-block; }
 
@@ -974,7 +962,7 @@
       <div class="hsc2 fi" onclick="go('services','heatpump')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/heat-pump.png')"></div><div class="hsc2-em">♨️</div></div><div class="hsc2-bd"><h3>Heat Pumps</h3><p>Energy-efficient heating and cooling in one system — ideal for the SoCal climate year-round.</p><a href="#" onclick="return go('services','heatpump')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','res-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><a href="#" onclick="return go('services','res-ref')" class="hsc2-lk">Learn More →</a></div></div>
       <div class="hsc2 fi" onclick="go('services','com-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><a href="#" onclick="return go('services','com-ref')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','maintenance')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/maintenance.jpg')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><a href="#" onclick="return go('services','maintenance')" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi" onclick="go('services','maintenance')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><a href="#" onclick="return go('services','maintenance')" class="hsc2-lk">Learn More →</a></div></div>
     </div>
   </div></section>
 
@@ -1211,7 +1199,6 @@
   </div>
   <span class="cb-label">Ask Steve</span>
   <span class="cb-close">✕</span>
-  <span class="cb-pulse"></span>
 </div>
 
 <div id="chatbot-window" role="dialog" aria-label="Chat with Steve's HVAC">
