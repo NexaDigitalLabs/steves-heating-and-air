@@ -433,19 +433,27 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 30px;
       flex-wrap: wrap;
     }
     .vps-words {
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 28px;
       font-family: 'Bebas Neue', sans-serif;
       font-size: 1.85rem;
       letter-spacing: .14em;
       color: var(--white);
       line-height: 1;
+    }
+    /* When .vps-words sits inside the hero, give it breathing room
+       above and a subtle gold-tinted text shadow so it reads as a
+       brand stamp at the bottom of the hero */
+    .h-content .vps-words {
+      margin-top: 36px;
+      text-shadow: 0 2px 14px rgba(0,0,0,.7);
     }
     .vps-words .vp-w { color: var(--white); }
     .vps-words .vp-dot { color: var(--red); font-size: 1.4rem; }
@@ -1609,19 +1617,19 @@
         <div class="ht-item"><div class="ht-val">Same<span>&nbsp;Day</span></div><div class="ht-lbl">Service Available</div></div>
         <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
       </div>
-    </div>
-  </section>
-
-  <!-- Value prop strip + credential badges -->
-  <div class="vps">
-    <div class="vps-in">
-      <div class="vps-words">
+      <div class="vps-words fade-stage fade-s3">
         <span class="vp-w">HONEST</span>
         <span class="vp-dot">●</span>
         <span class="vp-w">SKILLED</span>
         <span class="vp-dot">●</span>
         <span class="vp-w">LOCAL</span>
       </div>
+    </div>
+  </section>
+
+  <!-- Value prop strip + credential badges -->
+  <div class="vps">
+    <div class="vps-in">
       <div class="vps-badges">
         <div class="vps-bd">
           <div class="vps-bd-ic">
