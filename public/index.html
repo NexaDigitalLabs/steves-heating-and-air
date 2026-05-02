@@ -354,9 +354,9 @@
       border-bottom: 1px solid rgba(255,255,255,.06);
       padding: 36px 40px;
     }
-    .tbar-in { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .tbar-in { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; align-items: stretch; }
     .tbi {
-      display: flex; align-items: center; gap: 16px;
+      display: flex; align-items: flex-start; gap: 16px;
       padding: 22px 24px;
       background: rgba(255,255,255,.025);
       border: 1px solid rgba(74,122,181,.18);
@@ -376,18 +376,20 @@
       font-size: 1.5rem; flex-shrink: 0;
       box-shadow: 0 4px 14px rgba(0,0,0,.3);
     }
+    .tbi-tx { flex: 1; min-width: 0; }
     .tbi-tx strong {
       display: block;
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.15rem; letter-spacing: .06em; text-transform: uppercase;
+      font-size: 1.1rem; letter-spacing: .06em; text-transform: uppercase;
       color: var(--white);
-      line-height: 1.15;
-      margin-bottom: 3px;
+      line-height: 1.2;
+      margin-bottom: 6px;
     }
     .tbi-tx span {
       font-size: .82rem;
       color: var(--muted);
       letter-spacing: .02em;
+      line-height: 1.4;
     }
 
     /* ═══════════════════════════════════════════════════════════════════
@@ -1266,7 +1268,7 @@
         <span class="l2">Is My Business.</span>
       </h1>
       <div class="h-tagline">Licensed • Bonded • Insured</div>
-      <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first time.</p>
+      <p class="h-sub">Two decades of honest HVAC work in the Murrieta-Temecula Valley. No upsells, no runaround — just skilled technicians who fix it right the first&nbsp;time.</p>
       <div class="h-ctas">
         <a href="tel:9516343233" class="btn btn-red btn-lg">📞 Call Now — (951) 634-3233</a>
         <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Free Quote →</a>
@@ -1313,7 +1315,7 @@
   </div>
 
   <div class="tbar"><div class="tbar-in">
-    <div class="tbi fi"><div class="tbi-ic">🛡️</div><div class="tbi-tx"><strong>Licensed, Bonded & Insured</strong><span>Full coverage on every job</span></div></div>
+    <div class="tbi fi"><div class="tbi-ic">📋</div><div class="tbi-tx"><strong>Free Estimates</strong><span>No-obligation honest quotes</span></div></div>
     <div class="tbi fi"><div class="tbi-ic">⚡</div><div class="tbi-tx"><strong>Same-Day Service</strong><span>Emergency response when needed</span></div></div>
     <div class="tbi fi"><div class="tbi-ic">💬</div><div class="tbi-tx"><strong>Honest Upfront Pricing</strong><span>No hidden fees, ever</span></div></div>
     <div class="tbi fi"><div class="tbi-ic">🇺🇸</div><div class="tbi-tx"><strong>American-Owned & Operated</strong><span>Proudly local since day one</span></div></div>
