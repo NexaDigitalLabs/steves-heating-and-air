@@ -1069,38 +1069,42 @@
     .ft-br img { height: 110px; margin-bottom: 18px; display: block; max-width: 320px; width: auto; object-fit: contain; }
     .ft-br-tag {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1rem;
-      letter-spacing: .22em;
+      font-size: 1.05rem;
+      letter-spacing: .28em;
       color: var(--gold);
-      margin-bottom: 22px;
+      margin-bottom: 8px;
       text-transform: uppercase;
     }
-    .ft-br-stats {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
+    .ft-br-tagline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.92);
+      margin-bottom: 22px;
+      line-height: 1.1;
+    }
+    .ft-creds {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
       max-width: 360px;
     }
-    .ft-stat {
-      padding: 12px 14px;
-      background: rgba(255,255,255,.025);
-      border: 1px solid rgba(255,255,255,.06);
-      border-left: 2px solid var(--red);
-      border-radius: 4px;
-    }
-    .ft-stat-v {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.05rem;
-      letter-spacing: .04em;
-      color: var(--white);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .ft-stat-l {
-      font-size: .68rem;
+    .ft-cred {
+      font-size: .82rem;
       color: var(--muted);
+      letter-spacing: .02em;
+      line-height: 1.4;
+    }
+    .ft-cred strong {
+      color: var(--white);
+      font-weight: 600;
       letter-spacing: .04em;
-      line-height: 1.3;
+    }
+    .ft-cred-sep {
+      height: 1px;
+      width: 28px;
+      background: rgba(255,255,255,.18);
+      display: block;
     }
     .ft-br-n { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: .06em; margin-bottom: 12px; }
     .ft-br-n span { color: var(--red); }
@@ -1475,8 +1479,12 @@
       .ct-lay { grid-template-columns: 1fr; }
       .ar-lay { grid-template-columns: 1fr; }
       .fr { grid-template-columns: 1fr; }
-      .ft-g { grid-template-columns: 1fr; }
-      .ft-br-stats { max-width: 100%; }
+      .ft-g { grid-template-columns: 1fr; gap: 36px; padding: 50px 24px 30px; }
+      .ft-br { text-align: center; }
+      .ft-br img { margin-left: auto; margin-right: auto; height: 90px; }
+      .ft-br-tag { letter-spacing: .22em; }
+      .ft-creds { max-width: 100%; align-items: center; }
+      .ft-cred { text-align: center; }
       .ft-bot { flex-direction: column; gap: 12px; text-align: center; }
       .ph { padding: 24px 20px 22px; }
       .ph-in { flex-direction: column; align-items: flex-start; gap: 6px; }
@@ -2111,12 +2119,14 @@
   <div class="ft-g">
     <div class="ft-br">
       <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
-      <div class="ft-br-tag">Honest. Skilled. Local.</div>
-      <div class="ft-br-stats">
-        <div class="ft-stat"><div class="ft-stat-v">20+ Years</div><div class="ft-stat-l">Serving SW Riverside Co.</div></div>
-        <div class="ft-stat"><div class="ft-stat-v">NATE-Certified</div><div class="ft-stat-l">Licensed · Bonded · Insured</div></div>
-        <div class="ft-stat"><div class="ft-stat-v">Same-Day</div><div class="ft-stat-l">Emergency Response Available</div></div>
-        <div class="ft-stat"><div class="ft-stat-v">5.0★ Google</div><div class="ft-stat-l">612+ Verified Reviews</div></div>
+      <div class="ft-br-tag">Honest &middot; Skilled &middot; Local</div>
+      <p class="ft-br-tagline">Your Comfort Is My Business</p>
+      <div class="ft-creds">
+        <span class="ft-cred"><strong>20+</strong> Years in SW Riverside</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>NATE-Certified</strong> &middot; Licensed &middot; Bonded &middot; Insured</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
       </div>
     </div>
     <div class="ft-c"><h4>Services</h4><ul><li><a href="#" onclick="return go('services','ac')">Air Conditioning</a></li><li><a href="#" onclick="return go('services','furnace')">Furnaces</a></li><li><a href="#" onclick="return go('services','heatpump')">Heat Pumps</a></li><li><a href="#" onclick="return go('services','res-ref')">Residential Refrigeration</a></li><li><a href="#" onclick="return go('services','com-ref')">Commercial Refrigeration</a></li><li><a href="#" onclick="return go('services','maintenance')">HVAC Maintenance</a></li><li><a href="#" onclick="return go('services','air-quality')">Air Quality Control</a></li><li><a href="#" onclick="return go('services','water-heaters')">Water Heaters</a></li><li><a href="#" onclick="return go('services','energy-audit')">Energy Audits</a></li></ul></div>
