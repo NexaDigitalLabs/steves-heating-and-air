@@ -7,11 +7,12 @@
     "phoneRaw": "9516343233",
     "email": "stevesac_6708@yahoo.com",
     "address": {
-      "line1": "40960 California Oaks Rd #239",
       "city": "Murrieta",
       "state": "CA",
       "zip": "92562"
     },
+    "serviceAreaBusiness": true,
+    "serviceAreaNote": "Steve's is a service area business — no public storefront or office for customers to visit. We're a local mobile HVAC contractor that comes to you across the Murrieta-Temecula Valley.",
     "yearsInBusiness": "20+",
     "rating": "5.0",
     "reviewCount": "612",
