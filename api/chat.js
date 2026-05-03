@@ -1,6 +1,7 @@
 // /api/chat.js — Vercel serverless function
 // Receives chat messages from the floating chatbot, injects the knowledge base
-// into the system prompt, and calls the Anthropic API.
+// + live time context + (optional) page context into the system prompt, and
+// calls the Anthropic API.
 //
 // Reads knowledge-base.json at cold-start using fs from process.cwd().
 // Vercel's Node File Trace detects this fs.readFileSync call statically
@@ -74,8 +75,63 @@ function getPacificContext() {
   return { weekday, dateStr, timeStr, hour24, isOpen, nextOpenStr };
 }
 
-// ── Build the system prompt from the KB + live time context ───────────────
-function buildSystemPrompt(kb, timeCtx) {
+// ── Page context sanitizer ────────────────────────────────────────────────
+// pageContext arrives from the front end, which read it from a <meta> tag.
+// We sanitize aggressively — strip control chars, cap length, restrict the
+// `type` to a known whitelist — so it can't be used to inject prompt content.
+function sanitizePageContext(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+
+  const allowedTypes = ['service', 'city', 'neighborhood', 'page'];
+  const clean = (s, max) =>
+    String(s || '')
+      .replace(/[\x00-\x1f\x7f]/g, ' ')   // strip control chars
+      .replace(/[\r\n\t]/g, ' ')           // collapse newlines/tabs to spaces
+      .replace(/\s+/g, ' ')                // collapse whitespace
+      .trim()
+      .slice(0, max);
+
+  const type = clean(raw.type, 32).toLowerCase();
+  const slug = clean(raw.slug, 80).toLowerCase();
+  const name = clean(raw.name, 100);
+
+  if (!allowedTypes.includes(type)) return null;
+  if (!slug) return null;
+  // Slug must be URL-safe: lowercase letters, numbers, hyphens
+  if (!/^[a-z0-9-]+$/.test(slug)) return null;
+
+  return { type, slug, name: name || slug };
+}
+
+// ── Build a human-readable page context block for the system prompt ───────
+function buildPageContextBlock(pageContext, kb) {
+  if (!pageContext) return '';
+
+  let lookupHint = '';
+
+  if (pageContext.type === 'service') {
+    const svc = (kb.services || []).find((s) => s.id === pageContext.slug);
+    if (svc) {
+      lookupHint = `\nThis page describes: ${svc.name} — ${svc.summary}\nKey features: ${svc.features.join(', ')}`;
+    }
+  } else if (pageContext.type === 'city' || pageContext.type === 'neighborhood') {
+    lookupHint = `\nThis is a local landing page for visitors in ${pageContext.name}. Lean into local relevance — they're a homeowner or business owner there. Mention same-day service is available, address them as a neighbor, and naturally bring up that Steve's office is at 40960 California Oaks Rd in Murrieta (close by).`;
+  }
+
+  const typeLabel = pageContext.type.charAt(0).toUpperCase() + pageContext.type.slice(1);
+
+  return `
+═══════════════════════════════════════════════════════════
+USER IS CURRENTLY VIEWING
+═══════════════════════════════════════════════════════════
+${typeLabel}: ${pageContext.name}${lookupHint}
+
+Use this context naturally. On their FIRST message, you may briefly acknowledge what they're looking at — for example: "I see you're on the ${pageContext.name} page — what's going on with your unit?" — but don't force it if their question is unrelated. After the first message, just answer normally without re-referencing the page they're on.
+`;
+}
+
+// ── Build the system prompt from the KB + live time context + page context ─
+function buildSystemPrompt(kb, timeCtx, pageContext) {
   const b = kb.business || {};
   const sa = kb.serviceArea || {};
   const services = (kb.services || [])
@@ -103,6 +159,8 @@ function buildSystemPrompt(kb, timeCtx) {
     ? `WE ARE CURRENTLY OPEN. Customers can call ${b.phone} right now and reach the team.`
     : `WE ARE CURRENTLY CLOSED. Next opening: ${timeCtx.nextOpenStr}. Customers calling ${b.phone} now will likely reach voicemail. For TRUE emergencies (no AC in extreme heat, no heat in cold, refrigerant leak, gas smell, water leaking) they should still call — same-day emergency response is available.`;
 
+  const pageContextBlock = buildPageContextBlock(pageContext, kb);
+
   return `You are the friendly AI front desk for ${b.name}, an HVAC contractor based in ${b.address?.city || 'Murrieta'}, CA. The actual human Steve is the owner — you are NOT Steve. You're his helper, here to answer website visitor questions about heating, cooling, refrigeration, and the business itself, and to connect serious prospects with Steve directly.
 
 PERSONA RULES:
@@ -118,7 +176,7 @@ CURRENT TIME (Pacific)
 ${timeCtx.weekday}, ${timeCtx.dateStr} at ${timeCtx.timeStr} Pacific Time
 
 ${openStatus}
-
+${pageContextBlock}
 ═══════════════════════════════════════════════════════════
 BUSINESS INFORMATION
 ═══════════════════════════════════════════════════════════
@@ -305,7 +363,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'Invalid JSON' });
     }
   }
-  const { messages } = body || {};
+  const { messages, pageContext: rawPageContext } = body || {};
 
   if (!Array.isArray(messages) || messages.length === 0) {
     return res.status(400).json({ error: 'messages array is required' });
@@ -326,9 +384,12 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'No valid messages' });
   }
 
+  // Sanitize page context (may be null — that's fine)
+  const pageContext = sanitizePageContext(rawPageContext);
+
   const kb = loadKB();
   const timeCtx = getPacificContext();
-  const system = buildSystemPrompt(kb, timeCtx);
+  const system = buildSystemPrompt(kb, timeCtx, pageContext);
 
   try {
     const apiRes = await fetch('https://api.anthropic.com/v1/messages', {
@@ -375,7 +436,8 @@ export default async function handler(req, res) {
     // Lead-side-channel: log to console (Vercel logs) so Adam can see it
     // until a real notification path (Slack webhook, email) is wired up.
     if (lead) {
-      console.log('[LEAD CAPTURED]', JSON.stringify(lead));
+      console.log('[LEAD CAPTURED]', JSON.stringify(lead),
+        pageContext ? `from ${pageContext.type}:${pageContext.slug}` : 'from homepage');
     }
 
     return res.status(200).json({
