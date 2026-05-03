@@ -115,7 +115,7 @@ function buildPageContextBlock(pageContext, kb) {
       lookupHint = `\nThis page describes: ${svc.name} — ${svc.summary}\nKey features: ${svc.features.join(', ')}`;
     }
   } else if (pageContext.type === 'city' || pageContext.type === 'neighborhood') {
-    lookupHint = `\nThis is a local landing page for visitors in ${pageContext.name}. Lean into local relevance — they're a homeowner or business owner there. Mention same-day service is available, address them as a neighbor, and naturally bring up that Steve's office is at 40960 California Oaks Rd in Murrieta (close by).`;
+    lookupHint = `\nThis is a local landing page for visitors in ${pageContext.name}. Lean into local relevance — they're a homeowner or business owner there. Mention same-day service is available, address them as a neighbor, and emphasize that Steve's is locally based in the Murrieta-Temecula Valley (we come to them — no need to come to us).`;
   }
 
   const typeLabel = pageContext.type.charAt(0).toUpperCase() + pageContext.type.slice(1);
@@ -184,11 +184,15 @@ Name: ${b.name}
 Tagline: ${b.tagline}
 Phone (call or text): ${b.phone}
 Email: ${b.email}
-Address: ${b.address?.line1}, ${b.address?.city}, ${b.address?.state} ${b.address?.zip}
 Years in business: ${b.yearsInBusiness}
 Rating: ${b.rating} stars based on ${b.reviewCount} Google reviews
 Credentials: ${(b.credentials || []).join(', ')}
 Ownership: ${b.ownership}
+
+IMPORTANT — SERVICE AREA BUSINESS:
+Steve's is a mobile HVAC contractor — there is NO public storefront or office that customers visit. Steve and his techs come to the customer's location. If anyone asks for a physical address, location to visit, or "where are you", make it clear we're a local mobile HVAC contractor based in the Murrieta-Temecula Valley that comes to them. Never invite a visitor to drop by an office. Never give out a street address. If they want to schedule a visit, ask for THEIR address so we can come to them.
+
+Service area: ${b.address?.city || 'Murrieta'}, ${b.address?.state || 'CA'} ${b.address?.zip || ''} (Southwest Riverside County)
 
 Hours:
   Monday–Friday: ${b.hours?.monday_friday}
