@@ -1501,6 +1501,30 @@
       .ft-nap-name { font-size: 1.25rem; }
       .ft-nap-addr { font-size: .92rem; }
     }
+  
+    /* ─── Straight-Answer Guarantee section ─── */
+    .sgr-sec { background: var(--mid); padding: 80px 0; border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); }
+    .sgr-head { text-align: center; max-width: 720px; margin: 0 auto 50px; }
+    .sgr-head .eyebrow { justify-content: center; display: flex; align-items: center; gap: 10px; }
+    .sgr-head .section-h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--white); line-height: 1.1; margin: 14px 0 16px; letter-spacing: .02em; }
+    .sgr-head .section-h2 em { font-style: normal; color: var(--red); }
+    .sgr-head p { color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 580px; margin: 0 auto; }
+    .sgr-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
+    .sgr-card { background: rgba(11,29,58,.55); border: 1px solid rgba(74,122,181,.15); border-radius: 10px; padding: 28px 26px; transition: transform .25s, border-color .25s, background .25s; }
+    .sgr-card:hover { transform: translateY(-4px); border-color: rgba(196,30,30,.4); background: rgba(11,29,58,.75); }
+    .sgr-dash { display: inline-block; width: 36px; height: 3px; background: var(--red); margin-bottom: 14px; border-radius: 2px; }
+    .sgr-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.45rem; color: var(--white); letter-spacing: .06em; line-height: 1.1; margin: 0 0 10px; text-transform: uppercase; }
+    .sgr-card p { color: rgba(255,255,255,.72); font-size: .92rem; line-height: 1.7; margin: 0; }
+    /* The 4th and 5th cards on the second row should center on a 3-column grid */
+    .sgr-card.sgr-row2 { grid-column: auto; }
+    @media (max-width: 900px) {
+      .sgr-sec { padding: 60px 0; }
+      .sgr-grid { grid-template-columns: 1fr 1fr; gap: 16px; max-width: 720px; padding: 0 20px; }
+      .sgr-card { padding: 24px 22px; }
+    }
+    @media (max-width: 560px) {
+      .sgr-grid { grid-template-columns: 1fr; }
+    }
   </style>
 
   <!-- ═════════════════════════════════════════════════════════════════════
@@ -1890,6 +1914,44 @@
       </div>
     </div>
   </div></div></section>
+
+  <!-- ════════════════ STEVE'S STRAIGHT-ANSWER GUARANTEE ════════════════ -->
+  <section class="sgr-sec" aria-labelledby="sgr-heading">
+    <div class="container">
+      <div class="sgr-head fi">
+        <div class="eyebrow">The Steve's Promise</div>
+        <h2 class="section-h2" id="sgr-heading">Steve's <em>Straight-Answer</em> Guarantee</h2>
+        <p>Five promises we don't break. If we ever do, hold us to it.</p>
+      </div>
+      <div class="sgr-grid">
+        <div class="sgr-card fi">
+          <span class="sgr-dash" aria-hidden="true"></span>
+          <h3>Honest Pricing</h3>
+          <p>We quote it, we honor it. No surprise charges, no upsell, no "while we're here" add-ons.</p>
+        </div>
+        <div class="sgr-card fi">
+          <span class="sgr-dash" aria-hidden="true"></span>
+          <h3>On-Time Arrival</h3>
+          <p>If we say we'll be there at 2 PM, we're there at 2 PM. If something delays us, you get a call.</p>
+        </div>
+        <div class="sgr-card fi">
+          <span class="sgr-dash" aria-hidden="true"></span>
+          <h3>Written Estimate Before Work</h3>
+          <p>You see the price in writing before any wrench turns. Approve it or don't &mdash; no pressure.</p>
+        </div>
+        <div class="sgr-card fi">
+          <span class="sgr-dash" aria-hidden="true"></span>
+          <h3>Real Techs, No Salesmen</h3>
+          <p>The person diagnosing your system is the same person fixing it. No commissioned salespeople pushing equipment you don't need.</p>
+        </div>
+        <div class="sgr-card fi">
+          <span class="sgr-dash" aria-hidden="true"></span>
+          <h3>Satisfaction or It's Free</h3>
+          <p>If you're not satisfied with the work, we'll make it right or you don't pay. Period.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ══════════════════════════════ FAQ ══════════════════════════════ -->
   <section class="faq-sec" id="faq" aria-labelledby="faq-heading">
