@@ -697,11 +697,18 @@
     .stars { color: var(--gold); font-size: 1.2rem; letter-spacing: 3px; }
     .rat-c { font-size: .9rem; color: var(--muted); }
     .rat-btn { font-size: .82rem; padding: 11px 22px; }
-    .rev-g { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .rc { background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 30px; position: relative; overflow: hidden; transition: border-color .3s, transform .3s; }
+    .rev-g { position: relative; overflow: hidden; padding: 4px 0; }
+    .rev-track { display: flex; gap: 20px; transition: transform .55s cubic-bezier(.4,.2,.2,1); will-change: transform; }
+    .rc { background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 30px; position: relative; overflow: hidden; transition: border-color .3s, transform .3s; flex: 0 0 auto; min-width: 0; box-sizing: border-box; }
     .rc:hover { border-color: rgba(74,122,181,.3); transform: translateY(-4px); }
-    .rc::before { content: '"'; position: absolute; top: 10px; right: 18px; font-size: 6rem; line-height: 1; color: rgba(26,63,122,.18); font-family: Georgia, serif; }
     .rc-st { color: var(--gold); font-size: .9rem; letter-spacing: 2px; margin-bottom: 12px; }
+    /* Carousel arrows */
+    .rev-arr { position: absolute; top: 50%; transform: translateY(-50%); width: 48px; height: 48px; border-radius: 50%; background: rgba(11,29,58,.85); border: 1px solid rgba(255,255,255,.12); color: var(--white); cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 5; transition: background .2s, border-color .2s, transform .2s; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 0; }
+    .rev-arr:hover { background: var(--red); border-color: var(--red); transform: translateY(-50%) scale(1.06); }
+    .rev-arr:focus-visible { outline: 2px solid var(--blue2); outline-offset: 3px; }
+    .rev-arr svg { width: 18px; height: 18px; fill: currentColor; }
+    .rev-prev { left: 8px; }
+    .rev-next { right: 8px; }
     .rc-tx { font-size: .92rem; color: rgba(255,255,255,.78); line-height: 1.7; margin-bottom: 18px; }
     .rc-au { font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .78rem; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
     .rc-au strong { color: var(--white); }
@@ -1456,7 +1463,9 @@
       .why-g { grid-template-columns: 1fr; }
       .why-vis { display: none; }
       .rev-intro { grid-template-columns: 1fr; }
-      .rev-g { grid-template-columns: 1fr; }
+      .rev-arr { width: 40px; height: 40px; }
+      .rev-prev { left: 4px; }
+      .rev-next { right: 4px; }
       .rv-ag { grid-template-columns: 1fr; }
       .ab-sp { grid-template-columns: 1fr; padding: 60px 0; }
       .ab-vis { display: none; }
@@ -1611,46 +1620,34 @@
       "worstRating": "1"
     },
     "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Sarah Switzer" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-04-02",
-        "reviewBody": "Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!",
-        "publisher": { "@type": "Organization", "name": "Google" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Richard Leon" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-04-02",
-        "reviewBody": "Steve's Air Conditioning & Heating are the real deal, honest, reliable & they don't try to up-sell you. Been using Steve's for years. Great company! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!",
-        "publisher": { "@type": "Organization", "name": "Google" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Christina Ayguasbiba" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-04-25",
-        "reviewBody": "Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.",
-        "publisher": { "@type": "Organization", "name": "Google" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Paul Haug" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-04-04",
-        "reviewBody": "Steve's technician came in, they were professional, assessed the problem, told me my options and when I made my decision they gave me a quote. They found a problem I did not know about — it was a quick fix and I was up and running. They cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.",
-        "publisher": { "@type": "Organization", "name": "Google" }
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Yagui Yaqui" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-04-02",
-        "reviewBody": "Michael Castanon was very professional and knowledgeable about concerns. He serviced all that was necessary in a timely manner. Very pleasant to interact with.",
-        "publisher": { "@type": "Organization", "name": "Google" }
-      }
+      {"@type": "Review", "author": {"@type": "Person", "name": "Sarah Switzer"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-02", "reviewBody": "Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Christina Ayguasbiba"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-25", "reviewBody": "Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Jim Fritz"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-03-04", "reviewBody": "They showed up on time, did the job neatly and quickly, and even helped me with the paperwork for the financing. I highly recommend Steve's AC and Heating.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Captain Bungee"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-10-04", "reviewBody": "Matthew came to our house promptly. He was very nice. It took him less than an hour to replace the run capacitor. He went over and above by checking in the attic crawlspace for odors.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Steve Swanson"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-06-04", "reviewBody": "I've used Steve's services for my properties on 3 separate occasions and he has always done a fantastic job. The blower motor on my condenser went out and he replaced the part saving me thousands and most recently he re charged my system so I can get through the rest of the summer in comfort. Highly recommend once again!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Jessica Pennington"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Always 5 stars. Honest, efficient, knowledgeable. Highly recommend.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Paul Haug"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Steve's technician came in they were professionals, assets the problem, told me my options and when I made my decision the gave me a quote. They found a problem I did not know it was a quick fix and I was up and running. The cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Richard Leon"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Steve's Air Conditioning & Heating are the real deal, honest, reliable & they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company When it comes to my AC and heater. Again, Great company I highly recommend!!! 5 STARS", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "John Buckley"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Steve was professional, prompt and knowledgeable. Resurrected my 45+ year old air conditioner and saved me from having to replace it. Would definitely recommend him and his team to all my friends and family.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "John Gabriel"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "We had another great experience with Steve's AC and Heating. This is our second time using them, and they continue to deliver solid service. Michael, one of their service techs, arrived right on time and was courteous and professional.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "John Ireland"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Steve uses a modern scheduling and communication system to keep customers informed. Appointment was scheduled quickly. The AC was diagnosed and repaired with parts on-hand (no waiting for part to be ordered).", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Chad Yeager"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Steve is awesome. Very friendly and makes it easy to understand exactly what he is doing. He even gave me some advice on other things I want to do around the house. Definitely recommend these guys.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Tony E"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Profesional, timely and explained the work. Also applied a discount.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Robynn Flores"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-01-04", "reviewBody": "Steve's is awesome! We have used them for both a/c and heating service - each time they have been quick, professional, and affordable. We appreciate their honesty and reliability - a great resource and business for our community!!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Mary Ann Conover"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-04-04", "reviewBody": "Michael arrived promptly and replaced a bad connector and fuses. He made the special effort to come out, despite the team being short one member on that day. Thank you, Steve's A/C!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Dino Dean Gori"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-12-04", "reviewBody": "They promptly came over, went up to the furnace, cleaned the heat sensor and got my Furnace working within 20 min. All for the cost of a service call. These guys are not only honest, but professional. I highly recommend them.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "mnmusn"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-03-04", "reviewBody": "Per usual, Steve's AC and Heating came through as the experts and professionals they are. Efficient, proficient, courteous and THOROUGH, they are the best I have used.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "mark sherwood"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-03-04", "reviewBody": "Excellent service provided by Steve. Always honest, direct and knows his trade very well. I highly recommend Steve's A/C service for all your a/c - heater needs. You get what you pay for!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Amy & Bobby Williamson"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-03-04", "reviewBody": "This company is wonderful to deal with. They always are able to get us an appointment in a timely manner and offer very competitive pricing for their services. They are professional, honest and easy to deal with from the phone call to the service tech and all the way to Steve himself. Highly recommended this business!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Mr. Rey"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-03-04", "reviewBody": "Steve is very professional and prompt. He took care of our home's heating unit repair in minutes. I highly recommend him for any heating service needs you have. Thank you again Steve.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Richard Goldner"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-02-04", "reviewBody": "Timely and honest service. Will recommend to friends and have them service my heating and AC again. Both Jarred and Mickey were knowledgeable and easy to identify and fix the problem. I'm very pleased with all phases of Steves AC and Heating services.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Dindo Masanque"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-01-04", "reviewBody": "Prompt and professional. Easy scheduling and follow through.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "jquizzlestick"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-01-04", "reviewBody": "Steve and the crew are all great! Highly recommend for all your heating and air repairs!", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Willlam Barnum"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2026-01-04", "reviewBody": "These guys rock !! I've used them on several occasions and have always been impressed with their quality of work, communication and professionalism. I would highly recommend Steve's heating and air conditioning.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Richard Grace"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-12-04", "reviewBody": "great service and customer relations. they had completed my service call in less than an hour", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "Christine Ko"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-11-04", "reviewBody": "We had another company come out for a furnace tune because I was given a special deal. They told me that I needed a pricey service done. I was suspicious and called Steve for a second opinion. My suspicions were right.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "sandy ramirez"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-11-04", "reviewBody": "Steve's AC & Heating deserves more than 5 stars! When honesty and excellent customer service is most often a thing of the past, it is so refreshing to have the experience I had today. From my initial call yesterday, to the job completion, everything was handled with care.", "publisher": {"@type": "Organization", "name": "Google"}},
+      {"@type": "Review", "author": {"@type": "Person", "name": "J A"}, "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "datePublished": "2025-11-04", "reviewBody": "Michael was prompt, straight forward willing to answer questions and provide suggestions without pushing to sell something. Definitely have found a dependable HVAC company and local entrepreneur, not a big franchised company.", "publisher": {"@type": "Organization", "name": "Google"}}
     ],
     "knowsAbout": [
       "Air Conditioning Repair","Central Air Installation","Furnace Installation","Heat Pump Systems",
@@ -1877,10 +1874,43 @@
         <a href="/#reviews" class="btn btn-blue rat-btn">Read All Reviews</a>
       </div>
     </div>
-    <div class="rev-g">
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!</p><div class="rc-au"><strong>Sarah Switzer</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's Air Conditioning &amp; Heating are the real deal, honest, reliable &amp; they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!!!</p><div class="rc-au"><strong>Richard Leon</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.</p><div class="rc-au"><strong>Christina Ayguasbiba</strong> <span class="rc-via">via Google</span></div></div>
+    <div class="rev-g" role="region" aria-label="Customer reviews carousel" aria-roledescription="carousel">
+      <div class="rev-track">
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!</p><div class="rc-au"><strong>Sarah Switzer</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.</p><div class="rc-au"><strong>Christina Ayguasbiba</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">They showed up on time, did the job neatly and quickly, and even helped me with the paperwork for the financing. I highly recommend Steve's AC and Heating.</p><div class="rc-au"><strong>Jim Fritz</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Matthew came to our house promptly. He was very nice. It took him less than an hour to replace the run capacitor. He went over and above by checking in the attic crawlspace for odors.</p><div class="rc-au"><strong>Captain Bungee</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">I've used Steve's services for my properties on 3 separate occasions and he has always done a fantastic job. The blower motor on my condenser went out and he replaced the part saving me thousands and most recently he re charged my system so I can get through the rest of the summer in comfort. Highly recommend once again!</p><div class="rc-au"><strong>Steve Swanson</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Always 5 stars. Honest, efficient, knowledgeable. Highly recommend.</p><div class="rc-au"><strong>Jessica Pennington</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve's technician came in they were professionals, assets the problem, told me my options and when I made my decision the gave me a quote. They found a problem I did not know it was a quick fix and I was up and running. The cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.</p><div class="rc-au"><strong>Paul Haug</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve's Air Conditioning &amp; Heating are the real deal, honest, reliable &amp; they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company When it comes to my AC and heater. Again, Great company I highly recommend!!! 5 STARS</p><div class="rc-au"><strong>Richard Leon</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve was professional, prompt and knowledgeable. Resurrected my 45+ year old air conditioner and saved me from having to replace it. Would definitely recommend him and his team to all my friends and family.</p><div class="rc-au"><strong>John Buckley</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">We had another great experience with Steve's AC and Heating. This is our second time using them, and they continue to deliver solid service. Michael, one of their service techs, arrived right on time and was courteous and professional.</p><div class="rc-au"><strong>John Gabriel</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve uses a modern scheduling and communication system to keep customers informed. Appointment was scheduled quickly. The AC was diagnosed and repaired with parts on-hand (no waiting for part to be ordered).</p><div class="rc-au"><strong>John Ireland</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve is awesome. Very friendly and makes it easy to understand exactly what he is doing. He even gave me some advice on other things I want to do around the house. Definitely recommend these guys.</p><div class="rc-au"><strong>Chad Yeager</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Profesional, timely and explained the work. Also applied a discount.</p><div class="rc-au"><strong>Tony E</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve's is awesome! We have used them for both a/c and heating service - each time they have been quick, professional, and affordable. We appreciate their honesty and reliability - a great resource and business for our community!!</p><div class="rc-au"><strong>Robynn Flores</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Michael arrived promptly and replaced a bad connector and fuses. He made the special effort to come out, despite the team being short one member on that day. Thank you, Steve's A/C!</p><div class="rc-au"><strong>Mary Ann Conover</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">They promptly came over, went up to the furnace, cleaned the heat sensor and got my Furnace working within 20 min. All for the cost of a service call. These guys are not only honest, but professional. I highly recommend them.</p><div class="rc-au"><strong>Dino Dean Gori</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Per usual, Steve's AC and Heating came through as the experts and professionals they are. Efficient, proficient, courteous and THOROUGH, they are the best I have used.</p><div class="rc-au"><strong>mnmusn</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Excellent service provided by Steve. Always honest, direct and knows his trade very well. I highly recommend Steve's A/C service for all your a/c - heater needs. You get what you pay for!</p><div class="rc-au"><strong>mark sherwood</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">This company is wonderful to deal with. They always are able to get us an appointment in a timely manner and offer very competitive pricing for their services. They are professional, honest and easy to deal with from the phone call to the service tech and all the way to Steve himself. Highly recommended this business!</p><div class="rc-au"><strong>Amy &amp; Bobby Williamson</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve is very professional and prompt. He took care of our home's heating unit repair in minutes. I highly recommend him for any heating service needs you have. Thank you again Steve.</p><div class="rc-au"><strong>Mr. Rey</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Timely and honest service. Will recommend to friends and have them service my heating and AC again. Both Jarred and Mickey were knowledgeable and easy to identify and fix the problem. I'm very pleased with all phases of Steves AC and Heating services.</p><div class="rc-au"><strong>Richard Goldner</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Prompt and professional. Easy scheduling and follow through.</p><div class="rc-au"><strong>Dindo Masanque</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve and the crew are all great! Highly recommend for all your heating and air repairs!</p><div class="rc-au"><strong>jquizzlestick</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">These guys rock !! I've used them on several occasions and have always been impressed with their quality of work, communication and professionalism. I would highly recommend Steve's heating and air conditioning.</p><div class="rc-au"><strong>Willlam Barnum</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">great service and customer relations. they had completed my service call in less than an hour</p><div class="rc-au"><strong>Richard Grace</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">We had another company come out for a furnace tune because I was given a special deal. They told me that I needed a pricey service done. I was suspicious and called Steve for a second opinion. My suspicions were right.</p><div class="rc-au"><strong>Christine Ko</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Steve's AC &amp; Heating deserves more than 5 stars! When honesty and excellent customer service is most often a thing of the past, it is so refreshing to have the experience I had today. From my initial call yesterday, to the job completion, everything was handled with care.</p><div class="rc-au"><strong>sandy ramirez</strong> <span class="rc-via">via Google</span></div></div>
+        <div class="rc fi"><div class="rc-st" aria-label="5 out of 5 stars">★★★★★</div><p class="rc-tx">Michael was prompt, straight forward willing to answer questions and provide suggestions without pushing to sell something. Definitely have found a dependable HVAC company and local entrepreneur, not a big franchised company.</p><div class="rc-au"><strong>J A</strong> <span class="rc-via">via Google</span></div></div>
+      </div>
+      <button class="rev-arr rev-prev" type="button" aria-label="Previous reviews">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg>
+      </button>
+      <button class="rev-arr rev-next" type="button" aria-label="Next reviews">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4L13.2 12z"/></svg>
+      </button>
     </div>
     <div class="leave-review-block fi">
       <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
@@ -2317,6 +2347,91 @@ async function cbAsk(text) {
     videoStarted = true;
     clearTimeout(watchdog);
   }, { once: true });
+})();
+
+// ─── Reviews carousel ──────────────────────────────────────────────────────
+(() => {
+  const carousel = document.querySelector('.rev-g');
+  if (!carousel) return;
+  const track = carousel.querySelector('.rev-track');
+  const cards = track ? track.querySelectorAll('.rc') : [];
+  const prevBtn = carousel.querySelector('.rev-prev');
+  const nextBtn = carousel.querySelector('.rev-next');
+  if (!track || !cards.length || !prevBtn || !nextBtn) return;
+
+  const GAP = 20;
+  const AUTO_DELAY = 6000;
+  let index = 0;
+  let visible = window.innerWidth <= 768 ? 1 : 3;
+  let maxIndex = Math.max(0, cards.length - visible);
+  let cardWidth = 0;
+  let autoplayTimer = null;
+  let userInteracted = false;
+
+  function measure() {
+    const newVisible = window.innerWidth <= 768 ? 1 : 3;
+    visible = newVisible;
+    maxIndex = Math.max(0, cards.length - visible);
+    if (index > maxIndex) index = maxIndex;
+    const w = carousel.getBoundingClientRect().width;
+    cardWidth = visible === 1 ? w : (w - (visible - 1) * GAP) / visible;
+    cards.forEach(c => { c.style.width = cardWidth + 'px'; });
+    apply();
+  }
+
+  function apply() {
+    const offset = index * (cardWidth + GAP);
+    track.style.transform = 'translate3d(-' + offset + 'px,0,0)';
+  }
+
+  function next() { index = index >= maxIndex ? 0 : index + 1; apply(); }
+  function prev() { index = index <= 0 ? maxIndex : index - 1; apply(); }
+
+  function startAutoplay() {
+    if (userInteracted) return;
+    stopAutoplay();
+    autoplayTimer = setInterval(next, AUTO_DELAY);
+  }
+  function stopAutoplay() {
+    if (autoplayTimer) { clearInterval(autoplayTimer); autoplayTimer = null; }
+  }
+
+  prevBtn.addEventListener('click', () => { prev(); userInteracted = true; stopAutoplay(); });
+  nextBtn.addEventListener('click', () => { next(); userInteracted = true; stopAutoplay(); });
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', () => { if (!userInteracted) startAutoplay(); });
+  carousel.addEventListener('focusin', stopAutoplay);
+
+  // Touch swipe
+  let touchStartX = 0, touchActive = false;
+  track.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchActive = true;
+    stopAutoplay();
+  }, { passive: true });
+  track.addEventListener('touchend', (e) => {
+    if (!touchActive) return;
+    touchActive = false;
+    const diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 40) {
+      userInteracted = true;
+      if (diff > 0) next(); else prev();
+    }
+  }, { passive: true });
+
+  // Respect reduced motion — no autoplay
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Resize handling (debounced)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(measure, 150);
+  });
+
+  // Init
+  measure();
+  if (!reduceMotion) startAutoplay();
 })();
 </script>
 </body>
