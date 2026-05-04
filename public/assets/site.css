@@ -194,7 +194,6 @@ body {
    PAGE HERO — compact title strip for non-homepage pages
    ═══════════════════════════════════════════════════════════════════ */
 .ph { background: linear-gradient(135deg, var(--navy) 0%, var(--dark) 100%); padding: 36px 40px 32px; border-bottom: 1px solid rgba(255,255,255,.06); position: relative; overflow: hidden; }
-.ph::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(74,122,181,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(74,122,181,.05) 1px, transparent 1px); background-size: 50px 50px; }
 .ph-in { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
 .ph-in .eyebrow { margin-bottom: 0; flex-shrink: 0; }
 .ph-in h1, .ph-in h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); letter-spacing: .04em; margin: 0; line-height: 1; }
