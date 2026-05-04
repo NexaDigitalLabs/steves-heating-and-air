@@ -298,7 +298,7 @@
       z-index: 4;
       max-width: 900px;
       width: 100%;
-      padding: 80px 40px;
+      padding: 40px 40px 80px;
       text-align: center;
     }
 
@@ -325,7 +325,7 @@
 
     .h-h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.4rem, 7vw, 6.5rem);
+      font-size: clamp(4.5rem, 10vw, 8rem);
       line-height: .9;
       letter-spacing: .04em;
       margin-bottom: 28px;
@@ -333,7 +333,7 @@
       text-shadow: 0 2px 24px rgba(0,0,0,.6);
     }
     .h-h1 .l1 { display: block; color: var(--white); }
-    .h-h1 .l2 { display: block; color: var(--blueAcc); text-shadow: 0 2px 10px rgba(0,0,0,.6); }
+    .h-h1 .l2 { display: block; color: var(--blueAcc); text-shadow: 0 2px 10px rgba(0,0,0,.6); font-size: 70%; letter-spacing: .03em; margin-top: 4px; }
 
     .h-tagline {
       font-family: 'Bebas Neue', sans-serif;
@@ -1404,7 +1404,7 @@
        ═══════════════════════════════════════════════════════════════════ */
     @media (max-width: 1100px) {
       #hero { min-height: 75vh; }
-      .h-content { padding: 60px 30px; }
+      .h-content { padding: 24px 30px 60px; }
       .hsg { grid-template-columns: repeat(2, 1fr); }
       .ilf-in { grid-template-columns: 1fr; gap: 24px; text-align: center; }
       .ilf-form { grid-template-columns: 1fr 1fr; }
@@ -1423,7 +1423,7 @@
       .ham.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
       #hero { min-height: 92vh; }
       .h-content { padding: 80px 20px 60px; }
-      .h-h1 { font-size: 2.8rem; margin-bottom: 20px; letter-spacing: .02em; }
+      .h-h1 { font-size: 3.4rem; margin-bottom: 20px; letter-spacing: .02em; }
       .h-tagline { font-size: 1.1rem; letter-spacing: .14em; white-space: nowrap; margin-bottom: 32px; }
       .h-area {
         gap: 12px;
@@ -1526,6 +1526,11 @@
     }
     @media (max-width: 560px) {
       .sgr-grid { grid-template-columns: 1fr; }
+    }
+  
+    @media (max-width: 380px) {
+      .h-h1 { font-size: 2.6rem; }
+      .h-h1 .l2 { font-size: 75%; }
     }
   </style>
 
@@ -1762,8 +1767,8 @@
     <!-- Layer 4: centered text content -->
     <div class="h-content">
       <h1 class="h-h1 fade-stage fade-s1">
-        <span class="l1">Murrieta &amp; Temecula</span>
-        <span class="l2">Honest HVAC</span>
+        <span class="l1">Honest HVAC</span>
+        <span class="l2">Murrieta &middot; Temecula</span>
       </h1>
       <div class="h-tagline fade-stage fade-s2">Same-Day Service · NATE-Certified · No Upsells</div>
       <div class="h-ctas fade-stage fade-s3">
@@ -1771,8 +1776,8 @@
       </div>
       <div class="h-trust fade-stage fade-s3">
         <div class="ht-item"><div class="ht-val">20<span>+</span></div><div class="ht-lbl">Years in SoCal</div></div>
-        <div class="ht-item"><div class="ht-val">612<span>+</span></div><div class="ht-lbl">Five-Star Reviews</div></div>
         <div class="ht-item"><div class="ht-val">5<span>★</span></div><div class="ht-lbl">Avg Rating</div></div>
+        <div class="ht-item"><div class="ht-val">612<span>+</span></div><div class="ht-lbl">Five-Star Reviews</div></div>
       </div>
     </div>
   </section>
