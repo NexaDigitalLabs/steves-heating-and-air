@@ -1,1 +1,491 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HVAC, AC & Heating Repair in Bear Creek, Murrieta CA | Steve's</title>
+  <meta name="description" content="Local NATE-certified HVAC, AC repair, and heating service in the gated Bear Creek golf community of Murrieta, CA. Same-day emergency response. Specialists in established-home retrofits. Call (951) 634-3233."/>
+  <meta name="theme-color" content="#0B1D3A"/>
+  <link rel="icon" href="/images/favicon.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/murrieta/bear-creek/"/>
+
+  <meta property="og:title" content="HVAC, AC &amp; Heating Repair in Bear Creek, Murrieta | Steve's"/>
+  <meta property="og:description" content="Same-day HVAC service in gated Bear Creek golf community. NATE-certified. Local since 2004."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/murrieta/bear-creek/"/>
+  <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="HVAC, AC &amp; Heating Repair in Bear Creek | Steve's"/>
+  <meta name="twitter:description" content="Same-day HVAC service in Bear Creek, Murrieta. Call (951) 634-3233."/>
+  <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+
+  <meta name="geo.region" content="US-CA"/>
+  <meta name="geo.placename" content="Bear Creek, Murrieta, California"/>
+  <meta name="geo.position" content="33.5239;-117.2814"/>
+  <meta name="ICBM" content="33.5239, -117.2814"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+
+  <!-- Page context for chatbot -->
+  <meta name="page-context" content="neighborhood:bear-creek|Bear Creek (Murrieta)"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Oswald:wght@500;600;700&amp;family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="/assets/site.css"/>
+  <link rel="stylesheet" href="/assets/chatbot.css"/>
+
+  <!-- Page-specific styles for the city page -->
+  <style>
+    /* Local cred strip — under hero, mini-stats */
+    .ccred { background: var(--mid); padding: 32px 0; border-top: 1px solid rgba(255,255,255,.05); border-bottom: 1px solid rgba(255,255,255,.05); }
+    .ccred-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; padding: 0 24px; text-align: center; }
+    .ccred-i { padding: 0 12px; }
+    .ccred-num { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: var(--red); line-height: 1; margin-bottom: 6px; }
+    .ccred-tx { font-family: 'Rajdhani', sans-serif; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.7); }
+    @media (max-width: 768px) { .ccred-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; } .ccred-num { font-size: 1.9rem; } }
+
+    /* Local intro section */
+    .cintro { background: var(--dark); padding: 70px 0; }
+    .cintro-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 50px; max-width: 1100px; margin: 0 auto; padding: 0 24px; align-items: start; }
+    .cintro-tx h2 { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: var(--white); margin-bottom: 24px; line-height: 1.1; letter-spacing: .01em; }
+    .cintro-tx p { color: rgba(255,255,255,.78); font-size: 1rem; line-height: 1.75; margin-bottom: 18px; }
+    .cintro-tx p strong { color: var(--white); }
+    .cintro-side { background: var(--mid); border-radius: var(--r-lg); padding: 28px; border: 1px solid rgba(255,255,255,.06); border-left: 3px solid var(--red); }
+    .cintro-side h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: .04em; color: var(--white); margin-bottom: 18px; }
+    .cintro-side ul { list-style: none; padding: 0; margin: 0; }
+    .cintro-side li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.06); display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.85); font-size: .94rem; }
+    .cintro-side li:last-child { border-bottom: none; }
+    .cintro-side li::before { content: '✓'; color: var(--red); font-weight: bold; flex-shrink: 0; }
+    @media (max-width: 900px) { .cintro-grid { grid-template-columns: 1fr; gap: 32px; } .cintro-tx h2 { font-size: 1.9rem; } }
+
+    /* Service grid in city page (compact 3-col) */
+    .csvc { background: var(--mid); padding: 70px 0; border-top: 1px solid rgba(255,255,255,.05); }
+    .csvc-h { text-align: center; max-width: 720px; margin: 0 auto 40px; }
+    .csvc-h h2 { font-family: 'Anton', sans-serif; font-size: 2.2rem; color: var(--white); margin-bottom: 14px; line-height: 1.1; }
+    .csvc-h p { color: rgba(255,255,255,.72); font-size: 1rem; line-height: 1.6; }
+    .csvc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .csvc-card { background: var(--dark); border: 1px solid rgba(255,255,255,.07); border-radius: 12px; padding: 22px; text-decoration: none; color: inherit; display: flex; align-items: center; gap: 14px; transition: border-color .25s, transform .25s; }
+    .csvc-card:hover { border-color: var(--red); transform: translateY(-3px); }
+    .csvc-ic { width: 42px; height: 42px; border-radius: 9px; background: var(--mid); border: 1px solid rgba(74,122,181,.3); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+    .csvc-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .04em; color: var(--white); line-height: 1.2; }
+    .csvc-arrow { margin-left: auto; color: var(--sky); font-size: 1.1rem; transition: transform .25s; }
+    .csvc-card:hover .csvc-arrow { transform: translateX(4px); }
+    @media (max-width: 900px) { .csvc-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .csvc-grid { grid-template-columns: 1fr; } }
+
+    /* Neighborhoods strip */
+    .cnbhd { background: var(--dark); padding: 60px 0; }
+    .cnbhd-h { text-align: center; max-width: 760px; margin: 0 auto 32px; }
+    .cnbhd-h h2 { font-family: 'Anton', sans-serif; font-size: 2rem; color: var(--white); margin-bottom: 12px; }
+    .cnbhd-h p { color: rgba(255,255,255,.7); font-size: .98rem; }
+    .cnbhd-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .cnbhd-pill { background: var(--mid); border: 1px solid rgba(255,255,255,.07); border-radius: 999px; padding: 14px 22px; text-align: center; color: rgba(255,255,255,.92); text-decoration: none; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .95rem; letter-spacing: .04em; transition: border-color .2s, color .2s; }
+    .cnbhd-pill:hover { border-color: var(--red); color: var(--white); }
+    @media (max-width: 700px) { .cnbhd-grid { grid-template-columns: 1fr; } }
+  </style>
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       JSON-LD: HVACBusiness (Bear Creek neighborhood) + BreadcrumbList + FAQPage
+       ═════════════════════════════════════════════════════════════════════ -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "@id": "https://steves-heating-and-air.vercel.app/murrieta/bear-creek/#business",
+    "name": "Steve's Air Conditioning & Heating",
+    "description": "Local NATE-certified HVAC, AC, and heating contractor serving the Bear Creek neighborhood of Murrieta, CA. Same-day emergency service.",
+    "url": "https://steves-heating-and-air.vercel.app/murrieta/bear-creek/",
+    "telephone": "+19516343233",
+    "email": "stevesac_6708@yahoo.com",
+    "priceRange": "$$",
+    "image": "https://steves-heating-and-air.vercel.app/images/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Murrieta",
+      "addressRegion": "CA",
+      "postalCode": "92562",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.5239,
+      "longitude": -117.2814
+    },
+    "areaServed": [
+      { "@type": "Neighborhood", "name": "Bear Creek", "containedInPlace": { "@type": "City", "name": "Murrieta", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } } }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "612"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home",     "item": "https://steves-heating-and-air.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "Service Area",   "item": "https://steves-heating-and-air.vercel.app/service-area/" },
+      { "@type": "ListItem", "position": 3, "name": "Murrieta", "item": "https://steves-heating-and-air.vercel.app/murrieta/" },
+      { "@type": "ListItem", "position": 4, "name": "Bear Creek", "item": "https://steves-heating-and-air.vercel.app/murrieta/bear-creek/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://steves-heating-and-air.vercel.app/murrieta/bear-creek/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How fast can you respond in Bear Creek?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Bear Creek addresses, we typically have a NATE-certified tech on-site within 1-3 hours during business hours. We're locally based in Murrieta. Call (951) 634-3233 for fastest service. We're familiar with the gated community's check-in protocol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are older Bear Creek homes properly sized for current summer heat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often not. Many original 1980s and 1990s Bear Creek HVAC systems were sized for cooler historical climate norms, and they struggle during today's 105°F+ summer afternoons. We do a Manual J load calculation on every replacement to right-size the new system for current conditions, which usually means lower energy bills AND better comfort."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can shaded side-yard locations damage my Bear Creek AC condenser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but not for the reason most people think. Shade itself is fine — it actually helps efficiency. The problem is restricted airflow when shrubs, fences, or sheds are too close. The condenser needs at least 24\" of clear space on all sides and unobstructed exhaust. Mature landscaping in Bear Creek often crowds the unit over time, causing premature compressor failure. We'll inspect and recommend if relocation or clearance work is needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you service two-story Bear Creek homes with single HVAC systems?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — and this is a common Bear Creek scenario. Single-system two-story homes typically have hot upstairs in summer and cool upstairs in winter due to the natural stratification. We can solve this with a few approaches depending on your situation: zone dampers retrofit, balancing the existing system better, or in some cases adding a second smaller system for the upper floor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed to work in Bear Creek?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — fully Licensed, Bonded, and Insured. NATE-certified technicians. California CSLB License #1031139. We've been the trusted HVAC contractor for Bear Creek homeowners for over 20 years."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- TOP FLAG BANNER -->
+<div class="top-banner" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="/">
+    <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-ul" id="navUl">
+    <li><a href="/">Home</a></li>
+    <li class="has-drop">
+      <a href="/services/">Services ▾</a>
+      <ul class="drop">
+        <li><a href="/services/air-conditioning/"><span class="drop-ic">❄️</span><span class="drop-tx">Air Conditioning</span></a></li>
+        <li><a href="/services/furnaces/"><span class="drop-ic">🔥</span><span class="drop-tx">Furnaces</span></a></li>
+        <li><a href="/services/heat-pumps/"><span class="drop-ic">♨️</span><span class="drop-tx">Heat Pumps</span></a></li>
+        <li><a href="/services/residential-refrigeration/"><span class="drop-ic">🏠</span><span class="drop-tx">Residential Refrigeration</span></a></li>
+        <li><a href="/services/commercial-refrigeration/"><span class="drop-ic">🏢</span><span class="drop-tx">Commercial Refrigeration</span></a></li>
+        <li><a href="/services/hvac-maintenance/"><span class="drop-ic">🔧</span><span class="drop-tx">HVAC Maintenance</span></a></li>
+        <li><a href="/services/air-quality-control/"><span class="drop-ic">💨</span><span class="drop-tx">Air Quality Control</span></a></li>
+        <li><a href="/services/water-heaters/"><span class="drop-ic">💧</span><span class="drop-tx">Water Heaters</span></a></li>
+        <li><a href="/services/energy-audits/"><span class="drop-ic">⚡</span><span class="drop-tx">Energy Audits</span></a></li>
+      </ul>
+    </li>
+    <li><a href="/#about">About Us</a></li>
+    <li><a href="/#reviews">Reviews</a></li>
+    <li><a href="/service-area/" class="act">Service Area</a></li>
+    <li><a href="/#contact">Contact</a></li>
+    <li><a href="tel:9516343233" class="nav-cta-btn">📞 Schedule Now</a></li>
+  </ul>
+  <div class="ham" id="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-in">
+    <a href="/">Home</a>
+    <span class="crumb-sep">/</span>
+    <a href="/service-area/">Service Area</a>
+    <span class="crumb-sep">/</span>
+    <a href="/murrieta/">Murrieta</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-cur">Bear Creek</span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="ph">
+  <div class="ph-in">
+    <div class="eyebrow">Bear Creek, Murrieta, CA</div>
+    <h1>Bear Creek HVAC Service in Murrieta, California</h1>
+    <p>Local same-day HVAC, AC, and heating service across Bear Creek — the established gated golf community in west Murrieta. Specialists in older-home retrofits and dual-system service.</p>
+  </div>
+</div>
+
+<!-- LOCAL CREDIBILITY STRIP -->
+<section class="ccred">
+  <div class="ccred-grid">
+    <div class="ccred-i fi">
+      <div class="ccred-num">20+</div>
+      <div class="ccred-tx">Years in Bear Creek</div>
+    </div>
+    <div class="ccred-i fi">
+      <div class="ccred-num">612+</div>
+      <div class="ccred-tx">5-Star Reviews</div>
+    </div>
+    <div class="ccred-i fi">
+      <div class="ccred-num">1-3hr</div>
+      <div class="ccred-tx">Typical Response</div>
+    </div>
+    <div class="ccred-i fi">
+      <div class="ccred-num">NATE</div>
+      <div class="ccred-tx">Certified Techs</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL INTRO -->
+<section class="cintro">
+  <div class="cintro-grid">
+    <div class="cintro-tx fi">
+      <h2>Local HVAC Specialists for Bear Creek</h2>
+      <p>Bear Creek is one of west Murrieta's most established gated communities — built around the Bear Creek Golf Club, with homes dating from the late 1980s through the early 2000s. Steve's Air Conditioning &amp; Heating has been the trusted contractor in Bear Creek for <strong>over 20 years</strong>. Many of the original homes are now into their second or third HVAC system, and we've done a lot of those replacements.</p>
+      <p>Bear Creek's HVAC quirks: a lot of the original 1980s and early 90s homes were built with marginal HVAC sizing for Murrieta's actual summer heat (often during cooler historical climate norms), so even working systems sometimes can't keep up on 105°F days. Many homes are two-story with single HVAC systems, leading to upstairs/downstairs temperature imbalances. And the larger lots and mature landscaping mean some condenser units are tucked into shaded side-yards where airflow is restricted — a common cause of premature compressor failure.</p>
+      <p>We're locally based in Murrieta, so Bear Creek calls are typically on-site within 1-3 hours of your call. We work clean, respect the gated-community access protocols, and don't park trucks where they'll annoy the neighbors.</p>
+    </div>
+    <aside class="cintro-side fi">
+      <h3>Why Steve's in Bear Creek</h3>
+      <ul>
+        <li>Locally owned &amp; operated</li>
+        <li>20+ years serving Bear Creek</li>
+        <li>NATE-certified, Licensed, Bonded</li>
+        <li>5.0&#9733; on Google · 612+ reviews</li>
+        <li>Same-day emergency response</li>
+        <li>Honest pricing — no upsell</li>
+        <li>All major brands serviced</li>
+        <li>Free in-home estimates on installs</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- SERVICES IN BEAR CREEK -->
+<section class="csvc">
+  <div class="container">
+    <div class="csvc-h fi">
+      <h2>HVAC Services in Bear Creek</h2>
+      <p>Click any service for full details. Same-day response throughout Bear Creek.</p>
+    </div>
+    <div class="csvc-grid">
+      <a href="/services/air-conditioning/" class="csvc-card fi">
+        <div class="csvc-ic">❄️</div><div class="csvc-name">Air Conditioning</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/furnaces/" class="csvc-card fi">
+        <div class="csvc-ic">🔥</div><div class="csvc-name">Furnaces</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/heat-pumps/" class="csvc-card fi">
+        <div class="csvc-ic">♨️</div><div class="csvc-name">Heat Pumps</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/residential-refrigeration/" class="csvc-card fi">
+        <div class="csvc-ic">🏠</div><div class="csvc-name">Residential Refrigeration</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/commercial-refrigeration/" class="csvc-card fi">
+        <div class="csvc-ic">🏢</div><div class="csvc-name">Commercial Refrigeration</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/hvac-maintenance/" class="csvc-card fi">
+        <div class="csvc-ic">🔧</div><div class="csvc-name">HVAC Maintenance</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/air-quality-control/" class="csvc-card fi">
+        <div class="csvc-ic">💨</div><div class="csvc-name">Air Quality</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/water-heaters/" class="csvc-card fi">
+        <div class="csvc-ic">💧</div><div class="csvc-name">Water Heaters</div><span class="csvc-arrow">→</span>
+      </a>
+      <a href="/services/energy-audits/" class="csvc-card fi">
+        <div class="csvc-ic">⚡</div><div class="csvc-name">Energy Audits</div><span class="csvc-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ SECTION -->
+<section class="faq" aria-labelledby="bear-creek-faq-heading">
+  <div class="container">
+    <div class="faq-h fi">
+      <div class="eyebrow">Common Questions</div>
+      <h2 id="bear-creek-faq-heading">Bear Creek HVAC Questions</h2>
+      <p>Local answers about HVAC service in Bear Creek. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How fast can you respond in Bear Creek?</summary>
+        <div class="faq-body">For Bear Creek addresses, we typically have a NATE-certified tech on-site within 1-3 hours during business hours. We're locally based in Murrieta. Call (951) 634-3233 for fastest service. We're familiar with the gated community's check-in protocol.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Are older Bear Creek homes properly sized for current summer heat?</summary>
+        <div class="faq-body">Often not. Many original 1980s and 1990s Bear Creek HVAC systems were sized for cooler historical climate norms, and they struggle during today's 105°F+ summer afternoons. We do a Manual J load calculation on every replacement to right-size the new system for current conditions, which usually means lower energy bills AND better comfort.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can shaded side-yard locations damage my Bear Creek AC condenser?</summary>
+        <div class="faq-body">Yes, but not for the reason most people think. Shade itself is fine — it actually helps efficiency. The problem is restricted airflow when shrubs, fences, or sheds are too close. The condenser needs at least 24" of clear space on all sides and unobstructed exhaust. Mature landscaping in Bear Creek often crowds the unit over time, causing premature compressor failure. We'll inspect and recommend if relocation or clearance work is needed.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you service two-story Bear Creek homes with single HVAC systems?</summary>
+        <div class="faq-body">Yes — and this is a common Bear Creek scenario. Single-system two-story homes typically have hot upstairs in summer and cool upstairs in winter due to the natural stratification. We can solve this with a few approaches depending on your situation: zone dampers retrofit, balancing the existing system better, or in some cases adding a second smaller system for the upper floor.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Are you licensed to work in Bear Creek?</summary>
+        <div class="faq-body">Yes — fully Licensed, Bonded, and Insured. NATE-certified technicians. California CSLB License #1031139. We've been the trusted HVAC contractor for Bear Creek homeowners for over 20 years.</div>
+      </details>
+    </div>
+    <div class="faq-cta">
+      <p>Still have questions? We're here to help.</p>
+      <a href="tel:9516343233" class="btn btn-red">Call Steve</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cband">
+  <div class="cband-in">
+    <h2>Need HVAC Service in Bear Creek? <em style="font-style:normal;color:var(--red)">Call Steve.</em></h2>
+    <p>Same-day response in gated Bear Creek. Older-home retrofit specialists. NATE-certified. 20+ years serving Murrieta.</p>
+    <div class="cband-btns">
+      <a href="tel:9516343233" class="btn btn-red btn-lg">Call Steve</a>
+      <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<div class="bband">
+  <div class="btrack">
+    <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
+    <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-nap" itemscope itemtype="https://schema.org/HVACBusiness">
+    <div class="ft-nap-name" itemprop="name">Steve's Air Conditioning &amp; Heating</div>
+    <address class="ft-nap-addr">
+      <span>Serving Murrieta, Temecula &amp; Southwest Riverside County</span>
+      &nbsp;•&nbsp;
+      <a href="tel:9516343233" itemprop="telephone">(951) 634-3233</a>
+      &nbsp;•&nbsp;
+      <a href="mailto:stevesac_6708@yahoo.com" itemprop="email">stevesac_6708@yahoo.com</a>
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="display:none">
+        <span itemprop="addressLocality">Murrieta</span><span itemprop="addressRegion">CA</span><span itemprop="postalCode">92562</span>
+      </span>
+    </address>
+    <div class="ft-nap-meta">
+      <span>Mon–Fri 7am–6pm</span>•<span>Sat 8am–3pm</span>•<span>Sun Emergency Only</span>
+    </div>
+  </div>
+
+  <div class="ft-g">
+    <div class="ft-br">
+      <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
+      <div class="ft-br-tag">Honest &middot; Skilled &middot; Local</div>
+      <div class="ft-creds">
+        <span class="ft-cred"><strong>20+</strong> Years in Murrieta</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>NATE-Certified</strong> &middot; Licensed &middot; Bonded &middot; Insured</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
+      </div>
+    </div>
+    <div class="ft-c">
+      <h4>Services</h4>
+      <ul class="ft-services-ul">
+        <li><a href="/services/air-conditioning/">Air Conditioning</a></li>
+        <li><a href="/services/furnaces/">Furnaces</a></li>
+        <li><a href="/services/heat-pumps/">Heat Pumps</a></li>
+        <li><a href="/services/residential-refrigeration/">Residential Refrigeration</a></li>
+        <li><a href="/services/commercial-refrigeration/">Commercial Refrigeration</a></li>
+        <li><a href="/services/hvac-maintenance/">HVAC Maintenance</a></li>
+        <li><a href="/services/air-quality-control/">Air Quality Control</a></li>
+        <li><a href="/services/water-heaters/">Water Heaters</a></li>
+        <li><a href="/services/energy-audits/">Energy Audits</a></li>
+      </ul>
+    </div>
+    <div class="ft-c">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#reviews">Reviews</a></li>
+        <li><a href="/service-area/">Service Area</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="ft-c">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:9516343233">(951) 634-3233</a></li>
+        <li><a href="mailto:stevesac_6708@yahoo.com">stevesac_6708@yahoo.com</a></li>
+        <li><a href="/service-area/">Murrieta &amp; SW Riverside County</a></li>
+      </ul>
+      <h4 class="ft-follow-h">Follow Us</h4>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/Stevesairconditioningandheating/" target="_blank" rel="noopener noreferrer" aria-label="Steve's HVAC on Facebook" class="ft-social-lk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/steves_ac_and_heating/" target="_blank" rel="noopener noreferrer" aria-label="Steve's HVAC on Instagram" class="ft-social-lk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.85 5.85 0 0 0-2.13 1.38A5.85 5.85 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2026 Steve's Air Conditioning &amp; Heating — All rights reserved.</span>
+    <div class="ft-bs">
+      <span class="ft-b">✓ Licensed</span>
+      <span class="ft-b">✓ Bonded</span>
+      <span class="ft-b">✓ Insured</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:9516343233" class="sticall" aria-label="Call Steve's HVAC at (951) 634-3233">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+  </svg>
+</a>
+
+<script defer src="/assets/site.js"></script>
+<script defer src="/assets/chatbot.js"></script>
+
+</body>
+</html>
