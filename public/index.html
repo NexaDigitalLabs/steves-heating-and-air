@@ -755,6 +755,22 @@
     }
 
     /* CTA band */
+    /* ═══════════════════════════════════════════════════════════════════
+       HOMEPAGE PHOTO CHECK TEASER (.hpc) — teases /diagnose feature
+       ═══════════════════════════════════════════════════════════════════ */
+    .hpc { background: var(--mid); padding: 80px 0; border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); position: relative; overflow: hidden; }
+    .hpc::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at top right, rgba(74,122,181,.06) 0%, transparent 55%); pointer-events: none; }
+    .hpc-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+    .hpc-copy .section-h2 { margin: 0 0 18px; }
+    .hpc-sub { color: rgba(255,255,255,.78); font-size: 1.05rem; line-height: 1.7; margin-bottom: 32px; max-width: 520px; }
+    .hpc-steps { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px; }
+    .hpc-step { display: flex; align-items: flex-start; gap: 20px; background: var(--dark); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 22px 24px; transition: border-color .3s, transform .3s; }
+    .hpc-step:hover { border-color: rgba(74,122,181,.25); transform: translateX(4px); }
+    .hpc-step-num { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; line-height: 1; color: var(--blueAcc); flex-shrink: 0; min-width: 48px; letter-spacing: .04em; }
+    .hpc-step-tx { display: flex; flex-direction: column; gap: 4px; }
+    .hpc-step-tx strong { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.4rem; letter-spacing: .06em; color: var(--white); line-height: 1; }
+    .hpc-step-tx span { font-size: .92rem; color: rgba(255,255,255,.72); line-height: 1.5; }
+
     .cband {
       background: var(--dark);
       padding: 90px 40px;
@@ -1494,6 +1510,10 @@
       .ph-in { flex-direction: column; align-items: flex-start; gap: 6px; }
       .ph-in p { font-size: .82rem; }
       .cband { padding: 60px 20px; }
+      .hpc { padding: 60px 0; }
+      .hpc-grid { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; }
+      .hpc-step { padding: 18px 20px; gap: 16px; }
+      .hpc-step-num { font-size: 1.6rem; min-width: 36px; }
       .rv-hs { grid-template-columns: 1fr; }
       .hsv-hd { grid-template-columns: 1fr; }
       #chatbot-window { width: calc(100vw - 32px); right: 16px; bottom: 90px; height: 70vh; }
@@ -1994,6 +2014,41 @@
         <p>Still have questions? We're here to help.</p>
         <a href="tel:9516343233" class="btn btn-red btn-lg">Call (951) 634-3233</a>
       </div>
+    </div>
+  </section>
+
+  <!-- HOMEPAGE PHOTO CHECK TEASER — placeholder for /diagnose feature -->
+  <section class="hpc" aria-labelledby="hpc-heading">
+    <div class="hpc-grid">
+      <div class="hpc-copy fi">
+        <div class="eyebrow">Free Photo Estimate</div>
+        <h2 id="hpc-heading" class="section-h2">Not Sure What's Wrong? <em>Send Steve a Photo.</em></h2>
+        <p class="hpc-sub">Skip the service call for simple questions. Snap a photo of your unit, send it over with a quick note, and Steve will get back to you personally — usually within an hour or two.</p>
+        <a href="/diagnose/" class="btn btn-red btn-lg">Send a Photo &rarr;</a>
+      </div>
+      <ol class="hpc-steps fi">
+        <li class="hpc-step">
+          <div class="hpc-step-num">01</div>
+          <div class="hpc-step-tx">
+            <strong>Snap</strong>
+            <span>Take a photo of your unit, the issue, or both.</span>
+          </div>
+        </li>
+        <li class="hpc-step">
+          <div class="hpc-step-num">02</div>
+          <div class="hpc-step-tx">
+            <strong>Send</strong>
+            <span>Add a quick description of what's happening.</span>
+          </div>
+        </li>
+        <li class="hpc-step">
+          <div class="hpc-step-num">03</div>
+          <div class="hpc-step-tx">
+            <strong>Steve Replies</strong>
+            <span>Personal email back, usually within 1&ndash;2 hours.</span>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
