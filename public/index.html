@@ -1682,13 +1682,13 @@
 
 <!-- NAVBAR -->
 <nav id="navbar">
-  <a class="nav-logo" href="#" onclick="return go('home')">
+  <a class="nav-logo" href="/">
     <img src="/images/logo.png" alt="Steve's Air Conditioning & Heating" onerror="this.style.display='none'"/>
   </a>
   <ul class="nav-ul" id="navUl">
-    <li><a href="#" data-p="home" class="act" onclick="return go('home')">Home</a></li>
+    <li><a href="/" class="act">Home</a></li>
     <li class="has-drop">
-      <a href="/services/" data-p="services">Services ▾</a>
+      <a href="/services/">Services ▾</a>
       <ul class="drop">
         <li><a href="/services/air-conditioning/"><span class="drop-ic">❄️</span><span class="drop-tx">Air Conditioning</span></a></li>
         <li><a href="/services/furnaces/"><span class="drop-ic">🔥</span><span class="drop-tx">Furnaces</span></a></li>
@@ -1701,17 +1701,17 @@
         <li><a href="/services/energy-audits/"><span class="drop-ic">⚡</span><span class="drop-tx">Energy Audits</span></a></li>
       </ul>
     </li>
-    <li><a href="#" data-p="about" onclick="return go('about')">About Us</a></li>
-    <li><a href="#" data-p="reviews" onclick="return go('reviews')">Reviews</a></li>
-    <li><a href="#" data-p="area" onclick="return go('area')">Service Area</a></li>
-    <li><a href="#" data-p="contact" onclick="return go('contact')">Contact</a></li>
+    <li><a href="/#about">About Us</a></li>
+    <li><a href="/#reviews">Reviews</a></li>
+    <li><a href="/service-area/">Service Area</a></li>
+    <li><a href="/#contact">Contact</a></li>
     <li><a href="tel:9516343233" class="nav-cta-btn">📞 Schedule Now</a></li>
   </ul>
   <div class="ham" id="ham"><span></span><span></span><span></span></div>
 </nav>
 
 <!-- ══════════════════════════════ HOME ══════════════════════════════ -->
-<div class="page active" id="pg-home">
+<main id="home">
   <section id="hero">
     <!-- Layer 1: flag overlay (back) -->
     <div class="h-flag-bg" aria-hidden="true"></div>
@@ -1800,6 +1800,7 @@
   </div></div>
 
   <!-- Inline lead capture form -->
+  <a id="contact" aria-hidden="true"></a>
   <div class="ilf-wrap">
     <div class="ilf-in">
       <div class="ilf-pitch fi">
@@ -1831,18 +1832,18 @@
   <section class="hsv"><div class="container">
     <div class="hsv-hd">
       <div><div class="eyebrow fi">What We Do</div><h2 class="section-h2 fi">Complete <em>HVAC</em> Services</h2></div>
-      <a href="#" onclick="return go('services')" class="btn btn-outline-w fi">View All Services →</a>
+      <a href="/services/" class="btn btn-outline-w fi">View All Services →</a>
     </div>
     <div class="hsg">
-      <div class="hsc2 fi" onclick="go('services','ac')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/ac-service.jpg')"></div><div class="hsc2-em">❄️</div></div><div class="hsc2-bd"><h3>Air Conditioning</h3><p>Central AC, mini-splits, ductless systems — sales, installation, repair, and seasonal tune-ups for all brands.</p><a href="#" onclick="return go('services','ac')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','furnace')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/furnace.png')"></div><div class="hsc2-em">🔥</div></div><div class="hsc2-bd"><h3>Furnaces</h3><p>Natural gas, electric, and propane furnace installation, repair, and replacement for all home sizes.</p><a href="#" onclick="return go('services','furnace')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','heatpump')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/heat-pump.png')"></div><div class="hsc2-em">♨️</div></div><div class="hsc2-bd"><h3>Heat Pumps</h3><p>Energy-efficient heating and cooling in one system — ideal for the SoCal climate year-round.</p><a href="#" onclick="return go('services','heatpump')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','res-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><a href="#" onclick="return go('services','res-ref')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','com-ref')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><a href="#" onclick="return go('services','com-ref')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','maintenance')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><a href="#" onclick="return go('services','maintenance')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','air-quality')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">💨</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><a href="#" onclick="return go('services','air-quality')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','water-heaters')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/water-heater.png')"></div><div class="hsc2-em">💧</div></div><div class="hsc2-bd"><h3>Water Heaters</h3><p>Tank, tankless, and hybrid water heater installation, repair, and replacement. Gas, electric, and propane systems.</p><a href="#" onclick="return go('services','water-heaters')" class="hsc2-lk">Learn More →</a></div></div>
-      <div class="hsc2 fi" onclick="go('services','energy-audit')"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/energy-audit.png')"></div><div class="hsc2-em">⚡</div></div><div class="hsc2-bd"><h3>Energy Audits</h3><p>Comprehensive home and business energy assessments. Identify thermal leaks, insulation issues, and savings opportunities.</p><a href="#" onclick="return go('services','energy-audit')" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/ac-service.jpg')"></div><div class="hsc2-em">❄️</div></div><div class="hsc2-bd"><h3>Air Conditioning</h3><p>Central AC, mini-splits, ductless systems — sales, installation, repair, and seasonal tune-ups for all brands.</p><a href="/services/air-conditioning/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/furnace.png')"></div><div class="hsc2-em">🔥</div></div><div class="hsc2-bd"><h3>Furnaces</h3><p>Natural gas, electric, and propane furnace installation, repair, and replacement for all home sizes.</p><a href="/services/furnaces/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/heat-pump.png')"></div><div class="hsc2-em">♨️</div></div><div class="hsc2-bd"><h3>Heat Pumps</h3><p>Energy-efficient heating and cooling in one system — ideal for the SoCal climate year-round.</p><a href="/services/heat-pumps/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><a href="/services/residential-refrigeration/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><a href="/services/commercial-refrigeration/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><a href="/services/hvac-maintenance/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">💨</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><a href="/services/air-quality-control/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/water-heater.png')"></div><div class="hsc2-em">💧</div></div><div class="hsc2-bd"><h3>Water Heaters</h3><p>Tank, tankless, and hybrid water heater installation, repair, and replacement. Gas, electric, and propane systems.</p><a href="/services/water-heaters/" class="hsc2-lk">Learn More →</a></div></div>
+      <div class="hsc2 fi"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/energy-audit.png')"></div><div class="hsc2-em">⚡</div></div><div class="hsc2-bd"><h3>Energy Audits</h3><p>Comprehensive home and business energy assessments. Identify thermal leaks, insulation issues, and savings opportunities.</p><a href="/services/energy-audits/" class="hsc2-lk">Learn More →</a></div></div>
     </div>
   </div></section>
 
@@ -1851,13 +1852,13 @@
     <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
   </div></div>
 
-  <section class="hrev"><div class="container">
+  <section class="hrev" id="reviews"><div class="container">
     <div class="rev-intro fi">
       <div><div class="eyebrow">Customer Reviews</div><h2 class="section-h2">Real Words From <em>Real Customers</em></h2></div>
       <div class="rating-big">
         <img class="rating-img" src="/images/5-star-rating.png" alt="5.0 Google Business Review"/>
         <div class="rat-c">Based on 612+ Google Reviews</div>
-        <a href="#" onclick="return go('reviews')" class="btn btn-blue rat-btn">Read All Reviews</a>
+        <a href="/#reviews" class="btn btn-blue rat-btn">Read All Reviews</a>
       </div>
     </div>
     <div class="rev-g">
@@ -1873,7 +1874,7 @@
     </div>
   </div></section>
 
-  <section class="hwhy"><div class="container"><div class="why-g">
+  <section class="hwhy" id="about"><div class="container"><div class="why-g">
     <div class="why-vis fi">
       <img src="/images/team.jpg" alt="Steve's team" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
       <div class="why-vis-ph" style="display:none">🔧</div>
@@ -1922,174 +1923,10 @@
     <p class="fi">Call now for a free, no-pressure quote. Same-day service available.</p>
     <div class="cband-btns fi">
       <a href="tel:9516343233" class="btn btn-red btn-lg">📞 (951) 634-3233</a>
-      <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Request Online Quote</a>
+      <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
     </div>
   </div></div>
-</div>
-
-<!-- ══════════════════════════════ SERVICES ══════════════════════════════ -->
-<div class="page" id="pg-services">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">What We Do</div><h2>Our <span style="color:var(--red)">Services</span></h2><p>Complete heating, cooling, and refrigeration for homes and businesses across SW Riverside County.</p></div></div>
-  <section class="svp"><div class="container"><div class="sv-lay">
-    <div class="sv-sb">
-      <div class="sv-sb-h">All Services</div>
-      <ul>
-        <li><a href="#" class="act" onclick="return svShow('ac',this)">❄️ Air Conditioning</a></li>
-        <li><a href="#" onclick="return svShow('furnace',this)">🔥 Furnaces</a></li>
-        <li><a href="#" onclick="return svShow('heatpump',this)">♨️ Heat Pumps</a></li>
-        <li><a href="#" onclick="return svShow('res-ref',this)">🏠 Residential Refrigeration</a></li>
-        <li><a href="#" onclick="return svShow('com-ref',this)">🏢 Commercial Refrigeration</a></li>
-        <li><a href="#" onclick="return svShow('maintenance',this)">🔧 HVAC Maintenance</a></li>
-        <li><a href="#" onclick="return svShow('air-quality',this)">💨 Air Quality Control</a></li>
-        <li><a href="#" onclick="return svShow('water-heaters',this)">💧 Water Heaters</a></li>
-        <li><a href="#" onclick="return svShow('energy-audit',this)">⚡ Energy Audits</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="sd active" id="sd-ac"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">❄️</div><div><h2>Air Conditioning</h2><p>Installation, repair & tune-up for all AC systems</p></div></div><p class="sd-bd">Whether your central AC unit has stopped working in a SoCal heat wave, or you're building a new home and need a complete system installed, Steve's has the experience and equipment to handle it. We service all major brands including Carrier, Lennox, Trane, Rheem, Goodman, Daikin, and more. Our technicians diagnose problems fast and fix them right — without recommending unnecessary repairs.</p><p class="sd-bd">We also offer ductless mini-split installation for garages, additions, and spaces that are difficult to cool. If your unit is aging and driving up energy bills, we'll give you an honest assessment on whether repair or replacement makes more financial sense.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Central AC installation & replacement</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency AC repair — same day</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Ductless mini-split systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Seasonal tune-ups & maintenance</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">All major brands serviced</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Energy efficiency assessments</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Equipment retrofit & replacement</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request AC Service</a></div>
-
-      <div class="sd" id="sd-furnace"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🔥</div><div><h2>Furnaces</h2><p>Gas, electric, propane, oil & water systems</p></div></div><p class="sd-bd">Southern California winters may be mild compared to the rest of the country, but temperatures in the Temecula Valley can drop sharply at night. Steve's installs and services natural gas, electric, propane, oil, and water furnaces for homes of all sizes. If your furnace is short-cycling, producing strange noises, heating unevenly, or driving your gas bill sky-high, call us for a diagnostic. We'll tell you straight whether repair or replacement is the smarter investment.</p><p class="sd-bd">We also handle full equipment retrofit and replacement projects — upgrading older inefficient systems to modern high-efficiency units that pay for themselves in energy savings.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Natural gas furnace install & repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Electric furnace service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Propane system installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Oil and water furnace service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Full furnace replacement & retrofit</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat exchanger inspection</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">All brands serviced</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request Furnace Service</a></div>
-
-      <div class="sd" id="sd-heatpump"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">♨️</div><div><h2>Heat Pumps</h2><p>Year-round heating and cooling efficiency</p></div></div><p class="sd-bd">Heat pumps are one of the most energy-efficient ways to heat and cool your home — ideal for the mild SoCal climate. A single system does the work of both a furnace and an AC unit, moving heat rather than generating it, which means dramatically lower energy bills year-round. Steve's installs and services air-source and ground-source heat pumps for residential and light commercial applications.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air-source heat pump installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump repair & diagnostics</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Dual-fuel system setup</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Energy efficiency consulting</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request Heat Pump Service</a></div>
-
-      <div class="sd" id="sd-res-ref"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🏠</div><div><h2>Residential Refrigeration</h2><p>Specialty refrigeration for homes</p></div></div><p class="sd-bd">From custom wine cellars to residential walk-in coolers, Steve's handles the full range of residential refrigeration. Our technicians are certified in refrigerant handling and skilled in both installation and repair of specialty cold storage systems.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Wine cellar refrigeration</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Walk-in cooler installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant recovery & recharge</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Cold room repair & maintenance</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request Service</a></div>
-
-      <div class="sd" id="sd-com-ref"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🏢</div><div><h2>Commercial Refrigeration</h2><p>Keeping your business running cold</p></div></div><p class="sd-bd">Restaurant walk-ins, commercial freezers, refrigerated display cases — a refrigeration failure means lost product and lost revenue. Steve's provides rapid-response commercial refrigeration repair and full system installation for businesses throughout SW Riverside County. We work around your schedule to minimize downtime.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Restaurant walk-in cooler/freezer repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Commercial display case service</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">New system installation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Preventive maintenance contracts</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency response available</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Health code compliance support</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request Commercial Service</a></div>
-
-      <div class="sd" id="sd-maintenance"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">🔧</div><div><h2>HVAC Maintenance</h2><p>Keep it running before it breaks</p></div></div><p class="sd-bd">The single best way to avoid a mid-summer AC emergency is a proper spring tune-up. Steve's maintenance service includes a comprehensive system inspection, cleaning of all critical components, refrigerant level check, and a full performance test. We document everything and give you a plain-language report on your system's condition so you can plan ahead — not react in panic mode.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual AC tune-up</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Furnace inspection & cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Filter replacement & coil cleaning</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant level check</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Thermostat calibration</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Written system health report</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Schedule Maintenance</a></div>
-
-      <div class="sd" id="sd-air-quality"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">💨</div><div><h2>Air Quality Control</h2><p>Healthier indoor air for your home or business</p></div></div><p class="sd-bd">The air inside your home can be 2-5x more polluted than outdoor air. Steve's installs and services a full range of indoor air quality systems including HRV (Heat Recovery Ventilation), high-efficiency filtration, UV purification, and humidity control. Better air quality means fewer allergies, better sleep, and protection for vulnerable family members.</p><p class="sd-bd">HRV systems are particularly powerful — they bring fresh outdoor air in while capturing heat from the outgoing stale air, dramatically improving air quality without the energy penalty of just opening windows. Ideal for tightly sealed modern homes.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HRV (Heat Recovery Ventilation)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">High-efficiency air filtration (HEPA, MERV-13+)</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">UV light air purification</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home humidifiers & dehumidifiers</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air quality testing & assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Duct cleaning & sealing</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Improve My Air Quality</a></div>
-
-      <div class="sd" id="sd-water-heaters"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">💧</div><div><h2>Water Heaters</h2><p>Tank, tankless & hybrid systems</p></div></div><p class="sd-bd">Whether you're running out of hot water mid-shower or your old tank is leaking, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p><p class="sd-bd">Not sure which type is right for your home? We'll walk you through the tradeoffs based on your family size, fuel availability, and budget — without pushing you toward whatever has the best margin for us.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency water heater repair</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Request Water Heater Service</a></div>
-
-      <div class="sd" id="sd-energy-audit"><a href="#" class="sd-back" onclick="return svBack()"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg> Back to All Services</a><div class="sd-hd"><div class="sd-ic">⚡</div><div><h2>Energy Audits</h2><p>Stop wasting money on inefficiency</p></div></div><p class="sd-bd">An energy audit is the single most cost-effective service we offer — and one most HVAC contractors don't even provide. Steve's comprehensive audit identifies exactly where your home or business is losing energy: poorly sealed ductwork, insufficient insulation, drafty windows, oversized or undersized HVAC equipment, and thermal weak spots you'd never spot without proper diagnostic equipment.</p><p class="sd-bd">You get a written report with prioritized recommendations and projected savings for each fix. Many customers recover the cost of the audit itself within the first 2-3 months of implementing our recommendations.</p><div class="sd-feats"><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole-home energy assessment</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Thermal imaging & leak detection</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Ductwork inspection & sealing recommendations</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Insulation evaluation</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HVAC right-sizing analysis</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Written report with prioritized savings</div></div><div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Commercial energy audits available</div></div></div><a href="#" onclick="return go('contact', null, '#contact-form')" class="btn btn-red">Schedule Energy Audit</a></div>
-    </div>
-  </div></div></section>
-</div>
-
-<!-- ══════════════════════════════ ABOUT ══════════════════════════════ -->
-<div class="page" id="pg-about">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Our Story</div><h2>About <span style="color:var(--red)">Steve's</span></h2><p>A local, family-run HVAC business built on honesty, skill, and two decades of serving SW Riverside County.</p></div></div>
-  <section class="abp"><div class="container">
-    <div class="ab-sp">
-      <div class="ab-vis fi">
-        <img src="/images/about.jpg" alt="Steve's HVAC" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-        <div class="ab-vis-ph" style="display:none">🔧</div>
-        <div class="ab-vc"><div class="ab-vc-n">20+</div><div class="ab-vc-t">Years Serving<br/>Murrieta Valley</div></div>
-      </div>
-      <div>
-        <div class="eyebrow fi">Who We Are</div>
-        <h2 class="section-h2 fi">Built on <em>Honesty.</em><br/>Proven by Results.</h2>
-        <p class="fi" style="margin-top:20px;font-size:.97rem;color:rgba(255,255,255,.7);line-height:1.75">Steve's Air Conditioning & Heating was built from a simple idea: give every customer the same straight answers and skilled work you'd give your own family. That philosophy has guided this business since the beginning, and it's why we still have customers who have called us for 15+ years.</p>
-        <p class="fi" style="margin-top:14px;font-size:.97rem;color:rgba(255,255,255,.7);line-height:1.75">We're not a franchise or a corporate chain. When you call Steve's, you get real technicians who have been in the HVAC trade for decades — people who take pride in their work and stand behind every job. No call centers, no bait-and-switch, no high-pressure sales tactics.</p>
-        <div class="ab-vals fi">
-          <div class="av"><strong>🇺🇸 American-Owned</strong><span>Locally operated, community focused</span></div>
-          <div class="av"><strong>🛡️ Fully Licensed</strong><span>Certified, bonded & insured on every job</span></div>
-          <div class="av"><strong>💬 Honest Pricing</strong><span>Upfront quotes, no hidden costs</span></div>
-          <div class="av"><strong>⚡ Fast Response</strong><span>Same-day emergency service available</span></div>
-        </div>
-      </div>
-    </div>
-  </div></section>
-  <div class="ab-stats"><div class="container"><div class="ab-sg">
-    <div class="ab-si fi"><div class="ab-sn">20<span>+</span></div><div class="ab-sl">Years in Business</div></div>
-    <div class="ab-si fi"><div class="ab-sn">5<span>★</span></div><div class="ab-sl">Average Rating</div></div>
-    <div class="ab-si fi"><div class="ab-sn">100<span>%</span></div><div class="ab-sl">Licensed & Insured</div></div>
-    <div class="ab-si fi"><div class="ab-sn">Same<span>-Day</span></div><div class="ab-sl">Emergency Service</div></div>
-  </div></div></div>
-  <div class="cband"><div class="cband-in">
-    <h2 class="fi">Let's Get Your System Right</h2>
-    <p class="fi">Call for a free, honest quote — no pressure, no upsell, no runaround.</p>
-    <div class="cband-btns fi">
-      <a href="tel:9516343233" class="btn btn-red btn-lg">📞 (951) 634-3233</a>
-      <a href="#" onclick="return go('contact')" class="btn btn-outline-w btn-lg">Get a Free Quote</a>
-    </div>
-  </div></div>
-</div>
-
-<!-- ══════════════════════════════ REVIEWS ══════════════════════════════ -->
-<div class="page" id="pg-reviews">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">What Customers Say</div><h2>Customer <span style="color:var(--gold)">Reviews</span></h2><p>Honest feedback from homeowners and businesses across SW Riverside County.</p></div></div>
-  <section class="rvp"><div class="container">
-    <div class="rv-hs">
-      <div class="rv-hc fi"><div class="rv-hn">5.0<span>★</span></div><div class="rv-hl">Average Google Rating</div></div>
-      <div class="rv-hc fi"><div class="rv-hn" style="color:var(--sky)">612<span style="color:var(--sky)">+</span></div><div class="rv-hl">Verified Customer Reviews</div></div>
-      <div class="rv-hc fi"><div class="rv-hn" style="color:var(--red)">20<span style="color:var(--red)">+</span></div><div class="rv-hl">Years Building Trust</div></div>
-    </div>
-    <div class="rv-ag">
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Great service! Would highly recommend. I had quotes from other companies, whom I will not mention, they were charging double and more from the quote I got from Steve. Service was fast, reliable, friendly and quality. I have recommended them to friends and family!</p><div class="rc-au"><strong>Sarah Switzer</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's Air Conditioning &amp; Heating are the real deal, honest, reliable &amp; they don't try to up-sell you. Been using Steve's for years. Great company!!! I will call Steve before I will call my home warranty company when it comes to my AC and heater. Highly recommend!!!</p><div class="rc-au"><strong>Richard Leon</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's cooling and Heating is amazing. Thank you Jared for your professionalism and bright good spirits. Jared did a tune-up on both of our AC units and now we are ready for the summer.</p><div class="rc-au"><strong>Christina Ayguasbiba</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Steve's technician came in, they were professional, assessed the problem, told me my options and when I made my decision they gave me a quote. They found a problem I did not know about — it was a quick fix and I was up and running. They cleaned up what little mess that was made and thanked me for picking Steve's to help with my heating problem.</p><div class="rc-au"><strong>Paul Haug</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I just had a technician from Steve's come to my home — his name is Michael and I'm very pleased with the service. He did a thorough job checking everything and made sure my system was running properly. He was extremely professional.</p><div class="rc-au"><strong>Marietta Spry</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Michael Castanon was very professional and knowledgeable about concerns. He serviced all that was necessary in a timely manner. Very pleasant to interact with.</p><div class="rc-au"><strong>Yagui Yaqui</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">I had a great experience with Steve and the work he did for me. He was up front about costs and provided me with the knowledge necessary to work on the system if I wanted to. I would recommend Steve's Air Conditioning service to everyone.</p><div class="rc-au"><strong>David Sosa</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Always 5 stars. Honest, efficient, knowledgeable. Highly recommend.</p><div class="rc-au"><strong>Jessica Pennington</strong> <span class="rc-via">via Google</span></div></div>
-      <div class="rc fi"><div class="rc-st">★★★★★</div><p class="rc-tx">Thank you for a great experience. The technicians were professional, knowledgeable, and courteous! Awesome job!</p><div class="rc-au"><strong>Billy Ward</strong> <span class="rc-via">via Google</span></div></div>
-    </div>
-    <div class="leave-review-block fi">
-      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA" target="_blank" rel="noopener" class="leave-review-link">
-        <img src="/images/leave-review.png" alt="Leave us a Google review"/>
-      </a>
-      <p class="leave-review-tx">Were we good to you? Drop us a quick Google review — it means a lot to a small family business.</p>
-    </div>
-  </div></section>
-</div>
-
-<!-- ══════════════════════════════ AREA ══════════════════════════════ -->
-<div class="page" id="pg-area">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Where We Work</div><h2>Service <span style="color:var(--sky)">Area</span></h2><p>Serving all of Southwest Riverside County — from Murrieta to Lake Elsinore and everywhere in between.</p></div></div>
-  <section class="arp"><div class="container"><div class="ar-lay">
-    <div>
-      <div class="eyebrow fi">Coverage</div>
-      <h2 class="section-h2 fi">We Come <em>To You</em></h2>
-      <p class="fi" style="color:var(--muted);margin-top:16px;line-height:1.75;font-size:.97rem">Steve's covers the full Southwest Riverside County region. If you're not sure whether we service your area, just call — we'll let you know straight away.</p>
-      <div class="ar-cg fi">
-        <div class="ar-ct">Murrieta</div><div class="ar-ct">Temecula</div>
-        <div class="ar-ct">Wildomar</div><div class="ar-ct">Lake Elsinore</div>
-        <div class="ar-ct">Canyon Lake</div><div class="ar-ct">Menifee</div>
-        <div class="ar-ct">Sun City</div><div class="ar-ct">Winchester</div>
-        <div class="ar-ct">French Valley</div><div class="ar-ct">Perris</div>
-      </div>
-      <div style="margin-top:36px" class="fi"><a href="tel:9516343233" class="btn btn-red btn-lg">📞 Call Now — (951) 634-3233</a></div>
-    </div>
-    <div class="ar-map fi">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105877.95!2d-117.26!3d33.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db61a61e588dad%3A0x1b7b3bf1d38b2e1f!2sMurrieta%2C%20CA!5e0!3m2!1sen!2sus!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </div></div></section>
-</div>
-
-<!-- ══════════════════════════════ CONTACT ══════════════════════════════ -->
-<div class="page" id="pg-contact">
-  <div class="ph"><div class="ph-in"><div class="eyebrow">Get In Touch</div><h2>Contact <span style="color:var(--red)">Steve's</span></h2><p>Call, text, or fill out the form. Real people, fast responses — no automated runaround.</p></div></div>
-  <section class="ctp"><div class="container"><div class="ct-lay">
-    <div>
-      <div class="eyebrow fi">Reach Us</div>
-      <h2 class="section-h2 fi">We Answer <em>Fast.</em></h2>
-      <div class="ct-ib">
-        <div class="ct-i fi"><div class="ct-ic">📞</div><div class="ct-it"><strong>Phone / Text</strong><a href="tel:9516343233">(951) 634-3233</a></div></div>
-        <div class="ct-i fi"><div class="ct-ic">✉️</div><div class="ct-it"><strong>Email</strong><a href="mailto:stevesac_6708@yahoo.com">stevesac_6708@yahoo.com</a></div></div>
-        <div class="ct-i fi"><div class="ct-ic">📍</div><div class="ct-it"><strong>Service Area</strong><span>Murrieta, Temecula &amp; SW Riverside County<br/>We come to you — no storefront</span></div></div>
-        <div class="ct-i fi"><div class="ct-ic">🕐</div><div class="ct-it"><strong>Business Hours</strong><span>Mon–Fri: 7am–6pm<br/>Sat: 8am–3pm | Emergency service available</span></div></div>
-      </div>
-      <div class="embox fi">
-        <div class="embox-h">⚡ Emergency Service</div>
-        <div class="embox-n"><a href="tel:9516343233">(951) 634-3233</a></div>
-        <div class="embox-b">AC out in summer heat? Furnace died on a cold night? Call us — we offer same-day emergency response for heating and cooling failures.</div>
-      </div>
-    </div>
-    <div class="cf-card fi" id="contact-form">
-      <div class="cf-ttl">Request a Free Quote</div>
-      <form onsubmit="return fSub(event)">
-        <div class="fr"><div class="fg"><label>First Name</label><input type="text" placeholder="John" required/></div><div class="fg"><label>Last Name</label><input type="text" placeholder="Smith" required/></div></div>
-        <div class="fr"><div class="fg"><label>Phone</label><input type="tel" placeholder="(951) 555-0000" required/></div><div class="fg"><label>Email</label><input type="email" placeholder="you@example.com"/></div></div>
-        <div class="fg"><label>Service Needed</label><select required><option value="" disabled selected>Select a service…</option><option>Air Conditioning — Installation</option><option>Air Conditioning — Repair</option><option>Furnace — Installation</option><option>Furnace — Repair</option><option>Heat Pump</option><option>Residential Refrigeration</option><option>Commercial Refrigeration</option><option>HVAC Maintenance / Tune-Up</option><option>Air Quality / IAQ / HRV</option><option>Water Heater</option><option>Energy Audit</option><option>Emergency Service</option><option>Other / Not Sure</option></select></div>
-        <div class="fg"><label>Describe Your Issue</label><textarea placeholder="Tell us what's going on or what you need…"></textarea></div>
-        <button type="submit" class="fsub">Send My Request →</button>
-      </form>
-    </div>
-  </div></div></section>
-</div>
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -2122,14 +1959,14 @@
         <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
       </div>
     </div>
-    <div class="ft-c"><h4>Services</h4><ul class="ft-services-ul"><li><a href="#" onclick="return go('services','ac')">Air Conditioning</a></li><li><a href="#" onclick="return go('services','furnace')">Furnaces</a></li><li><a href="#" onclick="return go('services','heatpump')">Heat Pumps</a></li><li><a href="#" onclick="return go('services','res-ref')">Residential Refrigeration</a></li><li><a href="#" onclick="return go('services','com-ref')">Commercial Refrigeration</a></li><li><a href="#" onclick="return go('services','maintenance')">HVAC Maintenance</a></li><li><a href="#" onclick="return go('services','air-quality')">Air Quality Control</a></li><li><a href="#" onclick="return go('services','water-heaters')">Water Heaters</a></li><li><a href="#" onclick="return go('services','energy-audit')">Energy Audits</a></li></ul></div>
-    <div class="ft-c"><h4>Company</h4><ul><li><a href="#" onclick="return go('about')">About Us</a></li><li><a href="#" onclick="return go('reviews')">Reviews</a></li><li><a href="#" onclick="return go('area')">Service Area</a></li><li><a href="#" onclick="return go('contact')">Contact</a></li></ul></div>
+    <div class="ft-c"><h4>Services</h4><ul class="ft-services-ul"><li><a href="/services/air-conditioning/">Air Conditioning</a></li><li><a href="/services/furnaces/">Furnaces</a></li><li><a href="/services/heat-pumps/">Heat Pumps</a></li><li><a href="/services/residential-refrigeration/">Residential Refrigeration</a></li><li><a href="/services/commercial-refrigeration/">Commercial Refrigeration</a></li><li><a href="/services/hvac-maintenance/">HVAC Maintenance</a></li><li><a href="/services/air-quality-control/">Air Quality Control</a></li><li><a href="/services/water-heaters/">Water Heaters</a></li><li><a href="/services/energy-audits/">Energy Audits</a></li></ul></div>
+    <div class="ft-c"><h4>Company</h4><ul><li><a href="/#about">About Us</a></li><li><a href="/#reviews">Reviews</a></li><li><a href="/service-area/">Service Area</a></li><li><a href="/#contact">Contact</a></li></ul></div>
     <div class="ft-c">
       <h4>Contact</h4>
       <ul>
         <li><a href="tel:9516343233">(951) 634-3233</a></li>
         <li><a href="mailto:stevesac_6708@yahoo.com">stevesac_6708@yahoo.com</a></li>
-        <li><a href="#" onclick="return go('area')">Murrieta, CA 92562</a></li>
+        <li><a href="/service-area/">Murrieta, CA 92562</a></li>
       </ul>
       <h4 class="ft-follow-h">Follow Us</h4>
       <div class="ft-social">
@@ -2186,68 +2023,8 @@ What can I help you with?</div>
 </div>
 
 <script>
-// ─── ROUTER ──────────────────────────────────────────────────────────
-function go(page, svc, scrollTarget) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  const pg = document.getElementById('pg-' + page);
-  if (pg) pg.classList.add('active');
-  document.querySelectorAll('.nav-ul [data-p]').forEach(a => {
-    a.classList.toggle('act', a.dataset.p === page);
-  });
-  // Going to Services without a specific service? Reset to list view on mobile.
-  if (page === 'services' && !svc) {
-    const lay = document.querySelector('#pg-services .sv-lay');
-    if (lay) lay.classList.remove('mobile-detail-view');
-  }
-  if (svc) setTimeout(() => svShow(svc, null), 60);
-  // Scroll: either to a specific target with navbar offset, or to top
-  if (scrollTarget) {
-    setTimeout(() => {
-      const el = document.querySelector(scrollTarget);
-      if (el) {
-        const navH = document.getElementById('navbar')?.offsetHeight || 110;
-        const top = el.getBoundingClientRect().top + window.pageYOffset - navH - 16;
-        window.scrollTo({ top, behavior: 'smooth' });
-        setTimeout(fi, 600); // re-trigger fade-ins after scroll lands
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    }, 80);
-  } else {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  document.getElementById('navUl').classList.remove('open');
-  document.getElementById('ham').classList.remove('open');
-  setTimeout(fi, 80);
-  return false;
-}
 
-// ─── SERVICE SWITCHER ────────────────────────────────────────────────
-function svShow(id, el) {
-  document.querySelectorAll('.sd').forEach(d => d.classList.remove('active'));
-  document.querySelectorAll('.sv-sb ul li a').forEach(a => a.classList.remove('act'));
-  const p = document.getElementById('sd-' + id);
-  if (p) p.classList.add('active');
-  if (el) el.classList.add('act');
-  else {
-    const m = document.querySelector(`.sv-sb ul li a[onclick*="'${id}'"]`);
-    if (m) m.classList.add('act');
-  }
-  // Mobile only: enter drilldown view (hide list, show detail with back btn)
-  if (window.innerWidth <= 768) {
-    const lay = document.querySelector('#pg-services .sv-lay');
-    if (lay) lay.classList.add('mobile-detail-view');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  return false;
-}
 
-function svBack() {
-  const lay = document.querySelector('#pg-services .sv-lay');
-  if (lay) lay.classList.remove('mobile-detail-view');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  return false;
-}
 
 // ─── HAMBURGER ───────────────────────────────────────────────────────
 document.getElementById('ham').addEventListener('click', function () {
