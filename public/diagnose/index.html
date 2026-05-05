@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Send Steve a Photo | Steve's Air Conditioning &amp; Heating</title>
+  <meta name="description" content="Have an issue with your AC or heater? Send Steve a photo and your info — he'll personally review and get back to you within 1–2 hours."/>
+  <meta name="robots" content="noindex, follow"/>
+
+  <link rel="icon" href="/images/favicon.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --navy: #0B1D3A;
+      --navy3: #081530;
+      --blue: #1A3F7A;
+      --blue2: #2255A4;
+      --blueAcc: #4285F4;
+      --steel: #4A7AB5;
+      --red: #C41E1E;
+      --red2: #E02020;
+      --redDark: #8B1414;
+      --white: #FFFFFF;
+      --muted: #8BA3BF;
+      --dark: #060E1C;
+      --mid: #0D1A30;
+      --gold: #D4A843;
+      --green: #2BB673;
+      --greenDark: #1F8A57;
+      --r: 8px;
+      --r-lg: 14px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--dark);
+      color: var(--white);
+      min-height: 100vh;
+      line-height: 1.55;
+    }
+
+    /* ─── Mini header ─── */
+    .mh {
+      background: var(--navy3);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      background: rgba(8,21,48,.92);
+    }
+    .mh-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--white); }
+    .mh-logo img { height: 36px; width: auto; }
+    .mh-logo span { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: .04em; }
+    .mh-back { color: var(--muted); text-decoration: none; font-size: .88rem; font-family: 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
+    .mh-back:hover { color: var(--white); }
+
+    /* ─── Page wrap ─── */
+    .wrap { max-width: 720px; margin: 0 auto; padding: 36px 20px 80px; }
+
+    /* ─── Page header ─── */
+    .ph { text-align: center; margin-bottom: 40px; }
+    .ph .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; color: var(--blueAcc); margin-bottom: 16px; }
+    .ph .eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--blueAcc); }
+    .ph h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1; letter-spacing: .02em; margin-bottom: 14px; }
+    .ph h1 em { font-style: normal; color: var(--red); }
+    .ph p { color: rgba(255,255,255,.78); font-size: 1.05rem; max-width: 540px; margin: 0 auto; }
+
+    /* ─── Steps strip ─── */
+    .steps { display: flex; gap: 12px; margin-bottom: 36px; }
+    .step { flex: 1; background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 14px 12px; text-align: center; }
+    .step-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: var(--blueAcc); line-height: 1; margin-bottom: 4px; }
+    .step-tx { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--white); }
+
+    /* ─── Form card ─── */
+    .card {
+      background: var(--mid);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--r-lg);
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+    .card-intro { color: rgba(255,255,255,.78); font-size: .98rem; line-height: 1.65; margin-bottom: 24px; }
+
+    .field { margin-bottom: 20px; }
+    .field label { display: block; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .field input,
+    .field textarea {
+      width: 100%;
+      background: var(--dark);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r);
+      padding: 14px 16px;
+      color: var(--white);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color .2s, background .2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .field input:focus,
+    .field textarea:focus {
+      outline: none;
+      border-color: var(--blueAcc);
+      background: rgba(11,29,58,.6);
+    }
+    .field textarea { min-height: 100px; resize: vertical; line-height: 1.5; }
+    .field-hint { display: block; font-size: .82rem; color: var(--muted); margin-top: 6px; }
+    .field-error { display: none; color: var(--red2); font-size: .85rem; margin-top: 6px; }
+    .field.has-error input,
+    .field.has-error textarea { border-color: var(--red2); }
+    .field.has-error .field-error { display: block; }
+
+    /* ─── Photo picker ─── */
+    .pp { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .pp-btn {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 8px; padding: 22px 16px;
+      background: var(--dark);
+      border: 1px dashed rgba(74,122,181,.35);
+      border-radius: var(--r);
+      color: var(--white);
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 600;
+      font-size: .92rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: border-color .2s, background .2s, transform .15s;
+    }
+    .pp-btn:hover { border-color: var(--blueAcc); background: rgba(11,29,58,.4); }
+    .pp-btn:active { transform: scale(.98); }
+    .pp-btn svg { width: 28px; height: 28px; fill: var(--blueAcc); }
+    .pp input[type="file"] { display: none; }
+
+    .preview { display: none; margin-top: 16px; }
+    .preview img { width: 100%; max-height: 360px; object-fit: contain; background: var(--dark); border-radius: var(--r); border: 1px solid rgba(255,255,255,.08); }
+    .preview-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: .85rem; color: var(--muted); }
+    .preview-clear { color: var(--red2); background: none; border: none; font-family: inherit; font-size: .85rem; cursor: pointer; padding: 0; }
+    .preview-clear:hover { text-decoration: underline; }
+
+    /* ─── Submit ─── */
+    .submit-row { margin-top: 28px; }
+    .btn-submit {
+      width: 100%;
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      padding: 18px 24px;
+      border-radius: var(--r);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: .06em;
+      cursor: pointer;
+      transition: background .2s, transform .15s, opacity .2s;
+    }
+    .btn-submit:hover:not(:disabled) { background: var(--red2); }
+    .btn-submit:active:not(:disabled) { transform: scale(.99); }
+    .btn-submit:disabled { opacity: .5; cursor: not-allowed; }
+
+    .privacy-note { font-size: .82rem; color: var(--muted); margin-top: 14px; text-align: center; line-height: 1.5; }
+
+    /* ─── State: loading ─── */
+    .loading-card { display: none; text-align: center; padding: 60px 32px; }
+    .loading-card.active { display: block; }
+    .spinner {
+      width: 56px; height: 56px; margin: 0 auto 24px;
+      border: 4px solid rgba(74,122,181,.18);
+      border-top-color: var(--blueAcc);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-tx { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: .04em; margin-bottom: 8px; }
+    .loading-sub { color: var(--muted); font-size: .95rem; }
+
+    /* ─── State: result ─── */
+    .result-card { display: none; padding: 32px; }
+    .result-card.active { display: block; }
+
+    .result-icon {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+    }
+    .result-icon.ok { background: rgba(43,182,115,.15); color: var(--green); }
+    .result-icon.retry { background: rgba(212,168,67,.15); color: var(--gold); }
+    .result-icon.urgent { background: rgba(196,30,30,.18); color: var(--red2); }
+
+    .result-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: .02em; text-align: center; margin-bottom: 14px; }
+    .result-msg { color: rgba(255,255,255,.85); font-size: 1.02rem; line-height: 1.65; margin-bottom: 22px; text-align: center; }
+
+    .result-detail {
+      background: var(--dark);
+      border-left: 3px solid var(--blueAcc);
+      padding: 16px 20px;
+      border-radius: 0 var(--r) var(--r) 0;
+      margin-bottom: 20px;
+    }
+    .result-detail-label { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .result-detail-val { color: var(--white); font-size: .98rem; line-height: 1.5; }
+    .result-detail.urgent { border-left-color: var(--red2); }
+
+    .result-poss { background: var(--dark); border-radius: var(--r); padding: 18px 20px; margin-bottom: 20px; }
+    .result-poss-h { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+    .result-poss ul { list-style: none; padding: 0; margin: 0; }
+    .result-poss li { padding: 8px 0; padding-left: 22px; position: relative; color: rgba(255,255,255,.88); font-size: .96rem; line-height: 1.5; }
+    .result-poss li::before { content: ''; position: absolute; left: 0; top: 14px; width: 8px; height: 8px; background: var(--blueAcc); border-radius: 50%; }
+    .result-defer { color: var(--muted); font-size: .9rem; font-style: italic; text-align: center; margin: 18px 0 22px; }
+
+    .result-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
+    .btn-call {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: var(--r);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.2rem;
+      letter-spacing: .06em;
+      transition: background .2s;
+    }
+    .btn-call:hover { background: var(--greenDark); }
+    .btn-retry {
+      background: transparent;
+      color: var(--blueAcc);
+      border: 1px solid var(--blueAcc);
+      padding: 14px 24px;
+      border-radius: var(--r);
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: .06em;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-retry:hover { background: rgba(74,122,181,.12); }
+
+    /* ─── State: error ─── */
+    .error-banner {
+      display: none;
+      background: rgba(196,30,30,.12);
+      border: 1px solid rgba(224,32,32,.4);
+      color: var(--white);
+      padding: 14px 18px;
+      border-radius: var(--r);
+      margin-bottom: 20px;
+      font-size: .94rem;
+    }
+    .error-banner.active { display: block; }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 540px) {
+      .wrap { padding: 24px 16px 60px; }
+      .card { padding: 22px; }
+      .steps { gap: 8px; }
+      .step { padding: 12px 8px; }
+      .step-num { font-size: 1.2rem; }
+      .step-tx { font-size: .72rem; letter-spacing: .06em; }
+      .pp { grid-template-columns: 1fr; }
+      .ph h1 { font-size: 2rem; }
+      .mh-logo span { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="mh">
+    <a href="/" class="mh-logo">
+      <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
+      <span>Steve's HVAC</span>
+    </a>
+    <a href="/" class="mh-back">&larr; Back to Home</a>
+  </header>
+
+  <main class="wrap">
+    <div class="ph">
+      <div class="eyebrow">Free Photo Estimate</div>
+      <h1>Have an Issue? <em>Send Steve a Photo.</em></h1>
+      <p>Snap or upload a photo of your AC, heater, or thermostat. Steve will personally review and get back to you, usually within 1&ndash;2 hours.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step"><div class="step-num">01</div><div class="step-tx">Quick Info</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-tx">Send Photo</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-tx">Steve Replies</div></div>
+    </div>
+
+    <div class="error-banner" id="errorBanner"></div>
+
+    <!-- ─── FORM CARD ─── -->
+    <form class="card" id="diagnoseForm" novalidate>
+      <p class="card-intro">Steve will personally review what you send and get back to you. So we know who to reach out to &mdash;</p>
+
+      <div class="field" id="field-name">
+        <label for="customerName">Who should Steve ask for?</label>
+        <input type="text" id="customerName" name="customerName" placeholder="Your first name" autocomplete="given-name" required maxlength="80"/>
+        <span class="field-error">Please add a name so Steve knows who to ask for.</span>
+      </div>
+
+      <div class="field" id="field-phone">
+        <label for="customerPhone">Best number to reach you?</label>
+        <input type="tel" id="customerPhone" name="customerPhone" placeholder="(951) 555-1234" autocomplete="tel" inputmode="tel" required maxlength="20"/>
+        <span class="field-error">Please add a number Steve can call you back at.</span>
+      </div>
+
+      <div class="field" id="field-email">
+        <label for="customerEmail">Email <span style="color: var(--muted); font-weight: normal; text-transform: none; letter-spacing: 0; font-size: .82rem;">(optional)</span></label>
+        <input type="email" id="customerEmail" name="customerEmail" placeholder="you@example.com" autocomplete="email" maxlength="120"/>
+      </div>
+
+      <div class="field" id="field-photo">
+        <label>Photo of the issue</label>
+        <div class="pp">
+          <label class="pp-btn" for="cameraInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2 7.17 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+            Take a Photo
+          </label>
+          <input type="file" id="cameraInput" accept="image/*" capture="environment"/>
+          <label class="pp-btn" for="uploadInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13v6H5v-6H3v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2zm-7-12-5 5h3v6h4V6h3l-5-5z"/></svg>
+            Upload Photo
+          </label>
+          <input type="file" id="uploadInput" accept="image/*"/>
+        </div>
+        <span class="field-error">A photo helps Steve know what to look for.</span>
+
+        <div class="preview" id="preview">
+          <img id="previewImg" alt="Your photo"/>
+          <div class="preview-meta">
+            <span id="previewName">photo.jpg</span>
+            <button type="button" class="preview-clear" id="previewClear">Remove</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="customerDesc">What's going on? <span style="color: var(--muted); font-weight: normal; text-transform: none; letter-spacing: 0; font-size: .82rem;">(optional but helpful)</span></label>
+        <textarea id="customerDesc" name="customerDesc" placeholder="e.g. AC running but house isn't cooling, started this morning..." maxlength="800"></textarea>
+        <span class="field-hint">Quick description of what you're seeing or hearing.</span>
+      </div>
+
+      <!-- Honeypot — bots fill, humans don't -->
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"/>
+      </div>
+
+      <div class="submit-row">
+        <button type="submit" class="btn-submit" id="submitBtn">Send to Steve &rarr;</button>
+        <p class="privacy-note">Your photo is sent securely and only used to help Steve diagnose your issue.</p>
+      </div>
+    </form>
+
+    <!-- ─── LOADING CARD ─── -->
+    <div class="card loading-card" id="loadingCard">
+      <div class="spinner"></div>
+      <div class="loading-tx">Reviewing your photo&hellip;</div>
+      <div class="loading-sub">Just a few seconds.</div>
+    </div>
+
+    <!-- ─── RESULT CARD ─── -->
+    <div class="card result-card" id="resultCard">
+      <div class="result-icon" id="resultIcon">✓</div>
+      <h2 class="result-title" id="resultTitle">Got it!</h2>
+      <p class="result-msg" id="resultMsg"></p>
+
+      <div class="result-detail" id="resultUnit" style="display: none;">
+        <div class="result-detail-label">What we see</div>
+        <div class="result-detail-val" id="resultUnitVal"></div>
+      </div>
+
+      <div class="result-poss" id="resultPoss" style="display: none;">
+        <div class="result-poss-h">A few possibilities</div>
+        <ul id="resultPossList"></ul>
+      </div>
+
+      <p class="result-defer" id="resultDefer" style="display: none;">Steve will confirm what's actually going on once he takes a look.</p>
+
+      <div class="result-actions">
+        <a href="tel:9516343233" class="btn-call" id="resultCallBtn" style="display: none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+          Call Steve Now
+        </a>
+        <button type="button" class="btn-retry" id="resultRetryBtn" style="display: none;">Send Another Photo</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+  (() => {
+    const form = document.getElementById('diagnoseForm');
+    const cameraInput = document.getElementById('cameraInput');
+    const uploadInput = document.getElementById('uploadInput');
+    const preview = document.getElementById('preview');
+    const previewImg = document.getElementById('previewImg');
+    const previewName = document.getElementById('previewName');
+    const previewClear = document.getElementById('previewClear');
+    const submitBtn = document.getElementById('submitBtn');
+    const errorBanner = document.getElementById('errorBanner');
+    const loadingCard = document.getElementById('loadingCard');
+    const resultCard = document.getElementById('resultCard');
+
+    let selectedFile = null;
+    let selectedDataUrl = null;
+
+    // ── Photo selection ──────────────────────────────────────────
+    function handleFile(file) {
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        showError("That doesn't look like an image file. Try a JPG or PNG photo.");
+        return;
+      }
+      // Resize before storing (max 1920px long side, JPEG 85%) to keep payloads small
+      const img = new Image();
+      const reader = new FileReader();
+      reader.onload = e => {
+        img.onload = () => {
+          const MAX = 1920;
+          let w = img.width, h = img.height;
+          if (w > MAX || h > MAX) {
+            if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+            else { w = Math.round(w * MAX / h); h = MAX; }
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, w, h);
+          selectedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+          selectedFile = file;
+          previewImg.src = selectedDataUrl;
+          previewName.textContent = file.name || 'photo.jpg';
+          preview.style.display = 'block';
+          clearFieldError('field-photo');
+          hideError();
+        };
+        img.onerror = () => showError("Couldn't read that image. Try another photo.");
+        img.src = e.target.result;
+      };
+      reader.onerror = () => showError("Couldn't read that file.");
+      reader.readAsDataURL(file);
+    }
+
+    cameraInput.addEventListener('change', e => handleFile(e.target.files[0]));
+    uploadInput.addEventListener('change', e => handleFile(e.target.files[0]));
+    previewClear.addEventListener('click', () => {
+      selectedFile = null; selectedDataUrl = null;
+      preview.style.display = 'none';
+      cameraInput.value = ''; uploadInput.value = '';
+    });
+
+    // ── Validation helpers ──────────────────────────────────────
+    function setFieldError(id) { document.getElementById(id).classList.add('has-error'); }
+    function clearFieldError(id) { document.getElementById(id).classList.remove('has-error'); }
+    function showError(msg) {
+      errorBanner.textContent = msg;
+      errorBanner.classList.add('active');
+      errorBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    function hideError() { errorBanner.classList.remove('active'); }
+
+    function validatePhone(s) {
+      const digits = s.replace(/\D/g, '');
+      return digits.length >= 10 && digits.length <= 15;
+    }
+
+    // ── Submit ──────────────────────────────────────────────────
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      hideError();
+      ['field-name', 'field-phone', 'field-photo'].forEach(clearFieldError);
+
+      const name = document.getElementById('customerName').value.trim();
+      const phone = document.getElementById('customerPhone').value.trim();
+      const email = document.getElementById('customerEmail').value.trim();
+      const description = document.getElementById('customerDesc').value.trim();
+      const honeypot = document.getElementById('website').value;
+
+      // Honeypot — silently succeed, don't tip the bot off
+      if (honeypot) { showResult({ status: 'ready', customer_message: "Got it! Steve will reach out shortly." }); return; }
+
+      let valid = true;
+      if (!name) { setFieldError('field-name'); valid = false; }
+      if (!phone || !validatePhone(phone)) { setFieldError('field-phone'); valid = false; }
+      if (!selectedDataUrl) { setFieldError('field-photo'); valid = false; }
+      if (!valid) {
+        showError("A couple of things still need filling in.");
+        return;
+      }
+
+      // Lock UI, swap to loading
+      submitBtn.disabled = true;
+      form.style.display = 'none';
+      loadingCard.classList.add('active');
+
+      try {
+        const resp = await fetch('/api/diagnose', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            customerName: name,
+            customerPhone: phone,
+            customerEmail: email || null,
+            description: description || null,
+            photoDataUrl: selectedDataUrl
+          })
+        });
+
+        if (!resp.ok) throw new Error('Server returned ' + resp.status);
+        const result = await resp.json();
+        showResult(result);
+      } catch (err) {
+        loadingCard.classList.remove('active');
+        form.style.display = '';
+        submitBtn.disabled = false;
+        showError("Something went wrong sending your photo. Please try again, or call Steve directly at (951) 634-3233.");
+      }
+    });
+
+    // ── Result rendering ────────────────────────────────────────
+    function showResult(r) {
+      loadingCard.classList.remove('active');
+      form.style.display = 'none';
+      resultCard.classList.add('active');
+
+      const icon = document.getElementById('resultIcon');
+      const title = document.getElementById('resultTitle');
+      const msg = document.getElementById('resultMsg');
+      const unitBox = document.getElementById('resultUnit');
+      const unitVal = document.getElementById('resultUnitVal');
+      const possBox = document.getElementById('resultPoss');
+      const possList = document.getElementById('resultPossList');
+      const defer = document.getElementById('resultDefer');
+      const callBtn = document.getElementById('resultCallBtn');
+      const retryBtn = document.getElementById('resultRetryBtn');
+
+      const status = r.status || 'ready';
+      const isUrgent = r.estimated_priority === 'urgent';
+      const needsRetry = status === 'needs_better_photo' || status === 'needs_more_info';
+
+      // Icon + title vibe
+      if (isUrgent) {
+        icon.className = 'result-icon urgent';
+        icon.textContent = '!';
+        title.textContent = 'Flagged as Urgent';
+      } else if (needsRetry) {
+        icon.className = 'result-icon retry';
+        icon.textContent = '?';
+        title.textContent = 'One More Thing';
+      } else {
+        icon.className = 'result-icon ok';
+        icon.textContent = '✓';
+        title.textContent = "Got it — Steve will be in touch.";
+      }
+
+      msg.textContent = r.customer_message || "Steve will reach out within 1–2 hours.";
+
+      // Unit ID
+      if (r.unit_identification) {
+        unitBox.style.display = 'block';
+        unitVal.textContent = r.unit_identification;
+      }
+
+      // Possibilities
+      if (Array.isArray(r.possibilities) && r.possibilities.length > 0) {
+        possBox.style.display = 'block';
+        possList.innerHTML = '';
+        r.possibilities.forEach(p => {
+          const li = document.createElement('li');
+          li.textContent = p;
+          possList.appendChild(li);
+        });
+        defer.style.display = 'block';
+      }
+
+      // Actions
+      if (isUrgent) callBtn.style.display = 'flex';
+      if (needsRetry) retryBtn.style.display = 'inline-block';
+
+      retryBtn.addEventListener('click', () => {
+        // Reset photo + flip back to form. Keep name/phone/email/description.
+        selectedFile = null; selectedDataUrl = null;
+        preview.style.display = 'none';
+        cameraInput.value = ''; uploadInput.value = '';
+        resultCard.classList.remove('active');
+        // Reset result UI for next attempt
+        unitBox.style.display = 'none';
+        possBox.style.display = 'none';
+        defer.style.display = 'none';
+        callBtn.style.display = 'none';
+        retryBtn.style.display = 'none';
+        form.style.display = '';
+        submitBtn.disabled = false;
+        document.getElementById('field-photo').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // ── Phone formatter ────────────────────────────────────────
+    document.getElementById('customerPhone').addEventListener('input', e => {
+      const d = e.target.value.replace(/\D/g, '').slice(0, 10);
+      if (d.length >= 7) e.target.value = `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}`;
+      else if (d.length >= 4) e.target.value = `(${d.slice(0,3)}) ${d.slice(3)}`;
+      else if (d.length > 0) e.target.value = `(${d}`;
+    });
+  })();
+  </script>
+</body>
+</html>
