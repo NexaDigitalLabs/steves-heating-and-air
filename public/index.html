@@ -586,6 +586,7 @@
       padding: 40px;
       position: relative;
       overflow: hidden;
+      scroll-margin-top: 130px; /* clears 110px sticky navbar + 20px breathing room */
     }
     .ilf-wrap::before {
       content: '';
@@ -594,6 +595,19 @@
       width: 200px; height: 3px;
       background: var(--red);
       border-radius: 0 0 3px 3px;
+      transition: width .4s ease, height .4s ease, background .4s ease;
+    }
+    /* When user jumps to the form via #contact, briefly highlight the accent bar so
+       it's unmistakable they've landed at the quote form, not somewhere else. */
+    .ilf-wrap:target::before {
+      width: 320px; height: 5px;
+      background: var(--red2);
+      animation: ilfPulse 2.4s ease-out;
+    }
+    @keyframes ilfPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(224,32,32,.55); }
+      40%  { box-shadow: 0 0 24px 8px rgba(224,32,32,.35); }
+      100% { box-shadow: 0 0 0 0 rgba(224,32,32,0); }
     }
     .ilf-in {
       max-width: 1200px;
@@ -1510,7 +1524,7 @@
       .vps-bd-ic { margin: 0 auto; }
       .vps-bd-tx { font-size: .82rem; white-space: normal; width: 100%; }
       .vps-bd-tx span { font-size: .6rem; }
-      .ilf-wrap { padding: 32px 20px; }
+      .ilf-wrap { padding: 32px 20px; scroll-margin-top: 100px; }
       .ilf-in { grid-template-columns: 1fr; gap: 22px; }
       .ilf-pitch { text-align: center; }
       .ilf-form { grid-template-columns: 1fr; gap: 10px; }
@@ -1899,14 +1913,13 @@
   </div></div>
 
   <!-- Inline lead capture form -->
-  <a id="contact" aria-hidden="true"></a>
-  <div class="ilf-wrap">
+  <div class="ilf-wrap" id="contact">
     <div class="ilf-in">
-      <div class="ilf-pitch fi">
+      <div class="ilf-pitch">
         <h3>Get a Free Quote <em>Fast</em></h3>
         <p>Tell us what you need and we'll get right back to you — no pressure, no upsell.</p>
       </div>
-      <form class="ilf-form fi" onsubmit="return fSub(event)">
+      <form class="ilf-form" onsubmit="return fSub(event)">
         <input type="text" name="name" placeholder="Your name" required autocomplete="name"/>
         <input type="tel" name="phone" placeholder="Phone number" required autocomplete="tel"/>
         <select name="service" required>
