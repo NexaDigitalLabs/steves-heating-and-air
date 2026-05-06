@@ -860,8 +860,9 @@
       background-image: url('/images/truck.png');
       background-size: cover;
       background-position: center;
-      opacity: 0.14;
-      filter: contrast(1.05) saturate(.85);
+      background-attachment: fixed;
+      opacity: 0.42;
+      filter: contrast(1.05) saturate(.95) brightness(1.1);
       pointer-events: none;
       z-index: 0;
     }
@@ -869,7 +870,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,.65) 60%, rgba(0,0,0,.92) 100%);
+      background: linear-gradient(180deg, rgba(0,0,0,.25) 0%, rgba(0,0,0,.45) 60%, rgba(0,0,0,.78) 100%);
       pointer-events: none;
       z-index: 1;
     }
@@ -1562,6 +1563,7 @@
       .sd { padding: 32px 24px; }
       .sd-feats { grid-template-columns: 1fr; }
       .faq-sec { padding: 56px 0; }
+      .faq-sec::before { background-attachment: scroll; }
       .faq-sec .faq-container { padding: 0 20px; }
       .faq-list { grid-template-columns: 1fr; gap: 12px; }
       .faq-item summary { padding: 18px 20px; font-size: 1.15rem; }
@@ -1576,11 +1578,11 @@
     .sgr-sec { background: var(--mid); padding: 80px 0; border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); }
     .sgr-head { text-align: center; max-width: 720px; margin: 0 auto 50px; }
     .sgr-head .eyebrow { justify-content: center; display: flex; align-items: center; gap: 10px; }
-    .sgr-head .section-h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--white); line-height: 1.1; margin: 14px 0 16px; letter-spacing: .02em; }
+    .sgr-head .section-h2 { margin: 14px 0 16px; }
     .sgr-head .section-h2 em { font-style: normal; color: var(--red); }
     .sgr-head p { color: var(--muted); font-size: .96rem; line-height: 1.7; max-width: 580px; margin: 0 auto; }
     .sgr-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
-    .sgr-card { background: var(--dark); border: 1px solid rgba(74,122,181,.28); border-radius: 10px; padding: 28px 26px; transition: transform .25s, border-color .25s, background .25s, box-shadow .25s; grid-column: span 2; box-shadow: 0 2px 16px rgba(0,0,0,.25); }
+    .sgr-card { background: var(--dark); border: 1px solid rgba(74,122,181,.28); border-radius: 10px; padding: 28px 26px; transition: transform .25s, border-color .25s, background .25s, box-shadow .25s; grid-column: span 2; box-shadow: 0 2px 16px rgba(0,0,0,.25); text-align: center; }
     .sgr-card:hover { transform: translateY(-4px); border-color: rgba(196,30,30,.55); background: var(--navy3); box-shadow: 0 6px 24px rgba(0,0,0,.4); }
     .sgr-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.45rem; color: var(--white); letter-spacing: .06em; line-height: 1.1; margin: 0 0 10px; text-transform: uppercase; }
     .sgr-card p { color: rgba(255,255,255,.72); font-size: .92rem; line-height: 1.7; margin: 0; }
