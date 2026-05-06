@@ -77,7 +77,13 @@ function buildEmailHtml({ submissionId, customerName, customerPhone, customerEma
   const accent = isUrgent ? '#C41E1E' : '#2255A4';
   const possibilities = (ai?.possibilities || []).map(p => `<li style="margin: 4px 0; color: #333;">${escapeHtml(p)}</li>`).join('');
   const safetyFlags = (ai?.safety_flags || []).map(f => `<span style="display: inline-block; background: #C41E1E; color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin: 2px 4px 2px 0;">${escapeHtml(f.toUpperCase().replace(/_/g, ' '))}</span>`).join('');
-  const phoneHref = `tel:${(customerPhone || '').replace(/\D/g, '')}`;
+  const phoneDigitsOnly = (customerPhone || '').replace(/\D/g, '');
+  // Normalize to E.164 (+1XXXXXXXXXX) for reliable tel: link behavior across
+  // email clients. If 11 digits and starts with 1, use as-is; if 10, prepend 1.
+  const phoneNormalized = phoneDigitsOnly.length === 10
+    ? '1' + phoneDigitsOnly
+    : phoneDigitsOnly;
+  const phoneHref = `tel:+${phoneNormalized}`;
   const emailHref = customerEmail ? `mailto:${customerEmail}` : null;
 
   return `<!DOCTYPE html>
