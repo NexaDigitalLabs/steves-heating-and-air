@@ -1536,16 +1536,33 @@
       .ct-lay { grid-template-columns: 1fr; }
       .ar-lay { grid-template-columns: 1fr; }
       .fr { grid-template-columns: 1fr; }
-      .ft-g { grid-template-columns: 1fr 1fr; gap: 32px 24px; padding: 50px 20px 30px; }
-      .ft-br { text-align: center; grid-column: 1 / -1; }
+      .ft-g { grid-template-columns: 1fr; gap: 36px; padding: 50px 22px 30px; }
+      .ft-br { text-align: center; }
       .ft-br img { margin-left: auto; margin-right: auto; height: 90px; }
       .ft-br-tag { letter-spacing: .22em; }
       .ft-creds { max-width: 100%; align-items: center; }
       .ft-cred { text-align: center; }
-      .ft-g > .ft-c:first-of-type { grid-column: 1 / -1; }
-      /* Services list: 2 columns on mobile to keep footer compact */
-      .ft-services-ul { display: grid !important; grid-template-columns: 1fr 1fr; gap: 12px 24px !important; }
-      .ft-services-ul li a { font-size: .88rem; }
+
+      /* Centered section headers + tighter spacing for mobile */
+      .ft-c { text-align: center; }
+      .ft-c h4 { margin-bottom: 14px; }
+
+      /* Services list: inline pills that wrap — kills the column word-break problem */
+      .ft-services-ul { display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; justify-content: center; gap: 8px !important; }
+      .ft-services-ul li { display: inline-block; }
+      .ft-services-ul li a { display: inline-block; background: rgba(255,255,255,.04); border: 1px solid rgba(74,122,181,.2); padding: 7px 13px; border-radius: 999px; font-size: .82rem; line-height: 1.2; white-space: nowrap; }
+      .ft-services-ul li a:hover { background: rgba(74,122,181,.18); border-color: rgba(74,122,181,.4); color: var(--white); }
+
+      /* Company list: horizontal row of inline links */
+      .ft-c:nth-of-type(2) ul { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px 22px; }
+      .ft-c:nth-of-type(2) ul a { font-size: .92rem; }
+
+      /* Contact column: centered, tighter line spacing */
+      .ft-c:nth-of-type(3) ul { gap: 8px; }
+      .ft-c:nth-of-type(3) ul a, .ft-c:nth-of-type(3) ul li { text-align: center; }
+
+      /* Follow Us socials centered (default but explicit) */
+      .ft-social { justify-content: center !important; }
       .ft-bot { grid-template-columns: 1fr; gap: 14px; text-align: center; padding: 20px; }
       .ft-bot-copy, .ft-bs, .ft-credit { justify-self: center; }
       .ph { padding: 24px 20px 22px; }
@@ -1917,15 +1934,15 @@
       <a href="/services/" class="btn btn-outline-w fi">View All Services</a>
     </div>
     <div class="hsg">
-      <a class="hsc2 fi" href="/services/air-conditioning/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/ac-service.jpg')"></div><div class="hsc2-em">❄️</div></div><div class="hsc2-bd"><h3>Air Conditioning</h3><p>Central AC, mini-splits, ductless systems — sales, installation, repair, and seasonal tune-ups for all brands.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/furnaces/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/furnace.png')"></div><div class="hsc2-em">🔥</div></div><div class="hsc2-bd"><h3>Furnaces</h3><p>Natural gas, electric, and propane furnace installation, repair, and replacement for all home sizes.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/heat-pumps/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/heat-pump.png')"></div><div class="hsc2-em">♨️</div></div><div class="hsc2-bd"><h3>Heat Pumps</h3><p>Energy-efficient heating and cooling in one system — ideal for the SoCal climate year-round.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/residential-refrigeration/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/commercial-refrigeration/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/hvac-maintenance/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/air-quality-control/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">💨</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/water-heaters/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/water-heater.png')"></div><div class="hsc2-em">💧</div></div><div class="hsc2-bd"><h3>Water Heaters</h3><p>Tank, tankless, and hybrid water heater installation, repair, and replacement. Gas, electric, and propane systems.</p><span class="hsc2-lk">Learn More →</span></div></a>
-      <a class="hsc2 fi" href="/services/energy-audits/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/energy-audit.png')"></div><div class="hsc2-em">⚡</div></div><div class="hsc2-bd"><h3>Energy Audits</h3><p>Comprehensive home and business energy assessments. Identify thermal leaks, insulation issues, and savings opportunities.</p><span class="hsc2-lk">Learn More →</span></div></a>
+      <a class="hsc2 fi" href="/services/air-conditioning/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/ac-service.jpg')"></div><div class="hsc2-em">❄️</div></div><div class="hsc2-bd"><h3>Air Conditioning</h3><p>Central AC, mini-splits, ductless systems — sales, installation, repair, and seasonal tune-ups for all brands.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/furnaces/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/furnace.png')"></div><div class="hsc2-em">🔥</div></div><div class="hsc2-bd"><h3>Furnaces</h3><p>Natural gas, electric, and propane furnace installation, repair, and replacement for all home sizes.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/heat-pumps/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/heat-pump.png')"></div><div class="hsc2-em">♨️</div></div><div class="hsc2-bd"><h3>Heat Pumps</h3><p>Energy-efficient heating and cooling in one system — ideal for the SoCal climate year-round.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/residential-refrigeration/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/res-ref.png')"></div><div class="hsc2-em">🏠</div></div><div class="hsc2-bd"><h3>Residential Refrigeration</h3><p>Walk-in coolers, wine cellars, specialty refrigeration. Installation and repair with expert precision.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/commercial-refrigeration/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/commercial.png')"></div><div class="hsc2-em">🏢</div></div><div class="hsc2-bd"><h3>Commercial Refrigeration</h3><p>Restaurant coolers, commercial freezers, display cases — keeping your business running cold.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/hvac-maintenance/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/hvac-maintenance.png')"></div><div class="hsc2-em">🔧</div></div><div class="hsc2-bd"><h3>HVAC Maintenance</h3><p>Preventive plans that extend equipment life, improve efficiency, and catch problems early.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/air-quality-control/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/clean-air.png')"></div><div class="hsc2-em">💨</div></div><div class="hsc2-bd"><h3>Air Quality Control</h3><p>Indoor air quality systems, HRV (Heat Recovery Ventilation), filtration, and humidity control for healthier air.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/water-heaters/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/water-heater.png')"></div><div class="hsc2-em">💧</div></div><div class="hsc2-bd"><h3>Water Heaters</h3><p>Tank, tankless, and hybrid water heater installation, repair, and replacement. Gas, electric, and propane systems.</p><span class="hsc2-lk">Learn More</span></div></a>
+      <a class="hsc2 fi" href="/services/energy-audits/"><div class="hsc2-top"><div class="hsc2-img" style="background-image:url('/images/energy-audit.png')"></div><div class="hsc2-em">⚡</div></div><div class="hsc2-bd"><h3>Energy Audits</h3><p>Comprehensive home and business energy assessments. Identify thermal leaks, insulation issues, and savings opportunities.</p><span class="hsc2-lk">Learn More</span></div></a>
     </div>
   </div></section>
 
@@ -2071,7 +2088,7 @@
     <div class="hpc-grid">
       <div class="hpc-copy fi">
         <div class="eyebrow">Free Photo Review</div>
-        <h2 id="hpc-heading" class="section-h2">Not Sure What's Wrong? <em>Send Steve a Photo.</em></h2>
+        <h2 id="hpc-heading" class="section-h2">Not Sure What's Wrong? <em>Send Steve a Photo or Video.</em></h2>
         <p class="hpc-sub">Got a problem? Send Steve a photo with your info &mdash; he&rsquo;ll get back to you personally.</p>
         <a href="/diagnose/" class="btn btn-red btn-lg">Send a Photo</a>
       </div>
