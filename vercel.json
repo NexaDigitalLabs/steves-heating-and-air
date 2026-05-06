@@ -1,1 +1,9 @@
-{}
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/cleanup-old-submissions",
+      "schedule": "0 10 * * *"
+    }
+  ]
+}
