@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Send Steve a Photo | Steve's Air Conditioning &amp; Heating</title>
-  <meta name="description" content="Have an issue with your AC or heater? Send Steve a photo and your info — he'll personally review and get back to you within 1–2 hours."/>
+  <meta name="description" content="Have an issue with your AC or heater? Send Steve a photo or short video and your info — he'll personally review and get back to you."/>
   <meta name="robots" content="noindex, follow"/>
 
   <link rel="icon" href="/images/favicon.png" type="image/png"/>
@@ -16,61 +16,28 @@
 
   <style>
     :root {
-      --navy: #0B1D3A;
-      --navy3: #081530;
-      --blue: #1A3F7A;
-      --blue2: #2255A4;
-      --blueAcc: #4285F4;
-      --steel: #4A7AB5;
-      --red: #C41E1E;
-      --red2: #E02020;
-      --redDark: #8B1414;
-      --white: #FFFFFF;
-      --muted: #8BA3BF;
-      --dark: #060E1C;
-      --mid: #0D1A30;
-      --gold: #D4A843;
-      --green: #2BB673;
-      --greenDark: #1F8A57;
-      --r: 8px;
-      --r-lg: 14px;
+      --navy: #0B1D3A; --navy3: #081530; --blue: #1A3F7A; --blue2: #2255A4;
+      --blueAcc: #4285F4; --steel: #4A7AB5; --red: #C41E1E; --red2: #E02020;
+      --redDark: #8B1414; --white: #FFFFFF; --muted: #8BA3BF;
+      --dark: #060E1C; --mid: #0D1A30; --gold: #D4A843;
+      --green: #2BB673; --greenDark: #1F8A57;
+      --r: 8px; --r-lg: 14px;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--dark);
-      color: var(--white);
-      min-height: 100vh;
-      line-height: 1.55;
-    }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--dark); color: var(--white); min-height: 100vh; line-height: 1.55; }
 
-    /* ─── Mini header ─── */
-    .mh {
-      background: var(--navy3);
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      padding: 14px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      background: rgba(8,21,48,.92);
-    }
+    /* Mini header */
+    .mh { padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); background: rgba(8,21,48,.92); border-bottom: 1px solid rgba(255,255,255,.08); }
     .mh-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--white); }
     .mh-logo img { height: 36px; width: auto; }
     .mh-logo span { font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: .04em; }
     .mh-back { color: var(--muted); text-decoration: none; font-size: .88rem; font-family: 'Rajdhani', sans-serif; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; transition: color .2s; }
     .mh-back:hover { color: var(--white); }
 
-    /* ─── Page wrap ─── */
     .wrap { max-width: 720px; margin: 0 auto; padding: 36px 20px 80px; }
 
-    /* ─── Page header ─── */
+    /* Page header */
     .ph { text-align: center; margin-bottom: 40px; }
     .ph .eyebrow { display: inline-flex; align-items: center; gap: 12px; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; color: var(--blueAcc); margin-bottom: 16px; }
     .ph .eyebrow::before { content: ''; display: block; width: 24px; height: 2px; background: var(--blueAcc); }
@@ -78,192 +45,99 @@
     .ph h1 em { font-style: normal; color: var(--red); }
     .ph p { color: rgba(255,255,255,.78); font-size: 1.05rem; max-width: 540px; margin: 0 auto; }
 
-    /* ─── Steps strip ─── */
+    /* Steps */
     .steps { display: flex; gap: 12px; margin-bottom: 36px; }
     .step { flex: 1; background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 14px 12px; text-align: center; }
     .step-num { font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; color: var(--blueAcc); line-height: 1; margin-bottom: 6px; letter-spacing: .04em; }
     .step-tx { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .82rem; letter-spacing: .08em; text-transform: uppercase; color: var(--white); }
 
-    /* ─── Form card ─── */
-    .card {
-      background: var(--mid);
-      border: 1px solid rgba(255,255,255,.06);
-      border-radius: var(--r-lg);
-      padding: 32px;
-      margin-bottom: 20px;
-    }
+    /* Form card */
+    .card { background: var(--mid); border: 1px solid rgba(255,255,255,.06); border-radius: var(--r-lg); padding: 32px; margin-bottom: 20px; }
     .card-intro { color: rgba(255,255,255,.78); font-size: .98rem; line-height: 1.65; margin-bottom: 24px; }
 
     .field { margin-bottom: 20px; }
     .field label { display: block; font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-    .field input,
-    .field textarea {
-      width: 100%;
-      background: var(--dark);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: var(--r);
-      padding: 14px 16px;
-      color: var(--white);
-      font-family: inherit;
-      font-size: 1rem;
-      transition: border-color .2s, background .2s;
-      -webkit-appearance: none;
-      appearance: none;
-    }
-    .field input:focus,
-    .field textarea:focus {
-      outline: none;
-      border-color: var(--blueAcc);
-      background: rgba(11,29,58,.6);
-    }
+    .field input, .field textarea { width: 100%; background: var(--dark); border: 1px solid rgba(255,255,255,.12); border-radius: var(--r); padding: 14px 16px; color: var(--white); font-family: inherit; font-size: 1rem; transition: border-color .2s, background .2s; -webkit-appearance: none; appearance: none; }
+    .field input:focus, .field textarea:focus { outline: none; border-color: var(--blueAcc); background: rgba(11,29,58,.6); }
     .field textarea { min-height: 100px; resize: vertical; line-height: 1.5; }
     .field-hint { display: block; font-size: .82rem; color: var(--muted); margin-top: 6px; }
     .field-error { display: none; color: var(--red2); font-size: .85rem; margin-top: 6px; }
-    .field.has-error input,
-    .field.has-error textarea { border-color: var(--red2); }
+    .field.has-error input, .field.has-error textarea { border-color: var(--red2); }
     .field.has-error .field-error { display: block; }
+    .opt { color: var(--muted); font-weight: normal; text-transform: none; letter-spacing: 0; font-size: .82rem; }
 
-    /* ─── Photo picker ─── */
-    .pp { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .pp-btn {
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      gap: 8px; padding: 22px 16px;
-      background: var(--dark);
-      border: 1px dashed rgba(74,122,181,.35);
-      border-radius: var(--r);
-      color: var(--white);
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: .92rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: border-color .2s, background .2s, transform .15s;
-    }
-    .pp-btn:hover { border-color: var(--blueAcc); background: rgba(11,29,58,.4); }
-    .pp-btn:active { transform: scale(.98); }
-    .pp-btn svg { width: 28px; height: 28px; fill: var(--blueAcc); }
-    .pp input[type="file"] { display: none; }
+    /* Upload mode picker */
+    .ump { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .ump-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 18px 10px; background: var(--dark); border: 1px dashed rgba(74,122,181,.35); border-radius: var(--r); color: var(--white); font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .82rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; transition: border-color .2s, background .2s, transform .15s; }
+    .ump-btn:hover { border-color: var(--blueAcc); background: rgba(11,29,58,.4); }
+    .ump-btn:active { transform: scale(.98); }
+    .ump-btn svg { width: 24px; height: 24px; fill: var(--blueAcc); }
+    .ump input[type="file"] { display: none; }
 
-    .preview { display: none; margin-top: 16px; }
-    .preview img { width: 100%; max-height: 360px; object-fit: contain; background: var(--dark); border-radius: var(--r); border: 1px solid rgba(255,255,255,.08); }
-    .preview-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: .85rem; color: var(--muted); }
-    .preview-clear { color: var(--red2); background: none; border: none; font-family: inherit; font-size: .85rem; cursor: pointer; padding: 0; }
-    .preview-clear:hover { text-decoration: underline; }
+    /* Photo slot grid */
+    .slots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+    .slot { aspect-ratio: 1; background: var(--dark); border: 1px dashed rgba(255,255,255,.12); border-radius: var(--r); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .slot.has-img { border-style: solid; border-color: rgba(74,122,181,.4); }
+    .slot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .slot-empty-icon { color: var(--muted); opacity: .4; }
+    .slot-rm { position: absolute; top: 6px; right: 6px; width: 28px; height: 28px; border-radius: 50%; background: rgba(196,30,30,.85); color: var(--white); border: none; font-size: 18px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .slot-rm:hover { background: var(--red2); }
+    .slots-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: .85rem; color: var(--muted); }
+    .slots-add { color: var(--blueAcc); background: none; border: none; font-family: inherit; font-size: .88rem; cursor: pointer; padding: 0; font-weight: 600; }
+    .slots-add:hover { text-decoration: underline; }
+    .slots-add:disabled { color: var(--muted); cursor: not-allowed; text-decoration: none; }
 
-    /* ─── Submit ─── */
+    /* Video preview */
+    .vid-prev { margin-top: 12px; background: var(--dark); border: 1px solid rgba(74,122,181,.4); border-radius: var(--r); overflow: hidden; }
+    .vid-prev video { width: 100%; max-height: 360px; display: block; background: #000; }
+    .vid-prev-meta { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; font-size: .85rem; color: var(--muted); }
+    .vid-prev-clear { color: var(--red2); background: none; border: none; font-family: inherit; font-size: .85rem; cursor: pointer; padding: 0; }
+    .vid-prev-clear:hover { text-decoration: underline; }
+
+    /* Submit + result + loading + error (same as before) */
     .submit-row { margin-top: 28px; }
-    .btn-submit {
-      width: 100%;
-      background: var(--red);
-      color: var(--white);
-      border: none;
-      padding: 18px 24px;
-      border-radius: var(--r);
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.4rem;
-      letter-spacing: .06em;
-      cursor: pointer;
-      transition: background .2s, transform .15s, opacity .2s;
-    }
+    .btn-submit { width: 100%; background: var(--red); color: var(--white); border: none; padding: 18px 24px; border-radius: var(--r); font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: .06em; cursor: pointer; transition: background .2s, transform .15s, opacity .2s; }
     .btn-submit:hover:not(:disabled) { background: var(--red2); }
     .btn-submit:active:not(:disabled) { transform: scale(.99); }
     .btn-submit:disabled { opacity: .5; cursor: not-allowed; }
-
     .privacy-note { font-size: .82rem; color: var(--muted); margin-top: 14px; text-align: center; line-height: 1.5; }
 
-    /* ─── State: loading ─── */
     .loading-card { display: none; text-align: center; padding: 60px 32px; }
     .loading-card.active { display: block; }
-    .spinner {
-      width: 56px; height: 56px; margin: 0 auto 24px;
-      border: 4px solid rgba(74,122,181,.18);
-      border-top-color: var(--blueAcc);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
+    .spinner { width: 56px; height: 56px; margin: 0 auto 24px; border: 4px solid rgba(74,122,181,.18); border-top-color: var(--blueAcc); border-radius: 50%; animation: spin 1s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .loading-tx { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; letter-spacing: .04em; margin-bottom: 8px; }
     .loading-sub { color: var(--muted); font-size: .95rem; }
+    .loading-progress { display: none; max-width: 320px; margin: 16px auto 0; height: 6px; background: rgba(74,122,181,.18); border-radius: 3px; overflow: hidden; }
+    .loading-progress.active { display: block; }
+    .loading-progress-bar { height: 100%; background: var(--blueAcc); width: 0%; transition: width .3s; }
 
-    /* ─── State: result ─── */
     .result-card { display: none; padding: 32px; }
     .result-card.active { display: block; }
-
-    .result-icon {
-      width: 56px; height: 56px;
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 20px;
-      font-size: 1.8rem;
-    }
+    .result-icon { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; }
     .result-icon.ok { background: rgba(43,182,115,.15); color: var(--green); }
     .result-icon.retry { background: rgba(212,168,67,.15); color: var(--gold); }
     .result-icon.urgent { background: rgba(196,30,30,.18); color: var(--red2); }
-
     .result-title { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: .02em; text-align: center; margin-bottom: 14px; }
     .result-msg { color: rgba(255,255,255,.85); font-size: 1.02rem; line-height: 1.65; margin-bottom: 22px; text-align: center; }
-
-    .result-detail {
-      background: var(--dark);
-      border-left: 3px solid var(--blueAcc);
-      padding: 16px 20px;
-      border-radius: 0 var(--r) var(--r) 0;
-      margin-bottom: 20px;
-    }
+    .result-detail { background: var(--dark); border-left: 3px solid var(--blueAcc); padding: 16px 20px; border-radius: 0 var(--r) var(--r) 0; margin-bottom: 20px; }
     .result-detail-label { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .76rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
     .result-detail-val { color: var(--white); font-size: .98rem; line-height: 1.5; }
-    .result-detail.urgent { border-left-color: var(--red2); }
-
     .result-poss { background: var(--dark); border-radius: var(--r); padding: 18px 20px; margin-bottom: 20px; }
     .result-poss-h { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
     .result-poss ul { list-style: none; padding: 0; margin: 0; }
     .result-poss li { padding: 8px 0; padding-left: 22px; position: relative; color: rgba(255,255,255,.88); font-size: .96rem; line-height: 1.5; }
     .result-poss li::before { content: ''; position: absolute; left: 0; top: 14px; width: 8px; height: 8px; background: var(--blueAcc); border-radius: 50%; }
     .result-defer { color: var(--muted); font-size: .9rem; font-style: italic; text-align: center; margin: 18px 0 22px; }
-
     .result-actions { display: flex; flex-direction: column; gap: 10px; margin-top: 24px; }
-    .btn-call {
-      display: flex; align-items: center; justify-content: center; gap: 10px;
-      background: var(--green);
-      color: var(--white);
-      text-decoration: none;
-      padding: 16px 24px;
-      border-radius: var(--r);
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.2rem;
-      letter-spacing: .06em;
-      transition: background .2s;
-    }
+    .btn-call { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--green); color: var(--white); text-decoration: none; padding: 16px 24px; border-radius: var(--r); font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: .06em; transition: background .2s; }
     .btn-call:hover { background: var(--greenDark); }
-    .btn-retry {
-      background: transparent;
-      color: var(--blueAcc);
-      border: 1px solid var(--blueAcc);
-      padding: 14px 24px;
-      border-radius: var(--r);
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 1.1rem;
-      letter-spacing: .06em;
-      cursor: pointer;
-      transition: background .2s;
-    }
+    .btn-retry { background: transparent; color: var(--blueAcc); border: 1px solid var(--blueAcc); padding: 14px 24px; border-radius: var(--r); font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: .06em; cursor: pointer; transition: background .2s; }
     .btn-retry:hover { background: rgba(74,122,181,.12); }
 
-    /* ─── State: error ─── */
-    .error-banner {
-      display: none;
-      background: rgba(196,30,30,.12);
-      border: 1px solid rgba(224,32,32,.4);
-      color: var(--white);
-      padding: 14px 18px;
-      border-radius: var(--r);
-      margin-bottom: 20px;
-      font-size: .94rem;
-    }
+    .error-banner { display: none; background: rgba(196,30,30,.12); border: 1px solid rgba(224,32,32,.4); color: var(--white); padding: 14px 18px; border-radius: var(--r); margin-bottom: 20px; font-size: .94rem; }
     .error-banner.active { display: block; }
 
-    /* ─── Responsive ─── */
     @media (max-width: 540px) {
       .wrap { padding: 24px 16px 60px; }
       .card { padding: 22px; }
@@ -271,7 +145,8 @@
       .step { padding: 12px 8px; }
       .step-num { font-size: 1rem; }
       .step-tx { font-size: .72rem; letter-spacing: .06em; }
-      .pp { grid-template-columns: 1fr; }
+      .ump { grid-template-columns: 1fr; gap: 8px; }
+      .ump-btn { flex-direction: row; justify-content: flex-start; padding: 14px 18px; }
       .ph h1 { font-size: 2rem; }
       .mh-logo span { display: none; }
     }
@@ -291,18 +166,18 @@
     <div class="ph">
       <div class="eyebrow">Free Photo Review</div>
       <h1>Have an Issue? <em>Send Steve a Photo.</em></h1>
-      <p>Snap or upload a photo of your AC, heater, or thermostat. Steve will personally review and get back to you, usually within 1&ndash;2 hours.</p>
+      <p>Snap, upload, or record a short video of your AC, heater, water heater, or thermostat. Steve will personally review and get back to you, usually within 1&ndash;2 hours.</p>
     </div>
 
     <div class="steps">
       <div class="step"><div class="step-num">Step 1</div><div class="step-tx">Quick Info</div></div>
-      <div class="step"><div class="step-num">Step 2</div><div class="step-tx">Send Photo</div></div>
+      <div class="step"><div class="step-num">Step 2</div><div class="step-tx">Send Media</div></div>
       <div class="step"><div class="step-num">Step 3</div><div class="step-tx">Steve Replies</div></div>
     </div>
 
     <div class="error-banner" id="errorBanner"></div>
 
-    <!-- ─── FORM CARD ─── -->
+    <!-- ─── FORM ─── -->
     <form class="card" id="diagnoseForm" novalidate>
       <p class="card-intro">Steve will personally review what you send and get back to you. So we know who to reach out to &mdash;</p>
 
@@ -319,42 +194,59 @@
       </div>
 
       <div class="field" id="field-email">
-        <label for="customerEmail">Email <span style="color: var(--muted); font-weight: normal; text-transform: none; letter-spacing: 0; font-size: .82rem;">(optional)</span></label>
+        <label for="customerEmail">Email <span class="opt">(optional)</span></label>
         <input type="email" id="customerEmail" name="customerEmail" placeholder="you@example.com" autocomplete="email" maxlength="120"/>
       </div>
 
-      <div class="field" id="field-photo">
-        <label>Photo of the issue</label>
-        <div class="pp">
-          <label class="pp-btn" for="cameraInput">
+      <div class="field" id="field-media">
+        <label>Photo or short video of the issue</label>
+        <div class="ump">
+          <label class="ump-btn" for="cameraInput">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2 7.17 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3.17L15 2H9zm3 15a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
             Take a Photo
           </label>
           <input type="file" id="cameraInput" accept="image/*" capture="environment"/>
-          <label class="pp-btn" for="uploadInput">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13v6H5v-6H3v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2zm-7-12-5 5h3v6h4V6h3l-5-5z"/></svg>
-            Upload Photo
-          </label>
-          <input type="file" id="uploadInput" accept="image/*"/>
-        </div>
-        <span class="field-error">A photo helps Steve know what to look for.</span>
 
-        <div class="preview" id="preview">
-          <img id="previewImg" alt="Your photo"/>
-          <div class="preview-meta">
-            <span id="previewName">photo.jpg</span>
-            <button type="button" class="preview-clear" id="previewClear">Remove</button>
+          <label class="ump-btn" for="videoInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 10.5V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4.5l4 4v-11l-4 4z"/></svg>
+            Record Video
+          </label>
+          <input type="file" id="videoInput" accept="video/*" capture="environment"/>
+
+          <label class="ump-btn" for="uploadInput">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 13v6H5v-6H3v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-2zm-7-12-5 5h3v6h4V6h3l-5-5z"/></svg>
+            Upload File
+          </label>
+          <input type="file" id="uploadInput" accept="image/*,video/*"/>
+        </div>
+        <span class="field-error">Please add at least one photo or a short video.</span>
+
+        <!-- Photo slots — shown when photos picked -->
+        <div id="photoSlots" style="display: none;">
+          <div class="slots" id="slotsGrid"></div>
+          <div class="slots-meta">
+            <span id="slotsCount">0 of 3 photos</span>
+            <button type="button" class="slots-add" id="slotsAddBtn">+ Add another</button>
+          </div>
+        </div>
+
+        <!-- Video preview — shown when video picked -->
+        <div class="vid-prev" id="videoPreview" style="display: none;">
+          <video id="videoPreviewEl" controls playsinline preload="metadata"></video>
+          <div class="vid-prev-meta">
+            <span id="videoPreviewMeta">video.mp4</span>
+            <button type="button" class="vid-prev-clear" id="videoPreviewClear">Remove</button>
           </div>
         </div>
       </div>
 
       <div class="field">
-        <label for="customerDesc">What's going on? <span style="color: var(--muted); font-weight: normal; text-transform: none; letter-spacing: 0; font-size: .82rem;">(optional but helpful)</span></label>
+        <label for="customerDesc">What's going on? <span class="opt">(optional but helpful)</span></label>
         <textarea id="customerDesc" name="customerDesc" placeholder="e.g. AC running but house isn't cooling, started this morning..." maxlength="800"></textarea>
         <span class="field-hint">Quick description of what you're seeing or hearing.</span>
       </div>
 
-      <!-- Honeypot — bots fill, humans don't -->
+      <!-- Honeypot -->
       <div style="position: absolute; left: -9999px;" aria-hidden="true">
         <label for="website">Website</label>
         <input type="text" id="website" name="website" tabindex="-1" autocomplete="off"/>
@@ -362,127 +254,317 @@
 
       <div class="submit-row">
         <button type="submit" class="btn-submit" id="submitBtn">Send to Steve &rarr;</button>
-        <p class="privacy-note">Your photo is sent securely and only used to help Steve diagnose your issue.</p>
+        <p class="privacy-note">Your photos and videos are sent securely and only used to help Steve diagnose your issue.</p>
       </div>
     </form>
 
-    <!-- ─── LOADING CARD ─── -->
+    <!-- ─── LOADING ─── -->
     <div class="card loading-card" id="loadingCard">
       <div class="spinner"></div>
-      <div class="loading-tx">Reviewing your photo&hellip;</div>
-      <div class="loading-sub">Just a few seconds.</div>
+      <div class="loading-tx" id="loadingTx">Reviewing your photo&hellip;</div>
+      <div class="loading-sub" id="loadingSub">Just a few seconds.</div>
+      <div class="loading-progress" id="loadingProgress"><div class="loading-progress-bar" id="loadingBar"></div></div>
     </div>
 
-    <!-- ─── RESULT CARD ─── -->
+    <!-- ─── RESULT ─── -->
     <div class="card result-card" id="resultCard">
       <div class="result-icon" id="resultIcon">✓</div>
       <h2 class="result-title" id="resultTitle">Got it!</h2>
       <p class="result-msg" id="resultMsg"></p>
-
       <div class="result-detail" id="resultUnit" style="display: none;">
         <div class="result-detail-label">What we see</div>
         <div class="result-detail-val" id="resultUnitVal"></div>
       </div>
-
       <div class="result-poss" id="resultPoss" style="display: none;">
         <div class="result-poss-h">A few possibilities</div>
         <ul id="resultPossList"></ul>
       </div>
-
       <p class="result-defer" id="resultDefer" style="display: none;">Steve will confirm what's actually going on once he takes a look.</p>
-
       <div class="result-actions">
         <a href="tel:9516343233" class="btn-call" id="resultCallBtn" style="display: none;">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1.02 1.02 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
           Call Steve Now
         </a>
-        <button type="button" class="btn-retry" id="resultRetryBtn" style="display: none;">Send Another Photo</button>
+        <button type="button" class="btn-retry" id="resultRetryBtn" style="display: none;">Try Again</button>
       </div>
     </div>
   </main>
 
+  <!-- Supabase JS for direct upload of video files -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+
   <script>
   (() => {
+    // CONFIG — replace with your Supabase project values
+    const SUPABASE_URL = 'https://hbaayjimfkegfcmjjome.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhiYWF5amltZmtlZ2ZjbWpqb21lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgwMDM1NDEsImV4cCI6MjA5MzU3OTU0MX0.6PwwjmQR7XjTHa-XOJFr8lS46H0ZXtp300nNNm_sidg';
+    const STORAGE_BUCKET = 'diagnose-photos';
+    const MAX_PHOTOS = 3;
+    const MAX_VIDEO_MB = 25;          // hard ceiling for upload
+    const MAX_VIDEO_SECONDS = 10;     // duration cap
+    const PHOTO_RESIZE_MAX = 1280;    // long-edge resize for photos
+
+    const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // DOM
     const form = document.getElementById('diagnoseForm');
     const cameraInput = document.getElementById('cameraInput');
+    const videoInput = document.getElementById('videoInput');
     const uploadInput = document.getElementById('uploadInput');
-    const preview = document.getElementById('preview');
-    const previewImg = document.getElementById('previewImg');
-    const previewName = document.getElementById('previewName');
-    const previewClear = document.getElementById('previewClear');
+    const photoSlots = document.getElementById('photoSlots');
+    const slotsGrid = document.getElementById('slotsGrid');
+    const slotsCount = document.getElementById('slotsCount');
+    const slotsAddBtn = document.getElementById('slotsAddBtn');
+    const videoPreview = document.getElementById('videoPreview');
+    const videoPreviewEl = document.getElementById('videoPreviewEl');
+    const videoPreviewMeta = document.getElementById('videoPreviewMeta');
+    const videoPreviewClear = document.getElementById('videoPreviewClear');
     const submitBtn = document.getElementById('submitBtn');
     const errorBanner = document.getElementById('errorBanner');
     const loadingCard = document.getElementById('loadingCard');
+    const loadingTx = document.getElementById('loadingTx');
+    const loadingSub = document.getElementById('loadingSub');
+    const loadingProgress = document.getElementById('loadingProgress');
+    const loadingBar = document.getElementById('loadingBar');
     const resultCard = document.getElementById('resultCard');
 
-    let selectedFile = null;
-    let selectedDataUrl = null;
+    // STATE
+    let mode = null;            // 'photos' | 'video' | null
+    let photos = [];            // array of { dataUrl, name }
+    let videoFile = null;       // File
+    let videoFrameDataUrl = null;
 
-    // ── Photo selection ──────────────────────────────────────────
-    function handleFile(file) {
-      if (!file) return;
-      if (!file.type.startsWith('image/')) {
-        showError("That doesn't look like an image file. Try a JPG or PNG photo.");
-        return;
-      }
-      // Resize before storing (max 1920px long side, JPEG 85%) to keep payloads small
-      const img = new Image();
-      const reader = new FileReader();
-      reader.onload = e => {
-        img.onload = () => {
-          const MAX = 1920;
-          let w = img.width, h = img.height;
-          if (w > MAX || h > MAX) {
-            if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
-            else { w = Math.round(w * MAX / h); h = MAX; }
-          }
-          const canvas = document.createElement('canvas');
-          canvas.width = w; canvas.height = h;
-          const ctx = canvas.getContext('2d');
-          ctx.drawImage(img, 0, 0, w, h);
-          selectedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
-          selectedFile = file;
-          previewImg.src = selectedDataUrl;
-          previewName.textContent = file.name || 'photo.jpg';
-          preview.style.display = 'block';
-          clearFieldError('field-photo');
-          hideError();
-        };
-        img.onerror = () => showError("Couldn't read that image. Try another photo.");
-        img.src = e.target.result;
-      };
-      reader.onerror = () => showError("Couldn't read that file.");
-      reader.readAsDataURL(file);
-    }
-
-    cameraInput.addEventListener('change', e => handleFile(e.target.files[0]));
-    uploadInput.addEventListener('change', e => handleFile(e.target.files[0]));
-    previewClear.addEventListener('click', () => {
-      selectedFile = null; selectedDataUrl = null;
-      preview.style.display = 'none';
-      cameraInput.value = ''; uploadInput.value = '';
-    });
-
-    // ── Validation helpers ──────────────────────────────────────
-    function setFieldError(id) { document.getElementById(id).classList.add('has-error'); }
-    function clearFieldError(id) { document.getElementById(id).classList.remove('has-error'); }
+    // ── Helpers ──────────────────────────────────────────────────────────
     function showError(msg) {
       errorBanner.textContent = msg;
       errorBanner.classList.add('active');
       errorBanner.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
     function hideError() { errorBanner.classList.remove('active'); }
+    function setFieldError(id) { document.getElementById(id).classList.add('has-error'); }
+    function clearFieldError(id) { document.getElementById(id).classList.remove('has-error'); }
+    function validatePhone(s) { const d = s.replace(/\D/g, ''); return d.length >= 10 && d.length <= 15; }
 
-    function validatePhone(s) {
-      const digits = s.replace(/\D/g, '');
-      return digits.length >= 10 && digits.length <= 15;
+    // ── Photo handling ───────────────────────────────────────────────────
+    function resizeImageToDataUrl(file) {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        const reader = new FileReader();
+        reader.onload = e => {
+          img.onload = () => {
+            const MAX = PHOTO_RESIZE_MAX;
+            let w = img.width, h = img.height;
+            if (w > MAX || h > MAX) {
+              if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+              else { w = Math.round(w * MAX / h); h = MAX; }
+            }
+            const canvas = document.createElement('canvas');
+            canvas.width = w; canvas.height = h;
+            canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+            resolve(canvas.toDataURL('image/jpeg', 0.82));
+          };
+          img.onerror = () => reject(new Error('Image load failed'));
+          img.src = e.target.result;
+        };
+        reader.onerror = () => reject(new Error('File read failed'));
+        reader.readAsDataURL(file);
+      });
     }
 
-    // ── Submit ──────────────────────────────────────────────────
+    async function addPhoto(file) {
+      if (mode === 'video') {
+        showError("You've already added a video. Remove it first if you want to switch to photos.");
+        return;
+      }
+      if (photos.length >= MAX_PHOTOS) {
+        showError(`Max ${MAX_PHOTOS} photos. Remove one to add another.`);
+        return;
+      }
+      if (!file.type.startsWith('image/')) {
+        showError("That doesn't look like an image. Try a JPG or PNG.");
+        return;
+      }
+      try {
+        const dataUrl = await resizeImageToDataUrl(file);
+        photos.push({ dataUrl, name: file.name || 'photo.jpg' });
+        mode = 'photos';
+        renderPhotos();
+        clearFieldError('field-media');
+        hideError();
+      } catch (err) {
+        showError("Couldn't read that image — try another.");
+      }
+    }
+
+    function removePhoto(idx) {
+      photos.splice(idx, 1);
+      if (photos.length === 0) {
+        mode = null;
+        photoSlots.style.display = 'none';
+      } else {
+        renderPhotos();
+      }
+    }
+
+    function renderPhotos() {
+      photoSlots.style.display = '';
+      slotsGrid.innerHTML = '';
+      for (let i = 0; i < MAX_PHOTOS; i++) {
+        const slot = document.createElement('div');
+        slot.className = 'slot' + (photos[i] ? ' has-img' : '');
+        if (photos[i]) {
+          const img = document.createElement('img');
+          img.src = photos[i].dataUrl;
+          img.alt = `Photo ${i + 1}`;
+          slot.appendChild(img);
+          const rm = document.createElement('button');
+          rm.type = 'button';
+          rm.className = 'slot-rm';
+          rm.innerHTML = '×';
+          rm.setAttribute('aria-label', `Remove photo ${i + 1}`);
+          rm.onclick = () => removePhoto(i);
+          slot.appendChild(rm);
+        } else {
+          const icon = document.createElement('div');
+          icon.className = 'slot-empty-icon';
+          icon.innerHTML = '<svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>';
+          slot.appendChild(icon);
+        }
+        slotsGrid.appendChild(slot);
+      }
+      slotsCount.textContent = `${photos.length} of ${MAX_PHOTOS} photo${photos.length === 1 ? '' : 's'}`;
+      slotsAddBtn.disabled = photos.length >= MAX_PHOTOS;
+    }
+
+    // ── Video handling ───────────────────────────────────────────────────
+    async function handleVideo(file) {
+      if (mode === 'photos' && photos.length > 0) {
+        showError("You've already added photos. Remove them first if you want to send a video instead.");
+        return;
+      }
+      if (!file.type.startsWith('video/')) {
+        showError("That doesn't look like a video file. Try MP4 or MOV.");
+        return;
+      }
+      const sizeMB = file.size / 1024 / 1024;
+      if (sizeMB > MAX_VIDEO_MB) {
+        showError(`Video is ${sizeMB.toFixed(1)} MB — please keep it under ${MAX_VIDEO_MB} MB.`);
+        return;
+      }
+      // Validate duration + extract first frame via hidden video element
+      const url = URL.createObjectURL(file);
+      const v = document.createElement('video');
+      v.preload = 'metadata';
+      v.muted = true;
+      v.playsInline = true;
+      v.src = url;
+      try {
+        await new Promise((resolve, reject) => {
+          v.onloadedmetadata = resolve;
+          v.onerror = () => reject(new Error('Video metadata failed'));
+          setTimeout(() => reject(new Error('Video metadata timeout')), 8000);
+        });
+        if (v.duration && v.duration > MAX_VIDEO_SECONDS + 0.5) {
+          showError(`Could you keep it under ${MAX_VIDEO_SECONDS} seconds? Same shot, just shorter.`);
+          URL.revokeObjectURL(url);
+          return;
+        }
+        // Seek to 0 and grab a frame
+        await new Promise((resolve) => {
+          v.onseeked = resolve;
+          v.currentTime = 0.1; // tiny offset works better than 0 on some browsers
+        });
+        const canvas = document.createElement('canvas');
+        const MAX = 1280;
+        let w = v.videoWidth, h = v.videoHeight;
+        if (w > MAX || h > MAX) {
+          if (w > h) { h = Math.round(h * MAX / w); w = MAX; }
+          else { w = Math.round(w * MAX / h); h = MAX; }
+        }
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(v, 0, 0, w, h);
+        videoFrameDataUrl = canvas.toDataURL('image/jpeg', 0.82);
+        videoFile = file;
+        mode = 'video';
+        videoPreviewEl.src = url; // keep for preview playback
+        videoPreviewMeta.textContent = `${file.name || 'video'} · ${sizeMB.toFixed(1)} MB`;
+        videoPreview.style.display = '';
+        clearFieldError('field-media');
+        hideError();
+      } catch (err) {
+        showError("Couldn't read that video. Try another file.");
+        URL.revokeObjectURL(url);
+      }
+    }
+
+    function clearVideo() {
+      if (videoPreviewEl.src) URL.revokeObjectURL(videoPreviewEl.src);
+      videoPreviewEl.removeAttribute('src');
+      videoFile = null;
+      videoFrameDataUrl = null;
+      mode = null;
+      videoPreview.style.display = 'none';
+    }
+
+    // ── Input wiring ─────────────────────────────────────────────────────
+    cameraInput.addEventListener('change', e => { if (e.target.files[0]) addPhoto(e.target.files[0]); e.target.value = ''; });
+    videoInput.addEventListener('change', e => { if (e.target.files[0]) handleVideo(e.target.files[0]); e.target.value = ''; });
+    uploadInput.addEventListener('change', e => {
+      const f = e.target.files[0];
+      if (!f) return;
+      if (f.type.startsWith('video/')) handleVideo(f);
+      else addPhoto(f);
+      e.target.value = '';
+    });
+    slotsAddBtn.addEventListener('click', () => uploadInput.click());
+    videoPreviewClear.addEventListener('click', clearVideo);
+
+    // ── Phone formatter ──────────────────────────────────────────────────
+    document.getElementById('customerPhone').addEventListener('input', e => {
+      const d = e.target.value.replace(/\D/g, '').slice(0, 10);
+      if (d.length >= 7) e.target.value = `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}`;
+      else if (d.length >= 4) e.target.value = `(${d.slice(0,3)}) ${d.slice(3)}`;
+      else if (d.length > 0) e.target.value = `(${d}`;
+    });
+
+    // ── Loading state ────────────────────────────────────────────────────
+    function setLoading(text, sub, withProgress) {
+      loadingTx.textContent = text;
+      loadingSub.textContent = sub || 'Just a few seconds.';
+      if (withProgress) {
+        loadingProgress.classList.add('active');
+        loadingBar.style.width = '0%';
+      } else {
+        loadingProgress.classList.remove('active');
+      }
+    }
+    function setProgress(pct) { loadingBar.style.width = Math.min(100, Math.max(0, pct)) + '%'; }
+
+    // ── Video upload via signed URL ──────────────────────────────────────
+    async function uploadVideoToSupabase(file) {
+      const ext = (file.name.split('.').pop() || 'mp4').toLowerCase();
+      // 1. Get a signed upload URL from the API
+      const urlResp = await fetch('/api/get-upload-url', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ extension: ext })
+      });
+      if (!urlResp.ok) throw new Error('Could not get upload URL');
+      const { path, token } = await urlResp.json();
+      // 2. Upload to Supabase via the SDK using the signed token
+      const { error } = await sb.storage.from(STORAGE_BUCKET).uploadToSignedUrl(path, token, file, {
+        contentType: file.type || `video/${ext}`,
+        upsert: false
+      });
+      if (error) throw error;
+      return path;
+    }
+
+    // ── Submit ───────────────────────────────────────────────────────────
     form.addEventListener('submit', async e => {
       e.preventDefault();
       hideError();
-      ['field-name', 'field-phone', 'field-photo'].forEach(clearFieldError);
+      ['field-name', 'field-phone', 'field-media'].forEach(clearFieldError);
 
       const name = document.getElementById('customerName').value.trim();
       const phone = document.getElementById('customerPhone').value.trim();
@@ -490,36 +572,58 @@
       const description = document.getElementById('customerDesc').value.trim();
       const honeypot = document.getElementById('website').value;
 
-      // Honeypot — silently succeed, don't tip the bot off
       if (honeypot) { showResult({ status: 'ready', customer_message: "Got it! Steve will reach out shortly." }); return; }
 
       let valid = true;
       if (!name) { setFieldError('field-name'); valid = false; }
       if (!phone || !validatePhone(phone)) { setFieldError('field-phone'); valid = false; }
-      if (!selectedDataUrl) { setFieldError('field-photo'); valid = false; }
-      if (!valid) {
-        showError("A couple of things still need filling in.");
-        return;
+      if (mode === null || (mode === 'photos' && photos.length === 0) || (mode === 'video' && !videoFile)) {
+        setFieldError('field-media'); valid = false;
       }
+      if (!valid) { showError("A couple of things still need filling in."); return; }
 
-      // Lock UI, swap to loading
       submitBtn.disabled = true;
       form.style.display = 'none';
       loadingCard.classList.add('active');
 
       try {
-        const resp = await fetch('/api/diagnose', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
+        let body;
+        if (mode === 'video') {
+          setLoading('Uploading video…', 'This can take up to 30 seconds.', true);
+          // Fake progress while we upload (Supabase SDK doesn't stream progress)
+          let p = 5; const tick = setInterval(() => { p = Math.min(85, p + 6); setProgress(p); }, 400);
+          let videoPath;
+          try {
+            videoPath = await uploadVideoToSupabase(videoFile);
+          } finally { clearInterval(tick); }
+          setProgress(95);
+          setLoading('Reviewing your video…', 'Just a few seconds.', false);
+          body = {
             customerName: name,
             customerPhone: phone,
             customerEmail: email || null,
             description: description || null,
-            photoDataUrl: selectedDataUrl
-          })
-        });
+            mediaType: 'video',
+            videoPath,
+            videoFrameDataUrl
+          };
+        } else {
+          setLoading('Reviewing your photo' + (photos.length > 1 ? 's' : '') + '…', 'Just a few seconds.', false);
+          body = {
+            customerName: name,
+            customerPhone: phone,
+            customerEmail: email || null,
+            description: description || null,
+            mediaType: 'photos',
+            photoDataUrls: photos.map(p => p.dataUrl)
+          };
+        }
 
+        const resp = await fetch('/api/diagnose', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
         if (!resp.ok) throw new Error('Server returned ' + resp.status);
         const result = await resp.json();
         showResult(result);
@@ -531,7 +635,7 @@
       }
     });
 
-    // ── Result rendering ────────────────────────────────────────
+    // ── Result rendering ─────────────────────────────────────────────────
     function showResult(r) {
       loadingCard.classList.remove('active');
       form.style.display = 'none';
@@ -548,34 +652,34 @@
       const callBtn = document.getElementById('resultCallBtn');
       const retryBtn = document.getElementById('resultRetryBtn');
 
+      // Reset
+      unitBox.style.display = 'none';
+      possBox.style.display = 'none';
+      defer.style.display = 'none';
+      callBtn.style.display = 'none';
+      retryBtn.style.display = 'none';
+
       const status = r.status || 'ready';
       const isUrgent = r.estimated_priority === 'urgent';
-      const needsRetry = status === 'needs_better_photo' || status === 'needs_more_info';
+      const needsRetry = status === 'needs_better_photo' || status === 'needs_more_info' || status === 'not_relevant' || status === 'inappropriate_content';
 
-      // Icon + title vibe
       if (isUrgent) {
-        icon.className = 'result-icon urgent';
-        icon.textContent = '!';
+        icon.className = 'result-icon urgent'; icon.textContent = '!';
         title.textContent = 'Flagged as Urgent';
       } else if (needsRetry) {
-        icon.className = 'result-icon retry';
-        icon.textContent = '?';
+        icon.className = 'result-icon retry'; icon.textContent = '?';
         title.textContent = 'One More Thing';
       } else {
-        icon.className = 'result-icon ok';
-        icon.textContent = '✓';
+        icon.className = 'result-icon ok'; icon.textContent = '✓';
         title.textContent = "Got it — Steve will be in touch.";
       }
 
       msg.textContent = r.customer_message || "Steve will reach out within 1–2 hours.";
 
-      // Unit ID
       if (r.unit_identification) {
         unitBox.style.display = 'block';
         unitVal.textContent = r.unit_identification;
       }
-
-      // Possibilities
       if (Array.isArray(r.possibilities) && r.possibilities.length > 0) {
         possBox.style.display = 'block';
         possList.innerHTML = '';
@@ -586,38 +690,21 @@
         });
         defer.style.display = 'block';
       }
-
-      // Actions
       if (isUrgent) callBtn.style.display = 'flex';
       if (needsRetry) retryBtn.style.display = 'inline-block';
 
-      retryBtn.addEventListener('click', () => {
-        // Reset photo + flip back to form. Keep name/phone/email/description.
-        selectedFile = null; selectedDataUrl = null;
-        preview.style.display = 'none';
-        cameraInput.value = ''; uploadInput.value = '';
+      retryBtn.onclick = () => {
+        photos = []; photoSlots.style.display = 'none';
+        clearVideo();
+        mode = null;
         resultCard.classList.remove('active');
-        // Reset result UI for next attempt
-        unitBox.style.display = 'none';
-        possBox.style.display = 'none';
-        defer.style.display = 'none';
-        callBtn.style.display = 'none';
-        retryBtn.style.display = 'none';
         form.style.display = '';
         submitBtn.disabled = false;
-        document.getElementById('field-photo').scrollIntoView({ behavior: 'smooth', block: 'center' });
-      });
+        document.getElementById('field-media').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      };
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
-    // ── Phone formatter ────────────────────────────────────────
-    document.getElementById('customerPhone').addEventListener('input', e => {
-      const d = e.target.value.replace(/\D/g, '').slice(0, 10);
-      if (d.length >= 7) e.target.value = `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}`;
-      else if (d.length >= 4) e.target.value = `(${d.slice(0,3)}) ${d.slice(3)}`;
-      else if (d.length > 0) e.target.value = `(${d}`;
-    });
   })();
   </script>
 </body>
