@@ -2136,7 +2136,7 @@
     <p class="fi">Call now for a free, no-pressure quote. Same-day service available.</p>
     <div class="cband-btns fi">
       <a href="tel:9516343233" class="btn btn-red btn-lg">📞 Call Steve</a>
-      <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
+      <a href="/quote/" class="btn btn-outline-w btn-lg">Request Online Quote</a>
     </div>
   </div></div>
 </main>
@@ -2271,12 +2271,49 @@ function fi() {
 setTimeout(fi, 120);
 
 // ─── FORM ────────────────────────────────────────────────────────────
-function fSub(e) {
+async function fSub(e) {
   e.preventDefault();
-  const b = e.target.querySelector('.fsub');
-  b.textContent = "✓ Sent! We'll be in touch very soon.";
-  b.style.background = 'var(--blue)';
-  b.disabled = true;
+  const form = e.target;
+  const btn = form.querySelector('.fsub');
+  const originalText = btn.textContent;
+
+  // Honeypot — bots fill any visible field; we don't have one on the inline
+  // form but keep this hook for future. Standard validation comes from HTML5.
+
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  // Map inline form to the same shape /api/quote expects. Inline form has fewer
+  // fields than the dedicated /quote/ form — we send sensible defaults so the
+  // email Steve gets is still well-structured.
+  const data = {
+    name: form.name.value.trim(),
+    phone: form.phone.value.trim(),
+    email: '',
+    zip: form.zip.value.trim(),
+    service: form.service.value,
+    property_type: 'residential', // assume residential for the quick form
+    urgency: 'this-week',          // sensible default
+    best_time: 'anytime',
+    message: '',
+    honeypot: ''
+  };
+
+  try {
+    const resp = await fetch('/api/quote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (!resp.ok) throw new Error('Server returned ' + resp.status);
+    btn.textContent = "✓ Sent! We'll be in touch very soon.";
+    btn.style.background = 'var(--blue)';
+    // Keep button disabled — submission complete
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = originalText;
+    alert("Sorry — something went wrong sending your request. Please try again, or call Steve at (951) 634-3233.");
+  }
   return false;
 }
 
