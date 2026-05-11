@@ -933,11 +933,12 @@ footer::before {
   font-size: 1.4rem;
   letter-spacing: .04em;
   line-height: 1.15;
-  color: var(--white);
+  color: var(--blueAcc);
   margin: 4px 0;
   transition: color .2s;
 }
-.bp-card:hover h3 { color: var(--blueAcc); }
+.bp-card:hover h3 { color: var(--white); }
+.bp-card a, .bp-card h3 a { color: inherit; text-decoration: none; }
 .bp-card-desc {
   font-size: .92rem;
   color: var(--light);
