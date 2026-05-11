@@ -928,7 +928,8 @@ footer::before {
 }
 .bp-card-meta .sep { color: rgba(255,255,255,.2); }
 .bp-card-meta .date { color: var(--muted); }
-.bp-card h3 {
+.bp-card h3,
+.bp-card .bp-card-h {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.4rem;
   letter-spacing: .04em;
@@ -937,14 +938,32 @@ footer::before {
   margin: 4px 0;
   transition: color .2s;
 }
-.bp-card:hover h3 { color: var(--white); }
-.bp-card a, .bp-card h3 a { color: inherit; text-decoration: none; }
-.bp-card-desc {
+.bp-card:hover h3,
+.bp-card:hover .bp-card-h { color: var(--white); }
+.bp-card a,
+.bp-card h3 a,
+.bp-card .bp-card-h a { color: inherit; text-decoration: none; }
+.bp-card-desc,
+.bp-card-x {
   font-size: .92rem;
   color: var(--light);
   line-height: 1.55;
   margin: 0;
 }
+.bp-card-rd {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: .82rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--blueAcc);
+  margin-top: 6px;
+  padding-top: 8px;
+  align-self: flex-start;
+  text-decoration: none;
+  transition: color .2s, transform .2s;
+}
+.bp-card:hover .bp-card-rd { color: var(--white); transform: translateX(3px); }
 
 .bp-empty {
   text-align: center;
