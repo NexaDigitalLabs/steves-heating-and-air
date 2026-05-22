@@ -1514,15 +1514,21 @@
        Mobile/tablet (≤1024px) inherit the base sizes above — untouched.
        ═══════════════════════════════════════════════════════════════════ */
     @media (min-width: 1025px) {
-      .h-content { max-width: 1100px; }
-      .h-h1 { font-size: clamp(6.5rem, 9.5vw, 11rem); margin-bottom: 40px; }
-      .h-tagline { font-size: clamp(1.7rem, 2.3vw, 2.4rem); margin-bottom: 44px; }
-      .btn-lg { padding: 22px 52px; font-size: 1.55rem; }
-      .h-trust { gap: 56px; max-width: 760px; padding-top: 44px; }
-      .ht-val { font-size: 3.8rem; }
-      .ht-lbl { font-size: .95rem; }
-      .h-photo { font-size: 1.15rem; padding: 14px 30px; margin-top: 40px; }
-      .h-photo svg { width: 22px; height: 22px; }
+      .h-content { max-width: 1400px; }
+      .h-h1 { font-size: clamp(7.5rem, 11vw, 13rem); margin-bottom: 40px; line-height: .88; }
+      .h-tag { font-size: 1.1rem; padding: 11px 26px; margin-bottom: 36px; }
+      .h-tagline { font-size: clamp(2rem, 2.9vw, 3.2rem); margin-bottom: 44px; }
+      .btn-lg { padding: 24px 60px; font-size: 1.6rem; }
+      .h-trust { gap: 80px; max-width: 920px; padding-top: 56px; }
+      .ht-val { font-size: 5.2rem; }
+      .ht-lbl { font-size: 1.1rem; letter-spacing: .18em; }
+      .h-photo { font-size: 1.4rem; padding: 18px 40px; margin-top: 48px; }
+      .h-photo svg { width: 28px; height: 28px; }
+    }
+    @media (min-width: 1500px) {
+      .h-h1 { font-size: clamp(9rem, 12vw, 14.5rem); }
+      .h-tagline { font-size: clamp(2.5rem, 3.2vw, 3.5rem); }
+      .ht-val { font-size: 6rem; }
     }
 
     /* ═══════════════════════════════════════════════════════════════════
