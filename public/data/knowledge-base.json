@@ -32,6 +32,15 @@
     "paymentTypes": "Call for accepted payment methods and current financing options",
     "warranties": "Factory warranties on all brand-name equipment, plus our own labor guarantee on installations"
   },
+  "siteLinks": {
+    "quote": "/quote/",
+    "contact": "/contact/",
+    "reviews": "/reviews/",
+    "services": "/services/",
+    "serviceArea": "/service-area/",
+    "blog": "/blog/",
+    "about": "/about/"
+  },
   "serviceArea": {
     "primary": [
       "Murrieta",
@@ -456,6 +465,18 @@
     {
       "q": "How fast can you get to me in Corona or Riverside?",
       "a": "Same-day service is typical for our extended-area cities — Moreno Valley, Riverside, Corona, San Bernardino, Anza, and Aguanga. Actual arrival depends on tech availability that day and where they're currently routed. For our core area (Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, Canyon Lake) we run same-day to next-day on most service calls, with emergency response available."
+    },
+    {
+      "q": "Can I request a quote online?",
+      "a": "Yes — fill out the quote form at /quote/ and we'll get back to you, usually within a few hours during business hours. The form takes about a minute. For emergencies, calling (951) 634-3233 directly is faster."
+    },
+    {
+      "q": "How do I contact Steve's?",
+      "a": "Call (951) 634-3233 for fastest response, email stevesac_6708@yahoo.com, or use the quote form at /quote/. Full contact options are at /contact/. Hours: Mon-Fri 7am-6pm, Sat 8am-3pm, Sunday emergency only."
+    },
+    {
+      "q": "Where can I see your reviews?",
+      "a": "We have over 612 five-star reviews across Google and Yelp. A curated set is at /reviews/, and you can also see real customer stories on the homepage."
     }
   ],
   "troubleshootingTips": [
