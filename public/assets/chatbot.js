@@ -34,7 +34,7 @@
     '  </div>',
     '  <div class="cb-input-row">',
     '    <input id="cb-input" type="text" placeholder="Ask about HVAC..." maxlength="500"/>',
-    '    <button id="cb-send" aria-label="Send"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg></button>',
+    '    '    <button id="cb-send" aria-label="Send">→</button>',
     '  </div>',
     '  <div class="cb-foot">Powered by AI • Call (951) 634-3233 for urgent service</div>',
     '</div>'
