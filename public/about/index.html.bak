@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Steve's Air Conditioning &amp; Heating | 20+ Years in Murrieta, CA</title>
+  <meta name="description" content="Learn about Steve's Air Conditioning &amp; Heating — a family-owned, NATE-certified HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County for over 20 years. Honest pricing, real techs, no upsells. Call (951) 634-3233."/>
+  <meta name="theme-color" content="#0B1D3A"/>
+  <link rel="icon" href="/images/favicon.png" type="image/png"/>
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/about/"/>
+
+  <meta property="og:title" content="About Steve's Air Conditioning &amp; Heating | 20+ Years in Murrieta, CA"/>
+  <meta property="og:description" content="Family-owned NATE-certified HVAC contractor serving SW Riverside County for over 20 years. Built on honesty, skill, and 612+ five-star reviews."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/about/"/>
+  <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
+
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="About Steve's Air Conditioning &amp; Heating | 20+ Years Local"/>
+  <meta name="twitter:description" content="Family-owned NATE-certified HVAC contractor in Murrieta. 20+ years. 612+ reviews. Call (951) 634-3233."/>
+  <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
+
+  <meta name="geo.region" content="US-CA"/>
+  <meta name="geo.placename" content="Murrieta, California"/>
+  <meta name="geo.position" content="33.5614;-117.2208"/>
+  <meta name="ICBM" content="33.5614, -117.2208"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+
+  <!-- Page context for chatbot -->
+  <meta name="page-context" content="page:about|About Steve's"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Oswald:wght@500;600;700&amp;family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="/assets/site.css"/>
+  <link rel="stylesheet" href="/assets/chatbot.css"/>
+
+  <!-- Page-specific styles for the About page -->
+  <style>
+    /* About page sections — pulled from original SPA homepage */
+    .abp { background: var(--dark); }
+    .ab-sp { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 80px 0; max-width: 1100px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
+    .ab-vis { position: relative; border-radius: var(--r-lg); overflow: hidden; background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); aspect-ratio: 3/4; }
+    .ab-vis img { width: 100%; height: 100%; object-fit: cover; }
+    .ab-vis-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 6rem; }
+    .ab-vc { position: absolute; bottom: 30px; left: -20px; background: var(--red); padding: 20px 28px; border-radius: 8px; box-shadow: 0 12px 40px rgba(196,30,30,.4); }
+    .ab-vc-n { font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: #fff; line-height: 1; }
+    .ab-vc-t { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: rgba(255,255,255,.85); }
+    .ab-vals { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .av { padding: 18px 20px; border-radius: 8px; border: 1px solid rgba(74,122,181,.2); background: rgba(26,63,122,.08); }
+    .av strong { display: block; font-family: 'Rajdhani', sans-serif; font-weight: 700; font-size: .88rem; letter-spacing: .08em; text-transform: uppercase; color: var(--white); margin-bottom: 4px; }
+    .av span { font-size: .82rem; color: var(--muted); }
+    .ab-stats { background: var(--navy); border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); padding: 60px 0; }
+    .ab-sg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .ab-si { text-align: center; padding: 30px 20px; border-right: 1px solid rgba(255,255,255,.06); }
+    .ab-si:last-child { border: none; }
+    .ab-sn { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--white); letter-spacing: .04em; line-height: 1; }
+    .ab-sn span { color: var(--red); }
+    .ab-sl { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: .78rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+    @media (max-width: 900px) {
+      .ab-sp { grid-template-columns: 1fr; padding: 60px 0; gap: 32px; }
+      .ab-vis { display: none; }
+    }
+    @media (max-width: 768px) {
+      .ab-sg { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* About-specific paragraph styling (matches the homepage pattern) */
+    .ab-tx h2 { font-family: 'Anton', sans-serif; font-size: 2.4rem; color: var(--white); margin-bottom: 20px; line-height: 1.1; }
+    .ab-tx h2 em { font-style: normal; color: var(--red); }
+    .ab-tx p { color: rgba(255,255,255,.78); font-size: .98rem; line-height: 1.75; margin-bottom: 16px; }
+    .ab-tx .eyebrow { margin-bottom: 14px; }
+    @media (max-width: 768px) { .ab-tx h2 { font-size: 1.9rem; } }
+  </style>
+
+  <!-- ═════════════════════════════════════════════════════════════════════
+       JSON-LD: AboutPage + HVACBusiness + BreadcrumbList
+       ═════════════════════════════════════════════════════════════════════ -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://steves-heating-and-air.vercel.app/about/#page",
+    "name": "About Steve's Air Conditioning & Heating",
+    "description": "Learn about Steve's Air Conditioning & Heating — a family-owned, NATE-certified HVAC contractor serving Murrieta, Temecula, and Southwest Riverside County since 2004.",
+    "url": "https://steves-heating-and-air.vercel.app/about/",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Steve's Air Conditioning & Heating",
+      "url": "https://steves-heating-and-air.vercel.app/"
+    },
+    "mainEntity": {
+      "@type": "HVACBusiness",
+      "@id": "https://steves-heating-and-air.vercel.app/#business"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "@id": "https://steves-heating-and-air.vercel.app/about/#business",
+    "name": "Steve's Air Conditioning & Heating",
+    "description": "Family-owned NATE-certified HVAC, AC, and heating contractor serving Murrieta, Temecula, Wildomar, Lake Elsinore, Menifee, and all of Southwest Riverside County, CA. Founded by Steven M. Salvesen.",
+    "url": "https://steves-heating-and-air.vercel.app/about/",
+    "telephone": "+19516343233",
+    "email": "stevesac_6708@yahoo.com",
+    "priceRange": "$$",
+    "image": "https://steves-heating-and-air.vercel.app/images/og-image.jpg",
+    "foundingDate": "2004",
+    "founder": {
+      "@type": "Person",
+      "name": "Steven M. Salvesen",
+      "jobTitle": "Owner & Lead HVAC Technician",
+      "worksFor": {
+        "@type": "HVACBusiness",
+        "name": "Steve's Air Conditioning & Heating"
+      }
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Murrieta",
+      "addressRegion": "CA",
+      "postalCode": "92562",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.5614,
+      "longitude": -117.2208
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Murrieta", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } },
+      { "@type": "City", "name": "Temecula", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } },
+      { "@type": "City", "name": "Wildomar", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } },
+      { "@type": "City", "name": "Lake Elsinore", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } },
+      { "@type": "City", "name": "Menifee", "containedInPlace": { "@type": "AdministrativeArea", "name": "Riverside County, California" } }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
+    ],
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "NATE-Certified" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "California CSLB License #1031139 — Warm Air Heating, Ventilating and Air Conditioning" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "612"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://steves-heating-and-air.vercel.app/" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://steves-heating-and-air.vercel.app/about/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- TOP FLAG BANNER -->
+<div class="top-banner" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="/">
+    <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-ul" id="navUl">
+    <li><a href="/">Home</a></li>
+    <li class="has-drop">
+      <a href="/services/">Services ▾</a>
+      <ul class="drop">
+        <li><a href="/services/air-conditioning/"><span class="drop-ic">❄️</span><span class="drop-tx">Air Conditioning</span></a></li>
+        <li><a href="/services/furnaces/"><span class="drop-ic">🔥</span><span class="drop-tx">Furnaces</span></a></li>
+        <li><a href="/services/heat-pumps/"><span class="drop-ic">♨️</span><span class="drop-tx">Heat Pumps</span></a></li>
+        <li><a href="/services/ductless-mini-splits/"><span class="drop-ic">🔲</span><span class="drop-tx">Ductless Mini-Splits</span></a></li>
+        <li><a href="/services/whole-house-fans/"><span class="drop-ic">🌀</span><span class="drop-tx">Whole House Fans</span></a></li>
+        <li><a href="/services/ductwork/"><span class="drop-ic">🛠️</span><span class="drop-tx">Ductwork &amp; Airflow</span></a></li>
+        <li><a href="/services/condenser-relocation/"><span class="drop-ic">📦</span><span class="drop-tx">Condenser Relocation</span></a></li>
+        <li><a href="/services/residential-refrigeration/"><span class="drop-ic">🏠</span><span class="drop-tx">Residential Refrigeration</span></a></li>
+        <li><a href="/services/commercial-refrigeration/"><span class="drop-ic">🏢</span><span class="drop-tx">Commercial Refrigeration</span></a></li>
+        <li><a href="/services/commercial-hvac/"><span class="drop-ic">🏬</span><span class="drop-tx">Commercial HVAC</span></a></li>
+        <li><a href="/services/hvac-maintenance/"><span class="drop-ic">🔧</span><span class="drop-tx">HVAC Maintenance</span></a></li>
+        <li><a href="/services/air-quality-control/"><span class="drop-ic">💨</span><span class="drop-tx">Air Quality Control</span></a></li>
+        <li><a href="/services/drain-cleaning/"><span class="drop-ic">🚰</span><span class="drop-tx">Drain Cleaning</span></a></li>
+        <li><a href="/services/oven-hoods/"><span class="drop-ic">🍳</span><span class="drop-tx">Oven Hood Installation</span></a></li>
+        <li><a href="/services/water-heaters/"><span class="drop-ic">💧</span><span class="drop-tx">Water Heaters</span></a></li>
+        <li><a href="/services/energy-audits/"><span class="drop-ic">⚡</span><span class="drop-tx">Energy Audits</span></a></li>
+      </ul>
+    </li>
+    <li><a href="/about/" class="act">About Us</a></li>
+    <li><a href="/#reviews">Reviews</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/service-area/">Service Area</a></li>
+    <li><a href="/#contact">Contact</a></li>
+    <li><a href="tel:9516343233" class="nav-cta-btn">📞 Schedule Now</a></li>
+  </ul>
+  <div class="ham" id="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-in">
+    <a href="/">Home</a>
+    <span class="crumb-sep">/</span>
+    <span class="crumb-cur">About</span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="ph">
+  <div class="ph-in">
+    <div class="eyebrow">Our Story</div>
+    <h1>About Steve's Air Conditioning &amp; Heating</h1>
+    <p>A locally-owned, family-run HVAC business built on honesty, skill, and over two decades of serving Southwest Riverside County. NATE-certified. 612+ five-star reviews. Real techs, no franchise.</p>
+  </div>
+</div>
+
+<!-- ABOUT CONTENT -->
+<section class="abp">
+  <div class="ab-sp">
+    <div class="ab-vis fi">
+      <img src="/images/about.jpg" alt="Steve's Air Conditioning &amp; Heating — locally owned in Murrieta, CA" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="ab-vis-ph" style="display:none">🔧</div>
+      <div class="ab-vc"><div class="ab-vc-n">20+</div><div class="ab-vc-t">Years Serving<br/>Murrieta Valley</div></div>
+    </div>
+    <div class="ab-tx">
+      <div class="eyebrow fi">Who We Are</div>
+      <h2 class="fi">Built on <em>Honesty.</em><br/>Proven by Results.</h2>
+      <p class="fi">Steve's Air Conditioning &amp; Heating was founded by <strong>Steven M. Salvesen</strong> in 2004, built on a simple idea: give every customer the same straight answers and skilled work you'd give your own family. That philosophy has guided this business since the beginning, and it's why we still have customers who have called us for 15+ years.</p>
+      <p class="fi">We're not a franchise or a corporate chain. When you call Steve's, you get real technicians who have been in the HVAC trade for decades — people who take pride in their work and stand behind every job. No call centers, no bait-and-switch, no high-pressure sales tactics, no commissioned salespeople pushing equipment you don't need.</p>
+      <p class="fi">We hold California CSLB License #1031139 (Warm Air Heating, Ventilating and Air Conditioning), are NATE-certified (the industry's most rigorous technician certification), and are fully bonded and insured on every job. Our team has accumulated <strong>612+ five-star Google reviews</strong> serving homeowners and businesses across Murrieta, Temecula, Wildomar, Lake Elsinore, and Menifee.</p>
+      <div class="ab-vals fi">
+        <div class="av"><strong>🇺🇸 Locally Owned</strong><span>Family-run, community focused since 2004</span></div>
+        <div class="av"><strong>🛡️ Fully Licensed</strong><span>CSLB #1031139, bonded &amp; insured</span></div>
+        <div class="av"><strong>💬 Honest Pricing</strong><span>Upfront quotes, no hidden costs, no upsells</span></div>
+        <div class="av"><strong>⚡ Fast Response</strong><span>Same-day emergency service available</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="ab-stats">
+  <div class="ab-sg">
+    <div class="ab-si fi"><div class="ab-sn">20<span>+</span></div><div class="ab-sl">Years in Business</div></div>
+    <div class="ab-si fi"><div class="ab-sn">5<span>★</span></div><div class="ab-sl">Average Rating</div></div>
+    <div class="ab-si fi"><div class="ab-sn">612<span>+</span></div><div class="ab-sl">Five-Star Reviews</div></div>
+    <div class="ab-si fi"><div class="ab-sn">100<span>%</span></div><div class="ab-sl">Licensed &amp; Insured</div></div>
+  </div>
+</div>
+
+<!-- CTA BAND -->
+<section class="cband">
+  <div class="cband-in">
+    <h2>Ready to Work With Steve's? <em style="font-style:normal;color:var(--red)">Call Today.</em></h2>
+    <p>Free, honest quotes — no pressure, no upsell, no runaround. Same-day service available across SW Riverside County.</p>
+    <div class="cband-btns">
+      <a href="tel:9516343233" class="btn btn-red btn-lg">📞 (951) 634-3233</a>
+      <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<div class="bband">
+  <div class="btrack">
+    <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
+    <span class="bpill">Carrier</span><span class="bpill">Lennox</span><span class="bpill">Trane</span><span class="bpill">York</span><span class="bpill">Rheem</span><span class="bpill">Goodman</span><span class="bpill">Daikin</span><span class="bpill">American Standard</span><span class="bpill">Bryant</span><span class="bpill">Amana</span>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-nap" itemscope itemtype="https://schema.org/HVACBusiness">
+    <div class="ft-nap-name" itemprop="name">Steve's Air Conditioning &amp; Heating</div>
+    <address class="ft-nap-addr">
+      <span>Serving Murrieta, Temecula &amp; Southwest Riverside County</span>
+      &nbsp;•&nbsp;
+      <a href="tel:9516343233" itemprop="telephone">(951) 634-3233</a>
+      &nbsp;•&nbsp;
+      <a href="mailto:stevesac_6708@yahoo.com" itemprop="email">stevesac_6708@yahoo.com</a>
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" style="display:none">
+        <span itemprop="addressLocality">Murrieta</span><span itemprop="addressRegion">CA</span><span itemprop="postalCode">92562</span>
+      </span>
+    </address>
+    <div class="ft-nap-meta">
+      <span>Mon–Fri 7am–6pm</span>•<span>Sat 8am–3pm</span>•<span>Sun Emergency Only</span>
+    </div>
+  </div>
+
+  <div class="ft-g">
+    <div class="ft-br">
+      <img src="/images/logo.png" alt="Steve's Air Conditioning &amp; Heating" onerror="this.style.display='none'"/>
+      <div class="ft-br-tag">Honest &middot; Skilled &middot; Local</div>
+      <div class="ft-creds">
+        <span class="ft-cred"><strong>20+</strong> Years Local</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>NATE-Certified</strong> &middot; Licensed &middot; Bonded &middot; Insured</span>
+        <span class="ft-cred-sep"></span>
+        <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
+      </div>
+    </div>
+        <div class="ft-c">
+      <details class="ft-acc">
+        <summary><h4>Services</h4></summary>
+        <ul class="ft-services-ul">
+          <li><a href="/services/air-conditioning/">Air Conditioning</a></li>
+          <li><a href="/services/furnaces/">Furnaces</a></li>
+          <li><a href="/services/heat-pumps/">Heat Pumps</a></li>
+          <li><a href="/services/ductless-mini-splits/">Ductless Mini-Splits</a></li>
+          <li><a href="/services/whole-house-fans/">Whole House Fans</a></li>
+          <li><a href="/services/ductwork/">Ductwork &amp; Airflow</a></li>
+          <li><a href="/services/condenser-relocation/">Condenser Relocation</a></li>
+          <li><a href="/services/residential-refrigeration/">Residential Refrigeration</a></li>
+          <li><a href="/services/commercial-refrigeration/">Commercial Refrigeration</a></li>
+          <li><a href="/services/commercial-hvac/">Commercial HVAC</a></li>
+          <li><a href="/services/hvac-maintenance/">HVAC Maintenance</a></li>
+          <li><a href="/services/air-quality-control/">Air Quality Control</a></li>
+          <li><a href="/services/drain-cleaning/">Drain Cleaning</a></li>
+          <li><a href="/services/oven-hoods/">Oven Hood Installation</a></li>
+          <li><a href="/services/water-heaters/">Water Heaters</a></li>
+          <li><a href="/services/energy-audits/">Energy Audits</a></li>
+        </ul>
+      </details>
+    </div>
+    <div class="ft-c">
+      <details class="ft-acc">
+        <summary><h4>Areas Served</h4></summary>
+        <ul class="ft-areas-ul">
+          <li><a href="/murrieta/">Murrieta, CA</a></li>
+          <li><a href="/temecula/">Temecula, CA</a></li>
+          <li><a href="/menifee/">Menifee, CA</a></li>
+          <li><a href="/wildomar/">Wildomar, CA</a></li>
+          <li><a href="/lake-elsinore/">Lake Elsinore, CA</a></li>
+          <li><a href="/canyon-lake/">Canyon Lake, CA</a></li>
+          <li><a href="/sun-city/">Sun City, CA</a></li>
+          <li><a href="/winchester/">Winchester, CA</a></li>
+          <li><a href="/french-valley/">French Valley, CA</a></li>
+          <li><a href="/perris/">Perris, CA</a></li>
+          <li><a href="/hemet/">Hemet, CA</a></li>
+          <li><a href="/moreno-valley/">Moreno Valley, CA</a></li>
+          <li><a href="/riverside/">Riverside, CA</a></li>
+          <li><a href="/corona/">Corona, CA</a></li>
+          <li><a href="/romoland/">Romoland, CA</a></li>
+          <li><a href="/homeland/">Homeland, CA</a></li>
+          <li><a href="/san-bernardino/">San Bernardino, CA</a></li>
+          <li><a href="/fallbrook/">Fallbrook, CA</a></li>
+          <li><a href="/rainbow/">Rainbow, CA</a></li>
+          <li><a href="/anza/">Anza, CA</a></li>
+          <li><a href="/aguanga/">Aguanga, CA</a></li>
+        </ul>
+      </details>
+      <h4 class="ft-company-h">Company</h4>
+      <ul>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/#reviews">Reviews</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/service-area/">Service Area</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="ft-c">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:9516343233">(951) 634-3233</a></li>
+        <li><a href="mailto:stevesac_6708@yahoo.com">stevesac_6708@yahoo.com</a></li>
+        <li><a href="/service-area/">Murrieta &amp; SW Riverside County</a></li>
+      </ul>
+      <h4 class="ft-follow-h">Follow Us</h4>
+      <div class="ft-social">
+        <a href="https://www.facebook.com/Stevesairconditioningandheating/" target="_blank" rel="noopener noreferrer" aria-label="Steve's HVAC on Facebook" class="ft-social-lk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/steves_ac_and_heating/" target="_blank" rel="noopener noreferrer" aria-label="Steve's HVAC on Instagram" class="ft-social-lk">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.85 5.85 0 0 0-2.13 1.38A5.85 5.85 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.85 5.85 0 0 0-1.38-2.13A5.85 5.85 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.41-11.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2026 Steve's Air Conditioning &amp; Heating — All rights reserved.</span>
+    <div class="ft-bs">
+      <span class="ft-b">✓ Licensed</span>
+      <span class="ft-b">✓ Bonded</span>
+      <span class="ft-b">✓ Insured</span>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:9516343233" class="sticall" aria-label="Call Steve's HVAC at (951) 634-3233">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2a15.07 15.07 0 0 1-6.59-6.58l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+  </svg>
+</a>
+
+<script defer src="/assets/site.js"></script>
+<script defer src="/assets/chatbot.js"></script>
+
+</body>
+</html>
