@@ -251,10 +251,10 @@
     <h2 class="fi">Worked with us? <em style="font-style:normal;color:var(--red)">Leave a Review.</em></h2>
     <p class="fi">It genuinely helps a small local business. Takes about 30 seconds.</p>
     <div class="rev-leave-btns fi">
-      <a href="https://search.google.com/local/writereview?placeid=ChIJ-_-_-_-_-_-_-_-_-_-_-_" target="_blank" rel="noopener noreferrer" class="rev-btn rev-btn-google">
+      <a href="https://www.google.com/search?q=Steve%27s+Air+Conditioning+%26+Heating+Murrieta+CA+review" target="_blank" rel="noopener noreferrer" class="rev-btn rev-btn-google">
         <img src="/images/google-logo.png" alt="Google"/> Review on Google
       </a>
-      <a href="https://www.yelp.com/writeareview/biz/steves-air-conditioning-and-heating-murrieta" target="_blank" rel="noopener noreferrer" class="rev-btn rev-btn-yelp">
+      <a href="https://www.yelp.com/writeareview/biz/steves-air-conditioning-and-heating-murrieta-3" target="_blank" rel="noopener noreferrer" class="rev-btn rev-btn-yelp">
         <img src="/images/yelp-logo.png" alt="Yelp"/> Review on Yelp
       </a>
     </div>
