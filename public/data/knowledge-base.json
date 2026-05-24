@@ -36,6 +36,7 @@
     "quote": "/quote/",
     "contact": "/contact/",
     "reviews": "/reviews/",
+    "rebates": "/rebates/",
     "services": "/services/",
     "serviceArea": "/service-area/",
     "blog": "/blog/",
@@ -477,6 +478,22 @@
     {
       "q": "Where can I see your reviews?",
       "a": "We have over 612 five-star reviews across Google and Yelp. A curated set is at /reviews/, and you can also see real customer stories on the homepage."
+    },
+    {
+      "q": "Is the federal HVAC tax credit available in 2026?",
+      "a": "No — the Section 25C Energy Efficient Home Improvement Credit expired December 31, 2025 (terminated by the One Big Beautiful Bill Act). Equipment installed in 2025 is still claimable on your 2025 federal return. Equipment installed in 2026 or later is not eligible. Democratic legislators have introduced bills to restore it but as of mid-2026 nothing has been signed into law. See /rebates/ for the full current rebate picture."
+    },
+    {
+      "q": "Can I get the $8,000 HEEHRA heat pump rebate?",
+      "a": "Not currently — as of February 24, 2026, HEEHRA single-family funding is fully reserved statewide and the program is no longer accepting new income verification applications. New requests go on a waitlist with no funding guarantee. A Phase II is planned but no timeline confirmed. We monitor status and can help you submit a waitlist application. See /rebates/ for details and the official TECH Clean California link."
+    },
+    {
+      "q": "What HVAC rebates can I actually use in Murrieta or Temecula?",
+      "a": "The most accessible active programs for SW Riverside County homeowners are: SoCalGas Home Energy Efficiency Rebates (for natural gas furnaces, water heaters, dryers), SCE Building Electrification Program (for SCE customers replacing gas systems with heat pumps), Comfortably CA / Golden State Rebates (instant rebates at participating retailers for AC, smart thermostats, water heaters), and GoGreen Home Energy Financing (below-market interest loans). We check current status at quote time. Full list with links at /rebates/."
+    },
+    {
+      "q": "Do you handle the rebate paperwork?",
+      "a": "The applications themselves are the homeowner's responsibility — the utility wants your name and account on the form. We provide everything you need to submit them: itemized invoice with model numbers, efficiency certifications, ENERGY STAR documentation, and permit closure documentation. For pre-approval programs (like HEEHRA when active), we walk you through the reservation request before installation begins."
     }
   ],
   "troubleshootingTips": [
