@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Water Heater Installation & Repair in Murrieta & Temecula | Steve's</title>
-  <meta name="description" content="Tank, tankless, and heat pump hybrid water heater installation and repair in Murrieta, Temecula, and SW Riverside County. Same-day emergency repair. Call (951) 634-3233."/>
+  <title>Wine Cellar & Residential Refrigeration in Murrieta & Temecula | Steve's</title>
+  <meta name="description" content="Custom wine cellar refrigeration, residential walk-in cooler installation, and specialty cold storage repair in Murrieta, Temecula, and SW Riverside County. Call (951) 634-3233."/>
   <meta name="theme-color" content="#0B1D3A"/>
   <link rel="icon" href="/images/favicon.png" type="image/png"/>
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/residential-refrigeration/"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta property="og:description" content="Tank, tankless, and heat pump hybrid water heater installation across Murrieta, Temecula, and SW Riverside County. Same-day emergency repair available."/>
+  <meta property="og:title" content="Wine Cellar & Residential Refrigeration in Murrieta & Temecula | Steve's"/>
+  <meta property="og:description" content="Custom wine cellar refrigeration and residential walk-in cooler installation across Murrieta, Temecula, and SW Riverside County. Certified refrigerant handling."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
-  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/residential-refrigeration/"/>
   <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta name="twitter:description" content="Water heater install & repair in Murrieta & Temecula — tank, tankless, hybrid. Call (951) 634-3233."/>
+  <meta name="twitter:title" content="Wine Cellar & Residential Refrigeration in Murrieta & Temecula | Steve's"/>
+  <meta name="twitter:description" content="Wine cellars, walk-in coolers, specialty residential refrigeration in Murrieta & Temecula. Call (951) 634-3233."/>
   <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
 
   <!-- Geo -->
@@ -35,7 +35,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large"/>
 
   <!-- Page context for chatbot — tells the AI assistant what page the visitor is on -->
-  <meta name="page-context" content="service:water-heaters|Water Heaters"/>
+  <meta name="page-context" content="service:res-ref|Residential Refrigeration"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -57,11 +57,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#service",
-    "name": "Water Heaters Service",
-    "serviceType": "Water Heaters",
+    "@id": "https://steves-heating-and-air.vercel.app/services/residential-refrigeration/#service",
+    "name": "Residential Refrigeration Service",
+    "serviceType": "Residential Refrigeration",
     "category": "HVAC",
-    "description": "Tank water heater installation and replacement, tankless on-demand water heater systems, heat pump hybrid water heaters, gas, electric, and propane systems, emergency water heater repair in Murrieta, Temecula, and Southwest Riverside County.",
+    "description": "Custom wine cellar refrigeration, residential walk-in cooler installation, refrigerant recovery and recharge, and cold room repair in Murrieta, Temecula, and Southwest Riverside County. EPA-certified refrigerant handling.",
     "provider": {
       "@type": "HVACBusiness",
       "@id": "https://steves-heating-and-air.vercel.app/#business",
@@ -90,16 +90,13 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Water Heaters Services",
+      "name": "Residential Refrigeration Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tank Water Heater Installation & Replacement" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless On-Demand Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Hybrid Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electric Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Propane Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Water Heater Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Annual Water Heater Maintenance & Flushing" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cellar Refrigeration Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Walk-In Cooler Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerant Recovery & Recharge" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cold Room Repair & Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigeration System Replacement" } }
       ]
     }
   }
@@ -126,7 +123,7 @@
         "@type": "ListItem",
         "position": 3,
         "name": "Air Conditioning",
-        "item": "https://steves-heating-and-air.vercel.app/services/water-heaters/"
+        "item": "https://steves-heating-and-air.vercel.app/services/residential-refrigeration/"
       }
     ]
   }
@@ -136,70 +133,70 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#faq",
+    "@id": "https://steves-heating-and-air.vercel.app/services/residential-refrigeration/#faq",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tank vs tankless water heater \u2014 which is better for my home?",
+        "name": "Do you install wine cellar refrigeration in Temecula homes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation."
+          "text": "Yes \u2014 Temecula and Murrieta wine cellar installs are one of our specialties. We design and install custom systems ranging from small closet conversions to full walk-in cellars with multiple temperature zones for reds and whites. Call (951) 634-3233 for a consultation."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does a tankless water heater cost installed?",
+        "name": "How much does a wine cellar refrigeration system cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out."
+          "text": "Costs vary widely based on cellar size, cooling load, and whether you want a single zone or multiple temperature zones. Small closet-style cellar systems can start around $2,000-$4,000; larger custom installs with proper insulation, vapor barriers, and multi-zone cooling can run $8,000-$20,000+. We'll give you a clear written quote after evaluating your space."
         }
       },
       {
         "@type": "Question",
-        "name": "How long do water heaters last?",
+        "name": "Can you repair an existing wine cooler or cellar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance \u2014 flushing, anode rod replacement on tanks \u2014 extends life dramatically."
+          "text": "Yes \u2014 we repair all major wine refrigeration brands and work with both ducted split systems and self-contained units. Common issues we see: refrigerant leaks, compressor failures, condensate problems, and temperature regulation drift. Call (951) 634-3233 with the make/model and a description of the issue."
         }
       },
       {
         "@type": "Question",
-        "name": "What's a heat pump (hybrid) water heater?",
+        "name": "What's the difference between residential and commercial refrigeration?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market."
+          "text": "Residential systems are sized for home use \u2014 wine cellars, custom kitchens, hobbyist cold storage. They typically have lower duty cycles and quieter operation. Commercial systems are built for constant heavy use in restaurants and retail. We do both \u2014 see our commercial refrigeration page for restaurant walk-ins, freezers, and display cases."
         }
       },
       {
         "@type": "Question",
-        "name": "Are there rebates for tankless and heat pump water heaters?",
+        "name": "Do you install walk-in coolers in residential homes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted \u2014 we'll check availability for your situation. Call (951) 634-3233 for current incentives."
+          "text": "Yes \u2014 residential walk-in coolers are increasingly popular for serious cooks, large families, and game/livestock processing. We handle design, refrigeration installation, and ongoing maintenance. Insulation specs, drainage, and ventilation all matter \u2014 we'll walk you through the full scope."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you offer same-day water heater repair?",
+        "name": "How long does residential refrigeration equipment last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage."
+          "text": "Properly maintained residential refrigeration systems typically last 15-20 years. Wine cellar split systems may need refrigerant top-offs every 5-7 years depending on system design. Annual maintenance extends life significantly and catches problems before they become expensive failures."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the warning signs my water heater is failing?",
+        "name": "Do you handle refrigerant work on older systems?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely \u2014 replacement on your timeline is much cheaper than emergency replacement plus water damage."
+          "text": "Yes \u2014 we're EPA-certified for refrigerant recovery, recharge, and replacement. Older systems running R-22 (now phased out) can often be retrofitted with approved alternatives, though sometimes replacement is the more cost-effective path. We'll give you the honest assessment."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you give free estimates on water heater installation?",
+        "name": "Do you give free estimates on residential refrigeration installs?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule."
+          "text": "Yes \u2014 free in-home estimates on all installation projects. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule."
         }
       }
     ]
@@ -256,7 +253,7 @@
     <span class="crumb-sep">/</span>
     <a href="/services/">Services</a>
     <span class="crumb-sep">/</span>
-    <span class="crumb-cur">Water Heaters</span>
+    <span class="crumb-cur">Residential Refrigeration</span>
   </div>
 </nav>
 
@@ -264,8 +261,8 @@
 <div class="ph">
   <div class="ph-in">
     <div class="eyebrow">Service</div>
-    <h1>Water Heater Installation &amp; Repair in Murrieta, Temecula &amp; SW Riverside County</h1>
-    <p>Traditional tank, high-efficiency tankless, and heat-pump hybrid water heater installation, replacement, and repair — gas, electric, propane.</p>
+    <h1>Wine Cellar &amp; Residential Refrigeration in Murrieta, Temecula &amp; SW Riverside County</h1>
+    <p>Custom wine cellar refrigeration, walk-in coolers, and specialty cold storage installation and repair for SoCal homes.</p>
   </div>
 </div>
 
@@ -274,75 +271,75 @@
   <div class="container">
     <div class="sd-standalone fi">
       <div class="sd-hd">
-        <div class="sd-ic">💧</div>
+        <div class="sd-ic">🏠</div>
         <div>
-          <h2>Water Heaters</h2>
-          <p>Tank, tankless, and hybrid systems</p>
+          <h2>Residential Refrigeration</h2>
+          <p>Wine cellars, walk-in coolers & specialty refrigeration</p>
         </div>
       </div>
 
-      <p class="sd-bd">Whether you're running out of hot water mid-shower, your old tank is leaking down the wall, or you're remodeling and want a more efficient system, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p>
+      <p class="sd-bd">Temecula's wine country location means a lot of homes in the area have serious wine collections — and serious wine collections need serious refrigeration. Steve's handles the full range of residential refrigeration: custom wine cellars (anything from a 200-bottle closet conversion to a full walk-in cellar with multiple temperature zones), residential walk-in coolers for food storage, prep refrigeration in custom kitchens, and specialty cold storage for hobbyists.</p>
 
-      <p class="sd-bd">Not sure which type is right for your Murrieta or Temecula home? We'll walk you through the real tradeoffs based on your family size, fuel availability, hot water usage patterns, and budget — without pushing you toward whatever has the best margin for us. With federal IRA tax credits available for heat pump water heaters and SoCalGas rebates for tankless systems, the upgrade math has shifted significantly in recent years.</p>
+      <p class="sd-bd">Our technicians are EPA-certified in refrigerant handling and skilled in both new installation and repair of existing systems. Whether you need a fresh install for a new build, a retrofit on a malfunctioning cellar, or an honest assessment of whether your aging system can be saved, we'll give you straight answers with real numbers.</p>
 
       <div class="sd-feats">
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Same-day emergency water heater repair</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Recirculation pump installation</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Federal tax credit & rebate guidance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Custom wine cellar refrigeration design & install</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Residential walk-in cooler installation</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Multi-zone refrigeration systems</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigerant recovery & recharge (EPA-certified)</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Cold room repair & maintenance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Refrigeration retrofit & upgrades</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Specialty cold storage systems</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Emergency residential refrigeration repair</div></div>
       </div>
 
       <!-- Local relevance — names cities served, links to city pages once built -->
       <div class="sd-local">
-        <h3>Water Heater Specialists in the Murrieta-Temecula Valley</h3>
-        <p>Most Murrieta and Temecula homes have hard water that scales tank-style heaters faster than the manufacturer ratings assume — meaning many tanks need replacement at 8-10 years instead of the rated 12-15. Steve's is locally based in the Murrieta-Temecula Valley, and we install across the valley.</p>
+        <h3>Refrigeration Experts in Wine Country</h3>
+        <p>We've installed and serviced wine cellars across the Temecula Valley wine country region — from custom cellars in De Luz hilltop estates to climate-controlled storage rooms in newer Murrieta builds. Steve's is locally based in the Murrieta-Temecula Valley, minutes from anywhere in the valley.</p>
         <p>We service homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
       </div>
 
-      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Water Heater Service</a>
+      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Refrigeration Service</a>
     </div>
   </div>
 </section>
 
 <!-- OUR PROCESS — numbered timeline -->
-<section class="sv-process" aria-labelledby="water-heaters-process-heading">
+<section class="sv-process" aria-labelledby="residential-refrigeration-process-heading">
   <div class="sv-process-in">
     <div class="sv-process-hd">
       <div class="eyebrow">How It Works</div>
-      <h2 id="water-heaters-process-heading">Our Water Heater <em>Process</em></h2>
-      <p>Right-sized unit, code-compliant install, full walkthrough.</p>
+      <h2 id="residential-refrigeration-process-heading">Our Refrigeration <em>Process</em></h2>
+      <p>Specialty refrigeration done right, from spec to startup.</p>
     </div>
     <div class="sv-steps">
       <div class="sv-step">
         <div class="sv-step-n">1</div>
         <div class="sv-step-bd">
-          <h3>In-Home Assessment &amp; Capacity Sizing</h3>
-          <p>We come out, look at your existing water heater, check your gas/electric supply and venting, and ask about household size and hot water usage. We size the new unit to your actual usage — undersized causes constant complaints, oversized wastes money.</p>
+          <h3>Site Visit &amp; Specifications</h3>
+          <p>We come out, look at the space — wine cellar, walk-in cooler, beverage room — and talk through what you need to store, at what temperature and humidity. Specialty refrigeration is custom; getting the specs right at the start is what makes it work.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">2</div>
         <div class="sv-step-bd">
-          <h3>Unit Selection &amp; Quote</h3>
-          <p>We help you decide between tank, tankless, or heat pump water heater based on your home and budget. We explain efficiency ratings, energy costs over time, and any utility rebates honestly. Written, itemized estimate with no upsell tactics.</p>
+          <h3>System Design &amp; Equipment Selection</h3>
+          <p>We design the cooling system around your space — proper BTU capacity, insulation, drainage, and ventilation. We help you select equipment from reputable manufacturers and provide a written, itemized estimate with no surprises.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">3</div>
         <div class="sv-step-bd">
           <h3>Professional Installation</h3>
-          <p>We remove and dispose of the old unit, set the new one, connect water lines, gas or electrical, venting (or recirculation pump if applicable), and the temperature/pressure relief valve. Everything done to code with proper seismic strapping required in California.</p>
+          <p>Our techs handle the refrigeration lines, electrical, evaporator and condenser placement, and any cabinetry or structural work needed. We protect the surrounding space during the install and coordinate with any other trades involved.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">4</div>
         <div class="sv-step-bd">
-          <h3>Test &amp; Walkthrough</h3>
-          <p>We fill, check for leaks, verify temperature settings, and confirm safe operation. Then we walk you through the controls, recommended maintenance (anode rod and flush schedule), and warranty registration. You leave knowing exactly how to maintain your new unit.</p>
+          <h3>Commissioning &amp; Walkthrough</h3>
+          <p>We charge the system, run it through full operating range, verify temperature and humidity stay within spec, and document the install. We walk you through controls, defrost cycles, and maintenance — and provide manufacturer paperwork for warranty registration.</p>
         </div>
       </div>
     </div>
@@ -354,41 +351,41 @@
   <div class="faq-container">
     <div class="faq-head">
       <div class="eyebrow">Common Questions</div>
-      <h2 id="ac-faq-heading">Water Heaters FAQs</h2>
-      <p>Straight answers about water heaters in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
+      <h2 id="ac-faq-heading">Residential Refrigeration FAQs</h2>
+      <p>Straight answers about residential refrigeration in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Tank vs tankless water heater — which is better for my home?</summary>
-        <div class="faq-body">Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation.</div>
+        <summary>Do you install wine cellar refrigeration in Temecula homes?</summary>
+        <div class="faq-body">Yes — Temecula and Murrieta wine cellar installs are one of our specialties. We design and install custom systems ranging from small closet conversions to full walk-in cellars with multiple temperature zones for reds and whites. Call (951) 634-3233 for a consultation.</div>
       </details>
       <details class="faq-item">
-        <summary>How much does a tankless water heater cost installed?</summary>
-        <div class="faq-body">A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out.</div>
+        <summary>How much does a wine cellar refrigeration system cost?</summary>
+        <div class="faq-body">Costs vary widely based on cellar size, cooling load, and whether you want a single zone or multiple temperature zones. Small closet-style cellar systems can start around $2,000-$4,000; larger custom installs with proper insulation, vapor barriers, and multi-zone cooling can run $8,000-$20,000+. We'll give you a clear written quote after evaluating your space.</div>
       </details>
       <details class="faq-item">
-        <summary>How long do water heaters last?</summary>
-        <div class="faq-body">Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance — flushing, anode rod replacement on tanks — extends life dramatically.</div>
+        <summary>Can you repair an existing wine cooler or cellar?</summary>
+        <div class="faq-body">Yes — we repair all major wine refrigeration brands and work with both ducted split systems and self-contained units. Common issues we see: refrigerant leaks, compressor failures, condensate problems, and temperature regulation drift. Call (951) 634-3233 with the make/model and a description of the issue.</div>
       </details>
       <details class="faq-item">
-        <summary>What's a heat pump (hybrid) water heater?</summary>
-        <div class="faq-body">It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market.</div>
+        <summary>What's the difference between residential and commercial refrigeration?</summary>
+        <div class="faq-body">Residential systems are sized for home use — wine cellars, custom kitchens, hobbyist cold storage. They typically have lower duty cycles and quieter operation. Commercial systems are built for constant heavy use in restaurants and retail. We do both — see our commercial refrigeration page for restaurant walk-ins, freezers, and display cases.</div>
       </details>
       <details class="faq-item">
-        <summary>Are there rebates for tankless and heat pump water heaters?</summary>
-        <div class="faq-body">Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted — we'll check availability for your situation. Call (951) 634-3233 for current incentives.</div>
+        <summary>Do you install walk-in coolers in residential homes?</summary>
+        <div class="faq-body">Yes — residential walk-in coolers are increasingly popular for serious cooks, large families, and game/livestock processing. We handle design, refrigeration installation, and ongoing maintenance. Insulation specs, drainage, and ventilation all matter — we'll walk you through the full scope.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you offer same-day water heater repair?</summary>
-        <div class="faq-body">Yes — leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage.</div>
+        <summary>How long does residential refrigeration equipment last?</summary>
+        <div class="faq-body">Properly maintained residential refrigeration systems typically last 15-20 years. Wine cellar split systems may need refrigerant top-offs every 5-7 years depending on system design. Annual maintenance extends life significantly and catches problems before they become expensive failures.</div>
       </details>
       <details class="faq-item">
-        <summary>What are the warning signs my water heater is failing?</summary>
-        <div class="faq-body">Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely — replacement on your timeline is much cheaper than emergency replacement plus water damage.</div>
+        <summary>Do you handle refrigerant work on older systems?</summary>
+        <div class="faq-body">Yes — we're EPA-certified for refrigerant recovery, recharge, and replacement. Older systems running R-22 (now phased out) can often be retrofitted with approved alternatives, though sometimes replacement is the more cost-effective path. We'll give you the honest assessment.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you give free estimates on water heater installation?</summary>
-        <div class="faq-body">Yes — free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule.</div>
+        <summary>Do you give free estimates on residential refrigeration installs?</summary>
+        <div class="faq-body">Yes — free in-home estimates on all installation projects. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule.</div>
       </details>
     </div>
     <div class="faq-cta">
@@ -401,8 +398,8 @@
 <!-- CTA BAND -->
 <section class="cband">
   <div class="cband-in">
-    <h2>No Hot Water? <em style="font-style:normal;color:var(--red)">We're On It.</em></h2>
-    <p>Same-day emergency repair, honest replacement quotes, full breakdown of tank vs tankless vs hybrid options. No upsell.</p>
+    <h2>Wine Cellar Acting Up? <em style="font-style:normal;color:var(--red)">We Handle It.</em></h2>
+    <p>Custom installs, repairs, refrigerant work, and honest replacement quotes. EPA-certified, licensed, bonded, insured. Call to schedule.</p>
     <div class="cband-btns">
       <a href="tel:9516343233" class="btn btn-red btn-lg">Call Steve</a>
       <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
@@ -421,77 +418,42 @@
       <a href="/services/air-conditioning/" class="svxlink-card fi">
         <div class="svxlink-ic">❄️</div>
         <span class="svxlink-name">Air Conditioning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/furnaces/" class="svxlink-card fi">
         <div class="svxlink-ic">🔥</div>
         <span class="svxlink-name">Furnaces</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/heat-pumps/" class="svxlink-card fi">
         <div class="svxlink-ic">♨️</div>
         <span class="svxlink-name">Heat Pumps</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/ductless-mini-splits/" class="svxlink-card fi">
-        <div class="svxlink-ic">🔲</div>
-        <span class="svxlink-name">Ductless Mini-Splits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/whole-house-fans/" class="svxlink-card fi">
-        <div class="svxlink-ic">🌀</div>
-        <span class="svxlink-name">Whole House Fans</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/ductwork/" class="svxlink-card fi">
-        <div class="svxlink-ic">🛠️</div>
-        <span class="svxlink-name">Ductwork & Airflow</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/condenser-relocation/" class="svxlink-card fi">
-        <div class="svxlink-ic">📦</div>
-        <span class="svxlink-name">Condenser Relocation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/residential-refrigeration/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏠</div>
-        <span class="svxlink-name">Residential Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/commercial-refrigeration/" class="svxlink-card fi">
         <div class="svxlink-ic">🏢</div>
         <span class="svxlink-name">Commercial Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-hvac/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏬</div>
-        <span class="svxlink-name">Commercial HVAC</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/hvac-maintenance/" class="svxlink-card fi">
         <div class="svxlink-ic">🔧</div>
         <span class="svxlink-name">HVAC Maintenance</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/air-quality-control/" class="svxlink-card fi">
         <div class="svxlink-ic">💨</div>
-        <span class="svxlink-name">Air Quality Control</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-name">Air Quality</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
-      <a href="/services/drain-cleaning/" class="svxlink-card fi">
-        <div class="svxlink-ic">🚰</div>
-        <span class="svxlink-name">Drain Cleaning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/oven-hoods/" class="svxlink-card fi">
-        <div class="svxlink-ic">🍳</div>
-        <span class="svxlink-name">Oven Hood Installation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+      <a href="/services/water-heaters/" class="svxlink-card fi">
+        <div class="svxlink-ic">💧</div>
+        <span class="svxlink-name">Water Heaters</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/energy-audits/" class="svxlink-card fi">
         <div class="svxlink-ic">⚡</div>
         <span class="svxlink-name">Energy Audits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
     </div>
   </div>

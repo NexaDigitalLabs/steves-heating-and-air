@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Water Heater Installation & Repair in Murrieta & Temecula | Steve's</title>
-  <meta name="description" content="Tank, tankless, and heat pump hybrid water heater installation and repair in Murrieta, Temecula, and SW Riverside County. Same-day emergency repair. Call (951) 634-3233."/>
+  <title>Whole House Fan Installation in Murrieta &amp; Temecula | Steve's Heating &amp; Air</title>
+  <meta name="description" content="Whole house fan installation in Murrieta, Temecula, and Southwest Riverside County. Cut summer cooling costs by pulling in cool evening air. Quiet modern systems, free estimates. Call (951) 634-3233."/>
   <meta name="theme-color" content="#0B1D3A"/>
   <link rel="icon" href="/images/favicon.png" type="image/png"/>
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/whole-house-fans/"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta property="og:description" content="Tank, tankless, and heat pump hybrid water heater installation across Murrieta, Temecula, and SW Riverside County. Same-day emergency repair available."/>
+  <meta property="og:title" content="Whole House Fan Installation in Murrieta &amp; Temecula | Steve's Heating &amp; Air"/>
+  <meta property="og:description" content="Quiet, energy-efficient whole house fan installation across Murrieta, Temecula, and SW Riverside County. Pull in cool evening air and run your AC less. Licensed, bonded, insured."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
-  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/whole-house-fans/"/>
   <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta name="twitter:description" content="Water heater install & repair in Murrieta & Temecula — tank, tankless, hybrid. Call (951) 634-3233."/>
+  <meta name="twitter:title" content="Whole House Fan Installation in Murrieta &amp; Temecula | Steve's Heating &amp; Air"/>
+  <meta name="twitter:description" content="Quiet, energy-efficient whole house fan installation across Murrieta, Temecula, and SW Riverside County. Pull in cool evening air and run your AC less. Licensed, bonded, insured."/>
   <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
 
   <!-- Geo -->
@@ -35,7 +35,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large"/>
 
   <!-- Page context for chatbot — tells the AI assistant what page the visitor is on -->
-  <meta name="page-context" content="service:water-heaters|Water Heaters"/>
+  <meta name="page-context" content="service:whole-house-fans|Whole House Fans"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -57,11 +57,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#service",
-    "name": "Water Heaters Service",
-    "serviceType": "Water Heaters",
+    "@id": "https://steves-heating-and-air.vercel.app/services/whole-house-fans/#service",
+    "name": "Whole House Fans",
+    "serviceType": "Whole House Fan Installation",
     "category": "HVAC",
-    "description": "Tank water heater installation and replacement, tankless on-demand water heater systems, heat pump hybrid water heaters, gas, electric, and propane systems, emergency water heater repair in Murrieta, Temecula, and Southwest Riverside County.",
+    "description": "Whole house fan installation, replacement, and repair in Murrieta, Temecula, and Southwest Riverside County. Quiet, energy-efficient ventilation systems that pull cool evening air through the home and exhaust hot attic air, reducing reliance on air conditioning.",
     "provider": {
       "@type": "HVACBusiness",
       "@id": "https://steves-heating-and-air.vercel.app/#business",
@@ -90,16 +90,13 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Water Heaters Services",
+      "name": "Whole House Fan Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tank Water Heater Installation & Replacement" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless On-Demand Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Hybrid Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electric Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Propane Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Water Heater Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Annual Water Heater Maintenance & Flushing" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole House Fan Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole House Fan Replacement & Upgrade" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole House Fan Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Attic Ventilation Assessment" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Whole House Fan Sizing & Consultation" } }
       ]
     }
   }
@@ -125,8 +122,8 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Air Conditioning",
-        "item": "https://steves-heating-and-air.vercel.app/services/water-heaters/"
+        "name": "Whole House Fans",
+        "item": "https://steves-heating-and-air.vercel.app/services/whole-house-fans/"
       }
     ]
   }
@@ -136,70 +133,70 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#faq",
+    "@id": "https://steves-heating-and-air.vercel.app/services/whole-house-fans/#faq",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tank vs tankless water heater \u2014 which is better for my home?",
+        "name": "What is a whole house fan and how does it work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation."
+          "text": "A whole house fan is a large fan mounted in your ceiling that pulls cool outside air in through open windows and pushes hot air out through your attic vents. When the evening air cools down — which it reliably does in the Temecula Valley — you open a few windows, turn on the fan, and it flushes the day&#x27;s heat out of the house and attic in 10 to 15 minutes. It&#x27;s not a replacement for AC, but it lets you run your AC far less."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does a tankless water heater cost installed?",
+        "name": "How much can a whole house fan save on my energy bill?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out."
+          "text": "It varies by home, but most Murrieta and Temecula homeowners see a noticeable drop in summer cooling costs because a whole house fan uses a fraction of the electricity an AC compressor does. The savings come from running your AC fewer hours each day — using the fan on cool mornings and evenings, and saving the AC for the hottest part of the afternoon. We&#x27;ll give you a realistic estimate for your specific home during the free assessment."
         }
       },
       {
         "@type": "Question",
-        "name": "How long do water heaters last?",
+        "name": "Does a whole house fan work well in Murrieta and Temecula&#x27;s climate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance \u2014 flushing, anode rod replacement on tanks \u2014 extends life dramatically."
+          "text": "Yes — the Temecula Valley is close to an ideal climate for whole house fans. We get hot days but the dry inland air cools off significantly at night, often into the 60s even after a 100°F afternoon. That day-to-night temperature swing is exactly what a whole house fan takes advantage of. Coastal homes with little overnight cooling benefit less; inland valley homes like ours benefit a lot."
         }
       },
       {
         "@type": "Question",
-        "name": "What's a heat pump (hybrid) water heater?",
+        "name": "Do I still need air conditioning if I install a whole house fan?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market."
+          "text": "Yes, you&#x27;ll still want your AC for peak afternoon heat and for the worst stretches of summer. A whole house fan and an air conditioner are a team, not competitors. The fan handles cool mornings, evenings, and milder days; the AC handles the hottest hours. Used together, your AC runs less, lasts longer, and costs less to operate."
         }
       },
       {
         "@type": "Question",
-        "name": "Are there rebates for tankless and heat pump water heaters?",
+        "name": "How much does whole house fan installation cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted \u2014 we'll check availability for your situation. Call (951) 634-3233 for current incentives."
+          "text": "Cost depends on the size of your home, the fan model, and your attic&#x27;s existing ventilation. A standard single-fan installation in an average home is a straightforward one-day job; larger homes or homes that need additional attic venting cost more. We give you a written, itemized estimate before any work starts — and estimates on new installs are free. Call (951) 634-3233 for a quote."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you offer same-day water heater repair?",
+        "name": "Are modern whole house fans noisy?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage."
+          "text": "Modern whole house fans are dramatically quieter than the loud attic fans many people remember from older homes. Today&#x27;s systems use insulated ducting, sealed dampers, and variable-speed motors that run quietly even on high. Properly sized and installed, you&#x27;ll hear a soft rush of air, not a roar. Correct sizing and clean installation are what keep them quiet — which is why installation quality matters."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the warning signs my water heater is failing?",
+        "name": "Can a whole house fan be installed in any home?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely \u2014 replacement on your timeline is much cheaper than emergency replacement plus water damage."
+          "text": "Most homes are good candidates, but it depends on attic space, attic ventilation, and ceiling layout. The fan needs enough attic exhaust venting to push air out, or it can&#x27;t move air efficiently. During the in-home assessment we check your attic, confirm you have — or can add — adequate venting, and recommend the right size. If a whole house fan isn&#x27;t the right fit for your home, we&#x27;ll tell you honestly."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you give free estimates on water heater installation?",
+        "name": "Do you offer free estimates on whole house fan installation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule."
+          "text": "Yes — free, no-pressure estimates on all whole house fan installations and replacements. We&#x27;ll assess your home, explain your options with real numbers, and let you decide. Call (951) 634-3233 to schedule your free in-home assessment."
         }
       }
     ]
@@ -256,7 +253,7 @@
     <span class="crumb-sep">/</span>
     <a href="/services/">Services</a>
     <span class="crumb-sep">/</span>
-    <span class="crumb-cur">Water Heaters</span>
+    <span class="crumb-cur">Whole House Fans</span>
   </div>
 </nav>
 
@@ -264,8 +261,8 @@
 <div class="ph">
   <div class="ph-in">
     <div class="eyebrow">Service</div>
-    <h1>Water Heater Installation &amp; Repair in Murrieta, Temecula &amp; SW Riverside County</h1>
-    <p>Traditional tank, high-efficiency tankless, and heat-pump hybrid water heater installation, replacement, and repair — gas, electric, propane.</p>
+    <h1>Whole House Fan Installation in Murrieta, Temecula &amp; SW Riverside County</h1>
+    <p>Quiet, energy-efficient whole house fans that pull in cool evening air and flush out the day's heat — so your AC runs less and your summer bills drop.</p>
   </div>
 </div>
 
@@ -274,121 +271,121 @@
   <div class="container">
     <div class="sd-standalone fi">
       <div class="sd-hd">
-        <div class="sd-ic">💧</div>
+        <div class="sd-ic">🌀</div>
         <div>
-          <h2>Water Heaters</h2>
-          <p>Tank, tankless, and hybrid systems</p>
+          <h2>Whole House Fans</h2>
+          <p>Installation, replacement &amp; repair of quiet, energy-saving systems</p>
         </div>
       </div>
 
-      <p class="sd-bd">Whether you're running out of hot water mid-shower, your old tank is leaking down the wall, or you're remodeling and want a more efficient system, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p>
+      <p class="sd-bd">The Temecula Valley has one of the best climates in the country for a whole house fan. We get hot afternoons — but the dry inland air cools off hard at night, often dropping into the 60s even after a 100°F day. A whole house fan is built to take advantage of exactly that. When the outside air cools in the evening, you open a few windows, switch on the fan, and within 10 to 15 minutes it has pulled all that cool air through the house and pushed the trapped heat out through your attic. Your home cools down, your attic cools down, and your AC gets to rest.</p>
 
-      <p class="sd-bd">Not sure which type is right for your Murrieta or Temecula home? We'll walk you through the real tradeoffs based on your family size, fuel availability, hot water usage patterns, and budget — without pushing you toward whatever has the best margin for us. With federal IRA tax credits available for heat pump water heaters and SoCalGas rebates for tankless systems, the upgrade math has shifted significantly in recent years.</p>
+      <p class="sd-bd">A whole house fan doesn't replace your air conditioner — it works alongside it. The fan handles cool mornings, evenings, and milder days; the AC handles the hottest afternoon hours. Used together, your AC runs fewer hours, costs less to operate, and lasts longer before it needs replacing. We install modern variable-speed systems that run quietly — a soft rush of air, not the roar of the old attic fans people remember. Correct sizing and a clean, sealed installation are what keep them quiet and efficient, and that's the part we get right. If a whole house fan isn't a good fit for your home's attic or layout, we'll tell you straight.</p>
 
       <div class="sd-feats">
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Same-day emergency water heater repair</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Recirculation pump installation</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Federal tax credit & rebate guidance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">New whole house fan installation</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Replacement &amp; upgrade of older fans</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Whole house fan repair</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Quiet variable-speed systems</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Insulated, sealed-damper installs</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Attic ventilation assessment</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Correct sizing for your home</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Free estimates on new installs</div></div>
       </div>
 
-      <!-- Local relevance — names cities served, links to city pages once built -->
+      <!-- Local relevance — names cities served, links to city pages -->
       <div class="sd-local">
-        <h3>Water Heater Specialists in the Murrieta-Temecula Valley</h3>
-        <p>Most Murrieta and Temecula homes have hard water that scales tank-style heaters faster than the manufacturer ratings assume — meaning many tanks need replacement at 8-10 years instead of the rated 12-15. Steve's is locally based in the Murrieta-Temecula Valley, and we install across the valley.</p>
-        <p>We service homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
+        <h3>Whole House Fan Experts in the Murrieta-Temecula Valley</h3>
+        <p>We've been the trusted HVAC contractor in Southwest Riverside County for over 20 years, and the valley's hot-day/cool-night climate makes whole house fans one of the smartest comfort upgrades a local homeowner can make.</p>
+        <p>We serve homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
       </div>
 
-      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Water Heater Service</a>
+      <a href="tel:9516343233" class="btn btn-red btn-lg">Call About Whole House Fans</a>
     </div>
   </div>
 </section>
 
 <!-- OUR PROCESS — numbered timeline -->
-<section class="sv-process" aria-labelledby="water-heaters-process-heading">
+<section class="sv-process" aria-labelledby="whole-house-fans-process-heading">
   <div class="sv-process-in">
     <div class="sv-process-hd">
       <div class="eyebrow">How It Works</div>
-      <h2 id="water-heaters-process-heading">Our Water Heater <em>Process</em></h2>
-      <p>Right-sized unit, code-compliant install, full walkthrough.</p>
+      <h2 id="whole-house-fans-process-heading">Our Whole House Fan <em>Process</em></h2>
+      <p>Straightforward, transparent, and built around getting the install right the first time.</p>
     </div>
     <div class="sv-steps">
       <div class="sv-step">
         <div class="sv-step-n">1</div>
         <div class="sv-step-bd">
-          <h3>In-Home Assessment &amp; Capacity Sizing</h3>
-          <p>We come out, look at your existing water heater, check your gas/electric supply and venting, and ask about household size and hot water usage. We size the new unit to your actual usage — undersized causes constant complaints, oversized wastes money.</p>
+          <h3>In-Home Assessment & Free Quote</h3>
+          <p>We come out, look at your ceilings, attic space, and existing attic ventilation, and confirm a whole house fan is a good fit for your home. Then we recommend the right size and give you a written, itemized estimate — no pressure, no upsell.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">2</div>
         <div class="sv-step-bd">
-          <h3>Unit Selection &amp; Quote</h3>
-          <p>We help you decide between tank, tankless, or heat pump water heater based on your home and budget. We explain efficiency ratings, energy costs over time, and any utility rebates honestly. Written, itemized estimate with no upsell tactics.</p>
+          <h3>System Selection & Scheduling</h3>
+          <p>We help you choose the right model for your square footage and noise preferences, confirm whether your attic needs additional exhaust venting, and schedule the install at a time that works for you — most homes are a single-day job.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">3</div>
         <div class="sv-step-bd">
-          <h3>Professional Installation</h3>
-          <p>We remove and dispose of the old unit, set the new one, connect water lines, gas or electrical, venting (or recirculation pump if applicable), and the temperature/pressure relief valve. Everything done to code with proper seismic strapping required in California.</p>
+          <h3>Professional Installation & Sealing</h3>
+          <p>Our technicians cut in and mount the fan cleanly, connect insulated ducting, install sealed dampers, and add any attic venting the system needs to breathe. Clean sealing and correct mounting are what keep the fan quiet and efficient.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">4</div>
         <div class="sv-step-bd">
-          <h3>Test &amp; Walkthrough</h3>
-          <p>We fill, check for leaks, verify temperature settings, and confirm safe operation. Then we walk you through the controls, recommended maintenance (anode rod and flush schedule), and warranty registration. You leave knowing exactly how to maintain your new unit.</p>
+          <h3>Startup Test & Walkthrough</h3>
+          <p>We run the system, check airflow and noise, and walk you through exactly how to use it — when to open which windows, how to pair it with your AC, and how to get the most savings out of it. We don't leave until you're comfortable operating it.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AC-SPECIFIC FAQ -->
-<section class="faq-sec" aria-labelledby="ac-faq-heading">
+<!-- SERVICE FAQ -->
+<section class="faq-sec" aria-labelledby="whole-house-fans-faq-heading">
   <div class="faq-container">
     <div class="faq-head">
       <div class="eyebrow">Common Questions</div>
-      <h2 id="ac-faq-heading">Water Heaters FAQs</h2>
-      <p>Straight answers about water heaters in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
+      <h2 id="whole-house-fans-faq-heading">Whole House Fans FAQs</h2>
+      <p>Straight answers about whole house fans in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Tank vs tankless water heater — which is better for my home?</summary>
-        <div class="faq-body">Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation.</div>
+        <summary>What is a whole house fan and how does it work?</summary>
+        <div class="faq-body">A whole house fan is a large fan mounted in your ceiling that pulls cool outside air in through open windows and pushes hot air out through your attic vents. When the evening air cools down — which it reliably does in the Temecula Valley — you open a few windows, turn on the fan, and it flushes the day&#x27;s heat out of the house and attic in 10 to 15 minutes. It&#x27;s not a replacement for AC, but it lets you run your AC far less.</div>
       </details>
       <details class="faq-item">
-        <summary>How much does a tankless water heater cost installed?</summary>
-        <div class="faq-body">A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out.</div>
+        <summary>How much can a whole house fan save on my energy bill?</summary>
+        <div class="faq-body">It varies by home, but most Murrieta and Temecula homeowners see a noticeable drop in summer cooling costs because a whole house fan uses a fraction of the electricity an AC compressor does. The savings come from running your AC fewer hours each day — using the fan on cool mornings and evenings, and saving the AC for the hottest part of the afternoon. We&#x27;ll give you a realistic estimate for your specific home during the free assessment.</div>
       </details>
       <details class="faq-item">
-        <summary>How long do water heaters last?</summary>
-        <div class="faq-body">Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance — flushing, anode rod replacement on tanks — extends life dramatically.</div>
+        <summary>Does a whole house fan work well in Murrieta and Temecula&#x27;s climate?</summary>
+        <div class="faq-body">Yes — the Temecula Valley is close to an ideal climate for whole house fans. We get hot days but the dry inland air cools off significantly at night, often into the 60s even after a 100°F afternoon. That day-to-night temperature swing is exactly what a whole house fan takes advantage of. Coastal homes with little overnight cooling benefit less; inland valley homes like ours benefit a lot.</div>
       </details>
       <details class="faq-item">
-        <summary>What's a heat pump (hybrid) water heater?</summary>
-        <div class="faq-body">It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market.</div>
+        <summary>Do I still need air conditioning if I install a whole house fan?</summary>
+        <div class="faq-body">Yes, you&#x27;ll still want your AC for peak afternoon heat and for the worst stretches of summer. A whole house fan and an air conditioner are a team, not competitors. The fan handles cool mornings, evenings, and milder days; the AC handles the hottest hours. Used together, your AC runs less, lasts longer, and costs less to operate.</div>
       </details>
       <details class="faq-item">
-        <summary>Are there rebates for tankless and heat pump water heaters?</summary>
-        <div class="faq-body">Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted — we'll check availability for your situation. Call (951) 634-3233 for current incentives.</div>
+        <summary>How much does whole house fan installation cost?</summary>
+        <div class="faq-body">Cost depends on the size of your home, the fan model, and your attic&#x27;s existing ventilation. A standard single-fan installation in an average home is a straightforward one-day job; larger homes or homes that need additional attic venting cost more. We give you a written, itemized estimate before any work starts — and estimates on new installs are free. Call (951) 634-3233 for a quote.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you offer same-day water heater repair?</summary>
-        <div class="faq-body">Yes — leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage.</div>
+        <summary>Are modern whole house fans noisy?</summary>
+        <div class="faq-body">Modern whole house fans are dramatically quieter than the loud attic fans many people remember from older homes. Today&#x27;s systems use insulated ducting, sealed dampers, and variable-speed motors that run quietly even on high. Properly sized and installed, you&#x27;ll hear a soft rush of air, not a roar. Correct sizing and clean installation are what keep them quiet — which is why installation quality matters.</div>
       </details>
       <details class="faq-item">
-        <summary>What are the warning signs my water heater is failing?</summary>
-        <div class="faq-body">Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely — replacement on your timeline is much cheaper than emergency replacement plus water damage.</div>
+        <summary>Can a whole house fan be installed in any home?</summary>
+        <div class="faq-body">Most homes are good candidates, but it depends on attic space, attic ventilation, and ceiling layout. The fan needs enough attic exhaust venting to push air out, or it can&#x27;t move air efficiently. During the in-home assessment we check your attic, confirm you have — or can add — adequate venting, and recommend the right size. If a whole house fan isn&#x27;t the right fit for your home, we&#x27;ll tell you honestly.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you give free estimates on water heater installation?</summary>
-        <div class="faq-body">Yes — free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule.</div>
+        <summary>Do you offer free estimates on whole house fan installation?</summary>
+        <div class="faq-body">Yes — free, no-pressure estimates on all whole house fan installations and replacements. We&#x27;ll assess your home, explain your options with real numbers, and let you decide. Call (951) 634-3233 to schedule your free in-home assessment.</div>
       </details>
     </div>
     <div class="faq-cta">
@@ -401,8 +398,8 @@
 <!-- CTA BAND -->
 <section class="cband">
   <div class="cband-in">
-    <h2>No Hot Water? <em style="font-style:normal;color:var(--red)">We're On It.</em></h2>
-    <p>Same-day emergency repair, honest replacement quotes, full breakdown of tank vs tankless vs hybrid options. No upsell.</p>
+    <h2>Cool Your Home for Less. <em style="font-style:normal;color:var(--red)">Ask About a Whole House Fan.</em></h2>
+    <p>Free estimates across Murrieta, Temecula, and Southwest Riverside County. Honest sizing advice, quiet modern systems, and a clean install that lasts. No upsell pressure.</p>
     <div class="cband-btns">
       <a href="tel:9516343233" class="btn btn-red btn-lg">Call Steve</a>
       <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
@@ -421,77 +418,42 @@
       <a href="/services/air-conditioning/" class="svxlink-card fi">
         <div class="svxlink-ic">❄️</div>
         <span class="svxlink-name">Air Conditioning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/furnaces/" class="svxlink-card fi">
-        <div class="svxlink-ic">🔥</div>
-        <span class="svxlink-name">Furnaces</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/heat-pumps/" class="svxlink-card fi">
         <div class="svxlink-ic">♨️</div>
         <span class="svxlink-name">Heat Pumps</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
+      </a>
+      <a href="/services/furnaces/" class="svxlink-card fi">
+        <div class="svxlink-ic">🔥</div>
+        <span class="svxlink-name">Furnaces</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/ductless-mini-splits/" class="svxlink-card fi">
         <div class="svxlink-ic">🔲</div>
         <span class="svxlink-name">Ductless Mini-Splits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/whole-house-fans/" class="svxlink-card fi">
-        <div class="svxlink-ic">🌀</div>
-        <span class="svxlink-name">Whole House Fans</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/ductwork/" class="svxlink-card fi">
         <div class="svxlink-ic">🛠️</div>
-        <span class="svxlink-name">Ductwork & Airflow</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-name">Ductwork &amp; Airflow</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/condenser-relocation/" class="svxlink-card fi">
         <div class="svxlink-ic">📦</div>
         <span class="svxlink-name">Condenser Relocation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/residential-refrigeration/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏠</div>
-        <span class="svxlink-name">Residential Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-refrigeration/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏢</div>
-        <span class="svxlink-name">Commercial Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-hvac/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏬</div>
-        <span class="svxlink-name">Commercial HVAC</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/hvac-maintenance/" class="svxlink-card fi">
         <div class="svxlink-ic">🔧</div>
         <span class="svxlink-name">HVAC Maintenance</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/air-quality-control/" class="svxlink-card fi">
         <div class="svxlink-ic">💨</div>
-        <span class="svxlink-name">Air Quality Control</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/drain-cleaning/" class="svxlink-card fi">
-        <div class="svxlink-ic">🚰</div>
-        <span class="svxlink-name">Drain Cleaning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/oven-hoods/" class="svxlink-card fi">
-        <div class="svxlink-ic">🍳</div>
-        <span class="svxlink-name">Oven Hood Installation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/energy-audits/" class="svxlink-card fi">
-        <div class="svxlink-ic">⚡</div>
-        <span class="svxlink-name">Energy Audits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-name">Air Quality</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
     </div>
   </div>
@@ -537,7 +499,7 @@
         <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
       </div>
     </div>
-        <div class="ft-c">
+    <div class="ft-c">
       <details class="ft-acc">
         <summary><h4>Services</h4></summary>
         <ul class="ft-services-ul">

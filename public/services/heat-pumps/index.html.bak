@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Water Heater Installation & Repair in Murrieta & Temecula | Steve's</title>
-  <meta name="description" content="Tank, tankless, and heat pump hybrid water heater installation and repair in Murrieta, Temecula, and SW Riverside County. Same-day emergency repair. Call (951) 634-3233."/>
+  <title>Heat Pump Installation & Repair in Murrieta & Temecula | Steve's Heating & Air</title>
+  <meta name="description" content="NATE-certified heat pump installation, repair, and dual-fuel system setup in Murrieta, Temecula, and SW Riverside County. Federal tax credits available. Call (951) 634-3233."/>
   <meta name="theme-color" content="#0B1D3A"/>
   <link rel="icon" href="/images/favicon.png" type="image/png"/>
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/heat-pumps/"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta property="og:description" content="Tank, tankless, and heat pump hybrid water heater installation across Murrieta, Temecula, and SW Riverside County. Same-day emergency repair available."/>
+  <meta property="og:title" content="Heat Pump Installation & Repair in Murrieta & Temecula | Steve's Heating & Air"/>
+  <meta property="og:description" content="Energy-efficient heat pump installation across Murrieta, Temecula, and SW Riverside County. Federal IRA tax credits, California rebates, dual-fuel systems. NATE-certified."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
-  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/heat-pumps/"/>
   <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta name="twitter:description" content="Water heater install & repair in Murrieta & Temecula — tank, tankless, hybrid. Call (951) 634-3233."/>
+  <meta name="twitter:title" content="Heat Pump Installation & Repair in Murrieta & Temecula | Steve's Heating & Air"/>
+  <meta name="twitter:description" content="Heat pump installation & repair in Murrieta & Temecula. Federal tax credits available. NATE-certified. Call (951) 634-3233."/>
   <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
 
   <!-- Geo -->
@@ -35,7 +35,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large"/>
 
   <!-- Page context for chatbot — tells the AI assistant what page the visitor is on -->
-  <meta name="page-context" content="service:water-heaters|Water Heaters"/>
+  <meta name="page-context" content="service:heatpump|Heat Pumps"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -57,11 +57,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#service",
-    "name": "Water Heaters Service",
-    "serviceType": "Water Heaters",
+    "@id": "https://steves-heating-and-air.vercel.app/services/heat-pumps/#service",
+    "name": "Heat Pumps Service",
+    "serviceType": "Heat Pumps",
     "category": "HVAC",
-    "description": "Tank water heater installation and replacement, tankless on-demand water heater systems, heat pump hybrid water heaters, gas, electric, and propane systems, emergency water heater repair in Murrieta, Temecula, and Southwest Riverside County.",
+    "description": "Air-source and ground-source heat pump installation, repair, and dual-fuel system setup in Murrieta, Temecula, and Southwest Riverside County. NATE-certified technicians, federal IRA tax credits and California rebates available.",
     "provider": {
       "@type": "HVACBusiness",
       "@id": "https://steves-heating-and-air.vercel.app/#business",
@@ -90,16 +90,14 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Water Heaters Services",
+      "name": "Heat Pumps Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tank Water Heater Installation & Replacement" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless On-Demand Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Hybrid Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electric Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Propane Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Water Heater Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Annual Water Heater Maintenance & Flushing" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air-Source Heat Pump Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ground-Source Heat Pump Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Repair & Diagnostics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dual-Fuel System Setup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Energy Efficiency Consulting" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Replacement" } }
       ]
     }
   }
@@ -126,7 +124,7 @@
         "@type": "ListItem",
         "position": 3,
         "name": "Air Conditioning",
-        "item": "https://steves-heating-and-air.vercel.app/services/water-heaters/"
+        "item": "https://steves-heating-and-air.vercel.app/services/heat-pumps/"
       }
     ]
   }
@@ -136,70 +134,70 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#faq",
+    "@id": "https://steves-heating-and-air.vercel.app/services/heat-pumps/#faq",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tank vs tankless water heater \u2014 which is better for my home?",
+        "name": "How much does a heat pump cost installed in Temecula?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation."
+          "text": "A standard residential heat pump installation in our area typically runs $7,000 to $15,000 depending on system size, efficiency rating, and whether ductwork modifications are needed. After federal tax credits and California rebates, the net cost can drop significantly. We'll give you a clear written quote with all incentives factored in."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does a tankless water heater cost installed?",
+        "name": "What's the difference between a heat pump and an AC + furnace?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out."
+          "text": "A traditional setup uses two separate systems: an AC for cooling and a gas furnace for heating. A heat pump is a single system that does both \u2014 it moves heat outside in summer and pulls heat inside in winter. One unit, no gas line needed (for all-electric installs), and dramatically more energy-efficient than electric resistance heating."
         }
       },
       {
         "@type": "Question",
-        "name": "How long do water heaters last?",
+        "name": "Are heat pumps efficient in Southern California?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance \u2014 flushing, anode rod replacement on tanks \u2014 extends life dramatically."
+          "text": "Yes \u2014 in fact, this climate is ideal for them. Heat pumps lose efficiency in extreme cold (below ~30\u00b0F), but the Murrieta-Temecula Valley rarely sees those temperatures. Our long cooling season means the heat pump runs efficiently 9-10 months a year, and on the coldest nights, modern heat pumps still perform well or pair with a small backup."
         }
       },
       {
         "@type": "Question",
-        "name": "What's a heat pump (hybrid) water heater?",
+        "name": "What rebates and tax credits are available for heat pumps?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market."
+          "text": "The federal Inflation Reduction Act offers a $2,000 tax credit for qualifying heat pump installations. California's TECH Clean California program offers heat pump rebates, though some Southern California reservations are currently waitlisted \u2014 we'll check current availability for your situation. SCE may also offer additional incentives. Call (951) 634-3233 and we'll lay out exactly what you qualify for."
         }
       },
       {
         "@type": "Question",
-        "name": "Are there rebates for tankless and heat pump water heaters?",
+        "name": "How long does a heat pump last?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted \u2014 we'll check availability for your situation. Call (951) 634-3233 for current incentives."
+          "text": "Modern air-source heat pumps typically last 12-15 years with proper maintenance. That's somewhat shorter than a gas furnace (which can last 20+ years), but the energy savings over the system's life usually more than make up the difference, especially in our climate."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you offer same-day water heater repair?",
+        "name": "Should I switch from a gas furnace to a heat pump?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage."
+          "text": "If your existing AC and furnace are both aging (10+ years), it's a great time to consider switching. You replace two systems with one, qualify for federal tax credits and state rebates, and lock in lower energy bills going forward. If only one system is aging, the math is closer \u2014 we'll run real numbers for your specific situation."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the warning signs my water heater is failing?",
+        "name": "What's a dual-fuel heat pump system?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely \u2014 replacement on your timeline is much cheaper than emergency replacement plus water damage."
+          "text": "A dual-fuel setup pairs a heat pump (for everyday heating and cooling) with a smaller backup gas furnace that kicks in only on the coldest nights. You get the efficiency of a heat pump for 95% of the year, plus the brute heating power of gas for the rare 30\u00b0F nights in the valley. Best of both worlds for homeowners who want maximum reliability."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you give free estimates on water heater installation?",
+        "name": "Do you give free estimates on heat pump installation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule."
+          "text": "Yes \u2014 free in-home estimates on all heat pump installations, including a full breakdown of available federal tax credits and California rebates. Call (951) 634-3233 to schedule."
         }
       }
     ]
@@ -256,7 +254,7 @@
     <span class="crumb-sep">/</span>
     <a href="/services/">Services</a>
     <span class="crumb-sep">/</span>
-    <span class="crumb-cur">Water Heaters</span>
+    <span class="crumb-cur">Heat Pumps</span>
   </div>
 </nav>
 
@@ -264,8 +262,8 @@
 <div class="ph">
   <div class="ph-in">
     <div class="eyebrow">Service</div>
-    <h1>Water Heater Installation &amp; Repair in Murrieta, Temecula &amp; SW Riverside County</h1>
-    <p>Traditional tank, high-efficiency tankless, and heat-pump hybrid water heater installation, replacement, and repair — gas, electric, propane.</p>
+    <h1>Heat Pump Installation &amp; Repair in Murrieta, Temecula &amp; SW Riverside County</h1>
+    <p>Air-source and ground-source heat pump installation, dual-fuel system setup, and energy efficiency consulting — perfect for the SoCal climate.</p>
   </div>
 </div>
 
@@ -274,75 +272,75 @@
   <div class="container">
     <div class="sd-standalone fi">
       <div class="sd-hd">
-        <div class="sd-ic">💧</div>
+        <div class="sd-ic">♨️</div>
         <div>
-          <h2>Water Heaters</h2>
-          <p>Tank, tankless, and hybrid systems</p>
+          <h2>Heat Pumps</h2>
+          <p>Year-round heating and cooling efficiency</p>
         </div>
       </div>
 
-      <p class="sd-bd">Whether you're running out of hot water mid-shower, your old tank is leaking down the wall, or you're remodeling and want a more efficient system, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p>
+      <p class="sd-bd">Heat pumps are one of the most energy-efficient ways to heat and cool your home — and the mild Southern California climate is just about the perfect environment for them. A single heat pump system replaces both your AC and your furnace, moving heat instead of generating it, which means dramatically lower energy bills year-round. For Murrieta and Temecula homes that run AC nine months out of twelve, the math often works out heavily in favor of a heat pump.</p>
 
-      <p class="sd-bd">Not sure which type is right for your Murrieta or Temecula home? We'll walk you through the real tradeoffs based on your family size, fuel availability, hot water usage patterns, and budget — without pushing you toward whatever has the best margin for us. With federal IRA tax credits available for heat pump water heaters and SoCalGas rebates for tankless systems, the upgrade math has shifted significantly in recent years.</p>
+      <p class="sd-bd">Steve's installs and services air-source heat pumps for residential and light commercial applications, plus dual-fuel systems that pair a heat pump with a backup gas furnace for those rare cold snaps. With the federal Inflation Reduction Act tax credit ($2,000 for qualifying heat pumps) plus California rebates, the upfront cost gap between a heat pump and a traditional AC + furnace setup is smaller than it's been in years. We'll walk you through the real numbers for your situation.</p>
 
       <div class="sd-feats">
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Same-day emergency water heater repair</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Recirculation pump installation</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Air-source heat pump installation</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump repair & diagnostics</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Dual-fuel system setup (heat pump + gas backup)</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Energy efficiency consulting</div></div>
         <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Federal tax credit & rebate guidance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Mini-split heat pump systems</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">All major brands serviced</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump replacement & upgrades</div></div>
       </div>
 
       <!-- Local relevance — names cities served, links to city pages once built -->
       <div class="sd-local">
-        <h3>Water Heater Specialists in the Murrieta-Temecula Valley</h3>
-        <p>Most Murrieta and Temecula homes have hard water that scales tank-style heaters faster than the manufacturer ratings assume — meaning many tanks need replacement at 8-10 years instead of the rated 12-15. Steve's is locally based in the Murrieta-Temecula Valley, and we install across the valley.</p>
+        <h3>Heat Pump Specialists for the Murrieta-Temecula Valley</h3>
+        <p>The mild SW Riverside County climate is ideal heat pump territory — we rarely see temperatures below freezing, and our long cooling season means a heat pump runs efficiently most of the year. Steve's is locally based in the Murrieta-Temecula Valley, and we install and service heat pumps across the entire valley.</p>
         <p>We service homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
       </div>
 
-      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Water Heater Service</a>
+      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Heat Pump Service</a>
     </div>
   </div>
 </section>
 
 <!-- OUR PROCESS — numbered timeline -->
-<section class="sv-process" aria-labelledby="water-heaters-process-heading">
+<section class="sv-process" aria-labelledby="heat-pumps-process-heading">
   <div class="sv-process-in">
     <div class="sv-process-hd">
       <div class="eyebrow">How It Works</div>
-      <h2 id="water-heaters-process-heading">Our Water Heater <em>Process</em></h2>
-      <p>Right-sized unit, code-compliant install, full walkthrough.</p>
+      <h2 id="heat-pumps-process-heading">Our Heat Pump <em>Process</em></h2>
+      <p>Maximum efficiency, full rebate guidance, honest install.</p>
     </div>
     <div class="sv-steps">
       <div class="sv-step">
         <div class="sv-step-n">1</div>
         <div class="sv-step-bd">
-          <h3>In-Home Assessment &amp; Capacity Sizing</h3>
-          <p>We come out, look at your existing water heater, check your gas/electric supply and venting, and ask about household size and hot water usage. We size the new unit to your actual usage — undersized causes constant complaints, oversized wastes money.</p>
+          <h3>Home Assessment &amp; Heat Load</h3>
+          <p>We measure your home, check your existing system, electrical panel, and ductwork (or lack of it), and run a load calculation. Heat pumps are sized differently than gas furnaces — getting it right matters for both efficiency and comfort year-round.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">2</div>
         <div class="sv-step-bd">
-          <h3>Unit Selection &amp; Quote</h3>
-          <p>We help you decide between tank, tankless, or heat pump water heater based on your home and budget. We explain efficiency ratings, energy costs over time, and any utility rebates honestly. Written, itemized estimate with no upsell tactics.</p>
+          <h3>System Selection &amp; Rebate Review</h3>
+          <p>We help you choose between an air-source heat pump or dual-fuel system based on your home's needs. We walk you through federal tax credits, SCE/SDG&amp;E rebates, and any utility incentives that apply — getting you the full discount you qualify for, not just the easy ones.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">3</div>
         <div class="sv-step-bd">
           <h3>Professional Installation</h3>
-          <p>We remove and dispose of the old unit, set the new one, connect water lines, gas or electrical, venting (or recirculation pump if applicable), and the temperature/pressure relief valve. Everything done to code with proper seismic strapping required in California.</p>
+          <p>We set the outdoor unit on a proper pad with vibration isolation, install the indoor air handler or tie into existing ductwork, route the lineset cleanly, and handle all electrical and refrigerant work. Done correctly the first time so it actually performs like a heat pump should.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">4</div>
         <div class="sv-step-bd">
-          <h3>Test &amp; Walkthrough</h3>
-          <p>We fill, check for leaks, verify temperature settings, and confirm safe operation. Then we walk you through the controls, recommended maintenance (anode rod and flush schedule), and warranty registration. You leave knowing exactly how to maintain your new unit.</p>
+          <h3>Startup, Test &amp; Walkthrough</h3>
+          <p>We charge the system, test heating and cooling modes, and verify performance in both. Then we walk you through the controls, defrost behavior in winter, and what to expect from heat pump operation — which behaves a little differently than what most people are used to.</p>
         </div>
       </div>
     </div>
@@ -354,41 +352,41 @@
   <div class="faq-container">
     <div class="faq-head">
       <div class="eyebrow">Common Questions</div>
-      <h2 id="ac-faq-heading">Water Heaters FAQs</h2>
-      <p>Straight answers about water heaters in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
+      <h2 id="ac-faq-heading">Heat Pumps FAQs</h2>
+      <p>Straight answers about heat pumps in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Tank vs tankless water heater — which is better for my home?</summary>
-        <div class="faq-body">Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation.</div>
+        <summary>How much does a heat pump cost installed in Temecula?</summary>
+        <div class="faq-body">A standard residential heat pump installation in our area typically runs $7,000 to $15,000 depending on system size, efficiency rating, and whether ductwork modifications are needed. After federal tax credits and California rebates, the net cost can drop significantly. We'll give you a clear written quote with all incentives factored in.</div>
       </details>
       <details class="faq-item">
-        <summary>How much does a tankless water heater cost installed?</summary>
-        <div class="faq-body">A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out.</div>
+        <summary>What's the difference between a heat pump and an AC + furnace?</summary>
+        <div class="faq-body">A traditional setup uses two separate systems: an AC for cooling and a gas furnace for heating. A heat pump is a single system that does both — it moves heat outside in summer and pulls heat inside in winter. One unit, no gas line needed (for all-electric installs), and dramatically more energy-efficient than electric resistance heating.</div>
       </details>
       <details class="faq-item">
-        <summary>How long do water heaters last?</summary>
-        <div class="faq-body">Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance — flushing, anode rod replacement on tanks — extends life dramatically.</div>
+        <summary>Are heat pumps efficient in Southern California?</summary>
+        <div class="faq-body">Yes — in fact, this climate is ideal for them. Heat pumps lose efficiency in extreme cold (below ~30°F), but the Murrieta-Temecula Valley rarely sees those temperatures. Our long cooling season means the heat pump runs efficiently 9-10 months a year, and on the coldest nights, modern heat pumps still perform well or pair with a small backup.</div>
       </details>
       <details class="faq-item">
-        <summary>What's a heat pump (hybrid) water heater?</summary>
-        <div class="faq-body">It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market.</div>
+        <summary>What rebates and tax credits are available for heat pumps?</summary>
+        <div class="faq-body">The federal Inflation Reduction Act offers a $2,000 tax credit for qualifying heat pump installations. California's TECH Clean California program offers heat pump rebates, though some Southern California reservations are currently waitlisted — we'll check current availability for your situation. SCE may also offer additional incentives. Call (951) 634-3233 and we'll lay out exactly what you qualify for.</div>
       </details>
       <details class="faq-item">
-        <summary>Are there rebates for tankless and heat pump water heaters?</summary>
-        <div class="faq-body">Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted — we'll check availability for your situation. Call (951) 634-3233 for current incentives.</div>
+        <summary>How long does a heat pump last?</summary>
+        <div class="faq-body">Modern air-source heat pumps typically last 12-15 years with proper maintenance. That's somewhat shorter than a gas furnace (which can last 20+ years), but the energy savings over the system's life usually more than make up the difference, especially in our climate.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you offer same-day water heater repair?</summary>
-        <div class="faq-body">Yes — leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage.</div>
+        <summary>Should I switch from a gas furnace to a heat pump?</summary>
+        <div class="faq-body">If your existing AC and furnace are both aging (10+ years), it's a great time to consider switching. You replace two systems with one, qualify for federal tax credits and state rebates, and lock in lower energy bills going forward. If only one system is aging, the math is closer — we'll run real numbers for your specific situation.</div>
       </details>
       <details class="faq-item">
-        <summary>What are the warning signs my water heater is failing?</summary>
-        <div class="faq-body">Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely — replacement on your timeline is much cheaper than emergency replacement plus water damage.</div>
+        <summary>What's a dual-fuel heat pump system?</summary>
+        <div class="faq-body">A dual-fuel setup pairs a heat pump (for everyday heating and cooling) with a smaller backup gas furnace that kicks in only on the coldest nights. You get the efficiency of a heat pump for 95% of the year, plus the brute heating power of gas for the rare 30°F nights in the valley. Best of both worlds for homeowners who want maximum reliability.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you give free estimates on water heater installation?</summary>
-        <div class="faq-body">Yes — free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule.</div>
+        <summary>Do you give free estimates on heat pump installation?</summary>
+        <div class="faq-body">Yes — free in-home estimates on all heat pump installations, including a full breakdown of available federal tax credits and California rebates. Call (951) 634-3233 to schedule.</div>
       </details>
     </div>
     <div class="faq-cta">
@@ -401,8 +399,8 @@
 <!-- CTA BAND -->
 <section class="cband">
   <div class="cband-in">
-    <h2>No Hot Water? <em style="font-style:normal;color:var(--red)">We're On It.</em></h2>
-    <p>Same-day emergency repair, honest replacement quotes, full breakdown of tank vs tankless vs hybrid options. No upsell.</p>
+    <h2>Thinking About a Heat Pump? <em style="font-style:normal;color:var(--red)">Let's Talk Numbers.</em></h2>
+    <p>Honest pros and cons, real installation quotes, and a clear breakdown of available rebates and tax credits. No upsell. Just numbers that make sense for your home.</p>
     <div class="cband-btns">
       <a href="tel:9516343233" class="btn btn-red btn-lg">Call Steve</a>
       <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
@@ -421,77 +419,42 @@
       <a href="/services/air-conditioning/" class="svxlink-card fi">
         <div class="svxlink-ic">❄️</div>
         <span class="svxlink-name">Air Conditioning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/furnaces/" class="svxlink-card fi">
         <div class="svxlink-ic">🔥</div>
         <span class="svxlink-name">Furnaces</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/heat-pumps/" class="svxlink-card fi">
-        <div class="svxlink-ic">♨️</div>
-        <span class="svxlink-name">Heat Pumps</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/ductless-mini-splits/" class="svxlink-card fi">
-        <div class="svxlink-ic">🔲</div>
-        <span class="svxlink-name">Ductless Mini-Splits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/whole-house-fans/" class="svxlink-card fi">
-        <div class="svxlink-ic">🌀</div>
-        <span class="svxlink-name">Whole House Fans</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/ductwork/" class="svxlink-card fi">
-        <div class="svxlink-ic">🛠️</div>
-        <span class="svxlink-name">Ductwork & Airflow</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/condenser-relocation/" class="svxlink-card fi">
-        <div class="svxlink-ic">📦</div>
-        <span class="svxlink-name">Condenser Relocation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/residential-refrigeration/" class="svxlink-card fi">
         <div class="svxlink-ic">🏠</div>
         <span class="svxlink-name">Residential Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/commercial-refrigeration/" class="svxlink-card fi">
         <div class="svxlink-ic">🏢</div>
         <span class="svxlink-name">Commercial Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-hvac/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏬</div>
-        <span class="svxlink-name">Commercial HVAC</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/hvac-maintenance/" class="svxlink-card fi">
         <div class="svxlink-ic">🔧</div>
         <span class="svxlink-name">HVAC Maintenance</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/air-quality-control/" class="svxlink-card fi">
         <div class="svxlink-ic">💨</div>
-        <span class="svxlink-name">Air Quality Control</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-name">Air Quality</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
-      <a href="/services/drain-cleaning/" class="svxlink-card fi">
-        <div class="svxlink-ic">🚰</div>
-        <span class="svxlink-name">Drain Cleaning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/oven-hoods/" class="svxlink-card fi">
-        <div class="svxlink-ic">🍳</div>
-        <span class="svxlink-name">Oven Hood Installation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+      <a href="/services/water-heaters/" class="svxlink-card fi">
+        <div class="svxlink-ic">💧</div>
+        <span class="svxlink-name">Water Heaters</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/energy-audits/" class="svxlink-card fi">
         <div class="svxlink-ic">⚡</div>
         <span class="svxlink-name">Energy Audits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
     </div>
   </div>

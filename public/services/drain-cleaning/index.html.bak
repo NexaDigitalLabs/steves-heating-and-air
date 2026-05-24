@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Water Heater Installation & Repair in Murrieta & Temecula | Steve's</title>
-  <meta name="description" content="Tank, tankless, and heat pump hybrid water heater installation and repair in Murrieta, Temecula, and SW Riverside County. Same-day emergency repair. Call (951) 634-3233."/>
+  <title>Drain Cleaning Service in Murrieta &amp; Temecula | Steve's Heating &amp; Air</title>
+  <meta name="description" content="Professional drain cleaning in Murrieta, Temecula, and SW Riverside County. Clear slow and clogged drains, plus HVAC condensate drain service. Same-day appointments. Honest pricing. Call (951) 634-3233."/>
   <meta name="theme-color" content="#0B1D3A"/>
   <link rel="icon" href="/images/favicon.png" type="image/png"/>
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/services/drain-cleaning/"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta property="og:description" content="Tank, tankless, and heat pump hybrid water heater installation across Murrieta, Temecula, and SW Riverside County. Same-day emergency repair available."/>
+  <meta property="og:title" content="Drain Cleaning Service in Murrieta &amp; Temecula | Steve's Heating &amp; Air"/>
+  <meta property="og:description" content="Fast, professional drain cleaning across Murrieta, Temecula, and SW Riverside County — slow drains, clogs, and HVAC condensate lines. Honest pricing, no upsell."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
-  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/water-heaters/"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/services/drain-cleaning/"/>
   <meta property="og:site_name" content="Steve's Air Conditioning &amp; Heating"/>
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Water Heater Installation & Repair in Murrieta & Temecula | Steve's"/>
-  <meta name="twitter:description" content="Water heater install & repair in Murrieta & Temecula — tank, tankless, hybrid. Call (951) 634-3233."/>
+  <meta name="twitter:title" content="Drain Cleaning Service in Murrieta &amp; Temecula | Steve's Heating &amp; Air"/>
+  <meta name="twitter:description" content="Fast, professional drain cleaning across Murrieta, Temecula, and SW Riverside County — slow drains, clogs, and HVAC condensate lines. Honest pricing, no upsell."/>
   <meta name="twitter:image" content="https://steves-heating-and-air.vercel.app/images/og-image.jpg"/>
 
   <!-- Geo -->
@@ -35,7 +35,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large"/>
 
   <!-- Page context for chatbot — tells the AI assistant what page the visitor is on -->
-  <meta name="page-context" content="service:water-heaters|Water Heaters"/>
+  <meta name="page-context" content="service:drain-cleaning|Drain Cleaning"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -57,11 +57,11 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#service",
-    "name": "Water Heaters Service",
-    "serviceType": "Water Heaters",
+    "@id": "https://steves-heating-and-air.vercel.app/services/drain-cleaning/#service",
+    "name": "Drain Cleaning",
+    "serviceType": "Drain Cleaning",
     "category": "HVAC",
-    "description": "Tank water heater installation and replacement, tankless on-demand water heater systems, heat pump hybrid water heaters, gas, electric, and propane systems, emergency water heater repair in Murrieta, Temecula, and Southwest Riverside County.",
+    "description": "Professional drain cleaning in Murrieta, Temecula, and Southwest Riverside County. Clears slow and clogged drains in residential settings and services HVAC condensate drain lines to prevent water damage and system shutdowns.",
     "provider": {
       "@type": "HVACBusiness",
       "@id": "https://steves-heating-and-air.vercel.app/#business",
@@ -90,16 +90,13 @@
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Water Heaters Services",
+      "name": "Drain Cleaning Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tank Water Heater Installation & Replacement" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tankless On-Demand Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heat Pump Hybrid Water Heater Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electric Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Propane Water Heater Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Water Heater Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Annual Water Heater Maintenance & Flushing" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Slow & Clogged Drain Clearing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "HVAC Condensate Drain Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Line Inspection" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recurring Clog Diagnosis" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preventive Drain Maintenance" } }
       ]
     }
   }
@@ -125,8 +122,8 @@
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Air Conditioning",
-        "item": "https://steves-heating-and-air.vercel.app/services/water-heaters/"
+        "name": "Drain Cleaning",
+        "item": "https://steves-heating-and-air.vercel.app/services/drain-cleaning/"
       }
     ]
   }
@@ -136,70 +133,70 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "@id": "https://steves-heating-and-air.vercel.app/services/water-heaters/#faq",
+    "@id": "https://steves-heating-and-air.vercel.app/services/drain-cleaning/#faq",
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Tank vs tankless water heater \u2014 which is better for my home?",
+        "name": "Do you offer same-day drain cleaning?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation."
+          "text": "Yes — we offer same-day appointments for most drain clogs. Call (951) 634-3233 and we&#x27;ll get you on the schedule as quickly as we can. For non-urgent drain work, we offer flexible scheduling around your day."
         }
       },
       {
         "@type": "Question",
-        "name": "How much does a tankless water heater cost installed?",
+        "name": "What kinds of drains do you clear?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out."
+          "text": "We handle the common residential drain problems — slow sinks, tubs, and showers, and stubborn clogs that keep backing up. As an HVAC company, we also service HVAC condensate drain lines, which is a drain problem specific to your air conditioning that many companies don&#x27;t touch."
         }
       },
       {
         "@type": "Question",
-        "name": "How long do water heaters last?",
+        "name": "What is an HVAC condensate drain and why does it matter?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance \u2014 flushing, anode rod replacement on tanks \u2014 extends life dramatically."
+          "text": "Your air conditioner removes humidity from the air, and that water drains out through the condensate line. In our climate, that line commonly clogs with algae and buildup. When it does, water backs up — which can trip a safety switch and shut your AC down on a hot day, or overflow into a ceiling or wall and cause real damage. Keeping it clear protects both your system and your home."
         }
       },
       {
         "@type": "Question",
-        "name": "What's a heat pump (hybrid) water heater?",
+        "name": "Why does my drain keep clogging even after I clear it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market."
+          "text": "A drain that keeps backing up usually means the underlying cause was never addressed — the clog got punched through, not cleared, or there&#x27;s buildup, a partial obstruction, or a deeper issue. We focus on diagnosing the actual cause of a recurring clog rather than just clearing it one more time."
         }
       },
       {
         "@type": "Question",
-        "name": "Are there rebates for tankless and heat pump water heaters?",
+        "name": "Will store-bought drain cleaner fix my clog?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted \u2014 we'll check availability for your situation. Call (951) 634-3233 for current incentives."
+          "text": "Sometimes it helps with a minor clog, but for stubborn or recurring clogs it often just delays the problem — and repeated use can be hard on your pipes. If you&#x27;re pouring product down a drain regularly, that&#x27;s a sign the real cause needs to be diagnosed and cleared properly."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you offer same-day water heater repair?",
+        "name": "Do you offer 24/7 emergency drain service?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage."
+          "text": "We don&#x27;t offer 24/7 emergency drain service, but we do offer same-day appointments for most drainage issues and aim to diagnose and solve problems quickly to minimize disruption. Call (951) 634-3233 and we&#x27;ll get you scheduled as soon as possible."
         }
       },
       {
         "@type": "Question",
-        "name": "What are the warning signs my water heater is failing?",
+        "name": "How much does drain cleaning cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely \u2014 replacement on your timeline is much cheaper than emergency replacement plus water damage."
+          "text": "Cost depends on the type of clog, its location, and how involved the clearing is. We&#x27;ll diagnose the problem and give you a clear price before we do the work — our focus is getting your drains working, not stacking on unnecessary charges. Call (951) 634-3233 for details."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you give free estimates on water heater installation?",
+        "name": "Are there guarantees on your drain cleaning work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes \u2014 free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule."
+          "text": "We stand behind our work and take pride in being transparent and honest with every service — no hidden charges, no unnecessary upsells. If you have questions about a specific job, call (951) 634-3233 and we&#x27;ll walk you through exactly what&#x27;s covered."
         }
       }
     ]
@@ -256,7 +253,7 @@
     <span class="crumb-sep">/</span>
     <a href="/services/">Services</a>
     <span class="crumb-sep">/</span>
-    <span class="crumb-cur">Water Heaters</span>
+    <span class="crumb-cur">Drain Cleaning</span>
   </div>
 </nav>
 
@@ -264,8 +261,8 @@
 <div class="ph">
   <div class="ph-in">
     <div class="eyebrow">Service</div>
-    <h1>Water Heater Installation &amp; Repair in Murrieta, Temecula &amp; SW Riverside County</h1>
-    <p>Traditional tank, high-efficiency tankless, and heat-pump hybrid water heater installation, replacement, and repair — gas, electric, propane.</p>
+    <h1>Drain Cleaning Service in Murrieta, Temecula &amp; SW Riverside County</h1>
+    <p>Clear slow drains, stubborn clogs, and HVAC condensate lines — with the right tools, an honest diagnosis, and no unnecessary upsells.</p>
   </div>
 </div>
 
@@ -274,121 +271,121 @@
   <div class="container">
     <div class="sd-standalone fi">
       <div class="sd-hd">
-        <div class="sd-ic">💧</div>
+        <div class="sd-ic">🚰</div>
         <div>
-          <h2>Water Heaters</h2>
-          <p>Tank, tankless, and hybrid systems</p>
+          <h2>Drain Cleaning</h2>
+          <p>Slow drains, clogs &amp; HVAC condensate line service</p>
         </div>
       </div>
 
-      <p class="sd-bd">Whether you're running out of hot water mid-shower, your old tank is leaking down the wall, or you're remodeling and want a more efficient system, Steve's installs and services every type of water heater. Traditional tank models (gas, electric, propane), high-efficiency tankless systems for endless hot water on demand, and modern heat-pump hybrid units that can cut your water heating costs in half.</p>
+      <p class="sd-bd">A slow or clogged drain is one of those problems that's easy to ignore until it isn't — and then it's standing water, a backed-up sink, or an overflow you're cleaning up at the worst possible time. We provide professional drain cleaning across the Murrieta-Temecula Valley for the common residential drain problems: slow sinks and tubs, stubborn clogs, and drains that keep backing up no matter how much store-bought product gets poured down them. Our technicians use proper tools and techniques to actually clear the line, not just punch a hole through the clog so it comes back next month.</p>
 
-      <p class="sd-bd">Not sure which type is right for your Murrieta or Temecula home? We'll walk you through the real tradeoffs based on your family size, fuel availability, hot water usage patterns, and budget — without pushing you toward whatever has the best margin for us. With federal IRA tax credits available for heat pump water heaters and SoCalGas rebates for tankless systems, the upgrade math has shifted significantly in recent years.</p>
+      <p class="sd-bd">There's also a drain problem specific to HVAC that a lot of homeowners don't know about until it causes damage: the condensate drain line. Your air conditioner pulls humidity out of the air, and that water has to drain somewhere. When the condensate line clogs with algae and buildup — which is common in our climate — the water backs up. That can mean a safety switch shutting your AC down on a hot day, or worse, water overflowing into a ceiling or wall. Because we're an HVAC company, we handle both sides: the everyday household drains and the condensate lines that protect your system and your home. We'll diagnose what's actually causing a recurring clog rather than just clearing it again, and we keep it honest — our focus is getting your drains working, not finding extra work.</p>
 
       <div class="sd-feats">
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tank water heater install & replacement</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Tankless on-demand systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Heat pump hybrid water heaters</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Gas, electric & propane systems</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Same-day emergency water heater repair</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Annual maintenance & flushing</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Recirculation pump installation</div></div>
-        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Federal tax credit & rebate guidance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Slow &amp; clogged drain clearing</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">HVAC condensate drain service</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Recurring clog diagnosis</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Drain line inspection</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Same-day appointments for most clogs</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Proper tools — not a temporary punch-through</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Preventive drain maintenance</div></div>
+        <div class="sd-f"><div class="sd-f-ck"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="5 12 10 17 19 8"/></svg></div><div class="sd-f-tx">Honest, no-upsell service</div></div>
       </div>
 
-      <!-- Local relevance — names cities served, links to city pages once built -->
+      <!-- Local relevance — names cities served, links to city pages -->
       <div class="sd-local">
-        <h3>Water Heater Specialists in the Murrieta-Temecula Valley</h3>
-        <p>Most Murrieta and Temecula homes have hard water that scales tank-style heaters faster than the manufacturer ratings assume — meaning many tanks need replacement at 8-10 years instead of the rated 12-15. Steve's is locally based in the Murrieta-Temecula Valley, and we install across the valley.</p>
-        <p>We service homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
+        <h3>Drain Cleaning in the Murrieta-Temecula Valley</h3>
+        <p>As a local HVAC company that's served Southwest Riverside County for over 20 years, we handle both the everyday household drains and the HVAC condensate lines most companies overlook — and we know the area's homes well.</p>
+        <p>We serve homes and businesses across <a href="/murrieta/">Murrieta</a>, <a href="/temecula/">Temecula</a>, <a href="/menifee/">Menifee</a>, <a href="/wildomar/">Wildomar</a>, <a href="/lake-elsinore/">Lake Elsinore</a>, Canyon Lake, Sun City, Winchester, French Valley, and Perris.</p>
       </div>
 
-      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Water Heater Service</a>
+      <a href="tel:9516343233" class="btn btn-red btn-lg">Call for Drain Cleaning</a>
     </div>
   </div>
 </section>
 
 <!-- OUR PROCESS — numbered timeline -->
-<section class="sv-process" aria-labelledby="water-heaters-process-heading">
+<section class="sv-process" aria-labelledby="drain-cleaning-process-heading">
   <div class="sv-process-in">
     <div class="sv-process-hd">
       <div class="eyebrow">How It Works</div>
-      <h2 id="water-heaters-process-heading">Our Water Heater <em>Process</em></h2>
-      <p>Right-sized unit, code-compliant install, full walkthrough.</p>
+      <h2 id="drain-cleaning-process-heading">Our Drain Cleaning <em>Process</em></h2>
+      <p>Clear the clog, find the cause, keep it honest.</p>
     </div>
     <div class="sv-steps">
       <div class="sv-step">
         <div class="sv-step-n">1</div>
         <div class="sv-step-bd">
-          <h3>In-Home Assessment &amp; Capacity Sizing</h3>
-          <p>We come out, look at your existing water heater, check your gas/electric supply and venting, and ask about household size and hot water usage. We size the new unit to your actual usage — undersized causes constant complaints, oversized wastes money.</p>
+          <h3>Schedule Your Service</h3>
+          <p>Call (951) 634-3233 to set a time that fits your schedule. We offer same-day appointments for most drain clogs and flexible scheduling for non-urgent work.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">2</div>
         <div class="sv-step-bd">
-          <h3>Unit Selection &amp; Quote</h3>
-          <p>We help you decide between tank, tankless, or heat pump water heater based on your home and budget. We explain efficiency ratings, energy costs over time, and any utility rebates honestly. Written, itemized estimate with no upsell tactics.</p>
+          <h3>Assessment & Diagnosis</h3>
+          <p>Our technician arrives on time with the right equipment, looks at the affected drain, and identifies what's actually going on — a simple clog, buildup, or something recurring that needs a real diagnosis.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">3</div>
         <div class="sv-step-bd">
-          <h3>Professional Installation</h3>
-          <p>We remove and dispose of the old unit, set the new one, connect water lines, gas or electrical, venting (or recirculation pump if applicable), and the temperature/pressure relief valve. Everything done to code with proper seismic strapping required in California.</p>
+          <h3>Clear & Clean the Line</h3>
+          <p>We clear the clog with proper tools and techniques — fully clearing the line, not just punching through so it comes back. For HVAC condensate lines, we flush the buildup that causes backups and shutdowns.</p>
         </div>
       </div>
       <div class="sv-step">
         <div class="sv-step-n">4</div>
         <div class="sv-step-bd">
-          <h3>Test &amp; Walkthrough</h3>
-          <p>We fill, check for leaks, verify temperature settings, and confirm safe operation. Then we walk you through the controls, recommended maintenance (anode rod and flush schedule), and warranty registration. You leave knowing exactly how to maintain your new unit.</p>
+          <h3>Review & Prevention Tips</h3>
+          <p>We confirm the drain is flowing properly, walk you through what caused the problem, and give you straightforward tips to keep it from coming back. If something bigger is going on, we'll tell you honestly.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AC-SPECIFIC FAQ -->
-<section class="faq-sec" aria-labelledby="ac-faq-heading">
+<!-- SERVICE FAQ -->
+<section class="faq-sec" aria-labelledby="drain-cleaning-faq-heading">
   <div class="faq-container">
     <div class="faq-head">
       <div class="eyebrow">Common Questions</div>
-      <h2 id="ac-faq-heading">Water Heaters FAQs</h2>
-      <p>Straight answers about water heaters in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
+      <h2 id="drain-cleaning-faq-heading">Drain Cleaning FAQs</h2>
+      <p>Straight answers about drain cleaning in the Murrieta-Temecula Valley. Don't see your question? Call <a href="tel:9516343233">(951) 634-3233</a>.</p>
     </div>
     <div class="faq-list">
       <details class="faq-item">
-        <summary>Tank vs tankless water heater — which is better for my home?</summary>
-        <div class="faq-body">Depends on usage. Large families (4+) with high simultaneous hot water demand often do better with a tank heater or a high-capacity tankless. Smaller households or homes that want endless hot water for long showers/tubs benefit most from tankless. Tankless costs more upfront but lasts longer (~20 years vs ~10 for tank) and uses less energy. We'll run the numbers for your situation.</div>
+        <summary>Do you offer same-day drain cleaning?</summary>
+        <div class="faq-body">Yes — we offer same-day appointments for most drain clogs. Call (951) 634-3233 and we&#x27;ll get you on the schedule as quickly as we can. For non-urgent drain work, we offer flexible scheduling around your day.</div>
       </details>
       <details class="faq-item">
-        <summary>How much does a tankless water heater cost installed?</summary>
-        <div class="faq-body">A typical tankless installation in our area runs $3,000-$5,500 including the unit, gas line upgrade if needed, venting, and labor. Replacing an existing tank with a same-fuel tankless is at the lower end; converting from electric to gas tankless is at the higher end. We'll give you a written quote with all costs broken out.</div>
+        <summary>What kinds of drains do you clear?</summary>
+        <div class="faq-body">We handle the common residential drain problems — slow sinks, tubs, and showers, and stubborn clogs that keep backing up. As an HVAC company, we also service HVAC condensate drain lines, which is a drain problem specific to your air conditioning that many companies don&#x27;t touch.</div>
       </details>
       <details class="faq-item">
-        <summary>How long do water heaters last?</summary>
-        <div class="faq-body">Tank water heaters: 8-12 years typical (less in our hard-water area), 12-15 years with annual flushing. Tankless: 20+ years with annual descaling. Heat pump hybrid: 10-15 years. Annual maintenance — flushing, anode rod replacement on tanks — extends life dramatically.</div>
+        <summary>What is an HVAC condensate drain and why does it matter?</summary>
+        <div class="faq-body">Your air conditioner removes humidity from the air, and that water drains out through the condensate line. In our climate, that line commonly clogs with algae and buildup. When it does, water backs up — which can trip a safety switch and shut your AC down on a hot day, or overflow into a ceiling or wall and cause real damage. Keeping it clear protects both your system and your home.</div>
       </details>
       <details class="faq-item">
-        <summary>What's a heat pump (hybrid) water heater?</summary>
-        <div class="faq-body">It's a water heater that uses heat pump technology (the same principle as a modern HVAC heat pump) to extract heat from surrounding air and use it to heat water. Result: 50-60% lower energy cost compared to a standard electric water heater. They cost more upfront but qualify for federal tax credits and pay back fast in California's high-cost electric market.</div>
+        <summary>Why does my drain keep clogging even after I clear it?</summary>
+        <div class="faq-body">A drain that keeps backing up usually means the underlying cause was never addressed — the clog got punched through, not cleared, or there&#x27;s buildup, a partial obstruction, or a deeper issue. We focus on diagnosing the actual cause of a recurring clog rather than just clearing it one more time.</div>
       </details>
       <details class="faq-item">
-        <summary>Are there rebates for tankless and heat pump water heaters?</summary>
-        <div class="faq-body">Yes. SoCalGas offers rebates for qualifying gas tankless installations. The federal Inflation Reduction Act offers tax credits for heat pump water heaters. California's TECH Clean California program offers heat pump water heater rebates, though some Southern California funding is currently waitlisted — we'll check availability for your situation. Call (951) 634-3233 for current incentives.</div>
+        <summary>Will store-bought drain cleaner fix my clog?</summary>
+        <div class="faq-body">Sometimes it helps with a minor clog, but for stubborn or recurring clogs it often just delays the problem — and repeated use can be hard on your pipes. If you&#x27;re pouring product down a drain regularly, that&#x27;s a sign the real cause needs to be diagnosed and cleared properly.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you offer same-day water heater repair?</summary>
-        <div class="faq-body">Yes — leaking tanks and water heater failures are emergencies. We provide same-day response for water heater issues across Murrieta, Temecula, and SW Riverside County. If your tank is leaking, shut off the water supply to the heater and call (951) 634-3233 immediately to prevent water damage.</div>
+        <summary>Do you offer 24/7 emergency drain service?</summary>
+        <div class="faq-body">We don&#x27;t offer 24/7 emergency drain service, but we do offer same-day appointments for most drainage issues and aim to diagnose and solve problems quickly to minimize disruption. Call (951) 634-3233 and we&#x27;ll get you scheduled as soon as possible.</div>
       </details>
       <details class="faq-item">
-        <summary>What are the warning signs my water heater is failing?</summary>
-        <div class="faq-body">Rust-colored hot water, popping/rumbling noises (sediment buildup), lukewarm water that won't get hot, water pooling around the base of the tank, age over 10 years. If you see any of these in a tank-style heater, call us before it fails completely — replacement on your timeline is much cheaper than emergency replacement plus water damage.</div>
+        <summary>How much does drain cleaning cost?</summary>
+        <div class="faq-body">Cost depends on the type of clog, its location, and how involved the clearing is. We&#x27;ll diagnose the problem and give you a clear price before we do the work — our focus is getting your drains working, not stacking on unnecessary charges. Call (951) 634-3233 for details.</div>
       </details>
       <details class="faq-item">
-        <summary>Do you give free estimates on water heater installation?</summary>
-        <div class="faq-body">Yes — free estimates on all water heater installations and replacements. A diagnostic fee may apply for repair calls. Call (951) 634-3233 to schedule.</div>
+        <summary>Are there guarantees on your drain cleaning work?</summary>
+        <div class="faq-body">We stand behind our work and take pride in being transparent and honest with every service — no hidden charges, no unnecessary upsells. If you have questions about a specific job, call (951) 634-3233 and we&#x27;ll walk you through exactly what&#x27;s covered.</div>
       </details>
     </div>
     <div class="faq-cta">
@@ -401,8 +398,8 @@
 <!-- CTA BAND -->
 <section class="cband">
   <div class="cband-in">
-    <h2>No Hot Water? <em style="font-style:normal;color:var(--red)">We're On It.</em></h2>
-    <p>Same-day emergency repair, honest replacement quotes, full breakdown of tank vs tankless vs hybrid options. No upsell.</p>
+    <h2>Slow or Clogged Drain? <em style="font-style:normal;color:var(--red)">We'll Clear It.</em></h2>
+    <p>Same-day appointments across Murrieta, Temecula, and Southwest Riverside County for household drains and HVAC condensate lines. Honest pricing, real diagnosis, no upsell.</p>
     <div class="cband-btns">
       <a href="tel:9516343233" class="btn btn-red btn-lg">Call Steve</a>
       <a href="/#contact" class="btn btn-outline-w btn-lg">Request Online Quote</a>
@@ -421,77 +418,42 @@
       <a href="/services/air-conditioning/" class="svxlink-card fi">
         <div class="svxlink-ic">❄️</div>
         <span class="svxlink-name">Air Conditioning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/furnaces/" class="svxlink-card fi">
-        <div class="svxlink-ic">🔥</div>
-        <span class="svxlink-name">Furnaces</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/heat-pumps/" class="svxlink-card fi">
         <div class="svxlink-ic">♨️</div>
         <span class="svxlink-name">Heat Pumps</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
+      </a>
+      <a href="/services/furnaces/" class="svxlink-card fi">
+        <div class="svxlink-ic">🔥</div>
+        <span class="svxlink-name">Furnaces</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/ductless-mini-splits/" class="svxlink-card fi">
         <div class="svxlink-ic">🔲</div>
         <span class="svxlink-name">Ductless Mini-Splits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/whole-house-fans/" class="svxlink-card fi">
         <div class="svxlink-ic">🌀</div>
         <span class="svxlink-name">Whole House Fans</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/ductwork/" class="svxlink-card fi">
         <div class="svxlink-ic">🛠️</div>
-        <span class="svxlink-name">Ductwork & Airflow</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-name">Ductwork &amp; Airflow</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/condenser-relocation/" class="svxlink-card fi">
         <div class="svxlink-ic">📦</div>
         <span class="svxlink-name">Condenser Relocation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/residential-refrigeration/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏠</div>
-        <span class="svxlink-name">Residential Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-refrigeration/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏢</div>
-        <span class="svxlink-name">Commercial Refrigeration</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/commercial-hvac/" class="svxlink-card fi">
-        <div class="svxlink-ic">🏬</div>
-        <span class="svxlink-name">Commercial HVAC</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
       <a href="/services/hvac-maintenance/" class="svxlink-card fi">
         <div class="svxlink-ic">🔧</div>
         <span class="svxlink-name">HVAC Maintenance</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/air-quality-control/" class="svxlink-card fi">
-        <div class="svxlink-ic">💨</div>
-        <span class="svxlink-name">Air Quality Control</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/drain-cleaning/" class="svxlink-card fi">
-        <div class="svxlink-ic">🚰</div>
-        <span class="svxlink-name">Drain Cleaning</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/oven-hoods/" class="svxlink-card fi">
-        <div class="svxlink-ic">🍳</div>
-        <span class="svxlink-name">Oven Hood Installation</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
-      </a>
-      <a href="/services/energy-audits/" class="svxlink-card fi">
-        <div class="svxlink-ic">⚡</div>
-        <span class="svxlink-name">Energy Audits</span>
-        <span class="svxlink-arrow">Learn More &rarr;</span>
+        <span class="svxlink-arrow">Learn More →</span>
       </a>
     </div>
   </div>
@@ -537,7 +499,7 @@
         <span class="ft-cred"><strong>5.0&#9733;</strong> on Google &middot; 612+ Reviews</span>
       </div>
     </div>
-        <div class="ft-c">
+    <div class="ft-c">
       <details class="ft-acc">
         <summary><h4>Services</h4></summary>
         <ul class="ft-services-ul">

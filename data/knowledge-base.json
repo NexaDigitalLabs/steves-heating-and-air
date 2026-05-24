@@ -16,7 +16,12 @@
     "yearsInBusiness": "20+",
     "rating": "5.0",
     "reviewCount": "612",
-    "credentials": ["Licensed", "Bonded", "Insured", "NATE-Certified Technicians"],
+    "credentials": [
+      "Licensed",
+      "Bonded",
+      "Insured",
+      "NATE-Certified Technicians"
+    ],
     "ownership": "American-owned, locally operated, family-run",
     "hours": {
       "monday_friday": "7:00 AM – 6:00 PM",
@@ -27,9 +32,11 @@
     "paymentTypes": "Call for accepted payment methods and current financing options",
     "warranties": "Factory warranties on all brand-name equipment, plus our own labor guarantee on installations"
   },
-
   "serviceArea": {
-    "primary": ["Murrieta", "Temecula"],
+    "primary": [
+      "Murrieta",
+      "Temecula"
+    ],
     "full": [
       "Murrieta",
       "Temecula",
@@ -40,12 +47,60 @@
       "Sun City",
       "Winchester",
       "French Valley",
-      "Perris"
+      "Perris",
+      "Hemet",
+      "Romoland",
+      "Homeland",
+      "Fallbrook",
+      "Rainbow",
+      "Moreno Valley",
+      "Riverside",
+      "Corona",
+      "San Bernardino",
+      "Anza",
+      "Aguanga"
     ],
+    "tiers": {
+      "core": {
+        "cities": [
+          "Murrieta",
+          "Temecula",
+          "Menifee",
+          "Wildomar",
+          "Lake Elsinore",
+          "Canyon Lake"
+        ],
+        "typicalResponse": "Same-day to next-day for most service calls; emergency response available"
+      },
+      "close": {
+        "cities": [
+          "Sun City",
+          "Winchester",
+          "French Valley",
+          "Perris",
+          "Hemet",
+          "Romoland",
+          "Homeland",
+          "Fallbrook",
+          "Rainbow"
+        ],
+        "typicalResponse": "1-3 hours typical response (15-30 min drive from Murrieta)"
+      },
+      "extended": {
+        "cities": [
+          "Moreno Valley",
+          "Riverside",
+          "Corona",
+          "San Bernardino",
+          "Anza",
+          "Aguanga"
+        ],
+        "typicalResponse": "Same-day typical service (30-75 min drive); routed by tech availability"
+      }
+    },
     "region": "Southwest Riverside County, California",
     "note": "If you're not sure whether we cover your area, just call — we'll let you know straight away."
   },
-
   "services": [
     {
       "id": "ac",
@@ -171,9 +226,113 @@
         "Written report with prioritized savings",
         "Commercial energy audits available"
       ]
+    },
+    {
+      "id": "ductless",
+      "name": "Ductless Mini-Splits",
+      "summary": "Energy-efficient ductless cooling and heating for additions, garages, and rooms central HVAC can't reach",
+      "details": "Ductless mini-splits are perfect when running new ductwork isn't practical — converted garages, room additions, ADUs, sunrooms, master suites that never cool down, or any space the rest of your system fights to reach. We install Mitsubishi, Daikin, LG, and Fujitsu single-zone and multi-zone systems. Each indoor head has its own thermostat, so you only cool the rooms you're using. They run on standard electric service, qualify for federal tax credits and California rebates, and are dramatically quieter than window units.",
+      "features": [
+        "Single-zone and multi-zone systems",
+        "Garage, addition, ADU, and sunroom installations",
+        "Mitsubishi, Daikin, LG, Fujitsu certified installer",
+        "Federal tax credits and California rebates available",
+        "Heat pump versions for year-round comfort",
+        "Quieter than window units",
+        "Repair and refrigerant service on existing systems"
+      ]
+    },
+    {
+      "id": "whole-house-fans",
+      "name": "Whole House Fans",
+      "summary": "Pull cool evening air through the house and exhaust hot attic air — slash AC runtime on summer nights",
+      "details": "Inland Empire summers cool off hard at night. A whole-house fan pulls that 65°F evening air through your open windows and pushes the heat out through your attic — usually cooling a whole house in 15–20 minutes for pennies of electricity instead of running the AC. We install QuietCool and AirScape systems sized to your square footage, with proper attic venting calcs so you don't pressurize the attic or back-draft any combustion appliances. Great pairing with solar.",
+      "features": [
+        "QuietCool and AirScape installation",
+        "Sized to home square footage and attic venting",
+        "Significantly lower summer electric bills",
+        "Attic ventilation calculation included",
+        "Damper sealing for winter air-tightness",
+        "Wireless and timer-based controls",
+        "Repairs and motor replacement on existing fans"
+      ]
+    },
+    {
+      "id": "ductwork",
+      "name": "Ductwork & Airflow",
+      "summary": "Duct repair, replacement, sealing, and balancing — fix hot/cold rooms and lower energy bills",
+      "details": "If one room is always hot, your bills jumped, or you can hear the system whistle, the ductwork is usually the culprit. We pressure-test for leaks, repair or replace crushed flex duct, seal connections with mastic (not just tape), and re-balance airflow with dampers. We also size and run new ductwork for additions or full retrofits. Properly sealed ducts can recover 20–30% of the conditioned air your old system was leaking into the attic.",
+      "features": [
+        "Duct leakage testing and repair",
+        "Full ductwork replacement and redesign",
+        "Mastic sealing (not just foil tape)",
+        "Airflow balancing and damper installation",
+        "Hot/cold room diagnosis and fix",
+        "New ductwork for additions and ADUs",
+        "Sheet metal and flex duct fabrication"
+      ]
+    },
+    {
+      "id": "condenser-relo",
+      "name": "Condenser Relocation",
+      "summary": "Move your outdoor AC unit to free up yard space, reduce noise, or clear room for a remodel or pool build",
+      "details": "Adding a pool, expanding the patio, doing a side-yard remodel, or just tired of the condenser sitting right outside the bedroom window? We relocate outdoor condenser units anywhere on the property — typically up to 50 feet from the original location — including new line set, electrical, pad, and a full vacuum-and-recharge. We coordinate with pool builders and general contractors so the AC isn't down during the remodel.",
+      "features": [
+        "Full condenser relocation (up to 50 ft)",
+        "New line set, pad, and electrical disconnect",
+        "Coordination with pool builders and GCs",
+        "Vacuum, leak-test, and recharge included",
+        "Noise reduction options (anti-vibration pads)",
+        "Pre-quote site visit for accurate cost",
+        "Same-day relocation on most jobs"
+      ]
+    },
+    {
+      "id": "com-hvac",
+      "name": "Commercial HVAC",
+      "summary": "Rooftop units, package systems, and split systems for offices, retail, restaurants, and light industrial",
+      "details": "We service commercial HVAC across SW Riverside County and the broader Inland Empire — rooftop package units (RTUs), split systems for office suites, makeup air for restaurants, and full equipment changeouts. Service contracts available with priority response and quarterly PMs. We work with property managers, retail tenants, restaurant owners, and small industrial. Crane-set RTU replacements coordinated in-house.",
+      "features": [
+        "Rooftop package unit (RTU) service and replacement",
+        "Office, retail, restaurant, light industrial",
+        "Service contracts with priority response",
+        "Quarterly preventive maintenance programs",
+        "Crane-set RTU changeouts coordinated in-house",
+        "Carrier, Trane, Lennox, York commercial lines",
+        "After-hours service for retail and restaurant operations"
+      ]
+    },
+    {
+      "id": "drain",
+      "name": "Drain Cleaning",
+      "summary": "Condensate drain clearing for AC systems — prevent water damage, ceiling stains, and emergency shutoffs",
+      "details": "AC condensate drains clog with algae and sludge every couple of years, especially here in the Inland Empire. When they back up, the safety switch shuts the AC off mid-summer or — worse — water leaks through the ceiling. We clear the drain line with nitrogen, vacuum, or wet-vac depending on access, treat with algaecide tablets, and verify the safety switch works. Often done as part of a tune-up; available as a standalone service.",
+      "features": [
+        "AC condensate drain line clearing",
+        "Algae and sludge removal",
+        "Safety float switch testing",
+        "Drain pan inspection and replacement",
+        "Algaecide tablet treatment",
+        "Available as standalone or with tune-up",
+        "Water damage prevention"
+      ]
+    },
+    {
+      "id": "oven-hoods",
+      "name": "Oven Hood Installation",
+      "summary": "Range hood and oven hood installation, ducting to the exterior, and makeup-air sizing for high-CFM units",
+      "details": "Range hoods don't work without proper exterior venting — recirculating filters just blow the grease and steam back at you. We install range hoods of all sizes, run new duct from the hood to a roof or wall exterior cap, and handle makeup-air calculations for high-CFM commercial-style hoods (anything over 400 CFM in a tight home will starve combustion appliances without it). Works for new construction, remodels, and upgrades from old recirculating units.",
+      "features": [
+        "Range hood and oven hood installation",
+        "Exterior venting (roof and wall caps)",
+        "Makeup-air calculation for high-CFM hoods",
+        "Conversion from recirculating to ducted",
+        "Coordination with cabinet installers",
+        "Commercial-style residential hood installation",
+        "Existing hood ductwork repair"
+      ]
     }
   ],
-
   "brands": [
     "Carrier",
     "Lennox",
@@ -186,7 +345,6 @@
     "Bryant",
     "Amana"
   ],
-
   "pricingApproach": {
     "philosophy": "Honest, upfront pricing with no hidden fees, bait-and-switch tactics, or high-pressure sales",
     "estimates": "Free estimates on installations and replacements",
@@ -194,7 +352,6 @@
     "quoteProcess": "We provide a clear written quote before any work begins. If we discover something during the job, we stop and discuss it with you first.",
     "note": "Specific pricing varies by job. The best way to get an accurate number is to call (951) 634-3233 for a free quote."
   },
-
   "values": [
     "Honest, upfront pricing — no hidden fees",
     "Same-day emergency service",
@@ -203,7 +360,6 @@
     "Real technicians, no call centers",
     "No bait-and-switch, no high-pressure sales"
   ],
-
   "faqs": [
     {
       "q": "Do you offer emergency service?",
@@ -227,7 +383,7 @@
     },
     {
       "q": "What areas do you cover?",
-      "a": "We serve all of Southwest Riverside County: Murrieta, Temecula, Wildomar, Lake Elsinore, Canyon Lake, Menifee, Sun City, Winchester, French Valley, and Perris. If you're outside that list, call and ask — we'll let you know."
+      "a": "We serve 21 cities across Southwest Riverside County and the broader Inland Empire. Our core service area — same-day to next-day response — is Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, and Canyon Lake. Nearby cities with 1-3 hour typical response: Sun City, Winchester, French Valley, Perris, Hemet, Romoland, Homeland, Fallbrook, and Rainbow. Extended same-day service to Moreno Valley, Riverside, Corona, San Bernardino, Anza, and Aguanga. If you're outside that list, call and ask — we can often still help."
     },
     {
       "q": "Can you install a brand I purchase myself?",
@@ -280,9 +436,28 @@
     {
       "q": "Do you do furnace replacements with different fuel types?",
       "a": "Yes — we install and service natural gas, electric, propane, oil, and water furnaces. We also handle full equipment retrofit projects, like converting from oil to gas, or upgrading older inefficient systems to modern high-efficiency units."
+    },
+    {
+      "q": "Do you install ductless mini-splits?",
+      "a": "Yes — single-zone and multi-zone Mitsubishi, Daikin, LG, and Fujitsu systems. Mini-splits are ideal for converted garages, room additions, ADUs, sunrooms, or any room your central system never quite cools. Heat pump versions handle both heating and cooling, qualify for federal tax credits and California rebates, and run dramatically quieter than window units."
+    },
+    {
+      "q": "What is a whole-house fan and is it worth it in Murrieta?",
+      "a": "A whole-house fan pulls cool evening air in through your open windows and exhausts attic heat out through the roof vents. Murrieta and Temecula nights drop into the 60s most of the summer, so a properly-sized fan cools the whole house in 15-20 minutes for pennies of electricity — letting you shut the AC off entirely for most of the night. We install QuietCool and AirScape systems sized to your home and attic venting."
+    },
+    {
+      "q": "Can you relocate my outdoor AC unit for a pool build or remodel?",
+      "a": "Yes — condenser relocations are a regular job for us. Typical relocations are up to 50 feet from the original spot and include new line set, electrical disconnect, pad, vacuum, leak-test, and recharge. We coordinate with pool builders and general contractors so the AC is only down for the day of the move. Call (951) 634-3233 for a site visit and quote."
+    },
+    {
+      "q": "Do you service commercial HVAC?",
+      "a": "Yes — rooftop package units (RTUs), split systems for office suites and retail, restaurant makeup-air, and light industrial. We offer service contracts with priority response and quarterly PMs for property managers and business owners. After-hours service available for retail and restaurant operations."
+    },
+    {
+      "q": "How fast can you get to me in Corona or Riverside?",
+      "a": "Same-day service is typical for our extended-area cities — Moreno Valley, Riverside, Corona, San Bernardino, Anza, and Aguanga. Actual arrival depends on tech availability that day and where they're currently routed. For our core area (Murrieta, Temecula, Menifee, Wildomar, Lake Elsinore, Canyon Lake) we run same-day to next-day on most service calls, with emergency response available."
     }
   ],
-
   "troubleshootingTips": [
     {
       "issue": "AC not cooling",
@@ -331,7 +506,6 @@
       ]
     }
   ],
-
   "seasonalTips": {
     "spring": "Schedule your AC tune-up before the first heat wave hits. Replace your air filter. Clear leaves and debris from around the outdoor condenser unit.",
     "summer": "Set your thermostat to 78°F when home, higher when away. Use ceiling fans to feel cooler at higher set points. Close blinds during peak sun hours. Replace filters monthly during heavy use.",
