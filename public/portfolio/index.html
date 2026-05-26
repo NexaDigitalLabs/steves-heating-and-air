@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Recent Work | Steve's Air Conditioning &amp; Heating</title>
+  <meta name="description" content="Recent HVAC installations, repairs, and maintenance jobs by Steve's Air Conditioning &amp; Heating across Murrieta, Temecula, and Southwest Riverside County."/>
+  <meta name="theme-color" content="#0B1D3A"/>
+  <link rel="icon" href="/images/favicon.png" type="image/png"/>
+
+  <meta property="og:title" content="Our Recent Work | Steve's Air Conditioning &amp; Heating"/>
+  <meta property="og:description" content="Real HVAC jobs from Steve's crew — installs, repairs, maintenance, and more."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://steves-heating-and-air.vercel.app/portfolio/"/>
+
+  <link rel="canonical" href="https://steves-heating-and-air.vercel.app/portfolio/"/>
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="/assets/site.css"/>
+
+  <style>
+    /* ═══════════════════════════════════════════════════════════════════
+       PORTFOLIO PAGE STYLES
+       ═══════════════════════════════════════════════════════════════════ */
+    .portfolio-hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy3) 100%);
+      padding: 100px 0 60px;
+      border-bottom: 1px solid rgba(66,133,244,.12);
+    }
+    .portfolio-hero .container { text-align: center; }
+    .portfolio-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      letter-spacing: .04em; line-height: 1; color: var(--white);
+      margin-bottom: 18px;
+    }
+    .portfolio-hero h1 em { font-style: normal; color: var(--red); }
+    .portfolio-hero p {
+      font-size: 1.1rem; color: var(--muted);
+      max-width: 640px; margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Category filter tabs */
+    .filter-bar {
+      background: var(--navy2);
+      padding: 24px 0;
+      position: sticky; top: 70px; z-index: 50;
+      border-bottom: 1px solid rgba(66,133,244,.12);
+    }
+    .filter-tabs {
+      display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;
+    }
+    .filter-tab {
+      font-family: 'Rajdhani', sans-serif; font-weight: 600;
+      font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
+      padding: 10px 20px; border-radius: var(--r);
+      background: transparent; color: var(--muted);
+      border: 1px solid rgba(66,133,244,.2);
+      cursor: pointer; transition: all .22s ease;
+      white-space: nowrap;
+    }
+    .filter-tab:hover { color: var(--white); border-color: var(--blueAcc); }
+    .filter-tab.active {
+      background: var(--red); color: var(--white);
+      border-color: var(--red);
+    }
+
+    /* Grid */
+    .portfolio-grid-section {
+      padding: 60px 0 100px;
+      background: var(--dark);
+      min-height: 600px;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .portfolio-card {
+      background: var(--navy2);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1px solid rgba(66,133,244,.1);
+      transition: all .3s ease;
+      cursor: pointer;
+      opacity: 0; transform: translateY(20px);
+      animation: cardIn .5s ease forwards;
+    }
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(66,133,244,.3);
+      box-shadow: 0 12px 40px rgba(0,0,0,.3);
+    }
+    .portfolio-card .img-wrap {
+      aspect-ratio: 4/3;
+      background: var(--navy3);
+      position: relative; overflow: hidden;
+    }
+    .portfolio-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+    .portfolio-card:hover img { transform: scale(1.04); }
+    .portfolio-card .cat-badge {
+      position: absolute; top: 12px; left: 12px;
+      background: rgba(11, 29, 58, .9);
+      color: var(--white);
+      font-family: 'Rajdhani', sans-serif; font-weight: 600;
+      font-size: .7rem; letter-spacing: .15em; text-transform: uppercase;
+      padding: 5px 10px; border-radius: 4px;
+      backdrop-filter: blur(8px);
+    }
+    .portfolio-card .body {
+      padding: 18px 20px 20px;
+    }
+    .portfolio-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.35rem; letter-spacing: .02em; line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .portfolio-card p {
+      font-size: .92rem; color: var(--muted); line-height: 1.5;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .portfolio-card .meta {
+      margin-top: 12px;
+      display: flex; justify-content: space-between; align-items: center;
+      font-family: 'Rajdhani', sans-serif; font-weight: 500;
+      font-size: .78rem; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--sky);
+    }
+    .portfolio-card .meta .tech::before { content: '👷 '; }
+    .portfolio-card .meta .date::before { content: '📅 '; }
+
+    /* Loading + empty states */
+    .portfolio-loading, .portfolio-empty {
+      text-align: center; padding: 80px 20px;
+      color: var(--muted);
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.1rem;
+    }
+    .portfolio-loading::before {
+      content: ''; display: block; margin: 0 auto 20px;
+      width: 40px; height: 40px;
+      border: 3px solid rgba(66,133,244,.15);
+      border-top-color: var(--blueAcc);
+      border-radius: 50%;
+      animation: spin .9s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Lightbox modal */
+    .lightbox {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(6, 14, 28, .94);
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+      align-items: center; justify-content: center;
+      padding: 40px 20px;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-content {
+      max-width: 1100px; width: 100%;
+      max-height: 90vh;
+      background: var(--navy2);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 0;
+    }
+    .lightbox-img {
+      background: var(--navy3);
+      display: flex; align-items: center; justify-content: center;
+      max-height: 90vh;
+    }
+    .lightbox-img img {
+      width: 100%; height: 100%; object-fit: contain; max-height: 90vh;
+    }
+    .lightbox-info {
+      padding: 36px 32px;
+      overflow-y: auto;
+    }
+    .lightbox-info .cat {
+      font-family: 'Rajdhani', sans-serif; font-weight: 600;
+      font-size: .75rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--red); margin-bottom: 12px;
+    }
+    .lightbox-info h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.9rem; letter-spacing: .02em; line-height: 1.1;
+      color: var(--white); margin-bottom: 16px;
+    }
+    .lightbox-info p {
+      color: var(--light); font-size: 1rem; line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .lightbox-info .meta {
+      padding-top: 18px;
+      border-top: 1px solid rgba(66,133,244,.15);
+      font-family: 'Rajdhani', sans-serif; font-weight: 500;
+      font-size: .85rem; letter-spacing: .08em;
+      color: var(--muted);
+    }
+    .lightbox-info .meta strong { color: var(--white); }
+    .lightbox-close {
+      position: absolute; top: 24px; right: 24px;
+      background: rgba(11,29,58,.8);
+      border: 1px solid rgba(66,133,244,.25);
+      color: var(--white);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      font-size: 1.4rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: all .22s ease;
+    }
+    .lightbox-close:hover {
+      background: var(--red); border-color: var(--red);
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-hero { padding: 70px 0 40px; }
+      .filter-bar { top: 60px; padding: 16px 0; }
+      .filter-tabs { padding: 0 16px; }
+      .portfolio-grid { grid-template-columns: 1fr; gap: 18px; }
+      .lightbox-content { grid-template-columns: 1fr; max-height: 95vh; }
+      .lightbox-img { max-height: 45vh; }
+      .lightbox-info { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     PASTE YOUR CURRENT MODERN <nav id="navbar">…</nav> HERE
+     Copy from any Phase 3 city page (e.g. /sun-city/) so this page
+     matches the current 16-svc/21-city nav site-wide.
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<!-- HERO -->
+<section class="portfolio-hero">
+  <div class="container fi">
+    <span class="eyebrow">Recent Work</span>
+    <h1>Real Jobs, <em>Real Crews</em></h1>
+    <p>Every photo here is from a recent job by Steve's crew across Murrieta, Temecula, and the surrounding area. Installs, repairs, tune-ups, the works — straight from the field, no stock photos.</p>
+  </div>
+</section>
+
+<!-- FILTER TABS -->
+<section class="filter-bar">
+  <div class="container">
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-tab active" data-cat="all">All Work</button>
+      <button class="filter-tab" data-cat="install">Installs</button>
+      <button class="filter-tab" data-cat="repair">Repairs</button>
+      <button class="filter-tab" data-cat="maintenance">Maintenance</button>
+      <button class="filter-tab" data-cat="before_after">Before / After</button>
+      <button class="filter-tab" data-cat="ductwork">Ductwork</button>
+      <button class="filter-tab" data-cat="commercial">Commercial</button>
+    </div>
+  </div>
+</section>
+
+<!-- GRID -->
+<section class="portfolio-grid-section">
+  <div class="container">
+    <div id="portfolioGrid" class="portfolio-grid"></div>
+    <div id="portfolioLoading" class="portfolio-loading">Loading recent work…</div>
+    <div id="portfolioEmpty" class="portfolio-empty" style="display:none;">
+      No photos in this category yet. Check back soon.
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-content">
+    <div class="lightbox-img">
+      <img id="lightboxImg" src="" alt=""/>
+    </div>
+    <div class="lightbox-info">
+      <div class="cat" id="lightboxCat"></div>
+      <h2 id="lightboxTitle"></h2>
+      <p id="lightboxDesc"></p>
+      <div class="meta">
+        <div>By <strong id="lightboxTech"></strong></div>
+        <div id="lightboxDate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     PASTE YOUR CURRENT MODERN <footer>…</footer> HERE
+     Copy from any Phase 3 city page so this page matches the
+     site-wide 16-svc + 21-city footer.
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<script src="/assets/site.js"></script>
+<script>
+  // ═══════════════════════════════════════════════════════════════════
+  // PORTFOLIO PAGE LOGIC
+  // Fetches recent job photos from the Nexa Content Engine
+  // and renders them in a filterable grid with lightbox.
+  // ═══════════════════════════════════════════════════════════════════
+  
+  const API_BASE = 'https://nexa-content-engine-eta.vercel.app/api';
+  // NOTE: The recent-photos endpoint requires the API key. For a public
+  // portfolio page, we proxy through a same-origin endpoint instead.
+  // See /api/portfolio-feed below in the deployment guide.
+  const FEED_URL = '/api/portfolio-feed';
+  
+  const state = {
+    photos: [],
+    activeCategory: 'all',
+  };
+
+  const $grid = document.getElementById('portfolioGrid');
+  const $loading = document.getElementById('portfolioLoading');
+  const $empty = document.getElementById('portfolioEmpty');
+  const $tabs = document.getElementById('filterTabs');
+  const $lb = document.getElementById('lightbox');
+  const $lbImg = document.getElementById('lightboxImg');
+  const $lbTitle = document.getElementById('lightboxTitle');
+  const $lbDesc = document.getElementById('lightboxDesc');
+  const $lbCat = document.getElementById('lightboxCat');
+  const $lbTech = document.getElementById('lightboxTech');
+  const $lbDate = document.getElementById('lightboxDate');
+  const $lbClose = document.getElementById('lightboxClose');
+
+  function formatCategory(cat) {
+    const map = {
+      install: 'New Install',
+      repair: 'Repair',
+      maintenance: 'Maintenance',
+      before_after: 'Before / After',
+      diagnostic: 'Diagnostic',
+      ductwork: 'Ductwork',
+      commercial: 'Commercial',
+      team: 'The Crew',
+      other: 'Other Work'
+    };
+    return map[cat] || cat;
+  }
+  
+  function formatDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  
+  function render(photos) {
+    $grid.innerHTML = '';
+    if (!photos.length) {
+      $empty.style.display = 'block';
+      return;
+    }
+    $empty.style.display = 'none';
+    
+    photos.forEach((p, i) => {
+      const card = document.createElement('article');
+      card.className = 'portfolio-card';
+      card.style.animationDelay = `${i * 0.05}s`;
+      card.innerHTML = `
+        <div class="img-wrap">
+          <img src="${p.supabase_url}" alt="${(p.portfolio_title || 'Job photo').replace(/"/g, '&quot;')}" loading="lazy"/>
+          <span class="cat-badge">${formatCategory(p.category)}</span>
+        </div>
+        <div class="body">
+          <h3>${p.portfolio_title || 'Recent Job'}</h3>
+          <p>${p.portfolio_description || ''}</p>
+          <div class="meta">
+            <span class="tech">${p.tech_name || 'Crew'}</span>
+            <span class="date">${formatDate(p.portfolio_posted_at)}</span>
+          </div>
+        </div>
+      `;
+      card.addEventListener('click', () => openLightbox(p));
+      $grid.appendChild(card);
+    });
+  }
+  
+  function applyFilter() {
+    const filtered = state.activeCategory === 'all'
+      ? state.photos
+      : state.photos.filter(p => p.category === state.activeCategory);
+    render(filtered);
+  }
+  
+  function openLightbox(p) {
+    $lbImg.src = p.supabase_url;
+    $lbImg.alt = p.portfolio_title || 'Job photo';
+    $lbTitle.textContent = p.portfolio_title || 'Recent Job';
+    $lbDesc.textContent = p.portfolio_description || '';
+    $lbCat.textContent = formatCategory(p.category);
+    $lbTech.textContent = p.tech_name || 'Crew';
+    $lbDate.textContent = formatDate(p.portfolio_posted_at);
+    $lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  
+  function closeLightbox() {
+    $lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  
+  $lbClose.addEventListener('click', closeLightbox);
+  $lb.addEventListener('click', e => { if (e.target === $lb) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+  
+  $tabs.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-tab');
+    if (!btn) return;
+    $tabs.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.activeCategory = btn.dataset.cat;
+    applyFilter();
+  });
+  
+  // Fetch
+  fetch(FEED_URL)
+    .then(r => r.json())
+    .then(data => {
+      $loading.style.display = 'none';
+      state.photos = (data.photos || []);
+      applyFilter();
+      // Inject schema.org ItemList
+      const schema = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'itemListElement': state.photos.slice(0, 20).map((p, i) => ({
+          '@type': 'ListItem',
+          'position': i + 1,
+          'item': {
+            '@type': 'CreativeWork',
+            'name': p.portfolio_title,
+            'description': p.portfolio_description,
+            'image': p.supabase_url,
+            'dateCreated': p.portfolio_posted_at
+          }
+        }))
+      };
+      const s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.textContent = JSON.stringify(schema);
+      document.head.appendChild(s);
+    })
+    .catch(err => {
+      console.error('Portfolio load failed:', err);
+      $loading.style.display = 'none';
+      $empty.style.display = 'block';
+      $empty.textContent = 'Unable to load recent work right now. Please check back shortly.';
+    });
+</script>
+
+</body>
+</html>
