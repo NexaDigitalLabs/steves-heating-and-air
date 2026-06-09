@@ -1,338 +1,330 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static pages -->
   <url>
     <loc>https://steves-heating-and-air.vercel.app/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/contact/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/quote/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/quote/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/contact/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/rebates/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/reviews/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/service-area/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/services/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/aguanga/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/service-area/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/anza/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/reviews/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/canyon-lake/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/about/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/corona/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://steves-heating-and-air.vercel.app/blog/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/fallbrook/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/french-valley/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/hemet/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/homeland/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/lake-elsinore/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/menifee/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/moreno-valley/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/murrieta/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/perris/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/rainbow/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/riverside/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/romoland/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/san-bernardino/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/services/air-conditioning/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/air-quality-control/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/commercial-hvac/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/commercial-refrigeration/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/condenser-relocation/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/drain-cleaning/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/ductless-mini-splits/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/ductwork/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/energy-audits/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/services/furnaces/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/services/heat-pumps/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/hvac-maintenance/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/oven-hoods/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/residential-refrigeration/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/services/water-heaters/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/services/ductless-mini-splits/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/services/whole-house-fans/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/sun-city/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/services/ductwork/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/condenser-relocation/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/residential-refrigeration/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/commercial-refrigeration/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/commercial-hvac/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/hvac-maintenance/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/air-quality-control/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/drain-cleaning/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/oven-hoods/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/water-heaters/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/services/energy-audits/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/murrieta/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/temecula/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/menifee/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/wildomar/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/lake-elsinore/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/canyon-lake/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/sun-city/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/winchester/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/about/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/french-valley/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/perris/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/hemet/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/moreno-valley/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/riverside/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/corona/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/romoland/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/homeland/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/san-bernardino/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/fallbrook/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/rainbow/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/anza/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/aguanga/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/murrieta/bear-creek/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/murrieta/california-oaks/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/murrieta/greer-ranch/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/temecula/de-luz/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://steves-heating-and-air.vercel.app/temecula/redhawk/</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/common-capacitor-problems-and-replacement-in-ac-units/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/temecula/de-luz/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Blog posts (21) -->
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-importance-of-regular-hvac-maintenance-21/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-often-should-i-replace-my-ac-filter-in-murrieta/</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-choose-the-right-hvac-system-for-your-home/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-clean-your-ac-condenser-coils-yourself-in-menifee/</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-improve-indoor-air-quality-during-murrietas-dusty-seasons/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-refrigerant-leaks-and-their-impact-on-your-ac-system-16/</loc>
+    <lastmod>2026-06-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -343,49 +335,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-maintain-your-hvac-system-during-murrietas-hot-summers/</loc>
+    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-importance-of-regular-hvac-maintenance/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-test-your-ac-before-the-real-heat-hits/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/should-i-replace-my-old-ac-unit-or-repair-it-in-wildomar/</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-hvac-airflow-in-your-murrieta-home/</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-hvac-airflow-in-your-murrieta-home/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-basics-of-hvac-systems-for-homeowners/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-benefits-of-regular-hvac-maintenance/</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-importance-of-regular-hvac-maintenance/</loc>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-maintain-your-hvac-system-during-murrietas-hot-summers/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -397,14 +353,50 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-test-your-ac-before-the-real-heat-hits/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/common-capacitor-problems-and-replacement-in-ac-units/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-benefits-of-regular-hvac-maintenance/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-choose-the-right-hvac-system-for-your-home/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/understanding-the-basics-of-hvac-systems-for-homeowners/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-improve-indoor-air-quality-during-murrietas-dusty-seasons/</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://steves-heating-and-air.vercel.app/blog/understanding-your-hvac-systems-air-filter-replacement/</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/what-to-expect-when-installing-a-new-ac-system-in-murrieta/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/blog/why-regular-hvac-maintenance-saves-money-year-round/</loc>
+    <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -415,7 +407,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/when-to-schedule-your-annual-ac-tune-up-in-temecula/</loc>
+    <loc>https://steves-heating-and-air.vercel.app/blog/what-to-expect-when-installing-a-new-ac-system-in-murrieta/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/should-i-replace-my-old-ac-unit-or-repair-it-in-wildomar/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-to-clean-your-ac-condenser-coils-yourself-in-menifee/</loc>
     <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -427,9 +431,234 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://steves-heating-and-air.vercel.app/blog/why-regular-hvac-maintenance-saves-money-year-round/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://steves-heating-and-air.vercel.app/blog/when-to-schedule-your-annual-ac-tune-up-in-temecula/</loc>
+    <lastmod>2026-05-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/blog/how-often-should-i-replace-my-ac-filter-in-murrieta/</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Our Work / job photos (36) -->
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-11/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-4/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-2/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-10/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-5/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-12/</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-6/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-8/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-7/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-2/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-jarred-job-3/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-7/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-6/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-4/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-9/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-14/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-5/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-7/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-13/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-1/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-3/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-4/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-6/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-2/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-1/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-8/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-1/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-jarred-job-1/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-3/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-michael-job-5/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-11/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-jarred-job-2/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-8/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-10/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-mickey-job-3/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://steves-heating-and-air.vercel.app/our-work/SEED-matt-job-9/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
